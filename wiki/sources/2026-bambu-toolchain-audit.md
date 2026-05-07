@@ -10,6 +10,9 @@ related:
   - entities/slicers/bambu-studio.md
   - entities/slicers/orcaslicer.md
   - entities/tools/kickstarter-autodesk-fdm-protocol.md
+  - entities/printers/x1c.md
+  - entities/printers/p1s.md
+  - entities/printers/a1.md
 maturity: draft
 created: 2026-05-07
 updated: 2026-05-07
@@ -18,7 +21,7 @@ read_status: read
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/ai-design-tools.md @entities/slicers/bambu-studio.md @entities/slicers/orcaslicer.md @entities/tools/kickstarter-autodesk-fdm-protocol.md
+@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/ai-design-tools.md @entities/slicers/bambu-studio.md @entities/slicers/orcaslicer.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
 
 ## Raw Concept
 

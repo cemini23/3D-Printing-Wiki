@@ -10,6 +10,9 @@ related:
   - sources/2025-waheed-multimodal-sensor-fusion.md
   - sources/2026-mahjourian-vlm-iris.md
   - sources/2025-margadji-cipher.md
+  - entities/printers/x1c.md
+  - entities/printers/p1s.md
+  - entities/printers/a1.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-08
@@ -17,7 +20,7 @@ updated: 2026-05-08
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/vlm-in-manufacturing.md @sources/2023-waheed-acoustic-cnn-fault-detection.md @sources/2025-waheed-multimodal-sensor-fusion.md @sources/2026-mahjourian-vlm-iris.md @sources/2025-margadji-cipher.md
+@concepts/fdm-printing.md @concepts/vlm-in-manufacturing.md @sources/2023-waheed-acoustic-cnn-fault-detection.md @sources/2025-waheed-multimodal-sensor-fusion.md @sources/2026-mahjourian-vlm-iris.md @sources/2025-margadji-cipher.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
 
 ## Raw Concept
 

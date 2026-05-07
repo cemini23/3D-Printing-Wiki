@@ -7,6 +7,9 @@ related:
   - concepts/fdm-printing.md
   - concepts/high-speed-fdm.md
   - sources/2025-aung-adaptive-input-shaper.md
+  - entities/printers/x1c.md
+  - entities/printers/p1s.md
+  - entities/printers/a1.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-08
@@ -14,7 +17,7 @@ updated: 2026-05-08
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/high-speed-fdm.md @sources/2025-aung-adaptive-input-shaper.md
+@concepts/fdm-printing.md @concepts/high-speed-fdm.md @sources/2025-aung-adaptive-input-shaper.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
 
 ## Raw Concept
 

@@ -10,6 +10,9 @@ related:
   - sources/2026-bambu-toolchain-audit.md
   - entities/slicers/bambu-studio.md
   - entities/slicers/orcaslicer.md
+  - entities/printers/x1c.md
+  - entities/printers/p1s.md
+  - entities/printers/a1.md
 maturity: draft
 created: 2026-05-07
 updated: 2026-05-07
@@ -17,7 +20,7 @@ updated: 2026-05-07
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/print-farm-operations.md @concepts/ai-design-tools.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @entities/slicers/orcaslicer.md
+@concepts/fdm-printing.md @concepts/print-farm-operations.md @concepts/ai-design-tools.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @entities/slicers/orcaslicer.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
 
 ## Raw Concept
 

@@ -10,6 +10,7 @@ related:
   - sources/2025-aung-adaptive-input-shaper.md
   - sources/2025-lin-camera-extrusion-optimization.md
   - sources/2025-hoteit-closed-loop-extrusion-lqr.md
+  - entities/printers/x1c.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-08
@@ -17,7 +18,7 @@ updated: 2026-05-08
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/input-shaping.md @concepts/extrusion-control.md @sources/2025-aung-adaptive-input-shaper.md @sources/2025-lin-camera-extrusion-optimization.md @sources/2025-hoteit-closed-loop-extrusion-lqr.md
+@concepts/fdm-printing.md @concepts/input-shaping.md @concepts/extrusion-control.md @sources/2025-aung-adaptive-input-shaper.md @sources/2025-lin-camera-extrusion-optimization.md @sources/2025-hoteit-closed-loop-extrusion-lqr.md @entities/printers/x1c.md
 
 ## Raw Concept
 

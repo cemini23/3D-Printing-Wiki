@@ -35,7 +35,9 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 
 ### Printers
 
-(no pages yet — Bambu X1C / P1S / A1 to be added when reader chooses model)
+- [Bambu Lab X1 Carbon (X1C)](entities/printers/x1c.md) — flagship CoreXY enclosed; lidar + AI camera + accelerometer; hardened nozzle; ABS/ASA/composites capable; ~$1,200 — `printer, bambu, x1c, corexy, enclosed, flagship`
+- [Bambu Lab P1S](entities/printers/p1s.md) — mid-tier CoreXY enclosed; AI camera + accelerometer (no lidar); same build volume as X1C at ~$700 bare; ABS/ASA non-composite — `printer, bambu, p1s, corexy, enclosed, mid-tier`
+- [Bambu Lab A1 (and A1 mini)](entities/printers/a1.md) — entry-level bed-slinger open-frame; AMS Lite; lidar + AI camera; ~$400 (A1) / ~$300 (mini); PLA/PETG/TPU only — `printer, bambu, a1, a1-mini, bed-slinger, open-frame, entry-level`
 
 ### Materials
 
