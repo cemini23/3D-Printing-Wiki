@@ -88,10 +88,10 @@ At a market price of €10–15/ring, **profit margin ≈ 400–600%** [Source: 
 
 [CONFIRMED] These are direct numbers from the paper's testbed. [TENTATIVE] Whether 100 rings/month is realistic on a single SME-operator basis depends on the product mix; rings are small and fast, larger goods would amortize the platform overhead differently.
 
-**Bearing on the friend.** This is the closest published analog of the friend's eventual Etsy/MakerWorld store ops. Specific takeaways:
+**Bearing on the reader.** This is the closest published analog of the reader's eventual Etsy/MakerWorld store ops. Specific takeaways:
 1. **Production cost per item is low** (€0.08–0.20 for a small PLA ring). The material is the big variable, not electricity.
 2. **Cloud overhead (~€2 amortized) dominates production cost at small volumes** — only above ~50–100 prints/month does the per-unit cloud cost drop below the production cost.
-3. **Profit share favors infrastructure providers, not designers.** A pure-designer Etsy seller (like the friend's likely starting position — designs but doesn't run a fleet) gets ~10% of value if they license through a MaaS platform vs ~100% if they sell STLs directly. **Direct-sale STLs > MaaS licensing for individual designers.**
+3. **Profit share favors infrastructure providers, not designers.** A pure-designer Etsy seller (like the reader's likely starting position — designs but doesn't run a fleet) gets ~10% of value if they license through a MaaS platform vs ~100% if they sell STLs directly. **Direct-sale STLs > MaaS licensing for individual designers.**
 4. **The Creality K1 MAX is meaningfully cheaper to operate** than the Ultimaker for the same product. Maps to the high-speed-FDM trend (faster machines = less time = less power).
 
 **Security implications** [@concepts/ip-theft-3d-printing.md]: This MaaS architecture *is the threat model* of the security cluster. G-code travels over Azure to remote SME printers; a malicious printer-operator (Tier-2 or Tier-3 attacker per @concepts/ip-theft-3d-printing.md) has G-code in plaintext on their hardware. Ivkic doesn't address this. The matching defense is direct streaming + chunked STL [@concepts/g-code-protection.md] but the paper doesn't implement either.

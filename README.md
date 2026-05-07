@@ -87,9 +87,9 @@ If you're new to Bambu and reading this wiki to set up a printer for the first t
 
 ## License
 
-The wiki content (everything in `wiki/`, this README, `CLAUDE.md`, `LESSONS.md`, `ROADMAP.md`) is the curator's synthesis and analysis — no explicit license set yet (default copyright applies). The scripts in `scripts/` likewise.
+[MIT](LICENSE) — wiki content, scripts, and configuration are free to use, modify, and redistribute. Built so any hobbyist or small-business owner getting into 3D printing can lift it, fork it, or contribute back.
 
-Cited primary sources (academic papers, vendor docs) remain under their original copyrights — not redistributed in this repo (see `.gitignore`).
+Cited primary sources (academic papers, vendor docs) remain under their original licenses and copyrights — they are not redistributed in this repo (see `.gitignore`). To verify a specific claim against its primary source, find the paper via the title or DOI in the source page's frontmatter.
 
 ---
 

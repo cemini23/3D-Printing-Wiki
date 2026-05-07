@@ -37,7 +37,7 @@ TPU comes in different stiffness grades, labeled by **Shore A hardness** — a s
 | **95A** | Firm (skateboard wheel, phone case) | Bambu TPU 95A, **TPU 95A HF** | TPU 95A HF: yes (dedicated port). TPU 95A: ? — check |
 | Shore D scale starts | Rigid plastics begin | — | — |
 
-**Practical translation:** for AMS multi-color flexible work, only **TPU 95A HF** is supported. Softer grades (90A, 85A) must be printed manually-fed or single-spool-only. The friend's first TPU spool should be **95A or 95A HF** for compatibility.
+**Practical translation:** for AMS multi-color flexible work, only **TPU 95A HF** is supported. Softer grades (90A, 85A) must be printed manually-fed or single-spool-only. The reader's first TPU spool should be **95A or 95A HF** for compatibility.
 
 ### When TPU is the right choice
 
@@ -85,7 +85,7 @@ Bambu's AMS (the full unit) has 4 filament ports. **One of those 4 is configurab
 - AMS lite: no TPU support at all (no port can be reconfigured for it).
 - TPU 90A and TPU 85A: AMS-incompatible regardless of slot.
 
-Practical impact for the friend: TPU is workable as a single-color filament on the AMS by allocating one slot for it. TPU multi-color is essentially out of reach without two AMS units chained together. [Source: https://wiki.bambulab.com/en/general/filament-guide-material-table (retrieved 2026-05-06)]
+Practical impact for the reader: TPU is workable as a single-color filament on the AMS by allocating one slot for it. TPU multi-color is essentially out of reach without two AMS units chained together. [Source: https://wiki.bambulab.com/en/general/filament-guide-material-table (retrieved 2026-05-06)]
 
 ### Workflow gotchas
 
@@ -95,7 +95,7 @@ Practical impact for the friend: TPU is workable as a single-color filament on t
 4. **Storage and drying.** Buy TPU in vacuum-sealed packaging (with desiccant). Once opened, store in a sealed box with desiccant. Dry before every print if not used within a few days.
 5. **Layer adhesion is uniformly excellent.** Z impact (86.3) is much closer to XY impact (124.3) than for any rigid filament — because TPU's elastic modulus is low, the layer-bond strength dominates. **TPU prints don't have a Z-axis weakness.** Print orientation matters less than for rigid filaments.
 
-### TPU variants the friend might encounter
+### TPU variants the reader might encounter
 
 | Variant | Difference | When to pick |
 |---|---|---|

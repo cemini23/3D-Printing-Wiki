@@ -33,7 +33,7 @@ The threat-model spectrum for stealing 3D-printable designs, from a hobbyist sel
 
 ### Tier 1 — Hobbyist / Etsy / Printables seller
 
-**Profile**: a single designer selling printable models on Etsy, MakerWorld, Printables, or Cults3D. The friend this wiki is being built for sits here.
+**Profile**: a single designer selling printable models on Etsy, MakerWorld, Printables, or Cults3D. The reader this wiki is being built for sits here.
 
 **Attack surface**:
 - **File-level**: pirated STL files distributed on torrent sites or alternative marketplaces. The model is bytes — once shared, it's everywhere. Conventional copyright applies but enforcement is weak. **This is the dominant real-world threat for a small seller.**
@@ -62,9 +62,9 @@ The threat-model spectrum for stealing 3D-printable designs, from a hobbyist sel
 
 **Defenses**: shielded / enclosed printers with audited power supplies; trusted facility certification; **no good purely-cryptographic defense exists** for MATE in AM as of 2026-05-06 [Source: 2025-dolgavin-hearsay-pbf-power.pdf p.1].
 
-### Bambu-specific notes for the friend's use case
+### Bambu-specific notes for the reader's use case
 
-If the friend sells on Etsy / MakerWorld / Printables (Tier 1 → some Tier 2 if a design is genuinely valuable):
+If the reader sells on Etsy / MakerWorld / Printables (Tier 1 → some Tier 2 if a design is genuinely valuable):
 1. **File-level piracy is the dominant threat**, not side-channel attacks. Spend defensive energy on watermarking + DMCA, not acoustic obfuscation.
 2. **Don't expose the X1C camera stream to the cloud** if a design is genuinely sensitive. Bambu LAN-mode + disabled "AI Failure Detection upload" closes the optical-side-channel threat described in Chattopadhyay 2025.
 3. **The X1C enclosure** is a side benefit for security: ~10-20 dB acoustic attenuation versus an open-frame A1, plus optical containment. [TENTATIVE — Bambu doesn't market this; rough estimate based on Asgar 2026 LULZBOT-class measurements.]

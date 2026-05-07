@@ -22,7 +22,7 @@ updated: 2026-05-06
 
 ## Raw Concept
 
-The default filament. **PLA (polylactic acid)** is the easiest-printing, cheapest, most-color-varied, and most-Etsy-friendly filament. ~80-90% of a typical hobbyist's print volume is PLA. The friend should buy 4-6 spools of PLA (varied colors) before considering anything else.
+The default filament. **PLA (polylactic acid)** is the easiest-printing, cheapest, most-color-varied, and most-Etsy-friendly filament. ~80-90% of a typical hobbyist's print volume is PLA. The reader should buy 4-6 spools of PLA (varied colors) before considering anything else.
 
 ## Narrative
 
@@ -60,7 +60,7 @@ The default filament. **PLA (polylactic acid)** is the easiest-printing, cheapes
 | AMS / AMS lite | Both compatible |
 | Nozzle material | Any (hardened only for PLA-CF) |
 
-### Variants the friend will encounter
+### Variants the reader will encounter
 
 | Variant | Difference vs Basic | When to pick it |
 |---|---|---|

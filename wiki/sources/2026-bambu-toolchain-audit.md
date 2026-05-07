@@ -23,7 +23,7 @@ read_status: read
 ## Raw Concept
 
 - Title: Comprehensive Audit Report — 3D Printing Workspace Toolchain
-- Authors: external AI synthesis (Gemini-DR-style; no human author signature; written for friend's specific Bambu-laptop-only constraints)
+- Authors: external AI synthesis (Gemini-DR-style; no human author signature; written for reader's specific Bambu-laptop-only constraints)
 - Type: Word document (.docx), Phase-0 audit format
 - File: `raw-sources/2026-bambu-toolchain-audit.docx`
 - Pages: 1 long-form synthesis (~40k characters)
@@ -36,7 +36,7 @@ What it studies: 25 GitHub repositories proposed for a laptop-only Bambu-centric
 
 ### The thesis (audit's own framing)
 
-The friend's workspace operates under three hard constraints: Bambu Labs hardware, laptop-only execution, e-commerce target (Etsy + MakerWorld). These constraints bifurcate the open-source 3D-printing toolchain into two camps:
+The reader's workspace operates under three hard constraints: Bambu Labs hardware, laptop-only execution, e-commerce target (Etsy + MakerWorld). These constraints bifurcate the open-source 3D-printing toolchain into two camps:
 
 - **Compatible with Bambu's closed-firmware ecosystem** — slicer forks that respect Bambu's proprietary network protocols + 3MF format + AMS color/texture mapping. Verdict: GO or CONDITIONAL-GO.
 - **Incompatible — assumes RepRap-era open-firmware printers** — Klipper / Marlin / Repetier / ESP3D firmware retrofits, OctoPrint queue managers requiring USB serial, Voron/HevORT/VzBoT scratch-build hardware repos. Verdict: NO-GO on the Bambu platform.
@@ -56,7 +56,7 @@ The audit's strongest argument: **flashing Klipper/Marlin onto Bambu hardware de
 The 22 rejected repos fall into four categories, each with a distinct rejection rationale:
 
 1. **Firmware retrofits onto closed boards** (8 repos) — Klipper / Marlin / Repetier / Prusa-Firmware / ESP3D / klippain / KAMP / Ender3V2S1. **Why rejected**: Bambu's mainboard is encrypted; flashing voids warranty + bricks the printer + severs AI features.
-2. **Hardware-design repos for scratch-built printers** (8 repos) — Voron-2 / Voron-0 / Voron-Trident / VzBoT-Vz330 / Original-Prusa-i3 / HevORT / RAMBo / Core-R-Theta-4-Axis. **Why rejected**: friend is buying Bambu, not building a printer. CAD/STL/BOM repos are out of scope.
+2. **Hardware-design repos for scratch-built printers** (8 repos) — Voron-2 / Voron-0 / Voron-Trident / VzBoT-Vz330 / Original-Prusa-i3 / HevORT / RAMBo / Core-R-Theta-4-Axis. **Why rejected**: reader is buying Bambu, not building a printer. CAD/STL/BOM repos are out of scope.
 3. **Abandoned legacy slicers** (1 repo) — Slic3r (last commit 2017). **Why rejected**: 9-year-stale; modern descendants (PrusaSlicer / Bambu Studio / OrcaSlicer) supersede.
 4. **Parallel slicer or queue-manager implementations** (4 repos) — PrusaSlicer / Cura / OctoPrint / Qrome printer-monitor. **Why rejected**: Bambu Studio (a PrusaSlicer fork) already covers the slicer role; OctoPrint requires USB serial that Bambu doesn't expose; printer-monitor needs ESP8266 hardware that violates laptop-only constraint.
 
@@ -74,7 +74,7 @@ The audit cross-references a generative-AI-to-Bambu-Studio workflow:
 - **3MF format** — preserves multi-color/texture metadata so AI-generated multi-color models map directly onto AMS spools
 - **Etsy / MakerWorld pipeline** — generate aesthetic asset → push 3MF to Bambu Studio → publish via Bambu's MakerWorld hooks
 
-[TENTATIVE 2026-05-07] Audit asserts the AI-generated geometry is restricted to **aesthetic/decorative parts** because community skepticism dismisses it as "slop" with poor dimensional fidelity. Functional/load-bearing parts must use traditional CAD or refined AI output. This is well-supported by the audit's Reddit + MakerWorld-forum citations but the specific dimensional-tolerance numbers aren't given — should be verified before friend trusts AI generation for any structural part.
+[TENTATIVE 2026-05-07] Audit asserts the AI-generated geometry is restricted to **aesthetic/decorative parts** because community skepticism dismisses it as "slop" with poor dimensional fidelity. Functional/load-bearing parts must use traditional CAD or refined AI output. This is well-supported by the audit's Reddit + MakerWorld-forum citations but the specific dimensional-tolerance numbers aren't given — should be verified before reader trusts AI generation for any structural part.
 
 ### Quality / trustworthiness assessment
 
@@ -110,7 +110,7 @@ Despite these, the audit's structural recommendations (don't flash Klipper, don'
 
 ## Dead Ends
 
-The 22 NO-GO repos, listed for completeness so the friend doesn't waste time when they encounter them in online recommendations:
+The 22 NO-GO repos, listed for completeness so the reader doesn't waste time when they encounter them in online recommendations:
 
 | Repo | Why rejected |
 |---|---|

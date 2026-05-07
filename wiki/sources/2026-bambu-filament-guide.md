@@ -33,11 +33,11 @@ read_status: deep-read
 - Pages: web pages, multi-table content captured in full
 - Read-status: deep-read on retrieved snapshot
 
-This is the **canonical vendor reference** for any Bambu Lab user. Used as the primary source for the materials baseline entity pages (PLA / PETG / ABS / ASA / TPU). Treated as `validated` maturity because it's first-party manufacturer data, but every datapoint is a single-source vendor claim — cross-validation against independent benchmarks (CNC Kitchen, My Tech Fun, Filabase) is on the backlog if a specific claim becomes load-bearing for a friend decision.
+This is the **canonical vendor reference** for any Bambu Lab user. Used as the primary source for the materials baseline entity pages (PLA / PETG / ABS / ASA / TPU). Treated as `validated` maturity because it's first-party manufacturer data, but every datapoint is a single-source vendor claim — cross-validation against independent benchmarks (CNC Kitchen, My Tech Fun, Filabase) is on the backlog if a specific claim becomes load-bearing for a reader decision.
 
 ## Narrative
 
-The two pages together cover roughly the dataset the friend will actually need before buying any specific filament SKU:
+The two pages together cover roughly the dataset the reader will actually need before buying any specific filament SKU:
 
 - **Mechanical**: Impact Strength (XY and Z direction, kJ/m²), Bending Strength (MPa), Bending Modulus (MPa). All from Bambu's own ISO-standard test data on their own filaments.
 - **Thermal**: Heat Deflection Temperature at 0.45 MPa load (HDT). The number that determines whether a part survives in a hot car or near a window.
@@ -51,7 +51,7 @@ The two pages together cover roughly the dataset the friend will actually need b
 
 **Enclosure rule.** PLA / PETG / TPU are open-frame-OK. ABS / ASA / PC / PA / fiber-reinforced engineering filaments need an enclosed printer (X1, X1C, P1S) to suppress warping and ensure interlayer Z-strength. The A1, A1 mini, and unsealed P1P are explicitly **not recommended** for the high-temperature engineering filaments. **This is a hardware constraint, not a tuning constraint** — without a heated chamber, ABS prints crack and warp regardless of bed/nozzle settings.
 
-**AMS rule.** TPU 95A HF and TPU for AMS work on the regular AMS via a dedicated TPU port; TPU 85A and TPU 90A are too soft and **not** AMS-compatible. AMS lite is more restrictive — many materials that work on AMS (PETG-CF, PLA Glow, ABS, PC, PA fillers) are **not recommended** on AMS lite, mainly because AMS lite lacks the AMS's transmission gear that helps push rough/soft filament through. This is an actual purchase-decision input: a friend buying an A1 mini gets AMS lite, restricting their multi-material options.
+**AMS rule.** TPU 95A HF and TPU for AMS work on the regular AMS via a dedicated TPU port; TPU 85A and TPU 90A are too soft and **not** AMS-compatible. AMS lite is more restrictive — many materials that work on AMS (PETG-CF, PLA Glow, ABS, PC, PA fillers) are **not recommended** on AMS lite, mainly because AMS lite lacks the AMS's transmission gear that helps push rough/soft filament through. This is an actual purchase-decision input: a reader buying an A1 mini gets AMS lite, restricting their multi-material options.
 
 **Drying rule.** PVA, BVOH, PETG HF, PC, PA, PA-CF/GF, PET-CF/GF, TPU all *require* drying before use. Bambu sells the AMS 2 Pro and AMS HT specifically as drying chambers; alternative is a dedicated blast drying oven (e.g., FilaDry) at 50-140°C for 8-12 hours.
 

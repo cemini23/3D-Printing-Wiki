@@ -37,7 +37,7 @@ OrcaSlicer's value-add over Bambu Studio:
 
 ### Why CONDITIONAL-GO (not GO)
 
-The audit's argument: OrcaSlicer **does not lose** the Bambu integration (it inherits it from the Bambu Studio fork base), but **introduces profile schema divergence**. Profiles tuned in OrcaSlicer use parameter names and ranges that don't cleanly back-port into Bambu Studio's preset slots. If the friend uses both slicers daily, configuration drifts: the same filament has slightly different settings in each app, and the friend ends up not sure which is "canonical."
+The audit's argument: OrcaSlicer **does not lose** the Bambu integration (it inherits it from the Bambu Studio fork base), but **introduces profile schema divergence**. Profiles tuned in OrcaSlicer use parameter names and ranges that don't cleanly back-port into Bambu Studio's preset slots. If the reader uses both slicers daily, configuration drifts: the same filament has slightly different settings in each app, and the reader ends up not sure which is "canonical."
 
 The CONDITIONAL: **isolate OrcaSlicer to advanced calibration only.** Use it when characterizing a new filament, troubleshooting an extrusion issue, or running a calibration test — then port the resulting tuned values back into Bambu Studio for daily production. Daily production stays in Bambu Studio.
 
@@ -46,7 +46,7 @@ The CONDITIONAL: **isolate OrcaSlicer to advanced calibration only.** Use it whe
 - Running the built-in calibration test suite on a new filament (temp tower / flow / PA tower)
 - Diagnosing an extrusion problem that Bambu Studio's UI doesn't expose enough knobs for (corner blob / under-extrusion at speed transitions)
 - Tuning K-values, retract distance/speed, or flow ratio on a non-Bambu filament that needs values outside Bambu Studio's defaults
-- Slicing for a non-Bambu printer (if friend ever picks up a secondary Prusa / Voron / Creality)
+- Slicing for a non-Bambu printer (if reader ever picks up a secondary Prusa / Voron / Creality)
 
 ### When NOT to use OrcaSlicer
 
@@ -66,7 +66,7 @@ The OrcaSlicer GitHub tracker has a regression-tracking issue (#12684 "Tracking 
 
 ### Profile schema divergence — concrete consequence
 
-If the friend tunes a Polymaker PETG profile in OrcaSlicer (say, K=0.045, retract 1.4mm, flow 0.96) and tries to copy those into Bambu Studio:
+If the reader tunes a Polymaker PETG profile in OrcaSlicer (say, K=0.045, retract 1.4mm, flow 0.96) and tries to copy those into Bambu Studio:
 
 - **K value** transfers as-is (same parameter name)
 - **Retract distance** transfers as-is

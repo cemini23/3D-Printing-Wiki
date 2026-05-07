@@ -32,12 +32,12 @@ ABS shrinks ~0.7-0.8% as it cools from melt to room temperature — much more th
 
 [Source: https://wiki.bambulab.com/en/general/filament-guide-material-table (retrieved 2026-05-06)] *"ABS, ASA, PC, PA, and their CF/GF reinforced materials [...] need to be printed at higher heatbed temperature and chamber temperature to suppress model warping, shedding and ensure high enough interlayer (Z-bonding) strength, so when using them to print models, especially models with large size and high filling density, it is recommended to use a enclosed printer, such as Bambu X1, X1C, P1S, etc, and it is not recommended to use open-frame printers, such as unsealed Bambu P1P, Bambu A1 mini, Bambu A1, etc."*
 
-**Practical translation for the friend:** if they buy an A1 or A1 mini (likely, since it's the cheapest entry point), they should **not** plan on printing ABS. PETG covers ~95% of what hobbyists historically used ABS for and prints fine on the A1.
+**Practical translation for the reader:** if they buy an A1 or A1 mini (likely, since it's the cheapest entry point), they should **not** plan on printing ABS. PETG covers ~95% of what hobbyists historically used ABS for and prints fine on the A1.
 
 ### When ABS is actually the right choice
 
 - **Parts that live in hot environments.** Car interiors (60-80°C summer), engine bays, near-radiator parts. PETG HDT 69°C; ABS HDT 100°C.
-- **Impact-loaded parts where Z is not the load axis.** ABS impact strength XY = 41 kJ/m² (highest of the rigid baseline), but Z = 4.9 (worst of the rigid baseline). Print orientation matters more than material here — the friend should orient impact-loaded ABS prints so the impact is absorbed in XY.
+- **Impact-loaded parts where Z is not the load axis.** ABS impact strength XY = 41 kJ/m² (highest of the rigid baseline), but Z = 4.9 (worst of the rigid baseline). Print orientation matters more than material here — the reader should orient impact-loaded ABS prints so the impact is absorbed in XY.
 - **Acetone-smoothable parts.** ABS dissolves in acetone; vapor-smoothing produces a glossy, near-injection-molded surface finish. PLA and PETG don't smooth this way.
 - **Parts that need post-processing**: drilling, tapping, painting, sanding, gluing with acetone or epoxy. ABS machines well; PLA shatters under drill pressure.
 
@@ -73,7 +73,7 @@ ABS shrinks ~0.7-0.8% as it cools from melt to room temperature — much more th
 
 The AMS (full unit) has a transmission gear that helps push filament through with extra force; AMS lite doesn't. ABS is rigid and has higher friction loading from the AMS to the nozzle than PLA. **On AMS lite, ABS feed reliability drops** — feeding errors and skipped layers are common. [Source: https://wiki.bambulab.com/en/general/filament-guide-material-table (retrieved 2026-05-06)]
 
-A friend who buys an A1 mini gets *only* AMS lite. So between **(a) no enclosure** and **(b) AMS lite-only**, the A1 / A1 mini are double-disqualified for ABS multi-color printing.
+A reader who buys an A1 mini gets *only* AMS lite. So between **(a) no enclosure** and **(b) AMS lite-only**, the A1 / A1 mini are double-disqualified for ABS multi-color printing.
 
 ### Workflow gotchas
 

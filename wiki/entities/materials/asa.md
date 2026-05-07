@@ -37,7 +37,7 @@ ASA is "ABS but UV-stable." Same printability profile, same hardware requirement
 - **Outdoor parts.** Mailbox brackets, outdoor camera mounts, garden organizers, tree-fixture hardware, antenna mounts. Anything that sees sunlight.
 - **Cars (parked outside).** Dashboard mounts, sunshade brackets, license-plate frames. ABS cracks, PETG warps, ASA holds.
 - **Marine / pool / coastal.** Salt + UV is brutal on PLA, hard on PETG, fine on ASA.
-- **Anywhere the friend would have used ABS** if the printer is enclosed (X1, X1C, P1S). The price difference is small; ASA is just better for most ABS use cases.
+- **Anywhere the reader would have used ABS** if the printer is enclosed (X1, X1C, P1S). The price difference is small; ASA is just better for most ABS use cases.
 
 ### When ASA is the wrong choice
 
@@ -83,16 +83,16 @@ ASA is "ABS but UV-stable." Same printability profile, same hardware requirement
 | Bambu spool price | Slightly cheaper | Slightly more expensive | ABS |
 | Real-world hobbyist pick | Indoor only | Indoor or outdoor | **ASA** for any outdoor part |
 
-**Conclusion:** if the friend has an enclosed printer (X1C / P1S), ASA is the better default than ABS for almost everything. Only stick with ABS if there's a specific reason (impact-XY load critical, or matching color to existing ABS hardware).
+**Conclusion:** if the reader has an enclosed printer (X1C / P1S), ASA is the better default than ABS for almost everything. Only stick with ABS if there's a specific reason (impact-XY load critical, or matching color to existing ABS hardware).
 
 ### Workflow gotchas
 
 1. **Same enclosure / build-plate / glue rules as ABS.** No new gotchas there.
-2. **Bambu's AMS-lite story is better for ASA than ABS.** ASA prints fine on AMS lite (whereas ABS isn't recommended). So a friend with a P1P or AMS lite has ASA as a workable option.
+2. **Bambu's AMS-lite story is better for ASA than ABS.** ASA prints fine on AMS lite (whereas ABS isn't recommended). So a reader with a P1P or AMS lite has ASA as a workable option.
 3. **No acetone-smoothing performance gap.** ASA acetone-smooths similarly to ABS — surface finish is glossy and good.
 4. **Lower water absorption = less drying paranoia.** 0.25% saturated absorption is the lowest of the baseline filaments — a closed cardboard box with desiccant is sufficient indefinitely.
 
-[CONFIRMED] ASA requires an enclosed Bambu (X1, X1C, P1S). [CONFIRMED] ASA outperforms ABS on UV-stable, water-absorption, HDT, and bending strength — the only ABS edge is marginal impact-XY. [TENTATIVE] If the friend has an enclosed printer and wants one engineering filament, ASA over ABS is probably the right default.
+[CONFIRMED] ASA requires an enclosed Bambu (X1, X1C, P1S). [CONFIRMED] ASA outperforms ABS on UV-stable, water-absorption, HDT, and bending strength — the only ABS edge is marginal impact-XY. [TENTATIVE] If the reader has an enclosed printer and wants one engineering filament, ASA over ABS is probably the right default.
 
 ## Snippets
 

@@ -36,7 +36,7 @@ Bambu Studio is Bambu Labs' first-party slicer, derived from Prusa Research's Pr
 
 ### Why it's GO-tier
 
-The audit's argument is straightforward: **the friend's printer requires this slicer.** Bambu's network protocols, AMS spool addressing, lidar calibration triggers, and MakerWorld hooks are all proprietary and only fully exposed through Bambu Studio. Any other slicer either (a) doesn't speak the protocol at all, (b) treats Bambu as a generic FDM printer and loses the AMS/AI features, or (c) is a community fork like OrcaSlicer that re-implements most-but-not-all of the integration.
+The audit's argument is straightforward: **the reader's printer requires this slicer.** Bambu's network protocols, AMS spool addressing, lidar calibration triggers, and MakerWorld hooks are all proprietary and only fully exposed through Bambu Studio. Any other slicer either (a) doesn't speak the protocol at all, (b) treats Bambu as a generic FDM printer and loses the AMS/AI features, or (c) is a community fork like OrcaSlicer that re-implements most-but-not-all of the integration.
 
 License: AGPL-3.0. Per the workspace's monetization-priority memory rule, AGPL-3.0 is fully compliant for laptop-only desktop execution — the AGPL trigger is hosted server-side modifications, which doesn't apply to a desktop slicer.
 
@@ -48,7 +48,7 @@ Bambu's printers ship with cloud-required defaults but **support a local-only LA
 - Internet down at home → SD-card workflow (slice locally, save to SD, plug into printer)
 - LAN mode disables remote monitoring features but preserves slicing + printing core
 
-[TENTATIVE 2026-05-07] LAN-only mode is reportedly available across all current Bambu models (X1C / P1S / A1 / A1 mini) but the exact configuration steps + which features survive in LAN-only mode varies by model and firmware version. Friend should verify on their specific model before committing to a no-cloud workflow.
+[TENTATIVE 2026-05-07] LAN-only mode is reportedly available across all current Bambu models (X1C / P1S / A1 / A1 mini) but the exact configuration steps + which features survive in LAN-only mode varies by model and firmware version. Reader should verify on their specific model before committing to a no-cloud workflow.
 
 ### Reported issues [TENTATIVE 2026-05-07 — sourced from audit's Reddit/forum citations]
 
@@ -58,11 +58,11 @@ The audit cites several specific Bambu Studio bugs from community forums:
 - **Preset bug defaulting nozzle temp to 1500°C** — sporadic; users report a preset save/load issue that produces an obviously-wrong temperature setpoint [TENTATIVE — community-reported; not in Bambu's official tracker as of inspection]
 - **Heavy reliance on optional cloud-networking plugins** — some features degrade noticeably when cloud connectivity is unavailable
 
-These are sourced from forum complaints in the audit's works-cited list; severity and reproducibility unverified. Friend should be aware of the **1500°C preset claim specifically** — if it ever appears on screen during a print start, abort immediately. (Bambu nozzles tolerate 300°C max; 1500°C would cause catastrophic damage in seconds.)
+These are sourced from forum complaints in the audit's works-cited list; severity and reproducibility unverified. Reader should be aware of the **1500°C preset claim specifically** — if it ever appears on screen during a print start, abort immediately. (Bambu nozzles tolerate 300°C max; 1500°C would cause catastrophic damage in seconds.)
 
 ### When to use Bambu Studio (default)
 
-For this friend's workflow, Bambu Studio is the default for:
+For this reader's workflow, Bambu Studio is the default for:
 
 - Daily production slicing of Etsy / MakerWorld store items
 - All AMS multi-material slicing (other slicers don't address AMS spool ports correctly)

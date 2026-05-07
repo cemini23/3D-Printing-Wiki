@@ -57,10 +57,10 @@ Each angle has its own load-bearing technique:
 
 ### Why this matters for a Bambu hobbyist (today and in the next 3-5 years)
 
-[TENTATIVE 2026-05-07] Direct hands-on relevance for the friend in 2026 is **low** — none of these systems is a downloadable consumer product. But the conceptual lessons are immediate:
+[TENTATIVE 2026-05-07] Direct hands-on relevance for the reader in 2026 is **low** — none of these systems is a downloadable consumer product. But the conceptual lessons are immediate:
 
 1. **Bambu's "AI failure detection" is the simplest member of this family.** RGB camera + classifier for spaghetti / first-layer / clog. CIPHER points at where this likely goes: **a single agent that detects the failure, explains why, and proposes a fix in the same model.** Probable consumer-printer trajectory: 2027-2029.
-2. **When the friend uses a chat VLM (Claude, GPT-4o, Gemini) to advise on a 3D-printing problem, structured prompts beat freeform.** The τ-schema result on plan quality is empirical evidence: *what's the printer model, what filament, what's the symptom, what have you tried, here's a photo* will get materially better answers than *"what's wrong with my print?"* + photo.
+2. **When the reader uses a chat VLM (Claude, GPT-4o, Gemini) to advise on a 3D-printing problem, structured prompts beat freeform.** The τ-schema result on plan quality is empirical evidence: *what's the printer model, what filament, what's the symptom, what have you tried, here's a photo* will get materially better answers than *"what's wrong with my print?"* + photo.
 3. **Don't trust a chat VLM's invented numbers.** Both τ-schema (`dyn.num` can't be VLM-labeled) and CIPHER (process expert is the entire reason for the architecture) confirm it: VLMs hallucinate quantitative parameters. Force limits, temperature ranges, retract distances must come from datasheets, manuals, or tested measurements — not the model's "this seems reasonable" generation.
 
 ### What's missing from this cluster

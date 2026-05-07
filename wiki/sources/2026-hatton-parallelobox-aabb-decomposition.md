@@ -67,7 +67,7 @@ Decomposes a single 3D model into pieces that **multiple printers print in paral
 
 Real-printer reference machine: 0.4mm nozzle / 200 °C, glass bed 50 °C, build volume 223×223×205 mm, gantry XY at 12.5 µm precision, bed Z at 5 µm, print 30–300 mm/s, travel 30–350 mm/s [Source: 2026-hatton-parallelobox-aabb-decomposition.pdf p.12].
 
-Test geometries: standard test objects, Thingiverse models, Thingi10K samples, plus "Brain Left" — an MRI of a friend's left brain hemisphere converted to STL with permission.
+Test geometries: standard test objects, Thingiverse models, Thingi10K samples, plus "Brain Left" — an MRI of a reader's left brain hemisphere converted to STL with permission.
 
 **Results [Source: 2026-hatton-parallelobox-aabb-decomposition.pdf p.12]:**
 
@@ -76,7 +76,7 @@ Test geometries: standard test objects, Thingiverse models, Thingi10K samples, p
 - **Cost: minutes of compute** vs ms for Cube Skeleton Segmented Shell. For a job that takes hours of parallel printing time, this overhead is acceptable.
 - **Limitations** [Source: 2026-hatton-parallelobox-aabb-decomposition.pdf p.12]: stochastic noise (sometimes more printers gives a worse result), and occasional failures to find valid decompositions until the printer count rises sufficiently. The algorithm's objective penalty was sometimes over-constraining growth.
 
-**Bearing on the friend.** Niche-but-real if the friend grows into a multi-printer farm operating on commission work that includes large objects (e.g. cosplay armor, large display props, architectural models). At 1–2 printers, irrelevant. At 4+ printers with a steady stream of large jobs, this kind of parallel decomposition saves wall-clock time more than buying additional printers does (because parallel cuts the longest critical path, where buying more printers only helps when objects actually fit on a single plate to begin with).
+**Bearing on the reader.** Niche-but-real if the reader grows into a multi-printer farm operating on commission work that includes large objects (e.g. cosplay armor, large display props, architectural models). At 1–2 printers, irrelevant. At 4+ printers with a steady stream of large jobs, this kind of parallel decomposition saves wall-clock time more than buying additional printers does (because parallel cuts the longest critical path, where buying more printers only helps when objects actually fit on a single plate to begin with).
 
 [CONFIRMED] Pure simulation results — no physical assembled-print validation in the paper. [TENTATIVE] Assembly fidelity (how well do AABB-cut pieces actually mate after printing?) is asserted as adequate but not deeply tested.
 

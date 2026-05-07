@@ -52,7 +52,7 @@ Far less mature. Three published approaches:
 
 ### Operational defenses (deployable today on a Bambu)
 
-For the friend's Tier 1-2 use case [@concepts/ip-theft-3d-printing.md]:
+For the reader's Tier 1-2 use case [@concepts/ip-theft-3d-printing.md]:
 
 | Defense | What | Coverage |
 |---|---|---|

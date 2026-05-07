@@ -55,7 +55,7 @@ Parallelobox [Source: 2026-hatton-parallelobox-aabb-decomposition.pdf p.12] uses
 
 **Cost-benefit:** several minutes of compute is trivial against several hours of saved parallel-printing time, especially on large models (the Brain Left MRI / Stanford-Bunny-class examples in the paper).
 
-### When does either matter for the friend?
+### When does either matter for the reader?
 
 | Scenario | Sequential | Parallel decomposition |
 |---|---|---|

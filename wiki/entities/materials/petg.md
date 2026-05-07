@@ -31,7 +31,7 @@ The functional default. **PETG (polyethylene terephthalate glycol-modified)** si
 
 PETG inherits the chemistry of the plastic that water bottles and food containers are made of (PET), modified with glycol to lower the print temperature and avoid crystallization on cooling. **Practical translation:** PETG is the closest a hobbyist gets to "PLA's printability with ABS's properties." Strong layer adhesion, modest heat resistance, doesn't shatter on impact. Prints fine on the open-frame Bambu A1 / A1 mini — no enclosure needed.
 
-Prusa Research famously prints the orange plastic parts of their own MK4 / MK4S printers in PETG. If a self-replicating 3D printer's structural parts can be PETG, the friend's Etsy mount product probably can be too.
+Prusa Research famously prints the orange plastic parts of their own MK4 / MK4S printers in PETG. If a self-replicating 3D printer's structural parts can be PETG, the reader's Etsy mount product probably can be too.
 
 ### When PETG is the right choice
 
@@ -90,7 +90,7 @@ PETG-CF replaces some matrix polymer with chopped carbon fiber. Stiffness jumps 
 
 The community-tested observation [TENTATIVE — Bambu forum reference]: in real-world tensile tests, plain PETG and PETG-CF often perform similarly because the fibers introduce micro-defects that offset the reinforcement gain. **Pick PETG-CF for stiffness and aesthetic, not for absolute strength.** [Source: https://forum.bambulab.com/t/lets-talk-tested-filaments/56930 (retrieved 2026-05-06)]
 
-[CONFIRMED] PETG is the workhorse functional filament for the friend's likely use cases on any Bambu model. [CONFIRMED] PETG-CF is more about stiffness and finish than strength gain. [TENTATIVE] Brand-to-brand variability is significant (per Bambu forum cross-brand testing); Bambu's own SKUs are known-good but more expensive than Polymaker / Sunlu equivalents.
+[CONFIRMED] PETG is the workhorse functional filament for the reader's likely use cases on any Bambu model. [CONFIRMED] PETG-CF is more about stiffness and finish than strength gain. [TENTATIVE] Brand-to-brand variability is significant (per Bambu forum cross-brand testing); Bambu's own SKUs are known-good but more expensive than Polymaker / Sunlu equivalents.
 
 ## Snippets
 

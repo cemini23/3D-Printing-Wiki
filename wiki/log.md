@@ -25,16 +25,16 @@ Sixth ingest pass — full ingest of `GitHub Repo Audit for 3D Printing.docx` (G
 - `concepts/am-as-a-service.md` — +1 (ai-design-tools — content-pipeline tie)
 - `concepts/extrusion-control.md` — +2 (orcaslicer, kickstarter-autodesk-fdm-protocol)
 - `concepts/filaments-baseline.md` — +1 (kickstarter-autodesk-fdm-protocol — calibration companion)
-- `wiki/index.md` — populated empty Slicers section (Bambu Studio + OrcaSlicer); new Tools section (Kickstarter Autodesk FDM Test V4); AI design tools section points at concept hub (deferring per-platform entities until friend selects); +1 source row + 2 concept rows
+- `wiki/index.md` — populated empty Slicers section (Bambu Studio + OrcaSlicer); new Tools section (Kickstarter Autodesk FDM Test V4); AI design tools section points at concept hub (deferring per-platform entities until reader selects); +1 source row + 2 concept rows
 
 ### Lint
 
 - Lint clean: 35 → **41 pages**, 228 → **274 outbound edges**
 - Zero orphans, zero bidirectional gaps, zero dangling, zero missing-page mentions
 
-### Friend impact (the why)
+### Reader impact (the why)
 
-Closes the slicer + AI-design-tools sections of the wiki that were empty before this ingest — now answers "what slicer do I install?" and "is Meshy / RodinAI / 3DAIStudio safe to use?" with primary-source-backed concept hubs. Pre-bakes the day-1 toolchain decision so friend doesn't fall into the Klipper-on-Bambu / OctoPrint-on-Bambu rabbit holes that dominate online forum recommendations.
+Closes the slicer + AI-design-tools sections of the wiki that were empty before this ingest — now answers "what slicer do I install?" and "is Meshy / RodinAI / 3DAIStudio safe to use?" with primary-source-backed concept hubs. Pre-bakes the day-1 toolchain decision so reader doesn't fall into the Klipper-on-Bambu / OctoPrint-on-Bambu rabbit holes that dominate online forum recommendations.
 
 ### Audit trustworthiness caveats
 
@@ -111,7 +111,7 @@ Ingest workflow now unblocked.
 
 ## [2026-05-06] ingest | 5-paper FDM control / fault-detection starter cluster
 
-First real ingest pass. Cluster theme: print-quality control on consumer-grade FDM — input shaping (vibration), extrusion control (corner / speed-transition errors), fault detection (acoustic / multimodal), high-speed regime. Picked these 5 from the 59-PDF inbox because (a) they're directly relevant to a friend buying a Bambu, (b) they collectively define the four open problems and their research trajectory, (c) they cross-reference cleanly into a connected cluster rather than a star around one hub.
+First real ingest pass. Cluster theme: print-quality control on consumer-grade FDM — input shaping (vibration), extrusion control (corner / speed-transition errors), fault detection (acoustic / multimodal), high-speed regime. Picked these 5 from the 59-PDF inbox because (a) they're directly relevant to a reader buying a Bambu, (b) they collectively define the four open problems and their research trajectory, (c) they cross-reference cleanly into a connected cluster rather than a star around one hub.
 
 5 source pages + 5 concept pages = 10 pages touched. Within the 3-15 schema bound.
 
@@ -172,7 +172,7 @@ Deep-read pass on the 5-paper print-quality control cluster ingested earlier tod
 
 ## [2026-05-06] ingest | 4-paper security side-channel cluster
 
-Second ingest pass, security cluster — IP-theft / side-channel attacks on 3D printers and defenses. Picked these 4 from the remaining 54 PDFs because (a) they collectively define the attack surface (acoustic / optical / magnetic / power across FDM and PBF), (b) one of them is the first-ever published software-only defense (Asgar 2026 / SHM), (c) Tier 2 commercial-design IP theft is directly relevant if the friend ends up selling proprietary geometry on Etsy / MakerWorld. Used `pypdf` via Bash to extract first 10 pages of each PDF to `/tmp/3dp-security/*.txt` (workaround for missing poppler-utils on laptop).
+Second ingest pass, security cluster — IP-theft / side-channel attacks on 3D printers and defenses. Picked these 4 from the remaining 54 PDFs because (a) they collectively define the attack surface (acoustic / optical / magnetic / power across FDM and PBF), (b) one of them is the first-ever published software-only defense (Asgar 2026 / SHM), (c) Tier 2 commercial-design IP theft is directly relevant if the reader ends up selling proprietary geometry on Etsy / MakerWorld. Used `pypdf` via Bash to extract first 10 pages of each PDF to `/tmp/3dp-security/*.txt` (workaround for missing poppler-utils on laptop).
 
 4 source pages + 3 concept pages = 7 pages touched. Within the 3-15 schema bound.
 
@@ -183,7 +183,7 @@ Second ingest pass, security cluster — IP-theft / side-channel attacks on 3D p
 - `wiki/sources/2025-jamarani-acoustic-magnetic-decoding.md` — smartphone (Galaxy S22+) acoustic + magnetic dual-channel attack on LULZBOT TAZ; GBDT classifier; MFCC features; 98.80% accuracy / 4.47% MTE; non-intrusive at "greater distances" than prior work.
 - `wiki/sources/2025-dolgavin-hearsay-pbf-power.md` — first side-channel attack on industrial PBF (Sintratec S2); 11-probe instrumentation (Fluke i310 current clamps + galvanometer voltage taps + NI USB-6363 DAQ at 20 kHz); Differential Voxelization (DPA-inspired) + voxel pruning + gap filling; 90.29% TP / 7.02% FP / 9.71% FN voxel volume on Gear; "encryption is futile" against MATE threat.
 - `wiki/concepts/side-channel-attacks.md` — hub page: six modalities (acoustic / optical / magnetic / power / vibration / thermal), threat-tier continuum (compromised IP-cam → smartphone → planted recorder → MATE), defense classes summary.
-- `wiki/concepts/ip-theft-3d-printing.md` — three threat tiers (Tier 1 hobbyist Etsy seller; Tier 2 commercial-designer with proprietary geometry; Tier 3 industrial outsourced AM / MATE). Bambu-specific guidance for the friend's use case.
+- `wiki/concepts/ip-theft-3d-printing.md` — three threat tiers (Tier 1 hobbyist Etsy seller; Tier 2 commercial-designer with proprietary geometry; Tier 3 industrial outsourced AM / MATE). Bambu-specific guidance for the reader's use case.
 - `wiki/concepts/g-code-protection.md` — defense-class inventory: file-level (encryption / streaming / TPM / blockchain) vs physical-level (SHM / acoustic masking / dummy commands) plus operational controls (LAN-only mode, camera-off, isolation). Coverage matrix shows no single defense covers all attack surfaces.
 
 ### Updated
@@ -205,7 +205,7 @@ This same workaround unblocks the still-pending Lin 2025 deep-read.
 
 - Run `python3 scripts/wiki_lint.py` to verify bidirectional cross-links + read_status frontmatter
 - Update ROADMAP.md done log + status line
-- Pick next cluster from remaining 50 PDFs (candidates: AI-design / VLM-for-manufacturing, Bambu-specific entity pages once friend chooses model)
+- Pick next cluster from remaining 50 PDFs (candidates: AI-design / VLM-for-manufacturing, Bambu-specific entity pages once reader chooses model)
 
 ---
 
@@ -243,7 +243,7 @@ Clean: 0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing-pages / frontma
 
 ## [2026-05-06] ingest | 4-paper print-farm / production-economics cluster
 
-Third ingest pass — print-farm operations + production economics. Cluster theme: what changes when you go from one printer to many, and the economic model around productizing a print fleet as a service. Picked these 4 from the remaining 50 PDFs because (a) they collectively define the multi-printer regime (per-machine tuning + scheduling sequential-vs-parallel + MaaS productization), (b) the MaaS architecture papers cross-link cleanly into the security cluster's threat model — Tier-2/Tier-3 attacks apply directly to cloud-distributed G-code, (c) sequential printing on a single printer is the highest-leverage scheduling technique for the friend's Etsy-batch use case (failure robustness + multi-color purge savings) before they ever own a second printer. Used `pypdf` workaround again for first 10-12 pages of each PDF.
+Third ingest pass — print-farm operations + production economics. Cluster theme: what changes when you go from one printer to many, and the economic model around productizing a print fleet as a service. Picked these 4 from the remaining 50 PDFs because (a) they collectively define the multi-printer regime (per-machine tuning + scheduling sequential-vs-parallel + MaaS productization), (b) the MaaS architecture papers cross-link cleanly into the security cluster's threat model — Tier-2/Tier-3 attacks apply directly to cloud-distributed G-code, (c) sequential printing on a single printer is the highest-leverage scheduling technique for the reader's Etsy-batch use case (failure robustness + multi-color purge savings) before they ever own a second printer. Used `pypdf` workaround again for first 10-12 pages of each PDF.
 
 4 source pages + 3 concept pages = 7 pages touched. Within the 3-15 schema bound.
 
@@ -253,8 +253,8 @@ Third ingest pass — print-farm operations + production economics. Cluster them
 - `wiki/sources/2025-ivkic-cost-benefit-maas.md` — Cloud Crafting Platform on Microsoft Azure SOA; testbed of 3 printers behind OctoPi RPis (Ultimaker 2+ CONNECT, Creality K1 MAX, Prusa MK4); per-ring cost €2.121-€2.237 vs €10-15 market price = 400-600% margin; profit share 40 (platform) / 30 (printer operator) / 20 (web shop) / 10 (designer); security gap acknowledged but no defenses implemented.
 - `wiki/sources/2025-surynek-sequential-printing-cegar.md` — SEQ-PACK+S formal problem (NP-hard reduction from rectangle packing); Z3 SMT solver + CEGAR-inspired refinement loads PolygonLines-not-Intersect constraints lazily; ships in PrusaSlicer 2.9.1 (github.com/surynek/cegar-seq); Z3 ≫ Gecode CSP, CEGAR-SEQ ≫ eager.
 - `wiki/sources/2026-hatton-parallelobox-aabb-decomposition.md` — AABB height-field decomposition with k-means++ seeds + metaheuristic outer loop over printer count + clustering configs; dominates Symmetry Slicer, comparable-or-better than Cube Skeleton Segmented Shell on complex geometry; minutes-of-compute trade against hours of saved parallel-printing time; "Brain Left" MRI test geometry.
-- `wiki/concepts/print-farm-operations.md` — hub page; three problem classes that emerge above one printer (per-machine variability + tuning, scheduling, MaaS productization+security); friend-trajectory table by fleet size.
-- `wiki/concepts/print-job-scheduling.md` — sequential-on-one-printer vs parallel-across-many comparison; multi-color purge math (10 obj × 3 colors × 100 layers: 30 sequential vs 3000 slice-by-slice changes); friend-relevance table.
+- `wiki/concepts/print-farm-operations.md` — hub page; three problem classes that emerge above one printer (per-machine variability + tuning, scheduling, MaaS productization+security); reader-trajectory table by fleet size.
+- `wiki/concepts/print-job-scheduling.md` — sequential-on-one-printer vs parallel-across-many comparison; multi-color purge math (10 obj × 3 colors × 100 layers: 30 sequential vs 3000 slice-by-slice changes); reader-relevance table.
 - `wiki/concepts/am-as-a-service.md` — economics deep-dive; comparison table of distribution channels (Etsy direct STL ~95% / MakerWorld hybrid TBD / MaaS 10% / industrial Shapeways/Hubs/Xometry); explicit security gap analysis showing Tier-2/Tier-3 attacks from ip-theft cluster apply directly to MaaS architecture.
 
 ### Updated
@@ -285,7 +285,7 @@ Clean: 0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing-pages / frontma
 
 ## [2026-05-06] ingest | Bambu materials baseline cluster (vendor-doc, no PDF inbox)
 
-External-source ingest. Pulled Bambu Lab's two canonical filament-reference pages via Exa MCP — the comparison-table tool at `bambulab.com/en-us/filament/guide` and the wiki material-table at `wiki.bambulab.com/en/general/filament-guide-material-table`. No raw PDFs consumed from inbox; this fills the materials gap that was identified in pass 3 and is the single highest-friction gap on day 1 of friend owning a Bambu printer.
+External-source ingest. Pulled Bambu Lab's two canonical filament-reference pages via Exa MCP — the comparison-table tool at `bambulab.com/en-us/filament/guide` and the wiki material-table at `wiki.bambulab.com/en/general/filament-guide-material-table`. No raw PDFs consumed from inbox; this fills the materials gap that was identified in pass 3 and is the single highest-friction gap on day 1 of reader owning a Bambu printer.
 
 ### Created
 
@@ -308,7 +308,7 @@ None (vendor-doc pages, captured via Exa crawl directly into source page snippet
 
 ### Cross-cluster integration
 
-Materials cluster is upstream of every functional-print decision the friend will make on day 1. Decision matrix in `filaments-baseline.md` covers the printer-vs-material question (A1 / A1 mini are open-frame so ABS / ASA out of reach; PETG covers most of what hobbyists historically used ABS for). Cross-link to `concepts/fdm-printing.md` hub completes the entity-vs-process-vs-source triangle for materials.
+Materials cluster is upstream of every functional-print decision the reader will make on day 1. Decision matrix in `filaments-baseline.md` covers the printer-vs-material question (A1 / A1 mini are open-frame so ABS / ASA out of reach; PETG covers most of what hobbyists historically used ABS for). Cross-link to `concepts/fdm-printing.md` hub completes the entity-vs-process-vs-source triangle for materials.
 
 ### Lint
 
@@ -332,7 +332,7 @@ User selected option 1 from next-options list — AI-design / VLM-for-manufactur
 
 ### New concept hub
 
-- `wiki/concepts/vlm-in-manufacturing.md` — synthesizes the three papers around three orthogonal angles: **Sensing** (VLM-IRIS), **Manipulation** (τ-schema), **Control** (CIPHER). Establishes that bare-prompt VLMs are insufficient for engineering applications — each angle requires a load-bearing technique (modality bridging / schema anchoring / process expert hybrid). Practical translation for the friend: structured prompts beat freeform; never trust VLM-generated numeric parameters.
+- `wiki/concepts/vlm-in-manufacturing.md` — synthesizes the three papers around three orthogonal angles: **Sensing** (VLM-IRIS), **Manipulation** (τ-schema), **Control** (CIPHER). Establishes that bare-prompt VLMs are insufficient for engineering applications — each angle requires a load-bearing technique (modality bridging / schema anchoring / process expert hybrid). Practical translation for the reader: structured prompts beat freeform; never trust VLM-generated numeric parameters.
 
 ### Updated
 
@@ -352,7 +352,7 @@ User selected option 1 from next-options list — AI-design / VLM-for-manufactur
 
 ### Cross-cluster integration
 
-Anchors a new vertical: foundation-model AI applied to FDM. Adjacent to the existing fault-detection cluster (CIPHER's process expert is what fault-detection's classifiers will look like in 3-5 years) and the extrusion-control cluster (CIPHER directly addresses flow-rate regression). The friend's Etsy-print-farm context maps onto VLM-IRIS most directly — automation-grade build-plate monitoring for unloading is the cleanest practical application. τ-schema and CIPHER are research-trajectory rather than productizable today.
+Anchors a new vertical: foundation-model AI applied to FDM. Adjacent to the existing fault-detection cluster (CIPHER's process expert is what fault-detection's classifiers will look like in 3-5 years) and the extrusion-control cluster (CIPHER directly addresses flow-rate regression). The reader's Etsy-print-farm context maps onto VLM-IRIS most directly — automation-grade build-plate monitoring for unloading is the cleanest practical application. τ-schema and CIPHER are research-trajectory rather than productizable today.
 
 ### Lint
 
@@ -360,7 +360,7 @@ Clean: 0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing-pages / frontma
 
 ### Brief staged
 
-- `briefs/2026-05-07_vlm-prompt-discipline.md` — 2 actionable rules for the friend's day-1 chat-VLM workflow: (1) structured prompt template (printer / filament / symptom / what's-been-tried / ambient / photo) beats freeform with τ-schema empirical backing (35→89% specificity); (2) never trust VLM-generated numeric parameters with CIPHER process-expert backing (5× MAE reduction). Includes copy-pasteable prompt template + the "when chat VLMs are genuinely useful" guidance + a forward-looking note about VLM-IRIS as the most translatable paper for Etsy-print-farm automation.
+- `briefs/2026-05-07_vlm-prompt-discipline.md` — 2 actionable rules for the reader's day-1 chat-VLM workflow: (1) structured prompt template (printer / filament / symptom / what's-been-tried / ambient / photo) beats freeform with τ-schema empirical backing (35→89% specificity); (2) never trust VLM-generated numeric parameters with CIPHER process-expert backing (5× MAE reduction). Includes copy-pasteable prompt template + the "when chat VLMs are genuinely useful" guidance + a forward-looking note about VLM-IRIS as the most translatable paper for Etsy-print-farm automation.
 
 ### Future / deferred
 

@@ -66,9 +66,9 @@ This is **NP-hard** by reduction from rectangle packing [Source: 2025-surynek-se
 
 **Implementation.** C++, integrated into PrusaSlicer 2.9.1 (Prusa's official open-source slicer, also the basis of the OrcaSlicer fork that targets Bambu printers). The user's perspective: open multi-object job in PrusaSlicer, click "Sequential printing," and the algorithm packs + orders the objects so the gantry never collides.
 
-[CONFIRMED] Implementation is open-source and shipping. The Prusa Research authorship + integration into the official slicer makes this the practical reference for sequential printing on consumer FDM. [TENTATIVE] OrcaSlicer (Bambu's preferred slicer fork) — does it import this? Worth checking when the friend chooses a printer [NEEDS VERIFICATION 2026-05-06].
+[CONFIRMED] Implementation is open-source and shipping. The Prusa Research authorship + integration into the official slicer makes this the practical reference for sequential printing on consumer FDM. [TENTATIVE] OrcaSlicer (Bambu's preferred slicer fork) — does it import this? Worth checking when the reader chooses a printer [NEEDS VERIFICATION 2026-05-06].
 
-**Bearing on the friend.** Directly useful — if the friend ever batch-prints anything (Etsy seller producing 10 copies of a small product across one print job), sequential printing on a single Bambu approximates running multiple printers without owning multiple printers. The first benefit (failure robustness — losing 1 of 10 instead of 10 of 10) is the biggest practical win. The third benefit (multi-color economy) matters once the friend gets the Bambu AMS multi-color unit.
+**Bearing on the reader.** Directly useful — if the reader ever batch-prints anything (Etsy seller producing 10 copies of a small product across one print job), sequential printing on a single Bambu approximates running multiple printers without owning multiple printers. The first benefit (failure robustness — losing 1 of 10 instead of 10 of 10) is the biggest practical win. The third benefit (multi-color economy) matters once the reader gets the Bambu AMS multi-color unit.
 
 ## Snippets
 

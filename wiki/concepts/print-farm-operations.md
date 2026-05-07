@@ -60,7 +60,7 @@ Once a fleet exists, productizing it as a service to external customers becomes 
 
 But: distributing G-code over the cloud to remote SME printers is *exactly the threat model* discussed in [@concepts/ip-theft-3d-printing.md]. Tier-2 attackers (an SME operator with rogue intent on the network) and Tier-3 (insider MATE) become realistic when the design leaves the designer's machine. The mitigation stack is in [@concepts/g-code-protection.md]; Ivkic's paper does not implement any of it.
 
-### Bearing on the friend's trajectory
+### Bearing on the reader's trajectory
 
 | Stage | Print farm relevance |
 |---|---|

@@ -84,7 +84,7 @@ At 100 rings/month: ~€776–788 monthly profit, distributed per the share tabl
 | **Cloud Crafting / Ivkic-style MaaS** | File + production + delivery | **10%** | Customer gets finished product |
 | **Shapeways / Hubs / Xometry** | Industrial MaaS | Variable | Higher quality / industrial materials available |
 
-The economic insight: **MaaS captures the customer who doesn't own a printer, but at a steep cost to the designer's margin.** A pure-designer (the friend's likely starting position) maximizes income via **direct STL sales** unless customers genuinely cannot or will not print themselves. Bambu's MakerWorld is a hybrid — it lets designers sell STLs and (separately) let customers commission prints from a Bambu fleet, with the designer captured on both sides.
+The economic insight: **MaaS captures the customer who doesn't own a printer, but at a steep cost to the designer's margin.** A pure-designer (the reader's likely starting position) maximizes income via **direct STL sales** unless customers genuinely cannot or will not print themselves. Bambu's MakerWorld is a hybrid — it lets designers sell STLs and (separately) let customers commission prints from a Bambu fleet, with the designer captured on both sides.
 
 ### Security gap
 
@@ -94,7 +94,7 @@ The Ivkic architecture distributes G-code (or pre-G-code STL + slicer config) ov
 - An insider at the SME (Man-At-The-End) has full physical and software access (Tier-3 / MATE)
 - Side-channel attacks (acoustic, optical, magnetic, power) [@concepts/side-channel-attacks.md] all become viable because the printer is remote and unsupervised by the designer
 
-Ivkic's paper acknowledges security as a non-functional requirement but does **not** implement the published defenses from [@concepts/g-code-protection.md] — no chunked-STL streaming, no SHM, no TPM-bound printer attestation. **For any commercially valuable design (anything the friend would want to keep proprietary), MaaS as currently architected is unsafe**. Direct sale of the printable STL is more secure: the customer prints it themselves, no third party touches the file.
+Ivkic's paper acknowledges security as a non-functional requirement but does **not** implement the published defenses from [@concepts/g-code-protection.md] — no chunked-STL streaming, no SHM, no TPM-bound printer attestation. **For any commercially valuable design (anything the reader would want to keep proprietary), MaaS as currently architected is unsafe**. Direct sale of the printable STL is more secure: the customer prints it themselves, no third party touches the file.
 
 [CONFIRMED] No published MaaS platform implements physical-side-channel defenses. [TENTATIVE] Industrial MaaS (Shapeways, Hubs, Xometry) likely uses contractual + insurance instruments rather than cryptographic ones to address IP risk — out of scope for this wiki.
 

@@ -264,3 +264,15 @@ if undated_verifications:
         print(f"    - {page}:{line_num}  {snippet}")
     if len(undated_verifications) > 20:
         print(f"    ... and {len(undated_verifications)-20} more")
+
+# Exit code — CI gate. Hard issues (structural schema violations) fail; stale
+# verification tags are advisory and don't fail.
+hard_issues = (
+    len(orphans) + len(gaps) + len(dangling) + len(missing_mentions)
+    + len(cited_unread) + len(no_frontmatter) + len(no_type) + len(no_maturity)
+)
+if hard_issues:
+    print(f"\nLINT FAILED: {hard_issues} hard issue(s).")
+    sys.exit(1)
+print("\nLINT PASSED: 0 hard issues.")
+sys.exit(0)

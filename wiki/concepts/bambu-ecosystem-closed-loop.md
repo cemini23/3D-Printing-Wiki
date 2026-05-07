@@ -46,7 +46,7 @@ The audit's central insight is that **the closed firmware isn't a bug to be work
 
 These features are tightly coupled to the proprietary firmware. They are not exposed as APIs. They cannot be replicated by Klipper + community plugins because the integration points (lidar driver, motor-resonance loop, AMS protocol) are not open.
 
-**Flashing Klipper onto a Bambu mainboard** = lose all four features simultaneously. Plus the warranty. Plus the MakerWorld upload integration. In exchange for: open-source kinematics, slicer interchangeability, OctoPrint compatibility — features the friend will not use, doesn't need, and would actively make their day-to-day worse.
+**Flashing Klipper onto a Bambu mainboard** = lose all four features simultaneously. Plus the warranty. Plus the MakerWorld upload integration. In exchange for: open-source kinematics, slicer interchangeability, OctoPrint compatibility — features the reader will not use, doesn't need, and would actively make their day-to-day worse.
 
 ### The four NO-GO patterns from the 25-repo audit
 
@@ -54,7 +54,7 @@ The 22 rejected repos in the Phase-0 audit fall into four categories, each rejec
 
 1. **Firmware retrofits** (8 repos) — Klipper, Marlin, Repetier, Prusa-Firmware, klippain, ESP3D, KAMP, Ender3V2S1-firmware. **Rejection rationale:** flashing voids warranty + bricks the encrypted Bambu mainboard + severs all the closed-loop AI features.
 
-2. **Hardware-design / scratch-build repos** (8 repos) — Voron-2 / Voron-0 / Voron-Trident / VzBoT-Vz330 / Original-Prusa-i3 / HevORT / RAMBo / Core-R-Theta-4-Axis-Printer. **Rejection rationale:** the friend is buying Bambu, not building. CAD/STL/BOM repos for *building a different printer* are out of scope.
+2. **Hardware-design / scratch-build repos** (8 repos) — Voron-2 / Voron-0 / Voron-Trident / VzBoT-Vz330 / Original-Prusa-i3 / HevORT / RAMBo / Core-R-Theta-4-Axis-Printer. **Rejection rationale:** the reader is buying Bambu, not building. CAD/STL/BOM repos for *building a different printer* are out of scope.
 
 3. **Abandoned legacy slicers** (1 repo — Slic3r) and **redundant parallel slicer implementations** (3 repos — PrusaSlicer, Cura, OrcaSlicer-as-daily). **Rejection rationale:** Bambu Studio already covers the slicer role for Bambu. PrusaSlicer is the upstream of Bambu Studio's fork — running it in parallel just creates profile drift. Cura uses a different geometric engine and loses Bambu integrations entirely.
 
@@ -69,11 +69,11 @@ The audit isn't anti-open-source globally. Two open-source repos clear all the g
 
 **OrcaSlicer/OrcaSlicer** — community AGPL-3.0 fork of Bambu Studio. CONDITIONAL-GO: *uses* the Bambu Studio integration but introduces profile-schema divergence if used as daily driver. Use case-restricted to advanced calibration only.
 
-### Why this matters for friend's purchase decision
+### Why this matters for reader's purchase decision
 
-The closed-firmware-as-feature thesis gives the friend a clear day-1 mental model:
+The closed-firmware-as-feature thesis gives the reader a clear day-1 mental model:
 
-- **Buy Bambu = trade modifiability for "it just works" out of the box.** The trade is good if the friend wants to operate a print farm and sell on Etsy/MakerWorld; the trade is bad if the friend wants to research-and-modify-and-tune as a hobby.
+- **Buy Bambu = trade modifiability for "it just works" out of the box.** The trade is good if the reader wants to operate a print farm and sell on Etsy/MakerWorld; the trade is bad if the reader wants to research-and-modify-and-tune as a hobby.
 - **Don't fight the closed firmware.** Online recommendations to "install Klipper", "run OctoPrint", "flash Marlin" are written for a different audience operating different printers. Ignore them on Bambu — they cost more than they buy.
 - **Adopt the Bambu-aligned toolchain unironically.** Bambu Studio + OrcaSlicer-for-calibration + Kickstarter FDM Test V4 + AI generative platforms (Meshy / RodinAI / 3DAIStudio) → MakerWorld is a complete production loop that doesn't fight the architecture.
 

@@ -23,7 +23,7 @@ updated: 2026-05-07
 
 ## Raw Concept
 
-The five filament types a Bambu user actually buys in their first year: PLA, PETG, ABS, ASA, TPU. This page is the decision matrix — when each is the right answer, what each costs in printer-hardware terms, what each costs in workflow terms (drying / enclosure / nozzle wear). Engineering filaments (PC, PA, fiber-reinforced) are out of scope here — they show up only when a specific application demands them, and at that point the friend should read the dedicated source pages.
+The five filament types a Bambu user actually buys in their first year: PLA, PETG, ABS, ASA, TPU. This page is the decision matrix — when each is the right answer, what each costs in printer-hardware terms, what each costs in workflow terms (drying / enclosure / nozzle wear). Engineering filaments (PC, PA, fiber-reinforced) are out of scope here — they show up only when a specific application demands them, and at that point the reader should read the dedicated source pages.
 
 Synthesized 2026-05-06 from the Bambu Lab vendor reference [@sources/2026-bambu-filament-guide.md]. Single-source (Bambu's own labs); cross-validation against independent benchmarks (Filabase, CNC Kitchen, My Tech Fun) deferred unless a specific claim becomes load-bearing.
 
@@ -66,15 +66,15 @@ Synthesized 2026-05-06 from the Bambu Lab vendor reference [@sources/2026-bambu-
 ### The four rules that explain the table
 
 1. **Enclosure rule.** Materials with a high glass transition (ABS / ASA / PC / PA) shrink as they cool. On an open-frame printer the bottom of a part has cooled and locked in by the time the top is being printed, and the differential shrinkage cracks the part vertically. An enclosed chamber holds the air at ~50°C, slowing cooling enough for the whole part to shrink uniformly. **Hardware constraint, not tuning.** No bed-temp / nozzle-temp combo fixes this on an A1 / A1 mini.
-2. **Drying rule.** Hygroscopic materials (PETG HF / PC / PA / TPU) absorb water from air; water boils into bubbles in the nozzle, ruining surface finish and weakening layer bonds. Bambu sells the AMS 2 Pro and AMS HT specifically as drying chambers. Alternative: dedicated blast-drying oven (FilaDry, e.g.). The friend can probably skip a drying chamber on day 1 if they only print PLA + PETG basic, but if they buy TPU or PETG HF, drying is non-optional.
-3. **AMS-lite rule.** Bambu's two AMS units differ: AMS has a transmission gear that helps push rough or soft filaments through; AMS lite doesn't. So PLA Glow, PETG-CF, PLA Wood, ABS, PC, PA — all listed as "AMS-compatible but **not recommended** on AMS lite." A friend buying an A1 mini gets only AMS lite. **Material restriction is real and not in marketing copy.** [Source: https://wiki.bambulab.com/en/general/filament-guide-material-table (retrieved 2026-05-06)]
+2. **Drying rule.** Hygroscopic materials (PETG HF / PC / PA / TPU) absorb water from air; water boils into bubbles in the nozzle, ruining surface finish and weakening layer bonds. Bambu sells the AMS 2 Pro and AMS HT specifically as drying chambers. Alternative: dedicated blast-drying oven (FilaDry, e.g.). The reader can probably skip a drying chamber on day 1 if they only print PLA + PETG basic, but if they buy TPU or PETG HF, drying is non-optional.
+3. **AMS-lite rule.** Bambu's two AMS units differ: AMS has a transmission gear that helps push rough or soft filaments through; AMS lite doesn't. So PLA Glow, PETG-CF, PLA Wood, ABS, PC, PA — all listed as "AMS-compatible but **not recommended** on AMS lite." A reader buying an A1 mini gets only AMS lite. **Material restriction is real and not in marketing copy.** [Source: https://wiki.bambulab.com/en/general/filament-guide-material-table (retrieved 2026-05-06)]
 4. **Hardened-nozzle rule.** Pure PLA / PETG / ABS / ASA / TPU print fine on stainless-steel or brass nozzles. CF or GF reinforced filaments (PLA-CF, PETG-CF, etc.) need hardened steel — abrasive fibers wear soft nozzles fast.
 
 ### Layer adhesion is the dominant FDM weakness
 
 The Z impact-strength column collapses to 5-10× lower than the XY column for every rigid filament. ABS goes from 41 kJ/m² (XY) to 4.9 (Z) — a load-bearing part oriented with stress in the Z direction can fail at one-eighth the load it would survive in XY. **Print orientation matters more than material choice for thin load-bearing parts.** TPU is the exception: rubbery, layer-adhesion-dominated, high in both XY and Z because the elastic modulus is much lower than the layer-bond strength.
 
-### Decision tree for the friend's likely first-year materials
+### Decision tree for the reader's likely first-year materials
 
 ```
 Q1: Is the part going to live somewhere hot (car interior, near a window in summer, near a heat-emitting device)?
@@ -93,7 +93,7 @@ Q3: Is the part functional or load-bearing?
 ### What's NOT covered here
 
 - **PC (Polycarbonate)**: HDT 113°C, very tough, requires enclosed printer + drying. Specialty engineering use. Bambu data sheet has full numbers; create a dedicated entity page when an application calls for it.
-- **PA / Nylon and CF/GF reinforced filaments**: Engineering territory. HDT 186°C+. Need hardened nozzle, drying, enclosed printer, and slow speeds. Out of scope until friend has a specific use case.
+- **PA / Nylon and CF/GF reinforced filaments**: Engineering territory. HDT 186°C+. Need hardened nozzle, drying, enclosed printer, and slow speeds. Out of scope until reader has a specific use case.
 - **Specialty PLA** (PLA Wood, PLA Marble, PLA Sparkle, PLA Glow, PLA Silk, PLA-CF): largely a *cosmetic* differentiation — same printer settings as PLA Basic but with abrasive or rough fillers that complicate AMS lite compatibility. The PLA entity page covers these as variants.
 
 [CONFIRMED] All datapoints in this synthesis come directly from Bambu's vendor documentation (single-source). [TENTATIVE] The decision tree is opinionated synthesis tuned for a Bambu user starting hobby-and-Etsy work; an engineering or industrial user would weight differently.

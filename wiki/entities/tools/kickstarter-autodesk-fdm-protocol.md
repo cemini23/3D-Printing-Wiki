@@ -55,13 +55,13 @@ Workflow for characterizing a new filament:
 4. For any feature that fails: tune the relevant slicer parameter (cooling fan, retract, K-value, speed) and reprint
 5. Once the test passes: document the tuned profile as the canonical baseline for that filament
 
-This produces a **repeatable, deterministic baseline** — every filament in the friend's inventory gets characterized via the same standardized print. Cross-filament comparison becomes possible.
+This produces a **repeatable, deterministic baseline** — every filament in the reader's inventory gets characterized via the same standardized print. Cross-filament comparison becomes possible.
 
 ### Cross-link to filament baseline cluster
 
-The FDM Test V4 protocol is the practical companion to [@concepts/filaments-baseline.md] — the materials baseline gives the *expected* mechanical / thermal / process specs from Bambu's vendor data, and FDM Test V4 lets the friend *verify* the actual printer-on-this-filament behavior matches the spec.
+The FDM Test V4 protocol is the practical companion to [@concepts/filaments-baseline.md] — the materials baseline gives the *expected* mechanical / thermal / process specs from Bambu's vendor data, and FDM Test V4 lets the reader *verify* the actual printer-on-this-filament behavior matches the spec.
 
-For a friend running an Etsy print farm with multiple filament brands, this is the standardized characterization protocol that prevents per-filament tuning drift.
+For a reader running an Etsy print farm with multiple filament brands, this is the standardized characterization protocol that prevents per-filament tuning drift.
 
 [CONFIRMED] FDM Test V4 is a static, universally-compatible calibration geometry. [CONFIRMED] Apache-2.0; no licensing concerns. [TENTATIVE] Some features may be too easy for modern fast Bambu hardware to fail at — limits the diagnostic value at the high end of the printer's capability.
 

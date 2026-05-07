@@ -28,7 +28,7 @@ The 2024-2026 wave of generative-AI 3D-modeling platforms (Meshy, RodinAI, 3DAIS
 
 ### The pipeline: prompt → 3MF → Bambu Studio → AMS → MakerWorld
 
-The audit identifies a specific AI-design pipeline that's load-bearing for the friend's e-commerce strategy:
+The audit identifies a specific AI-design pipeline that's load-bearing for the reader's e-commerce strategy:
 
 ```
 [text or image prompt]
@@ -83,7 +83,7 @@ Examples of where AI generation should NOT be used directly:
 - Outdoor parts that need specific UV / heat resistance (the AI doesn't know your filament's thermal / UV envelope)
 - Anything where dimensional accuracy matters (the AI's mesh might be 1mm off and the part won't fit)
 
-For functional parts: traditional CAD (OpenSCAD / FreeCAD / Fusion 360) or curated-and-refined AI output where the friend has manually verified the mesh + dimensions.
+For functional parts: traditional CAD (OpenSCAD / FreeCAD / Fusion 360) or curated-and-refined AI output where the reader has manually verified the mesh + dimensions.
 
 ### The hallucinated-G-code red line (audit's strongest warning)
 
@@ -107,12 +107,12 @@ Workflow recommendation: before slicing any AI-generated 3MF, run it through a m
 
 The AI-design-tools concept and the [@concepts/vlm-in-manufacturing.md] concept describe two halves of the same broader story:
 
-- **AI design tools** = generative side. AI creates the asset; the friend prints it.
-- **VLM-in-manufacturing** = analytical side. AI analyzes the print; the friend acts on the analysis.
+- **AI design tools** = generative side. AI creates the asset; the reader prints it.
+- **VLM-in-manufacturing** = analytical side. AI analyzes the print; the reader acts on the analysis.
 
 Both share the same load-bearing weakness: **bad at quantitative engineering parameters.** The mitigation pattern is also the same: **trust AI for category / aesthetic / pattern-matching; verify against datasheets / manuals / measurements for any specific number.**
 
-[CONFIRMED] 3MF format is the working interchange between generative AI platforms and Bambu Studio. [CONFIRMED] AI-generated assets are decorative-grade only — community-validated, not functional-load-bearing. [CONFIRMED] Hallucinated G-code is a hard-prohibited category — physical-damage risk. [TENTATIVE 2026-05-07] Specific platform feature comparisons (Meshy vs RodinAI vs 3DAIStudio) need standalone Phase-0 audits before any platform is endorsed for daily friend use.
+[CONFIRMED] 3MF format is the working interchange between generative AI platforms and Bambu Studio. [CONFIRMED] AI-generated assets are decorative-grade only — community-validated, not functional-load-bearing. [CONFIRMED] Hallucinated G-code is a hard-prohibited category — physical-damage risk. [TENTATIVE 2026-05-07] Specific platform feature comparisons (Meshy vs RodinAI vs 3DAIStudio) need standalone Phase-0 audits before any platform is endorsed for daily reader use.
 
 ## Snippets
 

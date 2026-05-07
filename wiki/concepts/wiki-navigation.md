@@ -1,7 +1,7 @@
 ---
 title: Wiki Navigation — Reading This Knowledge Base
 type: concept
-tags: [meta, navigation, obsidian, wiki, conventions, schema, friend-handoff]
+tags: [meta, navigation, obsidian, wiki, conventions, schema, reader-handoff]
 keywords: [wiki navigation, Obsidian vault, cross-link convention, @path syntax, frontmatter, tag pane, command palette, graph view, search, index page]
 related:
   - entities/tools/obsidian.md
@@ -56,7 +56,7 @@ updated: 2026-05-07
 ---
 ```
 
-The fields the friend will use most:
+The fields the reader will use most:
 
 - **`tags:`** — coarse categorization. Click a tag in Obsidian's tag pane → see every page with that tag. Examples: `slicer`, `material`, `security`, `bambu`, `paper`.
 - **`maturity:`** — how trustworthy is this page?
@@ -80,7 +80,7 @@ This wiki uses **two** cross-link styles:
 
 **Why use the `@`-prefixed path style instead of `[[wikilinks]]` then?** The wiki was designed to be portable across tools (Obsidian, GitHub, VS Code, plain text editors). `[[wikilinks]]` are Obsidian-specific and don't render on GitHub or in most other tools. The `@`-prefixed style is plain text everywhere, and the trailing `.md` means a path-aware tool *can* link it if configured. The trade-off is: it's not auto-clickable in default Obsidian.
 
-[NEEDS VERIFICATION 2026-05-07] Some Obsidian community plugins claim to parse `@path` references and turn them into clickable links. Friend may want to look for one ("Markdown Auto-link" or similar) — but this hasn't been audited.
+[NEEDS VERIFICATION 2026-05-07] Some Obsidian community plugins claim to parse `@path` references and turn them into clickable links. Reader may want to look for one ("Markdown Auto-link" or similar) — but this hasn't been audited.
 
 ### Confidence tags inside body text
 
@@ -93,7 +93,7 @@ When a claim in body text has a confidence qualifier, look for these inline tags
 | `[NEEDS VERIFICATION 2026-05-07]` | Plausible but not yet checked. The date tells you when the claim was added — older = more suspicious |
 | `[RETRACTED]` | Was believed; now disproven. Kept in place with a note so context survives |
 
-**Friend's mental rule:** if a page recommends an action with a `[TENTATIVE]` or `[NEEDS VERIFICATION]` tag, cross-check before acting. The audit's specific bug claims (e.g. "Bambu Studio 1500°C preset bug") are tagged this way *for a reason*.
+**Reader's mental rule:** if a page recommends an action with a `[TENTATIVE]` or `[NEEDS VERIFICATION]` tag, cross-check before acting. The audit's specific bug claims (e.g. "Bambu Studio 1500°C preset bug") are tagged this way *for a reason*.
 
 ### Citation tags
 
@@ -103,7 +103,7 @@ When a page references a source:
 - `[Source: https://example.com (retrieved 2026-05-07)]` — quote/data from a URL on a specific date
 - `[Sources: file1.pdf p.3, file2.pdf p.12]` — multiple sources backing one claim
 
-The `raw-sources/` folder containing the actual PDFs is **not** committed to GitHub (see `.gitignore`) — it's local-only on the laptop where the wiki was originally curated. If the friend needs a specific paper they can usually find it via the title or DOI in the source page's frontmatter.
+The `raw-sources/` folder containing the actual PDFs is **not** committed to GitHub (see `.gitignore`) — it's local-only on the laptop where the wiki was originally curated. If the reader needs a specific paper they can usually find it via the title or DOI in the source page's frontmatter.
 
 ### Five Obsidian navigation tricks worth memorizing
 
@@ -133,12 +133,12 @@ wiki/
     └── … (15+ concept pages)
 ```
 
-### Adding new pages (when the friend wants to extend the wiki)
+### Adding new pages (when the reader wants to extend the wiki)
 
 The schema is enforced via `scripts/wiki_lint.py`:
 
 ```bash
-cd "~/Desktop/projects/3D printing"
+cd /path/to/3D-Printing-Wiki
 python3 scripts/wiki_lint.py
 ```
 

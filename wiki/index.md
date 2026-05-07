@@ -35,7 +35,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 
 ### Printers
 
-(no pages yet — Bambu X1C / P1S / A1 to be added when friend chooses model)
+(no pages yet — Bambu X1C / P1S / A1 to be added when reader chooses model)
 
 ### Materials
 
@@ -57,7 +57,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 
 ### AI design tools
 
-(no individual entity pages yet — see [@concepts/ai-design-tools.md](concepts/ai-design-tools.md) for the Meshy / RodinAI / 3DAIStudio pipeline. Per-platform Phase-0 audits deferred until friend selects platform)
+(no individual entity pages yet — see [@concepts/ai-design-tools.md](concepts/ai-design-tools.md) for the Meshy / RodinAI / 3DAIStudio pipeline. Per-platform Phase-0 audits deferred until reader selects platform)
 
 ### Marketplaces
 
@@ -86,4 +86,4 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [VLMs in Manufacturing — Sensing / Manipulation / Control](concepts/vlm-in-manufacturing.md) — hub for VLM/VLA research applied to FDM AM; three angles: zero-shot perception (VLM-IRIS), schema-anchored planning (τ), hybrid VLA control (CIPHER) — `VLM, VLA, AI, manufacturing, foundation-models, zero-shot`
 - [Bambu Ecosystem — Closed-Firmware-as-Feature](concepts/bambu-ecosystem-closed-loop.md) — why Bambu's closed appliance architecture is load-bearing for its edge-AI features; the four NO-GO patterns from the 25-repo audit — `bambu, ecosystem, closed-firmware, vendor-lock-in, edge-AI, no-go-patterns`
 - [AI Design Tools — Generative 3D for Etsy / MakerWorld Production](concepts/ai-design-tools.md) — Meshy / RodinAI / 3DAIStudio → 3MF → Bambu Studio → AMS pipeline; decorative-only restriction; hallucinated-G-code prohibition — `AI, generative-3D, text-to-3D, 3MF, AMS, MakerWorld, content-pipeline`
-- [Wiki Navigation — Reading This Knowledge Base](concepts/wiki-navigation.md) — meta-guide; schema conventions (frontmatter / @path / confidence tags) + Obsidian navigation tricks; **read this on day 1** — `meta, navigation, obsidian, wiki, conventions, schema, friend-handoff`
+- [Wiki Navigation — Reading This Knowledge Base](concepts/wiki-navigation.md) — meta-guide; schema conventions (frontmatter / @path / confidence tags) + Obsidian navigation tricks; **read this on day 1** — `meta, navigation, obsidian, wiki, conventions, schema, reader-handoff`

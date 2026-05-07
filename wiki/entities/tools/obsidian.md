@@ -16,7 +16,7 @@ updated: 2026-05-07
 
 ## Raw Concept
 
-The recommended app for reading this wiki on the friend's laptop. Free for personal use, local-first (no cloud account needed), reads any folder of markdown files as a "vault" — which is exactly what this wiki is. Page exists so the friend has a one-stop install + setup reference; navigation conventions for *this specific wiki* are on `@concepts/wiki-navigation.md`.
+The recommended app for reading this wiki on the reader's laptop. Free for personal use, local-first (no cloud account needed), reads any folder of markdown files as a "vault" — which is exactly what this wiki is. Page exists so the reader has a one-stop install + setup reference; navigation conventions for *this specific wiki* are on `@concepts/wiki-navigation.md`.
 
 ## Narrative
 
@@ -26,7 +26,7 @@ Obsidian is a local-first markdown editor built around the idea of a "vault" —
 
 Key facts:
 
-- **License:** proprietary (closed-source) but **free for personal use.** Commercial-use license is $50/user/year. The friend's use (personal knowledge management) is free.
+- **License:** proprietary (closed-source) but **free for personal use.** Commercial-use license is $50/user/year. The reader's use (personal knowledge management) is free.
 - **Platforms:** macOS / Windows / Linux / iOS / iPad / Android. The desktop apps are full-featured; mobile is read-mostly.
 - **Storage:** local-only by default. No cloud account required. (Optional paid Obsidian Sync exists for multi-device sync, but iCloud Drive / Dropbox / Syncthing all work fine for free.)
 - **File format:** plain `.md` files with YAML frontmatter — exactly what this wiki uses.
@@ -35,29 +35,29 @@ Key facts:
 
 Three reasons this wiki was scaffolded with Obsidian-compatibility in mind:
 
-1. **Markdown frontmatter** — Obsidian reads YAML frontmatter (`title:`, `tags:`, `related:`) into its property panel, so the friend can browse / filter pages by tags or maturity without touching a terminal.
-2. **Tag system** — every page has a `tags:` line in frontmatter. Obsidian's tag pane lets the friend click a tag (e.g. `slicer`, `material`, `security`) and see every page that uses it.
-3. **Local-first + plain markdown** — no lock-in. If the friend wants to read this wiki on GitHub instead, every page is rendered correctly there too. If they want to switch to VS Code, Logseq, or Cursor, the files just work.
+1. **Markdown frontmatter** — Obsidian reads YAML frontmatter (`title:`, `tags:`, `related:`) into its property panel, so the reader can browse / filter pages by tags or maturity without touching a terminal.
+2. **Tag system** — every page has a `tags:` line in frontmatter. Obsidian's tag pane lets the reader click a tag (e.g. `slicer`, `material`, `security`) and see every page that uses it.
+3. **Local-first + plain markdown** — no lock-in. If the reader wants to read this wiki on GitHub instead, every page is rendered correctly there too. If they want to switch to VS Code, Logseq, or Cursor, the files just work.
 
 ### Day-1 setup
 
 1. **Install Obsidian:** download from `obsidian.md`. Free; just click "Get Obsidian for Mac" (or Windows/Linux).
 2. **Open this folder as a vault:**
-   - Launch Obsidian → "Open folder as vault" → select `~/Desktop/projects/3D printing/`
+   - Launch Obsidian → "Open folder as vault" → select the cloned `3D-Printing-Wiki/` folder
    - Obsidian indexes the folder. The wiki appears in the file explorer (left sidebar).
 3. **Start at `wiki/index.md`:** click it in the file explorer. This is the catalog of every page; clickable markdown links navigate from there.
 4. **Optional: themes / appearance** — Settings → Appearance → pick a theme (the default is fine; "Minimal" and "Things" are popular).
 
 ### What's gitignored (per-user, not committed)
 
-The `.obsidian/` folder (Obsidian's per-vault settings — themes, plugin choices, pane layouts, hotkey customizations) is gitignored. Each user gets their own customization on their own machine; nothing leaks into the shared wiki. **This is intentional.** If the friend customizes their workspace it stays local.
+The `.obsidian/` folder (Obsidian's per-vault settings — themes, plugin choices, pane layouts, hotkey customizations) is gitignored. Each user gets their own customization on their own machine; nothing leaks into the shared wiki. **This is intentional.** If the reader customizes their workspace it stays local.
 
 ### Plugins worth knowing about [TENTATIVE 2026-05-07 — recommendations not validated against current Obsidian plugin ecosystem]
 
-Obsidian's "Community Plugins" let users extend the app. For this wiki, the friend may want:
+Obsidian's "Community Plugins" let users extend the app. For this wiki, the reader may want:
 
-- **Tag Wrangler** — bulk rename / merge tags. Useful as the wiki grows and the friend wants to consolidate similar tags.
-- **Templater** — auto-fill new-page templates. Useful if the friend starts adding their own pages following the schema.
+- **Tag Wrangler** — bulk rename / merge tags. Useful as the wiki grows and the reader wants to consolidate similar tags.
+- **Templater** — auto-fill new-page templates. Useful if the reader starts adding their own pages following the schema.
 - **Dataview** — query frontmatter as a database (e.g. "show me every page with `maturity: draft`"). Powerful but optional.
 - **Folder Note** — make a folder click open a same-named `.md` (so clicking `concepts/` opens `concepts/index.md` if it exists). Optional.
 

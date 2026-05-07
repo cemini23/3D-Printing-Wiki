@@ -85,9 +85,9 @@ The reference τ instance covers: lid rotate-to-open, spool axial-pull off spind
 
 ### Why this matters for a Bambu hobbyist
 
-[TENTATIVE 2026-05-07] Direct relevance is low — friend will be removing spools by hand, not via dual-arm robot. But two indirect lessons:
+[TENTATIVE 2026-05-07] Direct relevance is low — reader will be removing spools by hand, not via dual-arm robot. But two indirect lessons:
 
-1. **Schema-anchored prompting beats freeform.** When the friend uses a VLM (Claude, GPT-4o, Gemini) to advise on a 3D-printing problem, structured prompts that enumerate constraints (printer model, material, ambient conditions, what's been tried) get better answers than "what's wrong with my print?" with a photo. This paper is empirical evidence for that intuition.
+1. **Schema-anchored prompting beats freeform.** When the reader uses a VLM (Claude, GPT-4o, Gemini) to advise on a 3D-printing problem, structured prompts that enumerate constraints (printer model, material, ambient conditions, what's been tried) get better answers than "what's wrong with my print?" with a photo. This paper is empirical evidence for that intuition.
 2. **VLMs are weak on numeric / quantitative engineering parameters.** Don't trust a VLM's invented force limits, temperature ranges, or tolerances — those numbers must come from datasheets / manuals / actual measurements.
 
 [CONFIRMED] τ-anchored prompts produce dramatically more constraint-respecting plans than freeform on the spool-removal task. [TENTATIVE] Generalization to other manipulation tasks is plausible (the paper argues schema-orthogonal-to-policy-class) but not empirically demonstrated.
