@@ -120,6 +120,23 @@ updated: 2026-05-06
 - `[NEEDS VERIFICATION YYYY-MM-DD]` — plausible but untested. **Always include the date** so staleness can be flagged
 - `[RETRACTED]` — previously believed, now disproven. Keep in place with a note; don't delete
 
+## Related Wikis
+
+When a query needs data from another wiki, reference it using the `@wiki-alias/path/to/page.md` syntax. The LLM resolves these by reading the other wiki's files directly.
+
+| Alias | Path | Description |
+|-------|------|-------------|
+| `osint-wiki` | `/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki/` | Financial research, quant finance, prediction markets, CeminiSuite, RL for trading |
+| `image-gen-wiki` | `/Users/claudiobarone/Desktop/projects/Image gen/wiki/` | Uncensored image generation, model cataloging, ComfyUI, LoRA, persona/character ops |
+| `seo-wiki` | `/Users/claudiobarone/Desktop/projects/SEO:GEO B&M Business/wiki/` | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
+| `3d-printing-wiki` | `/Users/claudiobarone/Desktop/projects/3d printing/wiki/` | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |
+
+### Cross-wiki link syntax
+
+- Use `@wiki-alias/path/to/page.md` for cross-wiki references (e.g., `@image-gen-wiki/concepts/tree-supports.md`)
+- Bidirectional: if 3D Printing page A references another wiki's page B, add a matching `@3d-printing-wiki/...` backlink on page B
+- When creating a stub in another wiki, note the cross-wiki dependency in `## Relations`
+
 ## Operations
 
 ### Ingest (adding a new source)
@@ -127,6 +144,10 @@ updated: 2026-05-06
 1. New source dropped into `research to be indexed/`
 2. Read the source (or relevant sections for long PDFs / repo READMEs)
 3. **Discuss key takeaways with the user before writing**
+3b. **Cross-wiki routing check** — before writing pages, evaluate whether the source contains off-topic content more relevant to another wiki (@osint-wiki, @image-gen-wiki, or @seo-wiki). If so:
+   - Call `python3 "/Users/claudiobarone/Desktop/OSINT WORKSPACE/scripts/cross_wiki_route.py"` to create a stub page or brief in the correct wiki, piping content via stdin
+   - Use `--type page` for substantive material, `--type brief` for tangential material
+   - **When in doubt, prefer a brief over a stub** — briefs are cheaper and don't create maintenance burden in the target wiki
 4. Create `wiki/sources/<slug>.md` — frontmatter + Raw Concept + short Narrative
 5. Identify entities + concepts the source touches. For each:
    - If page exists: update it, add `related:` backlink, bump `updated:`

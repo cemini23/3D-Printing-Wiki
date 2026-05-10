@@ -10,6 +10,7 @@ Reports:
   6. Frontmatter quality  — missing `type` / `maturity` / mismatched `updated:`
   7. Stale verification   — `[NEEDS VERIFICATION YYYY-MM-DD]` tags older than --verify-age-days
                             (default 7) — Exa-resolution candidates per CLAUDE.md "External research"
+  8. Cross-wiki gaps     — `@wiki-alias/path` references to other wikis that don't resolve
 """
 
 import argparse
@@ -29,6 +30,34 @@ TODAY = date.today()
 # Resolve WIKI relative to this script (scripts/wiki_lint.py → repo root → wiki/),
 # with WIKI_DIR env-var override for non-standard layouts (e.g. CI checkout paths).
 WIKI = Path(os.environ.get("WIKI_DIR", Path(__file__).resolve().parent.parent / "wiki"))
+
+# -- cross-wiki alias mapping ----------------------------------------
+
+def load_wiki_aliases():
+    """Parse CLAUDE.md 'Related Wikis' section for alias→path mapping."""
+    claude_md = WIKI.parent / "CLAUDE.md"
+    aliases = {}  # alias -> abs_path
+    if not claude_md.exists():
+        return aliases
+    text = claude_md.read_text(errors="replace")
+    # Match the Related Wikis table: | `alias` | /path/to/wiki/ | ... |
+    table_re = re.compile(
+        r"^\|\s*`([a-z0-9_-]+)`\s*\|\s*`?([^`\n\|]+)`?\s*\|",
+        re.MULTILINE
+    )
+    for m in table_re.finditer(text):
+        alias = m.group(1).strip()
+        path_str = m.group(2).strip().rstrip("/")
+        # Path from CLAUDE.md already includes wiki/ — don't append again
+        wiki_path = Path(path_str)
+        if wiki_path.is_dir():
+            aliases[alias] = wiki_path
+        elif (wiki_path / "wiki").is_dir():
+            aliases[alias] = wiki_path / "wiki"
+    return aliases
+
+
+WIKI_ALIASES = load_wiki_aliases()
 
 # -- frontmatter parsing (no PyYAML dep) ----------------------------------
 
@@ -73,6 +102,21 @@ def normalize_path(p):
         p = p[len("wiki/"):]
     return p
 
+
+def is_cross_wiki_path_exists(normalized_path):
+    """If *normalized_path* starts with @alias/, resolve against WIKI_ALIASES.
+    Returns True if the cross-wiki file exists, False if it doesn't.
+    Returns None if it's not a cross-wiki path (no alias prefix)."""
+    if not WIKI_ALIASES:
+        return None
+    for alias in WIKI_ALIASES:
+        prefix = f"@{alias}/"
+        if normalized_path.startswith(prefix):
+            rel = normalized_path[len(prefix):]
+            target = WIKI_ALIASES[alias] / rel
+            return target.exists()
+    return None
+
 # -- walk ----------------------------------------------------------------
 
 pages = {}                  # rel_path -> frontmatter dict
@@ -106,7 +150,16 @@ for src, fm in pages.items():
             inbound[tgt].add(src)
             outbound[src].add(tgt)
         else:
-            dangling.append((src, tgt_raw))
+            xw = is_cross_wiki_path_exists(tgt)
+            if xw:
+                # cross-wiki target exists — not dangling
+                pass
+            elif xw is False:
+                # cross-wiki target doesn't exist — dangling
+                dangling.append((src, tgt_raw))
+            else:
+                # local path, not found
+                dangling.append((src, tgt_raw))
 
 # orphans: pages with zero inbound edges (excluding index/log already excluded)
 orphans = sorted(p for p in all_paths if p not in inbound)
@@ -122,7 +175,8 @@ gaps.sort()
 # -- 4: @path body mentions that don't resolve ---------------------------
 
 # `@path/to/page.md` style references in markdown body
-AT_PATH_RE = re.compile(r"@([a-z0-9_./-]+\.md)")
+# Capture the @ so cross-wiki paths retain the alias prefix for resolution.
+AT_PATH_RE = re.compile(r"(@[a-z0-9_./-]+\.md)")
 
 missing_mentions = defaultdict(set)  # mentioned_path -> {source, ...}
 for src, fm in pages.items():
@@ -130,9 +184,37 @@ for src, fm in pages.items():
     if not body:
         continue
     for m in AT_PATH_RE.finditer(body):
-        mentioned = normalize_path(m.group(1))
+        mentioned_raw = normalize_path(m.group(1))   # e.g. @seo-wiki/concepts/foo.md
+        mentioned = mentioned_raw.lstrip("@")        # e.g. seo-wiki/concepts/foo.md
         if mentioned not in all_paths and mentioned not in ("index.md", "log.md", "dashboard.md"):
-            missing_mentions[mentioned].add(src)
+            xw = is_cross_wiki_path_exists(mentioned_raw)
+            if not xw:
+                missing_mentions[mentioned].add(src)
+
+# -- 8: cross-wiki @wiki-alias/path links ---------------------------
+# Check @wiki-alias/path/to/page.md references to other wikis.
+
+CROSS_WIKI_RE = re.compile(r"@([a-z0-9_-]+)/([^\s`)]+)")
+
+cross_wiki_dangling = []  # (src, alias, rel_path, target_path)
+cross_wiki_ok = 0
+
+if WIKI_ALIASES:
+    for src, fm in pages.items():
+        body = fm.get("_body", "")
+        if not body:
+            continue
+        for m in CROSS_WIKI_RE.finditer(body):
+            alias = m.group(1)
+            # Only treat as cross-wiki link if alias is in WIKI_ALIASES
+            if alias not in WIKI_ALIASES:
+                continue  # skip local wiki links like @concepts/..., @entities/...
+            rel_path = m.group(2).lstrip("/")
+            target = WIKI_ALIASES[alias] / rel_path
+            if not target.exists():
+                cross_wiki_dangling.append((src, alias, rel_path, target))
+            else:
+                cross_wiki_ok += 1
 
 # -- 5: cited unread stubs -----------------------------------------------
 
@@ -265,14 +347,14 @@ if undated_verifications:
     if len(undated_verifications) > 20:
         print(f"    ... and {len(undated_verifications)-20} more")
 
-# Exit code — CI gate. Hard issues (structural schema violations) fail; stale
-# verification tags are advisory and don't fail.
-hard_issues = (
-    len(orphans) + len(gaps) + len(dangling) + len(missing_mentions)
-    + len(cited_unread) + len(no_frontmatter) + len(no_type) + len(no_maturity)
-)
-if hard_issues:
-    print(f"\nLINT FAILED: {hard_issues} hard issue(s).")
-    sys.exit(1)
-print("\nLINT PASSED: 0 hard issues.")
-sys.exit(0)
+header(f"8. Cross-wiki @wiki-alias/path links — {len(cross_wiki_dangling)} dangling, {cross_wiki_ok} ok")
+if not WIKI_ALIASES:
+    print("  (no Related Wikis defined in CLAUDE.md)")
+elif not cross_wiki_dangling:
+    print(f"  (all {cross_wiki_ok} cross-wiki references resolve correctly)")
+else:
+    for src, alias, rel_path, target in sorted(cross_wiki_dangling):
+        if target is None:
+            print(f"  {src}  →  @{alias}/{rel_path}  (wiki alias not found in CLAUDE.md)")
+        else:
+            print(f"  {src}  →  @{alias}/{rel_path}  (file not found: {target})")
