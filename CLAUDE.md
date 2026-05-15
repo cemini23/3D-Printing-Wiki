@@ -132,6 +132,7 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 | `image-gen-wiki` | `../Image gen/wiki/` | Uncensored image generation, model cataloging, ComfyUI, LoRA, persona/character ops |
 | `seo-wiki` | `../SEO:GEO B&M Business/wiki/` | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
 | `3d-printing-wiki` | `wiki/` | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |
+| `cybersecurity-wiki` | `../Cybersecurity wiki/wiki/` | Cybersecurity research — offensive security, defensive operations, certifications, threat actors. Shared territory: hardware hacking when printed jigs / RFID enclosures / lock-pick aids overlap with physical-pentest tooling |
 
 ### Cross-wiki link syntax
 
