@@ -366,3 +366,8 @@ Clean: 0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing-pages / frontma
 
 - Deep-read CIPHER pages 13+ to validate out-of-distribution + autonomous-fabrication claims
 - Tier-2 sweep for VLM-failure-mode papers (called out as missing from cluster)
+
+## [2026-05-15] cross-wiki route | gracia.ai — Gaussian Splatting volumetric video (3D-export angle)
+
+Cross-wiki stub routed from `@osint-wiki/sources/eval-github-repos-2026-05-13.md`.
+- Created wiki/concepts/2026-05-13_gracia-ai-volumetric-3d-export.md (stub)
