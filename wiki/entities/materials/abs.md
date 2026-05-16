@@ -11,14 +11,15 @@ related:
   - entities/materials/petg.md
   - entities/materials/asa.md
   - entities/materials/tpu.md
+  - entities/tools/rebot-devarm.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-16
 ---
 
 ## Relations
 
-@concepts/filaments-baseline.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/asa.md @entities/materials/tpu.md
+@concepts/filaments-baseline.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/asa.md @entities/materials/tpu.md @entities/tools/rebot-devarm.md
 
 ## Raw Concept
 

@@ -371,3 +371,20 @@ Clean: 0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing-pages / frontma
 
 Cross-wiki stub routed from `@osint-wiki/sources/eval-github-repos-2026-05-13.md`.
 - Created wiki/concepts/2026-05-13_gracia-ai-volumetric-3d-export.md (stub)
+
+## [2026-05-16] cross-wiki ingest | reBot-DevArm — open-source 6-DOF robotic arm (hybrid CNC + 3D-print)
+
+Cross-routed from OSINT-workspace tool-eval ingest `@osint-wiki/sources/tool-eval-wiki-fit-v3-iteration-2026-05-16.md` — scored STEAL-FROM tier with primary fit in this wiki. Value to the 3D-printing workspace is the project's documented hybrid CNC+print manufacturing methodology, not the robot itself.
+
+### Created (1 page)
+
+- `wiki/entities/tools/rebot-devarm.md` — entity tool page. 6-DOF arm (1.5 kg payload, <0.2 mm precision); bisected architecture (CNC-machined Aluminum 5052 ±0.02 mm for load-bearing parts / 3D-printed Bambu ABS + TPU 95+ for the rest, TPU on Soft Fingers). Captures concrete BOM detail: 30–45% infill for ABS Black joint bases, documented component substitutions, hardware STEP files. License split: hardware CERN-OHL-W-2.0 (copyleft triggers only on hardware-design redistribution — internal print-farm use is clean), software Apache-2.0 (Motorbridge SDK + rebotarm_ros2 Jazzy workspace). One `[NEEDS VERIFICATION 2026-05-16]` flag on long-term durability/deflection of printed MGN9 slider brackets under continuous payload.
+
+### Modified (4 pages)
+
+- `wiki/entities/materials/abs.md` — added `rebot-devarm.md` backlink + Relations; bumped `updated`.
+- `wiki/entities/materials/tpu.md` — added `rebot-devarm.md` backlink + Relations; bumped `updated`.
+- `wiki/concepts/print-farm-operations.md` — added `rebot-devarm.md` backlink + Relations; bumped `updated`.
+- `wiki/index.md` — added reBot-DevArm row under Tools.
+
+Pages touched: 5 (1 created + 4 modified) — within schema bound. Not committed; left staged.
