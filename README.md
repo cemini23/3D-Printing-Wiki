@@ -85,6 +85,20 @@ If you're new to Bambu and reading this wiki to set up a printer for the first t
 
 ---
 
+## Sister wikis
+
+This wiki is one of **six** interconnected Cemini knowledge wikis. Cross-wiki links use `@<alias>/path/to/page.md` syntax (aliases + paths in `CLAUDE.md` under "Related Wikis"):
+
+- `osint-wiki` — financial / quant / prediction-market research · **private (not publicly available)**
+- `image-gen-wiki` — uncensored image / video / voice generation
+- `seo-wiki` — local SEO, GBP, GEO/AEO, creator marketing
+- `cybersecurity-wiki` — offensive / defensive security research
+- `ccc-wiki` — Cemini Claude Code meta-wiki (workflow, subagents, MCP/conductor) · **private (not publicly available)**
+
+The OSINT and CCC wikis are private repositories — not publicly available; cross-wiki links into them resolve only inside the Cemini workspace.
+
+---
+
 ## License
 
 [MIT](LICENSE) — wiki content, scripts, and configuration are free to use, modify, and redistribute. Built so any hobbyist or small-business owner getting into 3D printing can lift it, fork it, or contribute back.
