@@ -4,12 +4,11 @@ type: entity
 tags: [tool, markdown, previewer, macOS, LaTeX, Mermaid, workflow]
 keywords: [markdown-preview-pluk, pluk-inc, markdown preview, LaTeX renderer, Mermaid diagram, macOS native]
 related:
-  - @osint-wiki/entities/tools/markdown-preview-pluk.md
   - entities/tools/obsidian.md
 maturity: draft
 created: 2026-05-21
 updated: 2026-05-21
-cross-wiki-source: @osint-wiki/entities/tools/markdown-preview-pluk.md
+cross-wiki-source: "@osint-wiki/entities/tools/markdown-preview-pluk.md"
 ---
 
 # markdown-preview-pluk — Native macOS Markdown Previewer (LaTeX + Mermaid)

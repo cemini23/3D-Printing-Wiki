@@ -5,11 +5,10 @@ tags: [AI, generative-3D, gaussian-splatting, volumetric, mesh-export, scanning]
 keywords: [gracia.ai, Gaussian Splatting, volumetric video, mesh export, point cloud to mesh, 3D scanning, STL, OBJ, printable mesh]
 related:
   - concepts/ai-design-tools.md
-  - @osint-wiki/sources/eval-github-repos-2026-05-13.md
 maturity: draft
 created: 2026-05-15
 updated: 2026-05-15
-cross-wiki-source: @osint-wiki/sources/eval-github-repos-2026-05-13.md
+cross-wiki-source: "@osint-wiki/sources/eval-github-repos-2026-05-13.md"
 ---
 
 # gracia.ai — Gaussian Splatting volumetric video (3D-export angle)

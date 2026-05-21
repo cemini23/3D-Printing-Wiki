@@ -2,7 +2,7 @@
 title: Wiki Navigation — Reading This Knowledge Base
 type: concept
 tags: [meta, navigation, obsidian, wiki, conventions, schema, reader-handoff]
-keywords: [wiki navigation, Obsidian vault, cross-link convention, @path syntax, frontmatter, tag pane, command palette, graph view, search, index page]
+keywords: [wiki navigation, Obsidian vault, cross-link convention, "@path syntax", frontmatter, tag pane, command palette, graph view, search, index page]
 related:
   - entities/tools/obsidian.md
 maturity: draft
