@@ -85,17 +85,21 @@ If you're new to Bambu and reading this wiki to set up a printer for the first t
 
 ---
 
-## Sister wikis
+## Cemini wiki federation
 
-This wiki is one of **six** interconnected Cemini knowledge wikis. Cross-wiki links use `@<alias>/path/to/page.md` syntax (aliases + paths in `CLAUDE.md` under "Related Wikis"):
+**Six** wikis + private **Cemini Financial Suite**. Cross-links: `@<alias>/path/to/page.md` (`CLAUDE.md` → Related Wikis).
 
-- `osint-wiki` — financial / quant / prediction-market research · **private (not publicly available)**
-- `image-gen-wiki` — uncensored image / video / voice generation
-- `seo-wiki` — local SEO, GBP, GEO/AEO, creator marketing
-- `cybersecurity-wiki` — offensive / defensive security research
-- `ccc-wiki` — Cemini Claude Code meta-wiki (workflow, subagents, MCP/conductor) · **private (not publicly available)**
+| Alias | Repository | Visibility | Focus |
+|-------|------------|------------|--------|
+| **`3d-printing-wiki`** | **This repo** ([3D-Printing-Wiki](https://github.com/cemini23/3D-Printing-Wiki)) | **Public** | FDM/FFF, Bambu, slicers, print farms |
+| `ccc-wiki` | [cemini-claude-code-CCC](https://github.com/cemini23/cemini-claude-code-CCC) | **Public** | Cursor / Claude Code workflow, MCP |
+| `image-gen-wiki` | [uncensored-image-gen-wiki](https://github.com/cemini23/uncensored-image-gen-wiki) | Public | Image / video generation |
+| `seo-wiki` | [SEO-GEO-B-M-Wiki](https://github.com/cemini23/SEO-GEO-B-M-Wiki) | Public | Local SEO, GEO/AEO |
+| `cybersecurity-wiki` | [Cybersecurity-wiki](https://github.com/cemini23/Cybersecurity-wiki) | Public | Pentest; physical-security / RFID overlap |
+| `osint-wiki` | `llm-wiki-by-cemini` *(private)* | **Private** | Financial research |
+| *Cemini Financial Suite* | `Cemini-Financial-Suite` *(private)* | **Private** | Trading stack (not a wiki) |
 
-The OSINT and CCC wikis are private repositories — not publicly available; cross-wiki links into them resolve only inside the Cemini workspace.
+**Privacy:** **`ccc-wiki` is public.** **`osint-wiki`** and **Cemini Financial Suite** are private.
 
 ---
 
