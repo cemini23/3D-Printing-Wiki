@@ -13,14 +13,15 @@ related:
   - entities/printers/x1c.md
   - entities/printers/p1s.md
   - entities/printers/a1.md
+  - entities/printers/flashforge-adventurer-5m.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-20
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/print-farm-operations.md @concepts/ai-design-tools.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @entities/slicers/orcaslicer.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
+@concepts/fdm-printing.md @concepts/print-farm-operations.md @concepts/ai-design-tools.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @entities/slicers/orcaslicer.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md (non-Bambu counterexample — ships Klipper firmware from the factory; inverts the closed-firmware-as-feature thesis)
 
 ## Raw Concept
 

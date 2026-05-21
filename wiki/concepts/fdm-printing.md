@@ -21,6 +21,7 @@ related:
   - entities/slicers/bambu-studio.md
   - entities/slicers/orcaslicer.md
   - entities/tools/kickstarter-autodesk-fdm-protocol.md
+  - entities/printers/flashforge-adventurer-5m.md
   - entities/materials/pla.md
   - entities/materials/petg.md
   - entities/materials/abs.md

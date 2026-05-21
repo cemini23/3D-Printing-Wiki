@@ -12,16 +12,17 @@ related:
   - concepts/extrusion-control.md
   - entities/printers/x1c.md
   - entities/printers/a1.md
+  - entities/printers/flashforge-adventurer-5m.md
   - entities/tools/kickstarter-autodesk-fdm-protocol.md
   - sources/2026-bambu-toolchain-audit.md
 maturity: draft
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-20
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/filaments-baseline.md @concepts/fault-detection.md @concepts/input-shaping.md @concepts/extrusion-control.md @entities/printers/x1c.md @entities/printers/a1.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @sources/2026-bambu-toolchain-audit.md
+@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/filaments-baseline.md @concepts/fault-detection.md @concepts/input-shaping.md @concepts/extrusion-control.md @entities/printers/x1c.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @sources/2026-bambu-toolchain-audit.md
 
 ## Raw Concept
 

@@ -15,14 +15,15 @@ related:
   - entities/printers/x1c.md
   - entities/printers/p1s.md
   - entities/printers/a1.md
+  - entities/printers/flashforge-adventurer-5m.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-05-20
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
+@concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md
 
 ## Raw Concept
 

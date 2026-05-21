@@ -4,6 +4,28 @@ Append-only chronological operations log. Each entry: date + operation + summary
 
 ---
 
+## [2026-05-20] cross-printer expansion | Flashforge Adventurer 5M entity + friend day-1 brief
+
+User's friend just got a Flashforge Adventurer 5M (his first 3D printer) and will set up the wiki this weekend. He has never used AI before. Two deliverables: (1) an entity page for the non-Bambu printer so the friend has a single read that says which wiki advice applies to his machine; (2) a paste-friendly brief covering AI + Obsidian setup, sourced from CCC wiki.
+
+### Created (2 pages)
+
+- `wiki/entities/printers/flashforge-adventurer-5m.md` — non-Bambu CoreXY; 220×220×220 mm, 600mm/s, 280°C, Orca-Flashforge slicer, **ships Klipper firmware** which inverts the closed-firmware-as-feature thesis; 5M (open-frame, ~$300-400) vs 5M Pro (enclosed + camera + HEPA, ~$500-600). Applies/does-not-apply table for which wiki sections transfer. Day-1 setup priorities (stock-firmware-first, do NOT install xblax Klipper mod or Bambu Studio). [CONFIRMED via Flashforge product page + retailer listing + community Klipper-mod GitHub repo, retrieved 2026-05-20].
+- `briefs/2026-05-20_friend-day1-ai-obsidian-setup.md` — friend-facing brief (paste into claude.ai OR follow standalone). Steps: (0) why AI at all; (1) install Obsidian + recommended plugins; (2) Claude.ai web account + structured-prompt template + numeric-hallucination warning + hallucinated-G-code prohibition; (3) paste-then-ask workflow with the wiki; (4) optional Claude Code CLI install (week 2+); (5) first-week wiki reading order; (6) escalation path. Sources from this wiki (Flashforge entity, Obsidian entity, vlm-in-manufacturing, ai-design-tools, filaments-baseline) + CCC wiki (claude-code, claude-desktop-vs-claude-code, token-economics, context-engineering, claude-obsidian DO-NOT-ADOPT note).
+
+### Updated (1 page)
+
+- `wiki/index.md` — Printers section gets Flashforge Adventurer 5M row beneath the Bambu A1 entry, with non-Bambu / Klipper caveat in the summary.
+
+### Notes
+
+- Brief lives in `briefs/` (gitignored) as a one-off deliverable; not indexed in `wiki/index.md`.
+- Flashforge entity page is `maturity: draft` — only one external verification pass (Brave search → vendor + retailer + community-mod GitHub); specific pricing and AMS-equivalent accessory lineup tagged [TENTATIVE 2026-05-20].
+- CCC wiki cross-references (`@ccc-wiki/...`) in the brief are bibliographic — friend may or may not have a synced copy; brief is self-contained without them.
+- No raw source moved to `raw-sources/` (no PDF/docx ingested — this was a friend-facing expansion, not a new-source ingest).
+
+---
+
 ## [2026-05-07] ingest | 25-repo Bambu toolchain audit (Phase-0 source audit)
 
 Sixth ingest pass — full ingest of `GitHub Repo Audit for 3D Printing.docx` (Gemini-DR-style audit of 25 GitHub repos for laptop-only Bambu workspace). Substance preserved fully rather than trimmed to GO repos only. 6 wiki pages = within schema bound (3-15).
