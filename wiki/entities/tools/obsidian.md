@@ -5,14 +5,16 @@ tags: [tool, obsidian, knowledge-base, markdown, local-first, free-personal, nav
 keywords: [Obsidian, vault, wikilinks, markdown editor, knowledge management, local-first, plugins, graph view, tags, dataview, command palette, file explorer]
 related:
   - concepts/wiki-navigation.md
+  - entities/tools/markdown-preview-pluk.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-21
 ---
 
 ## Relations
 
 @concepts/wiki-navigation.md
+@entities/tools/markdown-preview-pluk.md
 
 ## Raw Concept
 

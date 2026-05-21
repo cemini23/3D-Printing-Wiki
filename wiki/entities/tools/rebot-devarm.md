@@ -7,7 +7,7 @@ related:
   - entities/materials/abs.md
   - entities/materials/tpu.md
   - concepts/print-farm-operations.md
-  - "@osint-wiki/sources/tool-eval-wiki-fit-v3-iteration-2026-05-16.md"
+  - @osint-wiki/sources/tool-eval-wiki-fit-v3-iteration-2026-05-16.md
 maturity: draft
 created: 2026-05-16
 updated: 2026-05-16

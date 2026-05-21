@@ -2,6 +2,14 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-05-21] brief-triage | Process 6 staged briefs
+
+- Triaged all 6 briefs in `briefs/`. 5 already-ingested (substance already in wiki pages); 1 promoted.
+- **Promoted**: `markdown-preview-pluk` → new stub entity page `entities/tools/markdown-preview-pluk.md` (cross-wiki from OSINT wiki; tangential macOS markdown previewer for wiki authoring).
+- **Marked processed** (added `processed: 2026-05-21` frontmatter): `2026-05-06_print-farm-quickwins.md`, `2026-05-07_bambu-day1-toolchain.md`, `2026-05-07_vlm-prompt-discipline.md`, `2026-05-11_markdown-preview-pluk-cross-wiki.md`, `2026-05-13_gracia-ai-volumetric-3d-export.md`, `2026-05-20_friend-day1-ai-obsidian-setup.md`.
+- Added bidirectional `@3d-printing-wiki/` backlink to OSINT wiki's `markdown-preview-pluk.md` entity page.
+- Pages touched: `wiki/index.md` (+1 Tools row), `wiki/entities/tools/markdown-preview-pluk.md` (new), `@osint-wiki/entities/tools/markdown-preview-pluk.md` (backlink).
+
 ---
 
 ## [2026-05-20] cross-printer expansion | Flashforge Adventurer 5M entity + friend day-1 brief
