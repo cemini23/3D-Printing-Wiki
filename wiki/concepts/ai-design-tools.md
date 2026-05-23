@@ -10,16 +10,19 @@ related:
   - concepts/print-farm-operations.md
   - concepts/am-as-a-service.md
   - concepts/2026-05-13_gracia-ai-volumetric-3d-export.md
+  - concepts/shape-changing-fdm-interfaces.md
+  - concepts/novice-cad-workflows.md
+  - sources/2025-arslan-tinkerxr-ar-cad-novices.md
   - sources/2026-bambu-toolchain-audit.md
   - entities/slicers/bambu-studio.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-15
+updated: 2026-05-23
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/vlm-in-manufacturing.md @concepts/print-farm-operations.md @concepts/am-as-a-service.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md
+@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/vlm-in-manufacturing.md @concepts/print-farm-operations.md @concepts/am-as-a-service.md @concepts/shape-changing-fdm-interfaces.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md
 
 - @concepts/2026-05-13_gracia-ai-volumetric-3d-export.md — volumetric-capture (Gaussian Splatting) variant of the generative-3D-to-printable-mesh pipeline
 

@@ -16,9 +16,11 @@ related:
   - entities/printers/p1s.md
   - entities/printers/a1.md
   - entities/printers/flashforge-adventurer-5m.md
+  - concepts/shape-changing-fdm-interfaces.md
+  - concepts/novice-cad-workflows.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-20
+updated: 2026-05-23
 ---
 
 ## Relations

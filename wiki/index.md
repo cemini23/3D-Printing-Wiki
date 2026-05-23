@@ -28,6 +28,11 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [Towards Logic-Aware Manipulation — τ Knowledge Primitive for VLM Assistants](sources/2025-chen-tau-schema-vlm.md) — 8-field τ schema injects manipulation logic into GPT-4o prompts; 35→89% contact/tolerance specificity on spool-removal plans — `paper, VLM, robot-manipulation, schema, knowledge-base, planning, GPT-4o, smart-manufacturing`
 - [CIPHER — Hybrid Reasoning for Perception, Explanation, and Autonomous Action](sources/2025-margadji-cipher.md) — Llama-3.2 + ResNet-152 process expert + LoRA + RAG; 5× MAE reduction (82.92→17.62) on flow rate regression from endoscope images — `paper, VLA, vision-language-action, hybrid-reasoning, RAG, chain-of-thought, regression, process-expert, cambridge`
 - [Bambu Toolchain Audit — 25-Repo Phase-0 Evaluation](sources/2026-bambu-toolchain-audit.md) — Gemini-DR-style audit; 2 GO + 1 CONDITIONAL-GO + 22 NO-GO across 4 rejection patterns; closed-firmware-as-feature thesis — `audit, github, phase-0, bambu, toolchain, slicers, firmware, ecosystem-alignment`
+- [DuoMorph — FDM + Pneumatic Shape-Changing Interfaces](sources/2026-li-duomorph-fdm-pneumatic.md) — CHI '26; heat-seal + FDM + 4D pre-shape on TPU film; validated on Bambu A1 — `CHI, pneumatic, FDM, 4D, shape-changing`
+- [FluxLab — SLA Shape-Changing + SMA Inductive Sensing](sources/2026-lee-fluxlab-sma-sla.md) — TEI '26; FluxIO gyroid SLA + Nitinol spring; not consumer FFF — `TEI, SLA, SMA, sensing, shape-changing`
+- [Single-Material 4D via PvP Strain Trapping](sources/2025-iqbal-single-material-4d-pvp.md) — desktop FFF + commercial SMP; ~50% trapped strain; lattice expansion unit cells — `4D, SMP, PvP, FFF, metamaterial`
+- [NAT-LCE DIW with Hybrid Cooling](sources/2026-li-lce-nat-diw-hybrid-cooling.md) — DIW liquid-crystal elastomer; background-only for FFF wiki — `LCE, DIW, soft-robotics, background`
+- [TinkerXR — AR CAD for Novices](sources/2025-arslan-tinkerxr-ar-cad-novices.md) — SCF '25; Quest 3 in-situ CSG; not day-1 — compare Tinkercad baseline in @concepts/novice-cad-workflows.md — `AR, CAD, novice, open-source`
 
 ---
 
@@ -93,3 +98,5 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [AI Design Tools — Generative 3D for Etsy / MakerWorld Production](concepts/ai-design-tools.md) — Meshy / RodinAI / 3DAIStudio → 3MF → Bambu Studio → AMS pipeline; decorative-only restriction; hallucinated-G-code prohibition — `AI, generative-3D, text-to-3D, 3MF, AMS, MakerWorld, content-pipeline`
 - [Wiki Navigation — Reading This Knowledge Base](concepts/wiki-navigation.md) — meta-guide; schema conventions (frontmatter / @path / confidence tags) + Obsidian navigation tricks; **read this on day 1** — `meta, navigation, obsidian, wiki, conventions, schema, reader-handoff`
 - [gracia.ai — Gaussian Splatting volumetric video (3D-export angle)](concepts/2026-05-13_gracia-ai-volumetric-3d-export.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [Shape-Changing Interfaces — FDM and Adjacent Modalities](concepts/shape-changing-fdm-interfaces.md) — hub: PvP SMP 4D, DuoMorph pneumatics, FluxLab SLA contrast, LCE background — `shape-changing, 4D, pneumatic, SMP, maker`
+- [Novice CAD Workflows — What to Use When You're Just Starting](concepts/novice-cad-workflows.md) — week-1 download STLs → week-2 Tinkercad; explicitly skips print-farm / shape-changing — `beginner, CAD, Tinkercad, day-1, workflow`

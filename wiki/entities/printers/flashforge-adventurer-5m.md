@@ -9,9 +9,11 @@ related:
   - concepts/filaments-baseline.md
   - entities/printers/a1.md
   - entities/printers/p1s.md
+  - concepts/shape-changing-fdm-interfaces.md
+  - concepts/novice-cad-workflows.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-23
 ---
 
 ## Relations
@@ -120,6 +122,8 @@ Does **NOT** apply to the 5M:
 - AMS / 3MF-with-AMS-tags workflow — no Bambu AMS equivalent on the 5M
 - MakerWorld native integration — MakerWorld is Bambu's marketplace; uploads work but the printer-specific 3MF flow doesn't apply
 - [@concepts/ai-design-tools.md] — the Meshy/RodinAI/3DAIStudio "send to Bambu Studio" pipeline; the friend can still use these tools but the slicer endpoint is Orca-Flashforge, not Bambu Studio
+- [@concepts/print-farm-operations.md], [@concepts/am-as-a-service.md], [@concepts/print-job-scheduling.md] — multi-printer / commercial-scale ops; **not relevant** with one hobby machine
+- [@concepts/shape-changing-fdm-interfaces.md] — experimental 4D/pneumatic/AR maker research; skip until basic PLA prints are boring
 
 ### Day-1 setup priorities (5M-specific)
 

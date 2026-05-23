@@ -12,9 +12,11 @@ related:
   - entities/materials/abs.md
   - entities/materials/asa.md
   - entities/tools/rebot-devarm.md
+  - concepts/shape-changing-fdm-interfaces.md
+  - sources/2026-li-duomorph-fdm-pneumatic.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-16
+updated: 2026-05-23
 ---
 
 ## Relations

@@ -11,9 +11,10 @@ related:
   - sources/2026-mahjourian-vlm-iris.md
   - sources/2025-chen-tau-schema-vlm.md
   - sources/2025-margadji-cipher.md
+  - concepts/novice-cad-workflows.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-23
 ---
 
 ## Relations

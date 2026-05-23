@@ -77,7 +77,17 @@ Read in Obsidian, in this order:
 6. [`wiki/entities/materials/pla.md`](wiki/entities/materials/pla.md) and [`wiki/entities/materials/petg.md`](wiki/entities/materials/petg.md) — your first two filaments
 7. [`wiki/concepts/vlm-in-manufacturing.md`](wiki/concepts/vlm-in-manufacturing.md) — how to ask AI about prints safely
 
-**Skip tonight:** security, print-farm, MaaS, and Bambu-closed-firmware pages — come back when relevant.
+**Skip tonight (and probably all of month 1):** security, **print-farm**, MaaS, Bambu-closed-firmware, **shape-changing / 4D / pneumatics**, and anything requiring an AR headset. See [`wiki/concepts/novice-cad-workflows.md`](wiki/concepts/novice-cad-workflows.md) for when to start designing your own parts (spoiler: week 2, Tinkercad — not tonight).
+
+---
+
+## Week 2 — when you want to make your own parts
+
+Read [`wiki/concepts/novice-cad-workflows.md`](wiki/concepts/novice-cad-workflows.md). Short version:
+
+1. Keep downloading STLs until you've had ~10 good prints.
+2. Sign up for **Tinkercad** (free, browser) — export STL → Orca-Flashforge.
+3. Still skip AI model generators and print-farm wiki pages.
 
 ---
 
@@ -94,6 +104,7 @@ Read in Obsidian, in this order:
 
 - **Claude Code CLI** — reads wiki files directly without copy-paste; needs Claude Pro (~$20/mo). See [cemini-claude-code-CCC](https://github.com/cemini23/cemini-claude-code-CCC) when ready.
 - **Orca-Flashforge** — your slicer; install from Flashforge if you haven't already.
+- **Tinkercad** — free browser CAD for first original designs (week 2+). See `wiki/concepts/novice-cad-workflows.md`.
 - **AI design tools** (Meshy, RodinAI, etc.) — read `wiki/concepts/ai-design-tools.md` after you've shipped a few prints.
 
 ---

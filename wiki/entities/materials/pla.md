@@ -11,9 +11,12 @@ related:
   - entities/materials/abs.md
   - entities/materials/asa.md
   - entities/materials/tpu.md
+  - concepts/shape-changing-fdm-interfaces.md
+  - sources/2026-li-duomorph-fdm-pneumatic.md
+  - sources/2025-iqbal-single-material-4d-pvp.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-23
 ---
 
 ## Relations

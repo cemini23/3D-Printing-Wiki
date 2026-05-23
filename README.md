@@ -117,8 +117,8 @@ Cited primary sources (academic papers, vendor docs) remain under their original
 
 ## Status
 
-- Wiki: **50 pages**, 352 cross-links, lint clean as of 2026-05-23
-- Inbox: 42 PDFs/docx awaiting ingest
+- Wiki: **55 pages**, 385 cross-links, lint clean as of 2026-05-23
+- Inbox: 38 PDFs/docx awaiting ingest
 - Schema: HEAVY-mode (full bidirectional cross-link enforcement)
 - Maturity: `draft` for most pages; iterating
 

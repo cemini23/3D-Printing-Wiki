@@ -2,6 +2,27 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-05-23] ingest | TinkerXR + novice CAD workflows (beginner path)
+
+- Solo ingest for friend handoff — **not** print-farm cluster.
+- **1 source:** TinkerXR (SCF '25, AR CAD vs Tinkercad; Quest 3; CC BY-NC; NOT day-1).
+- **1 concept:** `novice-cad-workflows.md` — week-1 download/calibrate, week-2 Tinkercad, explicit skip list for print-farm/shape-changing/AR.
+- **Updated:** `FRIEND-SETUP.md` (skip list + week-2 pointer), `flashforge-adventurer-5m.md` (does-not-apply print-farm + shape-changing), `ai-design-tools.md`, `fdm-printing.md`, `shape-changing-fdm-interfaces.md`, `index.md`.
+- PDF moved to `raw-sources/2025-arslan-tinkerxr-ar-cad-novices.pdf`. Inbox 38 → 37.
+
+---
+
+## [2026-05-23] ingest | Cluster A — shape-changing / 4D FDM (4 papers)
+
+- Ingest pass 7 — shape-changing interfaces cluster from inbox (42 → 38 PDFs).
+- **4 source pages:** DuoMorph (FDM+heat-seal+pneumatic, CHI '26), FluxLab (SLA+SMA, TEI '26), Iqbal et al. PvP single-material 4D (FFF SMP), NAT-LCE DIW (skimmed, background).
+- **1 concept hub:** `shape-changing-fdm-interfaces.md` — modality comparison, reader fit for Bambu/Flashforge vs SLA/DIW, Etsy angle, safety on experimental G-code.
+- **Updated:** `fdm-printing.md`, `ai-design-tools.md`, `pla.md`, `tpu.md`, `a1.md`, `flashforge-adventurer-5m.md`, `index.md`.
+- PDFs moved to `raw-sources/` with slug renames.
+- Lint: run post-commit.
+
+---
+
 ## [2026-05-21] brief-triage | Process 6 staged briefs
 
 - Triaged all 6 briefs in `briefs/`. 5 already-ingested (substance already in wiki pages); 1 promoted.
