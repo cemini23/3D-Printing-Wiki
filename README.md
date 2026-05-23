@@ -6,6 +6,10 @@ A local knowledge base for setting up and operating a Bambu Labs 3D printer for 
 
 ## Start here
 
+**Flashforge Adventurer 5M reader?** → [`FRIEND-SETUP.md`](FRIEND-SETUP.md) — clone, Obsidian, Claude.ai, first-night reading order. $0 setup.
+
+**Bambu reader?** Continue below.
+
 1. **Open this folder in Obsidian** as a vault — or just browse on GitHub.
 2. **Read [`wiki/concepts/wiki-navigation.md`](wiki/concepts/wiki-navigation.md)** — five-minute meta-guide to the schema and navigation conventions.
 3. **Then [`wiki/index.md`](wiki/index.md)** — the catalog of every page. Skim, then drill into whatever interests you.
@@ -16,14 +20,14 @@ If you only have time for one document: read [`wiki/concepts/bambu-ecosystem-clo
 
 ## What's in here
 
-41 wiki pages, organized into:
+50 wiki pages, organized into:
 
 - **18 source pages** — one per ingested research paper / vendor doc / audit. Heavy on 2023-2026 academic FDM literature plus Bambu Labs primary sources.
-- **15 concept pages** — synthesis hubs covering FDM physics, extrusion control, fault detection, side-channel attacks, IP theft, print farms, manufacturing-as-a-service, materials baseline, VLMs in manufacturing, the Bambu closed-firmware ecosystem, and AI-design tooling.
+- **18 concept pages** — synthesis hubs covering FDM physics, extrusion control, fault detection, side-channel attacks, IP theft, print farms, manufacturing-as-a-service, materials baseline, VLMs in manufacturing, the Bambu closed-firmware ecosystem, AI-design tooling, and wiki navigation.
 - **5 materials entity pages** — PLA / PETG / ABS / ASA / TPU.
+- **5 printer entity pages** — Bambu X1C / P1S / A1 (+ mini) + Flashforge Adventurer 5M (friend reader).
 - **2 slicer entity pages** — Bambu Studio (mandatory native), OrcaSlicer (advanced calibration only).
-- **1 tools entity page** — Kickstarter / Autodesk FDM Test V4 calibration print.
-- **1 meta entity page** — Obsidian, the recommended reader.
+- **4 tools entity pages** — Obsidian, FDM Test V4 calibration print, reBot-DevArm, markdown-preview-pluk (cross-wiki stub).
 
 See [`wiki/index.md`](wiki/index.md) for a one-line summary of every page.
 
@@ -113,7 +117,7 @@ Cited primary sources (academic papers, vendor docs) remain under their original
 
 ## Status
 
-- Wiki: **41 pages**, 274 cross-links, lint clean as of 2026-05-07
+- Wiki: **50 pages**, 352 cross-links, lint clean as of 2026-05-23
 - Inbox: 42 PDFs/docx awaiting ingest
 - Schema: HEAVY-mode (full bidirectional cross-link enforcement)
 - Maturity: `draft` for most pages; iterating
