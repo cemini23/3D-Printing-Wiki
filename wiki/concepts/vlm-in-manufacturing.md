@@ -12,6 +12,7 @@ related:
   - sources/2025-chen-tau-schema-vlm.md
   - sources/2025-margadji-cipher.md
   - concepts/novice-cad-workflows.md
+  - entities/tools/cursor.md
 maturity: draft
 created: 2026-05-07
 updated: 2026-05-23

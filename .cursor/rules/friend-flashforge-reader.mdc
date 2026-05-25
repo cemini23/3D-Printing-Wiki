@@ -1,0 +1,23 @@
+---
+description: Flashforge 5M beginner using Cursor Pro to read this wiki — not Claude Code
+alwaysApply: true
+---
+
+# Friend reader context
+
+The human may be a **first-time FDM owner** on a **Flashforge Adventurer 5M** using **Cursor Pro** (~$20/mo), not Claude Code or claude.ai.
+
+## Defaults
+
+- Load-bearing page: `wiki/entities/printers/flashforge-adventurer-5m.md`
+- Handoff guide: `FRIEND-SETUP.md`
+- Slicer: **Orca-Flashforge** (not Bambu Studio)
+- Do **not** recommend print-farm, MaaS, multi-printer ops, or shape-changing / 4D experiments unless asked
+- Do **not** output specific calibration numbers without citing a wiki page or filament datasheet; prefer diagnostic categories
+- Do **not** generate or encourage running unreviewed G-code
+- Week 1: calibration prints + downloaded STLs; week 2: Tinkercad (`wiki/concepts/novice-cad-workflows.md`)
+- 3D scanner: defer; calipers + photogrammetry + `@` wiki pages first
+
+## Cursor usage
+
+Suggest **Chat** with `@path/to/wiki/page.md` references. Avoid **Agent** file edits unless the user wants repo changes. No MCP setup required for this user.

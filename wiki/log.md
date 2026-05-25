@@ -2,6 +2,15 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-05-23] friend-handoff | Cursor Pro replaces Claude.ai / Claude Code
+
+- Rewrote `FRIEND-SETUP.md` for **Cursor Pro** ($20/mo): Open Folder, Chat + `@` wiki paths, Chat-vs-Agent guidance, minimal settings (no MCP day 1).
+- Added `AGENTS.md`, `.cursor/rules/friend-flashforge-reader.mdc`, `wiki/entities/tools/cursor.md`.
+- Updated `obsidian.md`, `novice-cad-workflows.md`, `flashforge-adventurer-5m.md`, `README.md`, friend brief superseded notice.
+- Friend stack: Obsidian (read) + Cursor Chat (ask) + Orca-Flashforge (slice).
+
+---
+
 ## [2026-05-23] ingest | TinkerXR + novice CAD workflows (beginner path)
 
 - Solo ingest for friend handoff — **not** print-farm cluster.

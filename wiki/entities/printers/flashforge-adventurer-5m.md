@@ -11,6 +11,7 @@ related:
   - entities/printers/p1s.md
   - concepts/shape-changing-fdm-interfaces.md
   - concepts/novice-cad-workflows.md
+  - entities/tools/cursor.md
 maturity: draft
 created: 2026-05-20
 updated: 2026-05-23

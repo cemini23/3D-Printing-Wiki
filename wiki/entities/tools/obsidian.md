@@ -6,15 +6,17 @@ keywords: [Obsidian, vault, wikilinks, markdown editor, knowledge management, lo
 related:
   - concepts/wiki-navigation.md
   - entities/tools/markdown-preview-pluk.md
+  - entities/tools/cursor.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-21
+updated: 2026-05-23
 ---
 
 ## Relations
 
 @concepts/wiki-navigation.md
 @entities/tools/markdown-preview-pluk.md
+@entities/tools/cursor.md
 
 ## Raw Concept
 
@@ -39,7 +41,11 @@ Three reasons this wiki was scaffolded with Obsidian-compatibility in mind:
 
 1. **Markdown frontmatter** — Obsidian reads YAML frontmatter (`title:`, `tags:`, `related:`) into its property panel, so the reader can browse / filter pages by tags or maturity without touching a terminal.
 2. **Tag system** — every page has a `tags:` line in frontmatter. Obsidian's tag pane lets the reader click a tag (e.g. `slicer`, `material`, `security`) and see every page that uses it.
-3. **Local-first + plain markdown** — no lock-in. If the reader wants to read this wiki on GitHub instead, every page is rendered correctly there too. If they want to switch to VS Code, Logseq, or Cursor, the files just work.
+3. **Local-first + plain markdown** — no lock-in. GitHub, VS Code, **Cursor**, or Logseq all work on the same files.
+
+### Cursor (friend handoff)
+
+The recommended **AI** surface for the Flashforge beginner is **Cursor Pro** — open this repo as a folder and use Chat with `@wiki/...` file references. See `FRIEND-SETUP.md` and @entities/tools/cursor.md. Obsidian remains the nicer **reader**; Cursor is where you ask questions with print photos attached.
 
 ### Day-1 setup
 

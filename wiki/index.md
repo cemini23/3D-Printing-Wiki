@@ -62,6 +62,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 
 - [Kickstarter / Autodesk FDM Test V4 Protocol](entities/tools/kickstarter-autodesk-fdm-protocol.md) — Apache-2.0 standardized calibration print (`ksr_fdmtest_v4.stl`); witness features fail in known patterns to surface specific extruder/motion failures — `calibration, benchmark, witness-features, FDM, Apache-2.0, GO-tier, materials-research`
 - [Obsidian](entities/tools/obsidian.md) — local-first markdown knowledge-base app; free for personal use; recommended reader for this wiki — `tool, obsidian, knowledge-base, markdown, local-first, free-personal, navigation`
+- [Cursor](entities/tools/cursor.md) — IDE + Chat with `@` file refs; **friend handoff AI** (Cursor Pro, not Claude Code) — `tool, cursor, IDE, AI, friend-handoff`
 - [reBot-DevArm](entities/tools/rebot-devarm.md) — open-source 6-DOF robotic arm; bisected CNC-aluminum + 3D-print (ABS/TPU 95+) BOM; STEAL-FROM tier for hybrid-manufacturing methodology + infill profiles; CERN-OHL-W-2.0 hardware / Apache-2.0 software — `tool, robotics, robotic-arm, open-hardware, hybrid-manufacturing, ROS2, steal-from`
 - [markdown-preview-pluk](entities/tools/markdown-preview-pluk.md) — native macOS markdown previewer with LaTeX + Mermaid; cross-wiki stub (canonical in OSINT wiki); tangential workflow tip for wiki authors — `tool, markdown, previewer, macOS, LaTeX, Mermaid, cross-wiki-stub`
 

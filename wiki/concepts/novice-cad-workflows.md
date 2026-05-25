@@ -11,6 +11,7 @@ related:
   - concepts/shape-changing-fdm-interfaces.md
   - entities/printers/flashforge-adventurer-5m.md
   - sources/2025-arslan-tinkerxr-ar-cad-novices.md
+  - entities/tools/cursor.md
 maturity: draft
 created: 2026-05-23
 updated: 2026-05-23
@@ -42,7 +43,7 @@ Your first jobs are **calibration and trust-building**, not CAD:
 |------|------|------|--------|
 | **Download STLs** | $0 | Always first choice | Import into **Orca-Flashforge** |
 | **[Tinkercad](https://www.tinkercad.com)** | $0 browser | First original parts (hooks, brackets, boxes) | Export STL → Orca-Flashforge |
-| **Claude.ai + paste-then-ask** | Free tier | Troubleshoot prints, pick filament | No geometry — advice only (@concepts/vlm-in-manufacturing.md) |
+| **Cursor Chat + `@` wiki files** | Cursor Pro ($20/mo) | Troubleshoot prints, pick filament | No geometry — advice only (@concepts/vlm-in-manufacturing.md, @entities/tools/cursor.md) |
 
 Tinkercad is the baseline in @sources/2025-arslan-tinkerxr-ar-cad-novices.md's user study — good enough for key hangers, cable clips, and dimensioned holders. You do **not** need Fusion 360, Blender, or AI generators yet.
 

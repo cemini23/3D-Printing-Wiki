@@ -6,7 +6,7 @@ A local knowledge base for setting up and operating a Bambu Labs 3D printer for 
 
 ## Start here
 
-**Flashforge Adventurer 5M reader?** → [`FRIEND-SETUP.md`](FRIEND-SETUP.md) — clone, Obsidian, Claude.ai, first-night reading order. $0 setup.
+**Flashforge Adventurer 5M reader?** → [`FRIEND-SETUP.md`](FRIEND-SETUP.md) — clone, Obsidian + **Cursor Pro**, first-night reading order.
 
 **Bambu reader?** Continue below.
 
