@@ -123,3 +123,10 @@ Cited primary sources (academic papers, vendor docs) remain under their original
 - Maturity: `draft` for most pages; iterating
 
 See [`ROADMAP.md`](ROADMAP.md) for active workstreams and [`wiki/log.md`](wiki/log.md) for full ingest history.
+
+## Related
+
+- Methodology newsletter: [Outlier Weekly](https://outlierweekly.substack.com)
+- Wiki federation hub: [cemini-claude-code-CCC](https://github.com/cemini23/cemini-claude-code-CCC)
+- Agent toolkit: [wikilint](https://github.com/cemini23/wikilint) · [vet](https://github.com/cemini23/vet) · [ara-schema](https://github.com/cemini23/ara-schema)
+- Sibling wikis: [SEO/GEO](https://github.com/cemini23/SEO-GEO-B-M-Wiki) · [Cybersecurity](https://github.com/cemini23/Cybersecurity-wiki) · [Image Gen](https://github.com/cemini23/uncensored-image-gen-wiki)
