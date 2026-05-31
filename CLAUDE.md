@@ -129,6 +129,7 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 | Alias | Path | Description |
 |-------|------|-------------|
 | `osint-wiki` | `../../OSINT WORKSPACE/wiki/` | Financial research, quant finance, prediction markets, CeminiSuite, RL for trading |
+| `gambling-wiki` | `../Gambling wiki/wiki/` | Sports betting, casino, poker, DFS, best ball |
 | `image-gen-wiki` | `../Image gen/wiki/` | Uncensored image generation, model cataloging, ComfyUI, LoRA, persona/character ops |
 | `seo-wiki` | `../SEO:GEO B&M Business/wiki/` | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
 | `3d-printing-wiki` | `wiki/` | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |

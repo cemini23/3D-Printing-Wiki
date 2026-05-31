@@ -91,11 +91,12 @@ If you're new to Bambu and reading this wiki to set up a printer for the first t
 
 ## Cemini wiki federation
 
-**Six** wikis + private **Cemini Financial Suite**. Cross-links: `@<alias>/path/to/page.md` (`CLAUDE.md` → Related Wikis).
+**Seven** wikis + private **Cemini Financial Suite**. Cross-links: `@<alias>/path/to/page.md` (`CLAUDE.md` → Related Wikis).
 
 | Alias | Repository | Visibility | Focus |
 |-------|------------|------------|--------|
 | **`3d-printing-wiki`** | **This repo** ([3D-Printing-Wiki](https://github.com/cemini23/3D-Printing-Wiki)) | **Public** | FDM/FFF, Bambu, slicers, print farms |
+| `gambling-wiki` | [Gambling-wiki](https://github.com/cemini23/Gambling-wiki) | **Public** | Sports betting, casino, poker, DFS |
 | `ccc-wiki` | [cemini-claude-code-CCC](https://github.com/cemini23/cemini-claude-code-CCC) | **Public** | Cursor / Claude Code workflow, MCP |
 | `image-gen-wiki` | [uncensored-image-gen-wiki](https://github.com/cemini23/uncensored-image-gen-wiki) | Public | Image / video generation |
 | `seo-wiki` | [SEO-GEO-B-M-Wiki](https://github.com/cemini23/SEO-GEO-B-M-Wiki) | Public | Local SEO, GEO/AEO |
