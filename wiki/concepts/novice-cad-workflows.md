@@ -9,17 +9,18 @@ related:
   - concepts/ai-design-tools.md
   - concepts/vlm-in-manufacturing.md
   - concepts/shape-changing-fdm-interfaces.md
+  - concepts/open-source-legged-robotics.md
   - entities/printers/flashforge-adventurer-5m.md
   - sources/2025-arslan-tinkerxr-ar-cad-novices.md
   - entities/tools/cursor.md
 maturity: draft
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-06-01
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/filaments-baseline.md @concepts/ai-design-tools.md @concepts/vlm-in-manufacturing.md @entities/printers/flashforge-adventurer-5m.md @sources/2025-arslan-tinkerxr-ar-cad-novices.md
+@concepts/fdm-printing.md @concepts/filaments-baseline.md @concepts/ai-design-tools.md @concepts/vlm-in-manufacturing.md @concepts/open-source-legged-robotics.md @entities/printers/flashforge-adventurer-5m.md @sources/2025-arslan-tinkerxr-ar-cad-novices.md
 
 ## Raw Concept
 
@@ -35,7 +36,7 @@ Your first jobs are **calibration and trust-building**, not CAD:
 2. [@entities/tools/kickstarter-autodesk-fdm-protocol.md] FDM Test V4 on stock PLA profile.
 3. Download someone else's proven STL (Printables, Thingiverse, MakerWorld) before you model anything original.
 
-**Skip entirely in week 1:** @concepts/print-farm-operations.md, @concepts/am-as-a-service.md, @concepts/shape-changing-fdm-interfaces.md, security/MaaS pages.
+**Skip entirely in week 1:** @concepts/print-farm-operations.md, @concepts/am-as-a-service.md, @concepts/shape-changing-fdm-interfaces.md, @concepts/open-source-legged-robotics.md, security/MaaS pages.
 
 ### Week 2–4 — simple CAD without new hardware
 

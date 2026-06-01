@@ -33,6 +33,11 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [Single-Material 4D via PvP Strain Trapping](sources/2025-iqbal-single-material-4d-pvp.md) — desktop FFF + commercial SMP; ~50% trapped strain; lattice expansion unit cells — `4D, SMP, PvP, FFF, metamaterial`
 - [NAT-LCE DIW with Hybrid Cooling](sources/2026-li-lce-nat-diw-hybrid-cooling.md) — DIW liquid-crystal elastomer; background-only for FFF wiki — `LCE, DIW, soft-robotics, background`
 - [TinkerXR — AR CAD for Novices](sources/2025-arslan-tinkerxr-ar-cad-novices.md) — SCF '25; Quest 3 in-situ CSG; not day-1 — compare Tinkercad baseline in @concepts/novice-cad-workflows.md — `AR, CAD, novice, open-source`
+- [Berkeley Humanoid Lite — Open-Source 3D-Printed Humanoid](sources/2025-chi-berkeley-humanoid-lite.md) — cycloidal printed gearboxes; <$5k; RL sim-to-real — `robotics, humanoid, open-source, FDM`
+- [MEVITA — Open-Source Bipedal Robot (Sheet Metal)](sources/2025-kawaharazuka-mevita-bipedal.md) — JSK Tokyo; critiques fragile print-only bipeds — `robotics, bipedal, open-source`
+- [MEVIUS — E-Commerce Quadruped](sources/2024-kawaharazuka-mevius-quadruped.md) — metal quadruped for outdoor durability — `robotics, quadruped, open-source`
+- [eFlesh — 3D-Printed Magnetic Tactile Sensors](sources/2025-pattabiraman-eflesh-magnetic-tactile.md) — hobby FDM + magnets + Hall PCB — `robotics, tactile, FDM`
+- [M3D-skin — Multi-Material FDM Tactile Sensor](sources/2025-yoshimura-m3d-skin-tactile-fdm.md) — conductive TPU infill sensing — `robotics, tactile, TPU, multi-material`
 
 ---
 
@@ -101,6 +106,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [gracia.ai — Gaussian Splatting volumetric video (3D-export angle)](concepts/2026-05-13_gracia-ai-volumetric-3d-export.md) — cross-wiki stub routed from ingest — `cross-wiki`
 - [Shape-Changing Interfaces — FDM and Adjacent Modalities](concepts/shape-changing-fdm-interfaces.md) — hub: PvP SMP 4D, DuoMorph pneumatics, FluxLab SLA contrast, LCE background — `shape-changing, 4D, pneumatic, SMP, maker`
 - [Novice CAD Workflows — What to Use When You're Just Starting](concepts/novice-cad-workflows.md) — week-1 download STLs → week-2 Tinkercad; explicitly skips print-farm / shape-changing — `beginner, CAD, Tinkercad, day-1, workflow`
+- [Open-Source Legged Robotics — FDM Platforms and Printed Tactile Sensing](concepts/open-source-legged-robotics.md) — humanoid/quadruped OS platforms + eFlesh/M3D-skin; advanced, not day-1 — `robotics, open-source, tactile, legged`
 
 ---
 

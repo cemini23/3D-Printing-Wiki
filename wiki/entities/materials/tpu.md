@@ -13,15 +13,18 @@ related:
   - entities/materials/asa.md
   - entities/tools/rebot-devarm.md
   - concepts/shape-changing-fdm-interfaces.md
+  - concepts/open-source-legged-robotics.md
   - sources/2026-li-duomorph-fdm-pneumatic.md
+  - sources/2025-yoshimura-m3d-skin-tactile-fdm.md
+  - sources/2025-pattabiraman-eflesh-magnetic-tactile.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-23
+updated: 2026-06-01
 ---
 
 ## Relations
 
-@concepts/filaments-baseline.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/tools/rebot-devarm.md
+@concepts/filaments-baseline.md @concepts/fdm-printing.md @concepts/open-source-legged-robotics.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/tools/rebot-devarm.md
 
 ## Raw Concept
 
@@ -57,6 +60,8 @@ TPU comes in different stiffness grades, labeled by **Shore A hardness** — a s
 - **High-temperature environments.** TPU softens around 80°C — lower than HDT of any rigid filament. Don't put TPU parts in cars in summer.
 - **High-precision, high-detail prints.** TPU's flexibility means small features (text, sharp corners, fine threads) print noticeably softer/blurred than on PLA.
 - **Beginner first-month prints.** TPU is the highest-friction filament to feed — bowden tubes, sharp PTFE bends, and rapid travel moves all cause feeding failures. **Direct-drive extruder strongly preferred** (Bambu's printers are direct-drive — good).
+
+**Research note:** @sources/2025-yoshimura-m3d-skin-tactile-fdm.md pairs **TPU + conductive TPU** infill for printed pressure sensors — requires **multi-material FDM**, not a typical single-nozzle first printer (@concepts/open-source-legged-robotics.md).
 
 ### Specs (Bambu TPU 95A HF) [Source: https://bambulab.com/en-us/filament/guide (retrieved 2026-05-06)]
 

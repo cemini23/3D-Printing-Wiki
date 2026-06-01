@@ -14,6 +14,7 @@ related:
   - concepts/shape-changing-fdm-interfaces.md
   - sources/2026-li-duomorph-fdm-pneumatic.md
   - sources/2025-iqbal-single-material-4d-pvp.md
+  - sources/2025-chi-berkeley-humanoid-lite.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-23
@@ -21,7 +22,7 @@ updated: 2026-05-23
 
 ## Relations
 
-@concepts/filaments-baseline.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md
+@concepts/filaments-baseline.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @sources/2025-chi-berkeley-humanoid-lite.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md
 
 ## Raw Concept
 

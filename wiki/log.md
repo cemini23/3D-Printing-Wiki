@@ -2,6 +2,16 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-01] ingest | Cluster B — open-source legged robotics + FDM tactile (5 papers)
+
+- Ingest pass 9 — robotics cluster from inbox (37 → 32 PDFs).
+- **5 source pages:** Berkeley Humanoid Lite, MEVITA, MEVIUS, eFlesh, M3D-skin.
+- **1 concept hub:** `open-source-legged-robotics.md` — FDM vs sheet-metal durability split; tactile sensing paths; novice skip list.
+- **Updated:** `fdm-printing.md`, `novice-cad-workflows.md`, `flashforge-adventurer-5m.md`, `tpu.md`, `index.md`.
+- PDFs moved to `raw-sources/` with slug renames.
+
+---
+
 ## [2026-06-01] brief-install | K93 federated daily research digest
 
 - Processed brief `2026-06-01_k93-3dprinting-digest-from-osint.md` — install federation digest from OSINT workspace.

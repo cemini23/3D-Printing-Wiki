@@ -10,11 +10,12 @@ related:
   - entities/printers/a1.md
   - entities/printers/p1s.md
   - concepts/shape-changing-fdm-interfaces.md
+  - concepts/open-source-legged-robotics.md
   - concepts/novice-cad-workflows.md
   - entities/tools/cursor.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-23
+updated: 2026-06-01
 ---
 
 ## Relations
@@ -125,6 +126,7 @@ Does **NOT** apply to the 5M:
 - [@concepts/ai-design-tools.md] — the Meshy/RodinAI/3DAIStudio "send to Bambu Studio" pipeline; the friend can still use these tools but the slicer endpoint is Orca-Flashforge, not Bambu Studio
 - [@concepts/print-farm-operations.md], [@concepts/am-as-a-service.md], [@concepts/print-job-scheduling.md] — multi-printer / commercial-scale ops; **not relevant** with one hobby machine
 - [@concepts/shape-changing-fdm-interfaces.md] — experimental 4D/pneumatic/AR maker research; skip until basic PLA prints are boring
+- [@concepts/open-source-legged-robotics.md] — humanoids, quadrupeds, conductive-TPU tactile skins; multi-month robotics projects, not day-1
 
 ### Day-1 setup priorities (5M-specific)
 

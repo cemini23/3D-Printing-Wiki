@@ -8,7 +8,7 @@ Active workstreams, open decisions, and the done log. Read at session start; upd
 
 ### W1 — Initial research ingest pass
 
-**Status:** Ingest passes 1–6 complete through 2026-05-07; **ingest pass 7** (shape-changing / 4D FDM cluster, 4 papers) done 2026-05-23. **38 PDFs/docx remaining** in inbox. Wiki has **55 pages** (22 source + 19 concept + …).
+**Status:** Ingest passes 1–8 complete through 2026-05-23; **ingest pass 9** (open-source legged robotics + FDM tactile, 5 papers) done 2026-06-01. **32 PDFs/docx remaining** in inbox. Wiki has **66 pages**.
 
 Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-printing papers. Curation surfaces practical takeaways for the reader; some papers may go in as background-context one-liners rather than full pages.
 
@@ -50,6 +50,7 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-05-23 | Ingest pass 7 — shape-changing / 4D FDM cluster (4 papers) | Cluster A from inbox triage. 4 source + 1 concept = 5 pages. DuoMorph, FluxLab (SLA, not FFF), Iqbal PvP, NAT-LCE stub. Hub: `shape-changing-fdm-interfaces.md`. Inbox 42 → 38. |
 | 2026-05-23 | Ingest pass 8 — TinkerXR + novice CAD workflows | Beginner handoff path (not print-farm). 1 source + 1 concept; `FRIEND-SETUP.md` week-2 Tinkercad pointer. Inbox 38 → 37. |
 | 2026-06-01 | Federated daily research digest (K93) | Exa discovery + inbox PDF fetch from @osint-wiki federation. Scripts: `daily_research_digest_run.py`, `daily_research_fetch.py`, domain `daily_research_config.yaml`. Meta page + sweep template. LaunchAgent `com.cemini.daily-research-digest.3d-printing`. Does not auto-ingest. |
+| 2026-06-01 | Ingest pass 9 — open-source legged robotics + FDM tactile (5 papers) | Berkeley Humanoid Lite, MEVITA, MEVIUS, eFlesh, M3D-skin. Hub: `open-source-legged-robotics.md`. Inbox 37 → 32. |
 
 ---
 
