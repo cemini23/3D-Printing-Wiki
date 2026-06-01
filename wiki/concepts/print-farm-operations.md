@@ -10,6 +10,7 @@ related:
   - concepts/fdm-printing.md
   - concepts/bambu-ecosystem-closed-loop.md
   - concepts/ai-design-tools.md
+  - meta/daily-research-digest-cadence.md
   - sources/2025-wang-collaborative-parameter-recommender.md
   - sources/2025-ivkic-cost-benefit-maas.md
   - sources/2025-surynek-sequential-printing-cegar.md
@@ -17,12 +18,12 @@ related:
   - entities/tools/rebot-devarm.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-16
+updated: 2026-06-01
 ---
 
 ## Relations
 
-@concepts/print-job-scheduling.md @concepts/am-as-a-service.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/ai-design-tools.md @sources/2025-wang-collaborative-parameter-recommender.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2025-surynek-sequential-printing-cegar.md @sources/2026-hatton-parallelobox-aabb-decomposition.md @entities/tools/rebot-devarm.md
+@concepts/print-job-scheduling.md @concepts/am-as-a-service.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/ai-design-tools.md @meta/daily-research-digest-cadence.md @sources/2025-wang-collaborative-parameter-recommender.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2025-surynek-sequential-printing-cegar.md @sources/2026-hatton-parallelobox-aabb-decomposition.md @entities/tools/rebot-devarm.md
 
 ## Raw Concept
 

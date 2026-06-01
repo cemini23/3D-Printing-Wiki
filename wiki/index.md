@@ -101,3 +101,10 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [gracia.ai — Gaussian Splatting volumetric video (3D-export angle)](concepts/2026-05-13_gracia-ai-volumetric-3d-export.md) — cross-wiki stub routed from ingest — `cross-wiki`
 - [Shape-Changing Interfaces — FDM and Adjacent Modalities](concepts/shape-changing-fdm-interfaces.md) — hub: PvP SMP 4D, DuoMorph pneumatics, FluxLab SLA contrast, LCE background — `shape-changing, 4D, pneumatic, SMP, maker`
 - [Novice CAD Workflows — What to Use When You're Just Starting](concepts/novice-cad-workflows.md) — week-1 download STLs → week-2 Tinkercad; explicitly skips print-farm / shape-changing — `beginner, CAD, Tinkercad, day-1, workflow`
+
+---
+
+## Meta
+
+- [Daily research digest cadence (3d-printing)](meta/daily-research-digest-cadence.md) — federated Exa/inbox discovery loop (K93); sweep reports in `wiki/sweeps/` — `meta, automation, federation, k93`
+- [Daily research sweep template](sweeps/_daily-template.md) — copy scaffold for `wiki/sweeps/YYYY-MM-DD-daily.md` — `meta, template, sweep`

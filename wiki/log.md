@@ -2,6 +2,17 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-01] brief-install | K93 federated daily research digest
+
+- Processed brief `2026-06-01_k93-3dprinting-digest-from-osint.md` — install federation digest from OSINT workspace.
+- **Scripts:** `daily_research_digest_run.py`, `daily_research_fetch.py`, `daily_research_config.yaml` (domain-tuned topics).
+- **Meta:** `wiki/meta/daily-research-digest-cadence.md`, `wiki/sweeps/_daily-template.md`.
+- **Cross-wiki:** backlink on `@osint-wiki/concepts/federated-daily-research-digest.md`.
+- **Updated:** `wiki/index.md`, `ROADMAP.md`, `.env.example`.
+- LaunchAgent: `com.cemini.daily-research-digest.3d-printing` @ 08:15 — operator load not verified.
+
+---
+
 ## [2026-05-23] friend-handoff | Cursor Pro replaces Claude.ai / Claude Code
 
 - Rewrote `FRIEND-SETUP.md` for **Cursor Pro** ($20/mo): Open Folder, Chat + `@` wiki paths, Chat-vs-Agent guidance, minimal settings (no MCP day 1).

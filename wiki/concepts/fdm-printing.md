@@ -20,6 +20,7 @@ related:
   - concepts/ai-design-tools.md
   - concepts/shape-changing-fdm-interfaces.md
   - concepts/novice-cad-workflows.md
+  - meta/daily-research-digest-cadence.md
   - entities/slicers/bambu-studio.md
   - entities/slicers/orcaslicer.md
   - entities/tools/kickstarter-autodesk-fdm-protocol.md
@@ -55,12 +56,12 @@ related:
   - entities/printers/a1.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-23
+updated: 2026-06-01
 ---
 
 ## Relations
 
-@concepts/input-shaping.md @concepts/extrusion-control.md @concepts/fault-detection.md @concepts/high-speed-fdm.md @concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/print-farm-operations.md @concepts/print-job-scheduling.md @concepts/am-as-a-service.md @concepts/filaments-baseline.md @concepts/vlm-in-manufacturing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/ai-design-tools.md @concepts/shape-changing-fdm-interfaces.md @entities/slicers/bambu-studio.md @entities/slicers/orcaslicer.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @sources/2025-aung-adaptive-input-shaper.md @sources/2025-lin-camera-extrusion-optimization.md @sources/2023-waheed-acoustic-cnn-fault-detection.md @sources/2025-hoteit-closed-loop-extrusion-lqr.md @sources/2025-waheed-multimodal-sensor-fusion.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-wang-collaborative-parameter-recommender.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2025-surynek-sequential-printing-cegar.md @sources/2026-hatton-parallelobox-aabb-decomposition.md @sources/2026-bambu-filament-guide.md @sources/2026-mahjourian-vlm-iris.md @sources/2025-chen-tau-schema-vlm.md @sources/2025-margadji-cipher.md @sources/2026-bambu-toolchain-audit.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
+@concepts/input-shaping.md @concepts/extrusion-control.md @concepts/fault-detection.md @concepts/high-speed-fdm.md @concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/print-farm-operations.md @concepts/print-job-scheduling.md @concepts/am-as-a-service.md @concepts/filaments-baseline.md @concepts/vlm-in-manufacturing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/ai-design-tools.md @concepts/shape-changing-fdm-interfaces.md @meta/daily-research-digest-cadence.md @entities/slicers/bambu-studio.md @entities/slicers/orcaslicer.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @sources/2025-aung-adaptive-input-shaper.md @sources/2025-lin-camera-extrusion-optimization.md @sources/2023-waheed-acoustic-cnn-fault-detection.md @sources/2025-hoteit-closed-loop-extrusion-lqr.md @sources/2025-waheed-multimodal-sensor-fusion.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-wang-collaborative-parameter-recommender.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2025-surynek-sequential-printing-cegar.md @sources/2026-hatton-parallelobox-aabb-decomposition.md @sources/2026-bambu-filament-guide.md @sources/2026-mahjourian-vlm-iris.md @sources/2025-chen-tau-schema-vlm.md @sources/2025-margadji-cipher.md @sources/2026-bambu-toolchain-audit.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
 
 ## Raw Concept
 
