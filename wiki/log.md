@@ -2,6 +2,15 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-01] ingest | Passes 10–16 — final 32 inbox PDFs (inbox cleared)
+
+- **32 source pages** across volumetric AM, soft robotics/DIW, niche FDM apps, industrial monitoring, photonics background, research tools.
+- **6 concept hubs:** `volumetric-additive-manufacturing.md`, `soft-robotics-fdm-diw.md`, `niche-fdm-applications.md`, `industrial-am-monitoring.md`, `printed-photonics-background.md`, `fdm-research-tools.md`.
+- **Updated:** `fdm-printing.md`, `index.md`, `ROADMAP.md`; bidirectional links via `fix_bidirectional_gaps.py`.
+- All PDFs moved to `raw-sources/` with slug renames. **Inbox 32 → 0.** Wiki **66 → 104** pages. Lint clean.
+
+---
+
 ## [2026-06-01] ingest | Cluster B — open-source legged robotics + FDM tactile (5 papers)
 
 - Ingest pass 9 — robotics cluster from inbox (37 → 32 PDFs).

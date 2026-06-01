@@ -9,6 +9,7 @@ related:
   - sources/2025-ivkic-cost-benefit-maas.md
   - sources/2025-surynek-sequential-printing-cegar.md
   - sources/2026-hatton-parallelobox-aabb-decomposition.md
+  - sources/2025-schenka-noise-aware-parallel-optimization.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-06

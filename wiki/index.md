@@ -38,7 +38,38 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [MEVIUS — E-Commerce Quadruped](sources/2024-kawaharazuka-mevius-quadruped.md) — metal quadruped for outdoor durability — `robotics, quadruped, open-source`
 - [eFlesh — 3D-Printed Magnetic Tactile Sensors](sources/2025-pattabiraman-eflesh-magnetic-tactile.md) — hobby FDM + magnets + Hall PCB — `robotics, tactile, FDM`
 - [M3D-skin — Multi-Material FDM Tactile Sensor](sources/2025-yoshimura-m3d-skin-tactile-fdm.md) — conductive TPU infill sensing — `robotics, tactile, TPU, multi-material`
-
+- [Bed Rotation Mechanism for In-Situ Photogrammetric FDM QA](sources/2011-roberts-bed-rotation-photogrammetry.md) — ingest pass 10–16 — `paper, FDM, research-platform, photogrammetry, legacy`
+- [SplatOverflow — Gaussian Splat Hardware Troubleshooting](sources/2024-kwatra-splatoverflow-troubleshooting.md) — ingest pass 10–16 — `paper, tooling, 3D-scan, CAD, HCI`
+- [3D-Printed Canine Head Phantom for Veterinary Radiotherapy QA](sources/2024-rotoo-canine-head-phantom-vet.md) — ingest pass 10–16 — `paper, medical, polyjet, phantom, background`
+- [THz EM Vortices from Commercial FDM Prints](sources/2025-adams-fdm-thz-em-vortices.md) — ingest pass 10–16 — `paper, photonics, FDM, THz, background`
+- [Neuromorphic Anomaly Detection in Laser Powder Bed Fusion](sources/2025-banerjee-neuromorphic-lpbf.md) — ingest pass 10–16 — `paper, LPBF, neuromorphic, anomaly-detection, industrial, background`
+- [Stretchable Strain Sensors via Direct Ink Writing on Silicone](sources/2025-cha-diw-stretchable-strain-sensors.md) — ingest pass 10–16 — `paper, DIW, sensors, soft-robotics`
+- [Automated Fabrication of Magnetic Soft Microrobots](sources/2025-clancy-magnetic-soft-microrobots.md) — ingest pass 10–16 — `paper, soft-robotics, magnetic, DIW, background`
+- [X-ray CT + AI for AM Process Protocol Prediction (MEX)](sources/2025-khod-xray-ct-am-protocol-ai.md) — ingest pass 10–16 — `paper, AI, X-ray-CT, MEX, process-parameter, background`
+- [3D Cal — Open-Source Tactile Sensor Calibration via 3D Printer](sources/2025-kota-3d-cal-tactile-calibration.md) — ingest pass 10–16 — `paper, tactile, open-source, FDM, tooling`
+- [TS-ACES — Scalable Smart Factory Embedding for 3D Print Farms](sources/2025-leet-ts-aces-smart-factory.md) — ingest pass 10–16 — `paper, smart-factory, scheduling, print-farm, formal-methods`
+- [Microscale UV Nanosecond Laser Sintering of Cu Nanoparticles](sources/2025-liang-microscale-sls-cu-uv.md) — ingest pass 10–16 — `paper, SLS, metal, microscale, background`
+- [Five-Finger Soft Hand — Skin and Skeleton 3D Printed as One Unit](sources/2025-miyama-soft-hand-skin-skeleton.md) — ingest pass 10–16 — `paper, soft-robotics, FDM, hand, JSK`
+- [Mobile Food Printing in Professional Kitchens — Novice Chef Study](sources/2025-mobile-food-printing-kitchens.md) — ingest pass 10–16 — `paper, food-printing, 3DFP, HCI, background`
+- [Slug-Mapper — 3D Printer Repurposed for ULF MRI Field Mapping](sources/2025-morris-slug-mapper-ulfl-mri.md) — ingest pass 10–16 — `paper, tooling, open-source, repurpose, MRI`
+- [SE-WDNN Multi-Target Prediction for Continuous-Fiber AM Composites](sources/2025-parvaresh-cfrc-am-se-wdnn.md) — ingest pass 10–16 — `paper, ML, composites, Markforged, background`
+- [Noise-Aware Optimization for Parallel Manufacturing Systems](sources/2025-schenka-noise-aware-parallel-optimization.md) — ingest pass 10–16 — `paper, print-farm, Bayesian-optimization, variability`
+- [SLS Laser Power Control Sensitivity to Temperature Measurement Noise](sources/2025-toshani-sls-laser-power-noise.md) — ingest pass 10–16 — `paper, SLS, control, uncertainty, background`
+- [Production and Manufacturing of 3D Printed Acoustic Guitars](sources/2025-tran-3d-printed-acoustic-guitars.md) — ingest pass 10–16 — `paper, FDM, PLA, musical-instrument, maker`
+- [3D-Printed Biocompatible Ionic Polymer Membranes for Soft Actuators](sources/2025-truempler-ionic-polymer-diw.md) — ingest pass 10–16 — `paper, soft-robotics, DIW, actuator, background`
+- [STL-to-Stokeslet — Hydrodynamics from Printable Mesh](sources/2026-cheng-stl-to-stokeslet.md) — ingest pass 10–16 — `paper, simulation, STL, background`
+- [Thermal Drawing of Fibers from 3D-Printed Preforms](sources/2026-demircali-thermal-drawing-preforms.md) — ingest pass 10–16 — `paper, hybrid-process, fiber, FDM, background`
+- [3D-Printed Lithographs for Microscopy Accessibility](sources/2026-faulkner-lithographs-microscopy.md) — ingest pass 10–16 — `paper, accessibility, lithograph, FDM, tactile-art`
+- [Technomolecular Materials — 3D-Printed 2D Nanosheets](sources/2026-hamoudi-technomolecular-nanosheets.md) — ingest pass 10–16 — `paper, nanotechnology, DIW, background`
+- [Tendon-Actuated Continuum Robots with Tapered TPU Backbone](sources/2026-hansen-tendon-actuated-tpu-backbone.md) — ingest pass 10–16 — `paper, soft-robotics, TPU, continuum, FDM`
+- [TastePrint — Layer-Wise Taste via Airbrushed Seasoning](sources/2026-miyatake-tasteprint-food-printing.md) — ingest pass 10–16 — `paper, food-printing, 3DFP, HCI`
+- [Robust LQR Control of Cementitious Material Extrusion (RCE/DIW)](sources/2026-mohammadi-rce-lqr-extrusion.md) — ingest pass 10–16 — `paper, extrusion, control, DIW, background`
+- [High-Resolution 3D-Printed Plastic Scintillators](sources/2026-moore-plastic-scintillators-sla.md) — ingest pass 10–16 — `paper, SLA, materials, background`
+- [Automatic Exposure Control for Tomographic VAM](sources/2026-orth-auto-exposure-vam.md) — ingest pass 10–16 — `paper, VAM, tomographic, process-control, background`
+- [LOCABINACONN — 3D-Printable All-Dielectric Inverse Design](sources/2026-passia-locabinaconn-dielectric-sla.md) — ingest pass 10–16 — `paper, SLA, inverse-design, photonics, background`
+- [3D-Printed Helical Waveguides for Smith-Purcell Radiation](sources/2026-taleb-helical-waveguide-2pp.md) — ingest pass 10–16 — `paper, photonics, 2PP, background`
+- [Unified Multiscale Printer — TVAM + Two-Photon Polymerization](sources/2026-unlu-unified-tvam-2pp.md) — ingest pass 10–16 — `paper, VAM, TVAM, 2PP, volumetric, background`
+- [Optical Phased Arrays on Lithium Tantalate (Background Stub)](sources/2026-yue-lithium-tantalate-opa.md) — ingest pass 10–16 — `paper, photonics, OPA, background, stub`
 ---
 
 ## Entities
@@ -107,7 +138,12 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [Shape-Changing Interfaces — FDM and Adjacent Modalities](concepts/shape-changing-fdm-interfaces.md) — hub: PvP SMP 4D, DuoMorph pneumatics, FluxLab SLA contrast, LCE background — `shape-changing, 4D, pneumatic, SMP, maker`
 - [Novice CAD Workflows — What to Use When You're Just Starting](concepts/novice-cad-workflows.md) — week-1 download STLs → week-2 Tinkercad; explicitly skips print-farm / shape-changing — `beginner, CAD, Tinkercad, day-1, workflow`
 - [Open-Source Legged Robotics — FDM Platforms and Printed Tactile Sensing](concepts/open-source-legged-robotics.md) — humanoid/quadruped OS platforms + eFlesh/M3D-skin; advanced, not day-1 — `robotics, open-source, tactile, legged`
-
+- [Volumetric Additive Manufacturing — Background Hub](concepts/volumetric-additive-manufacturing.md) — `VAM, TVAM, volumetric, LPBF, background, non-FFF`
+- [Soft Robotics — FDM, DIW, and Tactile Tooling](concepts/soft-robotics-fdm-diw.md) — `soft-robotics, DIW, tactile, TPU, advanced`
+- [Niche FDM Applications — Accessibility, Food, Music, Medical](concepts/niche-fdm-applications.md) — `applications, accessibility, food-printing, PLA, maker`
+- [Industrial AM — Monitoring, Smart Factories, and Metal Processes](concepts/industrial-am-monitoring.md) — `industrial, LPBF, SLS, smart-factory, ML, background`
+- [Printed Photonics and Metamaterials — Background](concepts/printed-photonics-background.md) — `photonics, SLA, 2PP, THz, background, stub-hub`
+- [FDM Research Tools — Repurposed Printers and Hybrid Processes](concepts/fdm-research-tools.md) — `research, tooling, photogrammetry, repurposed, hybrid`
 ---
 
 ## Meta

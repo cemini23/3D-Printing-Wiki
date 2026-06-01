@@ -8,7 +8,7 @@ Active workstreams, open decisions, and the done log. Read at session start; upd
 
 ### W1 — Initial research ingest pass
 
-**Status:** Ingest passes 1–8 complete through 2026-05-23; **ingest pass 9** (open-source legged robotics + FDM tactile, 5 papers) done 2026-06-01. **32 PDFs/docx remaining** in inbox. Wiki has **66 pages**.
+**Status:** Ingest passes 1–16 complete through 2026-06-01. **Inbox empty.** Wiki has **104 pages**.
 
 Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-printing papers. Curation surfaces practical takeaways for the reader; some papers may go in as background-context one-liners rather than full pages.
 
@@ -51,14 +51,22 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-05-23 | Ingest pass 8 — TinkerXR + novice CAD workflows | Beginner handoff path (not print-farm). 1 source + 1 concept; `FRIEND-SETUP.md` week-2 Tinkercad pointer. Inbox 38 → 37. |
 | 2026-06-01 | Federated daily research digest (K93) | Exa discovery + inbox PDF fetch from @osint-wiki federation. Scripts: `daily_research_digest_run.py`, `daily_research_fetch.py`, domain `daily_research_config.yaml`. Meta page + sweep template. LaunchAgent `com.cemini.daily-research-digest.3d-printing`. Does not auto-ingest. |
 | 2026-06-01 | Ingest pass 9 — open-source legged robotics + FDM tactile (5 papers) | Berkeley Humanoid Lite, MEVITA, MEVIUS, eFlesh, M3D-skin. Hub: `open-source-legged-robotics.md`. Inbox 37 → 32. |
+| 2026-06-01 | Ingest passes 10–16 — remaining 32 inbox PDFs | Six hubs: volumetric AM, soft robotics FDM/DIW, niche applications, industrial monitoring, photonics background, FDM research tools. 32 source pages. Inbox **empty**. Wiki 66 → 104 pages. |
 
 ---
 
 ## Backlog
 
-**Higher priority — next ingest passes:**
+**Higher priority — post-inbox:**
 
-- Pick next cluster from remaining 43 PDFs. Candidates: volumetric / neuromorphic AM (likely background-only); robotics / soft-robotics cluster (Berkeley Humanoid Lite, MEVITA, MEVIUS, tendon-actuated robots, eFlesh, M3D-skin) — adjacent to reader's Etsy product but not core; smart-fabric / shape-changing cluster (DuoMorph, FluxLab, single-material 4D-printed); a `process-parameter-tuning` concept page (pressure advance / linear advance / Klipper auto-calibration) referenced from `print-farm-operations.md` but not yet written.
+- Bambu-specific entity pages (X1C / P1S / A1 / A1 mini) once reader chooses model
+- `process-parameter-tuning` concept page (pressure advance / linear advance / Klipper auto-calibration)
+- Deep-read deferred papers (CIPHER p13+, Lin p16-32) on demand
+- Tier-2 sweep: VLM failure-mode papers
+
+**Completed — initial ingest pass:**
+
+- ~~Pick next cluster from remaining PDFs~~ — **done 2026-06-01; inbox empty**
 - CIPHER pages 13+ deferred deep-read — methods + extended figures (out-of-distribution validation; end-to-end autonomous fabrication demo). Pages 1-12 deep-read 2026-05-07 covers headline metric + ablation. Revisit if a question arises about VLA out-of-distribution behavior.
 - Tier-2 sweep target: VLM-in-manufacturing **failure-mode** papers — current cluster is all successful demos; production-deployment failure analysis would round it out (called out as missing in `vlm-in-manufacturing.md`).
 - Bambu-specific entity pages (X1C / P1S / A1 / A1 mini) once reader chooses model — completes the printer-vs-material compatibility hop that materials cluster currently leaves at the table-row level.

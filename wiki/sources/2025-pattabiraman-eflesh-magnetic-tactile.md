@@ -8,6 +8,9 @@ related:
   - concepts/fdm-printing.md
   - entities/materials/tpu.md
   - sources/2025-yoshimura-m3d-skin-tactile-fdm.md
+  - concepts/soft-robotics-fdm-diw.md
+  - sources/2025-clancy-magnetic-soft-microrobots.md
+  - sources/2025-kota-3d-cal-tactile-calibration.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-06-01

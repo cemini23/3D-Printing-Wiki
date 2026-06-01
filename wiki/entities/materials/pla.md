@@ -15,6 +15,8 @@ related:
   - sources/2026-li-duomorph-fdm-pneumatic.md
   - sources/2025-iqbal-single-material-4d-pvp.md
   - sources/2025-chi-berkeley-humanoid-lite.md
+  - concepts/niche-fdm-applications.md
+  - sources/2025-tran-3d-printed-acoustic-guitars.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-23

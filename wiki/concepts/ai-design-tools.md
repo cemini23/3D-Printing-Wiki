@@ -17,6 +17,8 @@ related:
   - sources/2025-arslan-tinkerxr-ar-cad-novices.md
   - sources/2026-bambu-toolchain-audit.md
   - entities/slicers/bambu-studio.md
+  - concepts/fdm-research-tools.md
+  - sources/2024-kwatra-splatoverflow-troubleshooting.md
 maturity: draft
 created: 2026-05-07
 updated: 2026-06-01

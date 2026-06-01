@@ -17,6 +17,9 @@ related:
   - sources/2026-li-duomorph-fdm-pneumatic.md
   - sources/2025-yoshimura-m3d-skin-tactile-fdm.md
   - sources/2025-pattabiraman-eflesh-magnetic-tactile.md
+  - concepts/soft-robotics-fdm-diw.md
+  - sources/2026-hansen-tendon-actuated-tpu-backbone.md
+  - sources/2025-miyama-soft-hand-skin-skeleton.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-06-01

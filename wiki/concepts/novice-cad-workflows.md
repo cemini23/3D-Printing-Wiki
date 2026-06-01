@@ -13,6 +13,9 @@ related:
   - entities/printers/flashforge-adventurer-5m.md
   - sources/2025-arslan-tinkerxr-ar-cad-novices.md
   - entities/tools/cursor.md
+  - concepts/niche-fdm-applications.md
+  - sources/2025-tran-3d-printed-acoustic-guitars.md
+  - sources/2026-faulkner-lithographs-microscopy.md
 maturity: draft
 created: 2026-05-23
 updated: 2026-06-01

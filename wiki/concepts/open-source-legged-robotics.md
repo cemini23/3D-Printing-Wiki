@@ -14,6 +14,9 @@ related:
   - sources/2024-kawaharazuka-mevius-quadruped.md
   - sources/2025-pattabiraman-eflesh-magnetic-tactile.md
   - sources/2025-yoshimura-m3d-skin-tactile-fdm.md
+  - concepts/soft-robotics-fdm-diw.md
+  - sources/2026-hansen-tendon-actuated-tpu-backbone.md
+  - sources/2025-miyama-soft-hand-skin-skeleton.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-06-01

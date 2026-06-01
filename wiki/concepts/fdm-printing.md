@@ -20,7 +20,12 @@ related:
   - concepts/ai-design-tools.md
   - concepts/shape-changing-fdm-interfaces.md
   - concepts/open-source-legged-robotics.md
-  - concepts/novice-cad-workflows.md
+  - concepts/soft-robotics-fdm-diw.md
+  - concepts/niche-fdm-applications.md
+  - concepts/volumetric-additive-manufacturing.md
+  - concepts/industrial-am-monitoring.md
+  - concepts/printed-photonics-background.md
+  - concepts/fdm-research-tools.md
   - meta/daily-research-digest-cadence.md
   - entities/slicers/bambu-studio.md
   - entities/slicers/orcaslicer.md
@@ -60,6 +65,21 @@ related:
   - entities/printers/x1c.md
   - entities/printers/p1s.md
   - entities/printers/a1.md
+  - concepts/industrial-am-monitoring.md
+  - concepts/fdm-research-tools.md
+  - concepts/volumetric-additive-manufacturing.md
+  - concepts/niche-fdm-applications.md
+  - concepts/printed-photonics-background.md
+  - concepts/soft-robotics-fdm-diw.md
+  - sources/2026-unlu-unified-tvam-2pp.md
+  - sources/2026-demircali-thermal-drawing-preforms.md
+  - sources/2011-roberts-bed-rotation-photogrammetry.md
+  - sources/2025-parvaresh-cfrc-am-se-wdnn.md
+  - sources/2025-adams-fdm-thz-em-vortices.md
+  - sources/2026-hamoudi-technomolecular-nanosheets.md
+  - sources/2024-rotoo-canine-head-phantom-vet.md
+  - sources/2026-cheng-stl-to-stokeslet.md
+  - concepts/novice-cad-workflows.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-06-01

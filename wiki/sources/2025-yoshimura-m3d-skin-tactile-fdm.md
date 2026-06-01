@@ -9,6 +9,8 @@ related:
   - entities/materials/tpu.md
   - sources/2025-pattabiraman-eflesh-magnetic-tactile.md
   - sources/2024-kawaharazuka-mevius-quadruped.md
+  - concepts/soft-robotics-fdm-diw.md
+  - sources/2025-cha-diw-stretchable-strain-sensors.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-06-01

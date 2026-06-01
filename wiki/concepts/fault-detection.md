@@ -13,6 +13,10 @@ related:
   - entities/printers/x1c.md
   - entities/printers/p1s.md
   - entities/printers/a1.md
+  - concepts/industrial-am-monitoring.md
+  - concepts/volumetric-additive-manufacturing.md
+  - sources/2025-banerjee-neuromorphic-lpbf.md
+  - sources/2026-orth-auto-exposure-vam.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-08

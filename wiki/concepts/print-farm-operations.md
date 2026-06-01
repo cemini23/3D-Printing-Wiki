@@ -16,6 +16,9 @@ related:
   - sources/2025-surynek-sequential-printing-cegar.md
   - sources/2026-hatton-parallelobox-aabb-decomposition.md
   - entities/tools/rebot-devarm.md
+  - concepts/industrial-am-monitoring.md
+  - sources/2025-schenka-noise-aware-parallel-optimization.md
+  - sources/2025-leet-ts-aces-smart-factory.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-06-01
