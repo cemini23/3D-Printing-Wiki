@@ -7,15 +7,14 @@ related:
   - concepts/extrusion-control.md
   - concepts/industrial-am-monitoring.md
   - concepts/soft-robotics-fdm-diw.md
-maturity: draft
-created: 2026-06-01
-updated: 2026-06-01
+  - sources/2025-looey-physics-informed-extrusion-dynamical.md
+updated: 2026-06-02
 read_status: skimmed
 ---
 
 ## Relations
 
-@concepts/extrusion-control.md @concepts/industrial-am-monitoring.md @concepts/soft-robotics-fdm-diw.md
+@concepts/extrusion-control.md @concepts/industrial-am-monitoring.md @concepts/soft-robotics-fdm-diw.md @sources/2025-looey-physics-informed-extrusion-dynamical.md
 
 ## Raw Concept
 

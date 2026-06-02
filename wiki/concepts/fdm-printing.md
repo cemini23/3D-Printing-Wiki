@@ -80,6 +80,7 @@ related:
   - sources/2024-rotoo-canine-head-phantom-vet.md
   - sources/2026-cheng-stl-to-stokeslet.md
   - concepts/novice-cad-workflows.md
+  - sources/2025-looey-physics-informed-extrusion-dynamical.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-06-01

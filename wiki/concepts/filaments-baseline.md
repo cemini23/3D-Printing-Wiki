@@ -18,6 +18,7 @@ related:
   - entities/printers/flashforge-adventurer-5m.md
   - concepts/shape-changing-fdm-interfaces.md
   - concepts/novice-cad-workflows.md
+  - sources/2026-06-02-digest-polymaker-abs-pro.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-23

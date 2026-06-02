@@ -8,15 +8,17 @@ related:
   - concepts/ai-design-tools.md
   - concepts/print-farm-operations.md
   - sweeps/_daily-template.md
+  - sweeps/2026-06-01-daily.md
+  - sweeps/2026-06-02-daily.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-02
 cross-wiki-source: "@osint-wiki/concepts/federated-daily-research-digest.md"
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/print-farm-operations.md @sweeps/_daily-template.md
+@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/print-farm-operations.md @sweeps/_daily-template.md @sweeps/2026-06-01-daily.md @sweeps/2026-06-02-daily.md
 
 - @osint-wiki/concepts/federated-daily-research-digest.md — federation install kit (K93 canonical)
 
@@ -58,6 +60,8 @@ launchctl load ~/Library/LaunchAgents/com.cemini.daily-research-digest.3d-printi
 Label must stay unique across federation wikis (`com.cemini.daily-research-digest.3d-printing`).
 
 [TENTATIVE 2026-06-01] LaunchAgent loaded status not verified in this session — operator should confirm `launchctl list | grep 3d-printing`.
+
+**Exa paper-lane caveat (2026-06-02):** `category: research paper` often returns Springer/Nature/ScienceDirect URLs, not arXiv — auto-fetch downloads **zero** PDFs unless hits include `arxiv.org`. Manual arXiv hunt or add `site:arxiv.org` queries to `daily_research_config.yaml` for overnight PDF drops.
 
 ## Snippets
 

@@ -9,14 +9,15 @@ related:
   - concepts/extrusion-control.md
   - sources/2026-bambu-toolchain-audit.md
   - entities/slicers/bambu-studio.md
+  - sources/2026-06-02-digest-orcaslicer-2-4-news.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-06-02
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/extrusion-control.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md
+@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/extrusion-control.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @sources/2026-06-02-digest-orcaslicer-2-4-news.md
 
 ## Raw Concept
 
@@ -74,6 +75,10 @@ If the reader tunes a Polymaker PETG profile in OrcaSlicer (say, K=0.045, retrac
 - **But**: cooling profile, layer speed ramps, perimeter ordering, and corner-acceleration tuning may have different parameter names or scaling — silent drift can cause the same physical filament to print differently in each slicer
 
 Workflow recommendation: **calibrate in OrcaSlicer, *write down* the tuned values, then re-create the profile in Bambu Studio** — don't try to copy the entire profile. Treat OrcaSlicer's role as a tuning instrument, not a profile source-of-truth.
+
+### Release watch (digest 2026-06-02)
+
+Exa news lane flagged **OrcaSlicer 2.4.0 alpha** (Z anti-aliasing, gyroid infill changes, cloud platform) — see @sources/2026-06-02-digest-orcaslicer-2-4-news.md. Verify on [GitHub releases](https://github.com/OrcaSlicer/OrcaSlicer/releases) before upgrading production calibration workflows [NEEDS VERIFICATION 2026-06-02].
 
 [CONFIRMED] OrcaSlicer's calibration test suite + extended tuning range is genuinely useful for material characterization. [CONFIRMED] Profile schema divergence is a real risk if used as daily driver alongside Bambu Studio. [TENTATIVE] Specific version-pin claims for bugs (2.3.1 / 2.3.2) need verification against current OrcaSlicer release notes.
 

@@ -7,6 +7,7 @@ related:
   - concepts/extrusion-control.md
   - concepts/high-speed-fdm.md
   - concepts/fdm-printing.md
+  - sources/2025-looey-physics-informed-extrusion-dynamical.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-06

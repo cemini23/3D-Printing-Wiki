@@ -9,6 +9,7 @@ related:
   - concepts/ai-design-tools.md
   - sources/2026-bambu-toolchain-audit.md
   - entities/slicers/orcaslicer.md
+  - sources/2026-06-02-digest-orcaslicer-2-4-news.md
 maturity: draft
 created: 2026-05-07
 updated: 2026-05-07

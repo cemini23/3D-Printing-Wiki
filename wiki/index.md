@@ -33,6 +33,9 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [Single-Material 4D via PvP Strain Trapping](sources/2025-iqbal-single-material-4d-pvp.md) — desktop FFF + commercial SMP; ~50% trapped strain; lattice expansion unit cells — `4D, SMP, PvP, FFF, metamaterial`
 - [NAT-LCE DIW with Hybrid Cooling](sources/2026-li-lce-nat-diw-hybrid-cooling.md) — DIW liquid-crystal elastomer; background-only for FFF wiki — `LCE, DIW, soft-robotics, background`
 - [TinkerXR — AR CAD for Novices](sources/2025-arslan-tinkerxr-ar-cad-novices.md) — SCF '25; Quest 3 in-situ CSG; not day-1 — compare Tinkercad baseline in @concepts/novice-cad-workflows.md — `AR, CAD, novice, open-source`
+- [Physics-Informed Extrusion Dynamical Model](sources/2025-looey-physics-informed-extrusion-dynamical.md) — arXiv:2512.11048; reduced-order flow model for control — `extrusion, control, CFD, DIW`
+- [Daily digest — OrcaSlicer 2.4 news](sources/2026-06-02-digest-orcaslicer-2-4-news.md) — sweep news stub — `digest, OrcaSlicer, news`
+- [Daily digest — Polymaker ABS Pro](sources/2026-06-02-digest-polymaker-abs-pro.md) — sweep vendor stub — `digest, ABS, Polymaker`
 - [Berkeley Humanoid Lite — Open-Source 3D-Printed Humanoid](sources/2025-chi-berkeley-humanoid-lite.md) — cycloidal printed gearboxes; <$5k; RL sim-to-real — `robotics, humanoid, open-source, FDM`
 - [MEVITA — Open-Source Bipedal Robot (Sheet Metal)](sources/2025-kawaharazuka-mevita-bipedal.md) — JSK Tokyo; critiques fragile print-only bipeds — `robotics, bipedal, open-source`
 - [MEVIUS — E-Commerce Quadruped](sources/2024-kawaharazuka-mevius-quadruped.md) — metal quadruped for outdoor durability — `robotics, quadruped, open-source`

@@ -2,6 +2,15 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-02] ingest | Pass 17 — daily digest follow-up (1 arXiv + 2 news stubs)
+
+- Daily digest script verified (`wiki/sweeps/2026-06-02-daily.md`); auto-fetch 0 PDFs (Exa hits non-arXiv).
+- Manual arXiv fetch: `2025-looey-physics-informed-extrusion-dynamical.md` (2512.11048).
+- News stubs: OrcaSlicer 2.4 alpha, Polymaker ABS Pro.
+- Updated: `extrusion-control.md`, `orcaslicer.md`, `abs.md`, `meta/daily-research-digest-cadence.md`.
+
+---
+
 ## [2026-06-01] ingest | Passes 10–16 — final 32 inbox PDFs (inbox cleared)
 
 - **32 source pages** across volumetric AM, soft robotics/DIW, niche FDM apps, industrial monitoring, photonics background, research tools.

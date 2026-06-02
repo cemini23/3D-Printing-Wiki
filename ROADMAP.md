@@ -51,7 +51,8 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-05-23 | Ingest pass 8 — TinkerXR + novice CAD workflows | Beginner handoff path (not print-farm). 1 source + 1 concept; `FRIEND-SETUP.md` week-2 Tinkercad pointer. Inbox 38 → 37. |
 | 2026-06-01 | Federated daily research digest (K93) | Exa discovery + inbox PDF fetch from @osint-wiki federation. Scripts: `daily_research_digest_run.py`, `daily_research_fetch.py`, domain `daily_research_config.yaml`. Meta page + sweep template. LaunchAgent `com.cemini.daily-research-digest.3d-printing`. Does not auto-ingest. |
 | 2026-06-01 | Ingest pass 9 — open-source legged robotics + FDM tactile (5 papers) | Berkeley Humanoid Lite, MEVITA, MEVIUS, eFlesh, M3D-skin. Hub: `open-source-legged-robotics.md`. Inbox 37 → 32. |
-| 2026-06-01 | Ingest passes 10–16 — remaining 32 inbox PDFs | Six hubs: volumetric AM, soft robotics FDM/DIW, niche applications, industrial monitoring, photonics background, FDM research tools. 32 source pages. Inbox **empty**. Wiki 66 → 104 pages. |
+| 2026-06-01 | Ingest passes 10–16 — remaining 32 inbox PDFs | Six hubs; inbox **empty**. Wiki 104 pages. |
+| 2026-06-02 | Ingest pass 17 — daily digest follow-up | 1 arXiv (Looey extrusion dynamics) + 2 news stubs from sweep; digest auto-fetch still 0 PDFs (publisher URLs). |
 
 ---
 

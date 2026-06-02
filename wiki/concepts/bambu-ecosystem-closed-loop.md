@@ -14,6 +14,7 @@ related:
   - entities/printers/p1s.md
   - entities/printers/a1.md
   - entities/printers/flashforge-adventurer-5m.md
+  - sources/2026-06-02-digest-orcaslicer-2-4-news.md
 maturity: draft
 created: 2026-05-07
 updated: 2026-05-20
