@@ -108,6 +108,17 @@ If you're new to Bambu and reading this wiki to set up a printer for the first t
 
 ---
 
+
+## Support
+
+Voluntary tips fund open research and tooling. **Donation-only addresses** — not trading or production wallets.
+
+| Chain family | Address |
+|--------------|---------|
+| **EVM** (Ethereum, Polygon, Base, Arbitrum, …) | `0x444C5C2eC439E0382aa5a17F70313c536BcC5D58` |
+| **Solana / SVM** | `J4zNn4hK9jTrKBFY8sbAGJHLoZvXvQf4B9pQSbSrocZE` |
+
+
 ## License
 
 [MIT](LICENSE) — wiki content, scripts, and configuration are free to use, modify, and redistribute. Built so any hobbyist or small-business owner getting into 3D printing can lift it, fork it, or contribute back.
