@@ -2,6 +2,12 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-03] ingest | K95 — self-improving CAD agents (1 arXiv)
+
+- **Source** — `arxiv-2605-17448-self-improving-cad-agents.md`
+- **Concept** — `self-improving-cad-generation-agents.md`
+- **PDF** → librarian; inbox cleared
+
 ## [2026-06-02] ingest | Pass 17 — daily digest follow-up (1 arXiv + 2 news stubs)
 
 - Daily digest script verified (`wiki/sweeps/2026-06-02-daily.md`); auto-fetch 0 PDFs (Exa hits non-arXiv).

@@ -11,6 +11,7 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube transcripts). One page per canonical source.
 
 - [Adaptive Input Shaper Design for Unknown Second-Order Systems](sources/2025-aung-adaptive-input-shaper.md) — feedforward TDF input shaper with real-time RLS parameter estimation; simulation only — `paper, control, input-shaping, vibration`
+- [Self-improving CAD generation agents (arXiv:2605.17448)](sources/arxiv-2605-17448-self-improving-cad-agents.md) — K95 REFERENCE — agent loops for parametric CAD — `paper, cad, agents, k95`
 - [One-Shot Camera-Based Extrusion Optimization for High Speed FFF](sources/2025-lin-camera-extrusion-optimization.md) — two calibration prints + phone camera → optimized G-code; 2× quality-equivalent speed on Ender-3 V2 (1600→3600 mm/min) — `paper, vision, extrusion, high-speed-fdm`
 - [Real time fault detection using CNN + acoustic signals](sources/2023-waheed-acoustic-cnn-fault-detection.md) — microphone + spectrogram + CNN classifier for clog / breakage / pulley skip — `paper, fault-detection, CNN, acoustic, ML`
 - [Closed Loop Reference Optimization for Extrusion AM](sources/2025-hoteit-closed-loop-extrusion-lqr.md) — LQR over Force-Controlled Printing; 39.57% RMS error reduction — `paper, control, extrusion, LQR, closed-loop`
@@ -124,6 +125,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [FDM / FFF Printing](concepts/fdm-printing.md) — hub page; defines the process and the four open problems on consumer FDM today — `process, FDM, FFF, fundamentals`
 - [Input Shaping (Vibration Suppression)](concepts/input-shaping.md) — feedforward filter cancels gantry ringing on direction changes; behind Bambu "Active Tuning" — `control, vibration, feedforward`
 - [Extrusion Control](concepts/extrusion-control.md) — pressure advance → camera-based G-code optimization → closed-loop force feedback — `control, extrusion, feedforward, closed-loop`
+- [Self-improving CAD generation agents](concepts/self-improving-cad-generation-agents.md) — K95 REFERENCE (2605.17448) — `cad, agents, k95`
 - [Fault Detection](concepts/fault-detection.md) — acoustic / vibration / thermal / visual sensors + ML classifier; behind Bambu "AI failure detection" — `ML, monitoring, sensors, fault-detection`
 - [High-Speed FDM](concepts/high-speed-fdm.md) — above ~300 mm/s the dominant errors shift from positioning to dynamic mismatch; what makes Bambu fast — `process, high-speed, regime-shift`
 - [Side-Channel Attacks on 3D Printers](concepts/side-channel-attacks.md) — six modalities (acoustic / optical / magnetic / power / vibration / thermal) and the attack-tier continuum — `security, side-channel, attack-surface`
