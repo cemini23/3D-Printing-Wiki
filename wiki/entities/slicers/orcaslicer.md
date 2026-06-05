@@ -12,7 +12,7 @@ related:
   - sources/2026-06-02-digest-orcaslicer-2-4-news.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-06-02
+updated: 2026-06-05
 ---
 
 ## Relations
@@ -76,9 +76,15 @@ If the reader tunes a Polymaker PETG profile in OrcaSlicer (say, K=0.045, retrac
 
 Workflow recommendation: **calibrate in OrcaSlicer, *write down* the tuned values, then re-create the profile in Bambu Studio** — don't try to copy the entire profile. Treat OrcaSlicer's role as a tuning instrument, not a profile source-of-truth.
 
-### Release watch (digest 2026-06-02)
+### Release watch — V2.4.0 Alpha [CONFIRMED 2026-06-05]
 
-Exa news lane flagged **OrcaSlicer 2.4.0 alpha** (Z anti-aliasing, gyroid infill changes, cloud platform) — see @sources/2026-06-02-digest-orcaslicer-2-4-news.md. Verify on [GitHub releases](https://github.com/OrcaSlicer/OrcaSlicer/releases) before upgrading production calibration workflows [NEEDS VERIFICATION 2026-06-02].
+GitHub pre-release **2026-05-25** confirms digest claims — see @sources/2026-06-02-digest-orcaslicer-2-4-news.md:
+
+- **Orca Cloud** (optional): profile sync, version history, community preset bundles at [cloud.orcaslicer.com](https://cloud.orcaslicer.com). Local-only workflow unchanged if you do not log in.
+- **Z Anti-Aliasing (ZAA)**: Expert-mode; micro-adjusts Z on curved top surfaces against mesh geometry.
+- **Optimized Gyroid infill**: experimental buckling-aware per-region tuning; disabled = identical to legacy gyroid.
+- Also: Expert user mode, Machine Input Shaping, Prusa-style combined brims, Wayland Linux, fuzzy-skin ripple mode.
+- **Alpha caveat**: track issue **#13828** for known regressions. Pin version for calibration workflows; do not auto-update production Bambu Studio parallel installs.
 
 [CONFIRMED] OrcaSlicer's calibration test suite + extended tuning range is genuinely useful for material characterization. [CONFIRMED] Profile schema divergence is a real risk if used as daily driver alongside Bambu Studio. [TENTATIVE] Specific version-pin claims for bugs (2.3.1 / 2.3.2) need verification against current OrcaSlicer release notes.
 

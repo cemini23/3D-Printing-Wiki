@@ -21,7 +21,7 @@ related:
   - sources/2025-looey-physics-informed-extrusion-dynamical.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-06-02
+updated: 2026-06-05
 ---
 
 ## Relations
@@ -86,6 +86,10 @@ Bambu ships #1 (productized as auto-K-cal + manual K-cal print) and *part of* #3
 - Speed regime: [@concepts/high-speed-fdm.md] (extrusion control matters more above ~150 mm/s)
 - Practical: [@entities/tools/kickstarter-autodesk-fdm-protocol.md] (calibration print)
 - Research adjacent: [@concepts/vlm-in-manufacturing.md] (CIPHER VLA process expert)
+
+### Research depth — cement DIW ROM (not FFF) [deep-read 2026-06-05]
+
+@sources/2025-looey-physics-informed-extrusion-dynamical.md (same Penn State lab as @sources/2026-mohammadi-rce-lqr-extrusion.md) derives a **reduced-order Navier–Stokes model** for **cementitious DIW** identified from ANSYS Fluent CFD — three regions (nozzle, gap, deposited strand). Goal is **real-time control**, not slicer K-value tuning. FFF appears only in related-work citations. **No actionable Orca/Bambu preset** — conceptual parallel only (transient flow at nozzle exit and gap).
 
 ## Snippets
 

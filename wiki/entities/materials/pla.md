@@ -17,6 +17,7 @@ related:
   - sources/2025-chi-berkeley-humanoid-lite.md
   - concepts/niche-fdm-applications.md
   - sources/2025-tran-3d-printed-acoustic-guitars.md
+  - sources/2026-faulkner-lithographs-microscopy.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-23

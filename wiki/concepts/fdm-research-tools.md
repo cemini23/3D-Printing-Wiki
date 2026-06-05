@@ -15,7 +15,7 @@ related:
   - sources/2025-kota-3d-cal-tactile-calibration.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-05
 ---
 
 ## Relations
@@ -24,17 +24,19 @@ updated: 2026-06-01
 
 ## Raw Concept
 
-Ingest pass 15 — printers and STLs used as **research infrastructure** (motion stages, QA rigs, scan-to-CAD debug) plus hybrid post-processing.
+Ingest pass 15 — printers and STLs used as **research infrastructure** (motion stages, QA rigs, scan-to-CAD debug) plus hybrid post-processing. Deep-read 2026-06-05: @sources/2025-kota-3d-cal-tactile-calibration.md.
 
 ## Narrative
 
 | Pattern | Example |
 |---------|---------|
-| Printer → precision stage | 3D Cal, Slug-Mapper |
+| Printer → precision stage | **3D Cal** (G-code probe grid + TouchNet depth maps for DIGIT/GelSight; Ender 3 validated) — @sources/2025-kota-3d-cal-tactile-calibration.md; Slug-Mapper |
 | Printer → process research bed | Roberts 2011 rotation + photogrammetry |
 | Scan + CAD → remote debug | SplatOverflow |
 | FDM preform → downstream process | Thermal fiber drawing |
 | STL → simulation | Stokeslet mobility (not printing) |
+
+**3D Cal practical note [CONFIRMED]:** ~250 probe locations (~20% of 0.5 mm grid) sufficient for usable depth calibration; ~2 h automated capture per sensor; any G-code FDM printer in principle.
 
 ## Snippets
 

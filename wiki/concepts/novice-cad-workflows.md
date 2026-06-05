@@ -16,6 +16,8 @@ related:
   - concepts/niche-fdm-applications.md
   - sources/2025-tran-3d-printed-acoustic-guitars.md
   - sources/2026-faulkner-lithographs-microscopy.md
+  - concepts/self-improving-cad-generation-agents.md
+  - sources/arxiv-2605-17448-self-improving-cad-agents.md
 maturity: draft
 created: 2026-05-23
 updated: 2026-06-01

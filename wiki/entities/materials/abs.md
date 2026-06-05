@@ -15,7 +15,7 @@ related:
   - sources/2026-06-02-digest-polymaker-abs-pro.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-06-02
+updated: 2026-06-05
 ---
 
 ## Relations
@@ -88,6 +88,10 @@ A reader who buys an A1 mini gets *only* AMS lite. So between **(a) no enclosure
 ### ABS-GF (glass-fiber reinforced)
 
 Bambu sells ABS-GF — chopped glass fiber in ABS matrix. Gains: stiffness up, dimensional stability up, warping reduced. Trade-offs: requires hardened-steel nozzle (glass fiber is abrasive — brass nozzle wears out in <100 print-hours), surface finish gets fibrous-matte, and the same enclosure requirement still applies.
+
+### Third-party: Polymaker ABS Pro [CONFIRMED vendor page 2026-06-05]
+
+See @sources/2026-06-02-digest-polymaker-abs-pro.md. Vendor targets **enclosed passively heated** printers (names X1C, Voron Trident). **270–280 °C** nozzle, **110–120 °C** bed, fan **0–30%**, dry **70 °C / 6 h** if wet. Marketing emphasizes creep resistance vs generic ABS. **Same enclosure rule as Bambu ABS** — disqualifies open-frame Flashforge 5M / A1. AMS compatibility not stated; treat feed reliability as untested. Profile in OrcaSlicer for characterization only, then manual port to Bambu Studio.
 
 [CONFIRMED] ABS requires an enclosed Bambu (X1 / X1C / P1S) — not viable on A1 / A1 mini. [CONFIRMED] PETG covers most hobbyist use cases that historically meant ABS, on open-frame printers. [TENTATIVE] ABS-vs-ASA price differential at retail is small; if printing outdoors-bound parts on an X1C / P1S, ASA is strictly better than ABS.
 

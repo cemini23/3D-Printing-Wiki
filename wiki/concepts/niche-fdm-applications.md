@@ -14,7 +14,7 @@ related:
   - sources/2024-rotoo-canine-head-phantom-vet.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-05
 ---
 
 ## Relations
@@ -23,18 +23,20 @@ updated: 2026-06-01
 
 ## Raw Concept
 
-Ingest pass 12 — creative, educational, and adjacent-modality uses of 3D printing beyond mechanical parts.
+Ingest pass 12 — creative, educational, and adjacent-modality uses of 3D printing beyond mechanical parts. Deep-read pass 2026-06-05 on lithographs + guitar sources.
 
 ## Narrative
 
 | Application | FFF? | Notes |
 |-------------|------|-------|
-| Microscopy lithographs | Yes | @sources/2026-faulkner-lithographs-microscopy.md — accessibility / maker-education |
-| 3D printed guitar (PLA) | Yes | @sources/2025-tran-3d-printed-acoustic-guitars.md — ambitious PLA project post-calibration |
+| Microscopy lithographs | Yes | @sources/2026-faulkner-lithographs-microscopy.md — ImageJ → Bambu Maker Lab → FDM; **~$0.75/print**, TAMP GitHub workflow |
+| 3D printed guitar (PLA) | Yes | @sources/2025-tran-3d-printed-acoustic-guitars.md — Prusa MK4 segmented classical guitar; treble strings ~3 Hz off, bass FFT shows octave-doubled partials |
 | Food printing | Extrusion variant | TastePrint + kitchen study — not Orca-Flashforge polymer |
 | Vet radiotherapy phantom | Polyjet | @sources/2024-rotoo-canine-head-phantom-vet.md — medical AM contrast |
 
-**Most accessible to novices after week 2:** lithographs workflow; downloading guitar sections from paper/repo if published.
+**Most accessible to novices after week 2:** **TAMP lithographs** (no CAD — ImageJ + Maker Lab). Guitar is multi-week tolerance/assembly project with sustained-load caveats (PLA creep at tuning head).
+
+**Friend handoff pointer:** lithographs workflow is the only item here worth optional mention post-calibration; guitar and food printing are curiosity tier.
 
 ## Snippets
 

@@ -20,9 +20,10 @@ related:
   - entities/slicers/bambu-studio.md
   - concepts/fdm-research-tools.md
   - sources/2024-kwatra-splatoverflow-troubleshooting.md
+  - sources/arxiv-2605-17448-self-improving-cad-agents.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-06-01
+updated: 2026-06-05
 ---
 
 ## Relations
@@ -113,6 +114,10 @@ For a print-farm at fleet size 2+ [@concepts/print-farm-operations.md]: AI gener
 A specific failure mode worth flagging: AI generators occasionally produce **non-manifold meshes** — holes, intersecting faces, doubled vertices. Bambu Studio + OrcaSlicer have automatic mesh-repair tools (Print → Repair, or Tools → Repair Model) but these don't always succeed. If a 3MF imports but slicing fails or produces visually wrong toolpaths, the first thing to check is whether the mesh is manifold.
 
 Workflow recommendation: before slicing any AI-generated 3MF, run it through a manifold check. Bambu Studio's repair tool, Microsoft 3D Builder, MeshLab, or the online Netfabb basic service all do this. **5 minutes of manifold check saves 5 hours of "why did my print fail at layer 47?".**
+
+### Engineering CAD agents (research tier) — @concepts/self-improving-cad-generation-agents.md
+
+Separate from Meshy/image-to-STL decorative pipelines: arXiv 2605.17448 studies **Codex/Claude Code agents** writing **CadQuery → STEP → CalculiX FEA** loops with typed engineering pass/fail rubrics (Hephaestus-CCX benchmark). **0/400 strict passes on first attempt** in the main sweep — useful as a **research signal**, not a reader workflow. NO-GO for store ops; REFERENCE only.
 
 ### Cross-link to VLM-in-manufacturing cluster
 

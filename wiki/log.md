@@ -2,6 +2,16 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-05] deep-read | Priority A+B (7 sources)
+
+- **A:** K95 `arxiv-2605-17448` → expanded source + `self-improving-cad-generation-agents.md` (CadQuery/CalculiX/Hephaestus-CCX; 0/400 strict first pass).
+- **A:** `2025-looey-physics-informed-extrusion-dynamical.md` — confirmed DIW-only ROM; updated `extrusion-control.md`.
+- **A:** OrcaSlicer 2.4 alpha news stub verified vs GitHub release → `orcaslicer.md`.
+- **A:** Polymaker ABS Pro vendor page → `abs.md` third-party subsection.
+- **B:** Faulkner lithographs, Tran PLA guitar (frequency table), Kota 3D Cal (ablation ~20% grid) — sources + `niche-fdm-applications.md`, `fdm-research-tools.md`.
+
+---
+
 ## [2026-06-03] ingest | K95 — self-improving CAD agents (1 arXiv)
 
 - **Source** — `arxiv-2605-17448-self-improving-cad-agents.md`
