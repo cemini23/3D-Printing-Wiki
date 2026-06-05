@@ -6,10 +6,19 @@ keywords: [2605.17448, CAD agents, self-improving]
 related:
   - sources/arxiv-2605-17448-self-improving-cad-agents.md
   - concepts/fdm-printing.md
+  - concepts/ai-design-tools.md
 maturity: draft
 created: 2026-06-03
 updated: 2026-06-03
 ---
+
+## Relations
+
+@sources/arxiv-2605-17448-self-improving-cad-agents.md @concepts/fdm-printing.md @concepts/ai-design-tools.md
+
+## Raw Concept
+
+K95 daily digest fetch (2026-06-03). Source page marked `read_status: read` but body is stub — **deep-read still required** before promoting beyond REFERENCE.
 
 ## Narrative
 

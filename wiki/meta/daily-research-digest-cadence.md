@@ -10,15 +10,18 @@ related:
   - sweeps/_daily-template.md
   - sweeps/2026-06-01-daily.md
   - sweeps/2026-06-02-daily.md
+  - sweeps/2026-06-03-daily.md
+  - sweeps/2026-06-04-daily.md
+  - sweeps/2026-06-05-daily.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-02
+updated: 2026-06-05
 cross-wiki-source: "@osint-wiki/concepts/federated-daily-research-digest.md"
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/print-farm-operations.md @sweeps/_daily-template.md @sweeps/2026-06-01-daily.md @sweeps/2026-06-02-daily.md
+@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/print-farm-operations.md @sweeps/_daily-template.md @sweeps/2026-06-01-daily.md @sweeps/2026-06-02-daily.md @sweeps/2026-06-03-daily.md @sweeps/2026-06-04-daily.md @sweeps/2026-06-05-daily.md
 
 - @osint-wiki/concepts/federated-daily-research-digest.md — federation install kit (K93 canonical)
 

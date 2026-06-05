@@ -12,6 +12,7 @@ related:
   - concepts/2026-05-13_gracia-ai-volumetric-3d-export.md
   - concepts/shape-changing-fdm-interfaces.md
   - concepts/novice-cad-workflows.md
+  - concepts/self-improving-cad-generation-agents.md
   - concepts/open-source-legged-robotics.md
   - meta/daily-research-digest-cadence.md
   - sources/2025-arslan-tinkerxr-ar-cad-novices.md
