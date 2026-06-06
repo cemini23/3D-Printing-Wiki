@@ -8,7 +8,7 @@ related:
 maturity: draft
 created: 2026-05-21
 updated: 2026-05-21
-cross-wiki-source: @osint-wiki/entities/tools/markdown-preview-pluk.md
+cross-wiki-source: "@osint-wiki/entities/tools/markdown-preview-pluk.md"
 ---
 
 # markdown-preview-pluk — Native macOS Markdown Previewer (LaTeX + Mermaid)

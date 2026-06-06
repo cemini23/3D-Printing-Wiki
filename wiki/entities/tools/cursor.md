@@ -2,7 +2,7 @@
 title: Cursor — IDE with AI Chat for This Wiki
 type: entity
 tags: [tool, cursor, IDE, AI, chat, friend-handoff]
-keywords: [Cursor, Cursor Pro, Agent, Chat, @file references, Open Folder, Flashforge friend]
+keywords: [Cursor, Cursor Pro, Agent, Chat, "@file references", Open Folder, Flashforge friend]
 related:
   - concepts/novice-cad-workflows.md
   - concepts/vlm-in-manufacturing.md
