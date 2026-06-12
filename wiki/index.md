@@ -47,6 +47,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [3D-Printed Canine Head Phantom for Veterinary Radiotherapy QA](sources/2024-rotoo-canine-head-phantom-vet.md) — ingest pass 10–16 — `paper, medical, polyjet, phantom, background`
 - [THz EM Vortices from Commercial FDM Prints](sources/2025-adams-fdm-thz-em-vortices.md) — ingest pass 10–16 — `paper, photonics, FDM, THz, background`
 - [Neuromorphic Anomaly Detection in Laser Powder Bed Fusion](sources/2025-banerjee-neuromorphic-lpbf.md) — ingest pass 10–16 — `paper, LPBF, neuromorphic, anomaly-detection, industrial, background`
+- [Spatiotemporal Graph Transformer for LPBF Quality Prediction](sources/2026-pelaez-stgt-lpbf-quality-prediction.md) — STGT dual-attention; R² 0.719 with cross-layer 3D neighborhood on NIST AMMT — `paper, LPBF, graph-transformer, quality-monitoring, industrial, background`
 - [Stretchable Strain Sensors via Direct Ink Writing on Silicone](sources/2025-cha-diw-stretchable-strain-sensors.md) — ingest pass 10–16 — `paper, DIW, sensors, soft-robotics`
 - [Automated Fabrication of Magnetic Soft Microrobots](sources/2025-clancy-magnetic-soft-microrobots.md) — ingest pass 10–16 — `paper, soft-robotics, magnetic, DIW, background`
 - [X-ray CT + AI for AM Process Protocol Prediction (MEX)](sources/2025-khod-xray-ct-am-protocol-ai.md) — ingest pass 10–16 — `paper, AI, X-ray-CT, MEX, process-parameter, background`

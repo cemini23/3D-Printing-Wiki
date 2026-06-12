@@ -2,6 +2,15 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-12] ingest | STGT LPBF quality prediction (1 arXiv)
+
+- **Source** — `2026-pelaez-stgt-lpbf-quality-prediction.md` (arXiv:2606.10227; weighted k-NN graph + dual-attention STGT; R² 0.719 with cross-layer interactions on NIST AMS 100-69).
+- **Concepts updated** — `industrial-am-monitoring.md` (LPBF monitoring comparison table), `fault-detection.md` (industrial branch note).
+- **Backlink** — `2025-banerjee-neuromorphic-lpbf.md`.
+- **PDF** → `raw-sources/2026-pelaez-stgt-lpbf-quality-prediction.pdf`; inbox cleared.
+
+---
+
 ## [2026-06-05] deep-read | Priority A+B (7 sources)
 
 - **A:** K95 `arxiv-2605-17448` → expanded source + `self-improving-cad-generation-agents.md` (CadQuery/CalculiX/Hephaestus-CCX; 0/400 strict first pass).

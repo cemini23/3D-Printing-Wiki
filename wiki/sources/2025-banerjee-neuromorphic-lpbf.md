@@ -7,15 +7,16 @@ related:
   - concepts/volumetric-additive-manufacturing.md
   - concepts/industrial-am-monitoring.md
   - concepts/fault-detection.md
+  - sources/2026-pelaez-stgt-lpbf-quality-prediction.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-12
 read_status: skimmed
 ---
 
 ## Relations
 
-@concepts/volumetric-additive-manufacturing.md @concepts/industrial-am-monitoring.md @concepts/fault-detection.md
+@concepts/volumetric-additive-manufacturing.md @concepts/industrial-am-monitoring.md @concepts/fault-detection.md @sources/2026-pelaez-stgt-lpbf-quality-prediction.md
 
 ## Raw Concept
 

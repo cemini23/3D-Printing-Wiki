@@ -53,6 +53,7 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-06-01 | Ingest pass 9 — open-source legged robotics + FDM tactile (5 papers) | Berkeley Humanoid Lite, MEVITA, MEVIUS, eFlesh, M3D-skin. Hub: `open-source-legged-robotics.md`. Inbox 37 → 32. |
 | 2026-06-01 | Ingest passes 10–16 — remaining 32 inbox PDFs | Six hubs; inbox **empty**. Wiki 104 pages. |
 | 2026-06-02 | Ingest pass 17 — daily digest follow-up | 1 arXiv (Looey extrusion dynamics) + 2 news stubs from sweep; digest auto-fetch still 0 PDFs (publisher URLs). |
+| 2026-06-12 | Ingest pass 18 — STGT LPBF quality prediction | 1 arXiv (2606.10227); graph transformer for cross-layer melt-pool quality on NIST AMMT. Updated `industrial-am-monitoring.md`, `fault-detection.md`. Inbox cleared. |
 
 ---
 

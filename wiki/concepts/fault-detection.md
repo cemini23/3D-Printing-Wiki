@@ -16,15 +16,16 @@ related:
   - concepts/industrial-am-monitoring.md
   - concepts/volumetric-additive-manufacturing.md
   - sources/2025-banerjee-neuromorphic-lpbf.md
+  - sources/2026-pelaez-stgt-lpbf-quality-prediction.md
   - sources/2026-orth-auto-exposure-vam.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-08
+updated: 2026-06-12
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/vlm-in-manufacturing.md @sources/2023-waheed-acoustic-cnn-fault-detection.md @sources/2025-waheed-multimodal-sensor-fusion.md @sources/2026-mahjourian-vlm-iris.md @sources/2025-margadji-cipher.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
+@concepts/fdm-printing.md @concepts/vlm-in-manufacturing.md @concepts/industrial-am-monitoring.md @sources/2023-waheed-acoustic-cnn-fault-detection.md @sources/2025-waheed-multimodal-sensor-fusion.md @sources/2026-mahjourian-vlm-iris.md @sources/2025-margadji-cipher.md @sources/2025-banerjee-neuromorphic-lpbf.md @sources/2026-pelaez-stgt-lpbf-quality-prediction.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
 
 ## Raw Concept
 
@@ -84,6 +85,8 @@ The reader's mental rule: AI failure detection saves you from catastrophic print
 ### Research trajectory
 
 From single-modality (audio-only, CNN-only) → multimodal fusion → VLM zero-shot → VLA continuous regression. Each step trades hardware/training cost for a different failure-mode coverage. As of late 2025, published end-to-end multimodal results haven't fully caught up with the program's stated ambitions; VLM-IRIS is the strongest deployable result outside Bambu's commercial stack.
+
+**Industrial LPBF branch** (background — see @concepts/industrial-am-monitoring.md): factory metal AM adds graph-transformer quality regression from melt-pool images with explicit 3D neighborhood modeling [@sources/2026-pelaez-stgt-lpbf-quality-prediction.md] and neuromorphic photodiode anomaly detection [@sources/2025-banerjee-neuromorphic-lpbf.md]. These target spatially resolved ex-situ quality / process anomalies, not consumer spaghetti detection.
 
 [CONFIRMED] Bambu X1C / X1 ship lidar + AI camera + accelerometer — multi-sensor not single-CNN. [TENTATIVE 2026-05-08] False-negative-favoring tuning is community-reported. [NEEDS VERIFICATION 2026-05-08] Whether the AI camera's classifier is updated post-purchase or fixed at time of manufacture.
 
