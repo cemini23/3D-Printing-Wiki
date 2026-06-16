@@ -11,14 +11,15 @@ related:
   - sources/2025-chattopadhyay-one-video-optical.md
   - sources/2025-jamarani-acoustic-magnetic-decoding.md
   - sources/2025-dolgavin-hearsay-pbf-power.md
+  - sources/2026-yocam-amnc-bambu-side-channel.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-06-16
 ---
 
 ## Relations
 
-@concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md
+@concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2026-yocam-amnc-bambu-side-channel.md
 
 ## Raw Concept
 
@@ -32,11 +33,11 @@ A **side-channel** is an unintended physical emanation from a process that corre
 
 | Modality | First demonstrated | Best-result reference | Notes |
 |---|---|---|---|
-| **Acoustic** | Faruque 2016 (FDM, Zoom H6) | Jamarani 2025: 4.47% MTE on a "plain G-code" with smartphone | Stepper motors and fan noise; MFCC + GBDT works well [@sources/2025-jamarani-acoustic-magnetic-decoding.md] |
+| **Acoustic** | Faruque 2016 (FDM, Zoom H6) | Jamarani 2025: 4.47% MTE on a "plain G-code" with smartphone | Stepper motors and fan noise; MFCC + GBDT works well [@sources/2025-jamarani-acoustic-magnetic-decoding.md]. **Bambu AMNC (2026):** deployed countermeasure on P1P/A1 Mini — acoustic ID at random chance [@sources/2026-yocam-amnc-bambu-side-channel.md] |
 | **Optical** | Liang 2022 NDSS (FDM, ResNet-50) | Chattopadhyay 2025 CCS: 90.87% similarity, functional counterfeit key from one IP-camera video | Bambu X1C internal camera is in scope [@sources/2025-chattopadhyay-one-video-optical.md] |
 | **Magnetic** | Song 2016 (FDM, smartphone) | Jamarani 2025 fuses magnetic + acoustic | Magnetic falls off as 1/r³ — short range only |
 | **Power** | Gatlin 2021 (FDM stepper currents, ~99% spatial accuracy) | Dolgavin 2025 (industrial PBF, 90.29% TP voxel volume) | Scales from FDM to industrial PBF [@sources/2025-dolgavin-hearsay-pbf-power.md]; defeats end-to-end design encryption |
-| **Vibration / inertial** | Stańczak 2021 (FDM accelerometer chassis-mounted) | Gao 2024 (multimodal FDM) | Effective, but requires physical contact with chassis |
+| **Vibration / inertial** | Stańczak 2021 (FDM accelerometer chassis-mounted) | Gao 2024 (multimodal FDM); Yocam 2026: ~61% closed-set ID with temporal model on AMNC-equipped Bambu (vibration not cancelled) [@sources/2026-yocam-amnc-bambu-side-channel.md] | Effective, but requires physical contact with chassis; AMNC does not address |
 | **Thermal** | Faruque 2018 (FDM, IR camera) | — | Lower-bandwidth than acoustic / optical; less mature |
 
 Source: [Source: 2025-dolgavin-hearsay-pbf-power.pdf Table I] enumerates all FDM-side-channel attacks; 2025 Chattopadhyay et al. + 2025 Dolgavin et al. extend the table beyond FDM.
@@ -52,7 +53,7 @@ From cheapest / most accessible to most invasive:
 
 ### Why this is hard to defend against
 
-- **Single-channel defenses don't cover other channels.** QuietPrint's Stealth Head Movement [@sources/2026-asgar-quietprint-acoustic-defense.md] obfuscates acoustic *and* magnetic stepper emanations (because both come from the same motor) but leaves optical (camera), power (current taps), and thermal (IR cam) untouched.
+- **Single-channel defenses don't cover other channels.** QuietPrint's Stealth Head Movement [@sources/2026-asgar-quietprint-acoustic-defense.md] obfuscates acoustic *and* magnetic stepper emanations (because both come from the same motor) but leaves optical (camera), power (current taps), and thermal (IR cam) untouched. **Bambu AMNC** [@sources/2026-yocam-amnc-bambu-side-channel.md] is the inverse specialization: hardware acoustic cancellation only; vibration channel remains partially leaky.
 - **Encryption alone is futile** when the printer itself leaks (Dolgavin 2025: "encryption is futile"). The actuators decode the G-code internally and act on it physically; that physical action is observable.
 - **ML attacks are robust to noise-injection countermeasures.** Chattopadhyay 2025 explicitly argues that degrading the optical channel (e.g., reducing camera resolution or adding visual noise) doesn't stop a ResNet-50+LSTM that uses temporal context. [TENTATIVE — paper's own claim, not independently validated.]
 

@@ -54,6 +54,7 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-06-01 | Ingest passes 10–16 — remaining 32 inbox PDFs | Six hubs; inbox **empty**. Wiki 104 pages. |
 | 2026-06-02 | Ingest pass 17 — daily digest follow-up | 1 arXiv (Looey extrusion dynamics) + 2 news stubs from sweep; digest auto-fetch still 0 PDFs (publisher URLs). |
 | 2026-06-12 | Ingest pass 18 — STGT LPBF quality prediction | 1 arXiv (2606.10227); graph transformer for cross-layer melt-pool quality on NIST AMMT. Updated `industrial-am-monitoring.md`, `fault-detection.md`. Inbox cleared. |
+| 2026-06-16 | Ingest pass 19 — AMNC security + RedAct cross-route | 1 arXiv ingested (2606.13952 AMNC); 1 cross-routed to cybersec (2606.10813 RedAct). Briefs staged + scp to cybersec. Security cluster updated. |
 
 ---
 

@@ -15,14 +15,15 @@ related:
   - entities/printers/flashforge-adventurer-5m.md
   - entities/tools/kickstarter-autodesk-fdm-protocol.md
   - sources/2026-bambu-toolchain-audit.md
+  - sources/2026-yocam-amnc-bambu-side-channel.md
 maturity: draft
 created: 2026-05-08
-updated: 2026-05-20
+updated: 2026-06-16
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/filaments-baseline.md @concepts/fault-detection.md @concepts/input-shaping.md @concepts/extrusion-control.md @entities/printers/x1c.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @sources/2026-bambu-toolchain-audit.md
+@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/filaments-baseline.md @concepts/fault-detection.md @concepts/input-shaping.md @concepts/extrusion-control.md @entities/printers/x1c.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @sources/2026-bambu-toolchain-audit.md @sources/2026-yocam-amnc-bambu-side-channel.md
 
 ## Raw Concept
 
@@ -45,7 +46,7 @@ Bambu Lab's mid-tier CoreXY printer (released 2023). Same build volume + same en
 - **AMS**: same first-party 4-spool AMS as X1C (sold separately on bare P1S; included in P1S Combo). Up to 16 colors via 4 chained AMS units.
 - **Network**: WiFi only (no Ethernet); LAN-only mode supported.
 
-The closely-related **P1P** is the same machine without the enclosure panels — open-frame variant, same mainboard. Treat P1P as "P1S minus engineering-filament capability."
+The closely-related **P1P** is the same machine without the enclosure panels — open-frame variant, same mainboard. Treat P1P as "P1S minus engineering-filament capability." **P1P ships AMNC** (Active Motor Noise Cancellation) — first validated commercial acoustic side-channel countermeasure [@sources/2026-yocam-amnc-bambu-side-channel.md].
 
 ### What it does well
 

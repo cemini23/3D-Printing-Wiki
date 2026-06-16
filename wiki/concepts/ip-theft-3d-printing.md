@@ -14,14 +14,15 @@ related:
   - sources/2025-jamarani-acoustic-magnetic-decoding.md
   - sources/2025-dolgavin-hearsay-pbf-power.md
   - sources/2025-ivkic-cost-benefit-maas.md
+  - sources/2026-yocam-amnc-bambu-side-channel.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-06-16
 ---
 
 ## Relations
 
-@concepts/side-channel-attacks.md @concepts/g-code-protection.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @concepts/print-farm-operations.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md
+@concepts/side-channel-attacks.md @concepts/g-code-protection.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @concepts/print-farm-operations.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-yocam-amnc-bambu-side-channel.md
 
 ## Raw Concept
 
@@ -37,7 +38,7 @@ The threat-model spectrum for stealing 3D-printable designs, from a hobbyist sel
 
 **Attack surface**:
 - **File-level**: pirated STL files distributed on torrent sites or alternative marketplaces. The model is bytes — once shared, it's everywhere. Conventional copyright applies but enforcement is weak. **This is the dominant real-world threat for a small seller.**
-- **Side-channel**: theoretically possible but practically unlikely. An adversary would need access to the seller's workshop with a phone or camera, and the economics rarely justify it for hobbyist-priced designs (sub-$50 SKUs).
+- **Side-channel**: theoretically possible but practically unlikely for sub-$50 SKUs. **Update (2026):** Bambu AMNC neutralizes acoustic leakage on P1P/A1 Mini [@sources/2026-yocam-amnc-bambu-side-channel.md]; vibration remains a partial channel — still not reconstruction-grade on public test data. Optical (cloud camera) and file piracy dominate practical Tier-1 risk.
 
 **Defenses**: watermark designs (subtle, recoverable surface features); time-limited streaming via OctoPrint to a single printer; DMCA takedowns post-leak; price low enough that pirating isn't worth the friction.
 

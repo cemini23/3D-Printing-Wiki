@@ -2,6 +2,16 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-16] ingest | Pass 19 — AMNC side-channel + RedAct cross-route (2 arXiv)
+
+- **Ingested:** `2026-yocam-amnc-bambu-side-channel.md` (arXiv:2606.13952) — first empirical AMNC eval on Bambu P1P/A1 Mini; acoustic neutralized, vibration partial.
+- **Updated:** `side-channel-attacks.md`, `g-code-protection.md`, `ip-theft-3d-printing.md`, `a1.md`, `p1s.md`, `2026-asgar-quietprint-acoustic-defense.md`.
+- **Cross-routed:** arXiv:2606.10813 RedAct → `@cybersecurity-wiki/briefs/2026-06-16_redact-agent-skill-protection-from-3d-printing.md` (Phase-0 REFERENCE/CONDITIONAL-GO on `XuShuwenn/RedAct`).
+- **Briefs:** `2026-06-16_bambu-amnc-vibration-side-channel.md` (local); RedAct routing brief (3D printing + cybersec copies).
+- **Archive:** PDFs → egress-fi (`3d-printing` + `cybersec` wiki-ids); inbox cleared.
+
+---
+
 ## [2026-06-12] ingest | STGT LPBF quality prediction (1 arXiv)
 
 - **Source** — `2026-pelaez-stgt-lpbf-quality-prediction.md` (arXiv:2606.10227; weighted k-NN graph + dual-attention STGT; R² 0.719 with cross-layer interactions on NIST AMS 100-69).

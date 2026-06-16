@@ -13,14 +13,15 @@ related:
   - sources/2025-jamarani-acoustic-magnetic-decoding.md
   - sources/2025-dolgavin-hearsay-pbf-power.md
   - sources/2025-ivkic-cost-benefit-maas.md
+  - sources/2026-yocam-amnc-bambu-side-channel.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-06-16
 ---
 
 ## Relations
 
-@concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md
+@concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-yocam-amnc-bambu-side-channel.md
 
 ## Raw Concept
 
@@ -50,6 +51,8 @@ Far less mature. Three published approaches:
 
 3. **G-code obfuscation via dummy commands** (no published productized version; see "Hiding My Real Self" [Liang & Beyah, undated, cited in Asgar 2026 [19]]). Inject decoy moves that don't physically extrude. Less developed than SHM.
 
+4. **Active Motor Noise Cancellation (AMNC)** — Bambu Lab firmware/hardware on P1P and A1 Mini [@sources/2026-yocam-amnc-bambu-side-channel.md]. Adaptive current control suppresses motor resonance frequencies targeted by acoustic SCAs. **First deployed consumer countermeasure empirically validated** (Jun 2026): acoustic closed-set ID drops to random chance. **Does not address** chassis vibration, optical, magnetic, or power channels.
+
 ### Operational defenses (deployable today on a Bambu)
 
 For the reader's Tier 1-2 use case [@concepts/ip-theft-3d-printing.md]:
@@ -72,6 +75,7 @@ For the reader's Tier 1-2 use case [@concepts/ip-theft-3d-printing.md]:
 | TPM / Identify3D | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Active acoustic masking | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **SHM** (Asgar 2026) | ❌ | ✅ | ❌ | ✅ | ❌ | ❌ |
+| **AMNC** (Bambu P1P/A1 Mini) | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | Physical isolation | ❌ | ✅ | ✅ | ✅ | partial | ❌ |
 | LAN-only / camera off | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | **Defense-in-depth** | ✅ | ✅ | ✅ | ✅ | partial | partial |

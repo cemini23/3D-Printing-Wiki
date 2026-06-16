@@ -11,6 +11,7 @@ related:
   - sources/2026-asgar-quietprint-acoustic-defense.md
   - sources/2025-chattopadhyay-one-video-optical.md
   - sources/2025-dolgavin-hearsay-pbf-power.md
+  - sources/2026-yocam-amnc-bambu-side-channel.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-06
