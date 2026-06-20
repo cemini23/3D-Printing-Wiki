@@ -16,12 +16,13 @@ fetch:
   max_results_per_paper_query: 5
 
 active_topics:
-  - "Inbox ingest pass — 37 PDFs remaining; cluster picks from ROADMAP"
+  - "Arxiv lane noise triage — queries tightened 2026-06-20; monitor next overnight fetch"
   - "Consumer FDM — Bambu / Flashforge / Orca-Flashforge / print quality"
   - "Materials baseline — PLA PETG ABS TPU vendor docs + new filament SKUs"
   - "AI design tools — Meshy RodinAI generative 3D Etsy MakerWorld pipeline"
   - "Store ops — Etsy MakerWorld Printables listing + print-farm economics (defer for friend reader)"
 
+# Broad discovery — often returns Springer/Nature/ScienceDirect (digest only; fetch skips non-arXiv).
 paper_queries:
   - cluster: fdm-print-quality-paper
     query: "research paper fused deposition modeling FDM print quality extrusion fault detection input shaping"
@@ -38,6 +39,19 @@ paper_queries:
   - cluster: soft-robotics-am-paper
     query: "research paper 3D printing soft robotics shape morphing 4D printing FDM"
     category: research paper
+
+  # arXiv-biased lane — overnight PDF fetch (added 2026-06-19). Quote AM/FDM terms to cut noise.
+  - cluster: fdm-print-quality-arxiv
+    query: 'site:arxiv.org ("fused deposition modeling" OR "fused filament fabrication" OR FFF) ("print quality" OR extrusion OR "input shaping" OR "fault detection" OR "layer adhesion")'
+
+  - cluster: vlm-manufacturing-arxiv
+    query: 'site:arxiv.org ("additive manufacturing" OR LPBF OR SLM OR SLS) ("vision language" OR VLM OR "visual inspection" OR "in-process monitoring")'
+
+  - cluster: am-security-arxiv
+    query: 'site:arxiv.org ("3D printing" OR FDM) ("side channel" OR "side-channel" OR G-code OR "intellectual property")'
+
+  - cluster: soft-robotics-am-arxiv
+    query: 'site:arxiv.org ("3D printing" OR FDM) ("soft robot" OR "4D printing" OR "shape morphing")'
 
 queries:
   - cluster: bambu-slicer-news

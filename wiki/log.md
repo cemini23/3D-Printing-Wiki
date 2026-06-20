@@ -2,6 +2,16 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-20] ingest | Pass 20 — arXiv lane noise triage (5 PDFs, reject-all)
+
+- **Triage:** 5 overnight arXiv PDFs from Exa `site:arxiv.org` lane — all rejected (medical 3D, HCI motion, construction 3DGS, robot nav, LLM RL env). No entity/concept pages.
+- **Created:** `2026-arxiv-lane-noise-triage-jun20.md` — reject table + Phase-0 on `LARK-AI-Lab/Trainee-to-Trainer` (CONDITIONAL-GO lab ref) and `QwenLM/Qwen-RobotNav` (404).
+- **Updated:** `daily-research-digest-cadence.md`, `index.md`, `daily_research_config.yaml` (query tighten), sweep frontmatter 2026-06-17…20, `ROADMAP.md`.
+- **Brief:** `2026-06-20_arxiv-lane-noise-triage.md`.
+- **Archive:** 5 PDFs → egress-fi (`3d-printing`); inbox cleared.
+
+---
+
 ## [2026-06-16] ingest | Pass 19 — AMNC side-channel + RedAct cross-route (2 arXiv)
 
 - **Ingested:** `2026-yocam-amnc-bambu-side-channel.md` (arXiv:2606.13952) — first empirical AMNC eval on Bambu P1P/A1 Mini; acoustic neutralized, vibration partial.

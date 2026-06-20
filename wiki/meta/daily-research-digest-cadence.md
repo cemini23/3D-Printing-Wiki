@@ -24,15 +24,20 @@ related:
   - sweeps/2026-06-14-daily.md
   - sweeps/2026-06-15-daily.md
   - sweeps/2026-06-16-daily.md
+  - sweeps/2026-06-17-daily.md
+  - sweeps/2026-06-18-daily.md
+  - sweeps/2026-06-19-daily.md
+  - sweeps/2026-06-20-daily.md
+  - sources/2026-arxiv-lane-noise-triage-jun20.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-16
+updated: 2026-06-20
 cross-wiki-source: "@osint-wiki/concepts/federated-daily-research-digest.md"
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/print-farm-operations.md @sweeps/_daily-template.md @sweeps/2026-06-01-daily.md @sweeps/2026-06-02-daily.md @sweeps/2026-06-03-daily.md @sweeps/2026-06-04-daily.md @sweeps/2026-06-05-daily.md @sweeps/2026-06-06-daily.md @sweeps/2026-06-07-daily.md @sweeps/2026-06-08-daily.md @sweeps/2026-06-09-daily.md @sweeps/2026-06-10-daily.md @sweeps/2026-06-11-daily.md @sweeps/2026-06-12-daily.md @sweeps/2026-06-13-daily.md @sweeps/2026-06-14-daily.md @sweeps/2026-06-15-daily.md @sweeps/2026-06-16-daily.md
+@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/print-farm-operations.md @sweeps/_daily-template.md @sweeps/2026-06-01-daily.md @sweeps/2026-06-02-daily.md @sweeps/2026-06-03-daily.md @sweeps/2026-06-04-daily.md @sweeps/2026-06-05-daily.md @sweeps/2026-06-06-daily.md @sweeps/2026-06-07-daily.md @sweeps/2026-06-08-daily.md @sweeps/2026-06-09-daily.md @sweeps/2026-06-10-daily.md @sweeps/2026-06-11-daily.md @sweeps/2026-06-12-daily.md @sweeps/2026-06-13-daily.md @sweeps/2026-06-14-daily.md @sweeps/2026-06-15-daily.md @sweeps/2026-06-16-daily.md @sweeps/2026-06-17-daily.md @sweeps/2026-06-18-daily.md @sweeps/2026-06-19-daily.md @sweeps/2026-06-20-daily.md @sources/2026-arxiv-lane-noise-triage-jun20.md
 
 - @osint-wiki/concepts/federated-daily-research-digest.md — federation install kit (K93 canonical)
 
@@ -76,6 +81,10 @@ Label must stay unique across federation wikis (`com.cemini.daily-research-diges
 [TENTATIVE 2026-06-01] LaunchAgent loaded status not verified in this session — operator should confirm `launchctl list | grep 3d-printing`.
 
 **Exa paper-lane caveat (2026-06-02):** `category: research paper` often returns Springer/Nature/ScienceDirect URLs, not arXiv — auto-fetch downloads **zero** PDFs unless hits include `arxiv.org`. Manual arXiv hunt or add `site:arxiv.org` queries to `daily_research_config.yaml` for overnight PDF drops.
+
+**Fix applied (2026-06-19):** four parallel `*-arxiv` paper queries with `site:arxiv.org` plus quoted AM/FDM terms (no Exa `category:` filter) added alongside the four broad `*-paper` discovery queries. Overnight fetch verified same day (0 → 5 PDFs). **Relevance caveat:** Exa still returns some off-topic arXiv hits — triage inbox before full ingest; tighten queries again if noise persists.
+
+**Pass 20 triage (2026-06-20):** all 5 overnight PDFs rejected (medical 3D, HCI motion, construction 3DGS, robot nav, LLM RL env). Queries tightened again — FDM lane drops bare `FDM`; VLM lane requires LPBF/SLM/SLS not standalone `"3D printing"`. Record: @sources/2026-arxiv-lane-noise-triage-jun20.md.
 
 ## Snippets
 

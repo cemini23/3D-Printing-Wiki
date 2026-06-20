@@ -283,7 +283,7 @@ def main() -> int:
     lines.extend(["---", "", "## Paper candidates (Exa research paper)", ""])
     paper_total = 0
     for i, (cluster, query, category, results) in enumerate(paper_sections, 1):
-        cat_label = category or "research paper"
+        cat_label = category or "none"
         lines.append(f"### P{i}: {cluster} ({len(results)} hits)")
         lines.append("")
         lines.append(f"Query: `{query}` · category: `{cat_label}`")
