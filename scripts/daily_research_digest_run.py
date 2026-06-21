@@ -216,11 +216,18 @@ def main() -> int:
     )
     partial = paper_partial or news_partial
 
+    fetch_clusters = {
+        q["cluster"]
+        for q in paper_defs
+        if q.get("cluster") and q.get("fetch") is not False
+    }
+    fetch_sections = [s for s in paper_sections if s[0] in fetch_clusters]
+
     fetch_outcomes: list[FetchOutcome] = []
-    if fetch_cfg.get("enabled", True) and paper_sections:
+    if fetch_cfg.get("enabled", True) and fetch_sections:
         fetch_outcomes = fetch_papers(
             repo,
-            paper_sections,
+            fetch_sections,
             max_downloads=int(fetch_cfg.get("max_downloads", 8)),
             fetch_likely=bool(fetch_cfg.get("fetch_likely", False)),
         )

@@ -2,6 +2,17 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-21] ingest | Pass 21 — arXiv noise triage + publisher signal (5 PDFs, reject-all)
+
+- **Triage:** 5 overnight arXiv PDFs — all rejected (VLM nav, stats, GNN/drones, remote sensing, egocentric video). On-topic AM hits in digest as publisher URLs (`skipped-no-arxiv`).
+- **Created:** `2026-arxiv-lane-noise-triage-jun21.md`.
+- **Updated:** `daily-research-digest-cadence.md`, `2026-arxiv-lane-noise-triage-jun20.md` (backlink), `index.md`, `daily_research_config.yaml` (`fetch: false` on `*-arxiv`), `daily_research_digest_run.py`, sweep frontmatter 2026-06-21, `ROADMAP.md`.
+- **Cross-route:** arXiv:2606.17119 → `@cybersecurity-wiki/briefs/2026-06-21_gnn-at-war-from-3d-printing-inbox.md`.
+- **Brief:** `2026-06-21_arxiv-lane-noise-triage.md`.
+- **Archive:** 5 PDFs → egress-fi; inbox cleared.
+
+---
+
 ## [2026-06-20] ingest | Pass 20 — arXiv lane noise triage (5 PDFs, reject-all)
 
 - **Triage:** 5 overnight arXiv PDFs from Exa `site:arxiv.org` lane — all rejected (medical 3D, HCI motion, construction 3DGS, robot nav, LLM RL env). No entity/concept pages.
