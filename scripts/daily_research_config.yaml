@@ -10,13 +10,13 @@ loop:
   max_results_per_query: 3
 
 fetch:
-  enabled: true
+  enabled: false  # disabled 2026-06-22 pass 22 — Exa arXiv hits are noise; ingest publisher URLs manually from sweep
   max_downloads: 5
   fetch_likely: false
   max_results_per_paper_query: 5
 
 active_topics:
-  - "Publisher manual-fetch — on-topic AM hits in sweep skipped-no-arxiv rows; arxiv auto-fetch disabled on *-arxiv queries (2026-06-21)"
+  - "Manual publisher fetch only — auto-fetch disabled 2026-06-22; top hits in daily sweep P1–P4 rows"
   - "Consumer FDM — Bambu / Flashforge / Orca-Flashforge / print quality"
   - "Materials baseline — PLA PETG ABS TPU vendor docs + new filament SKUs"
   - "AI design tools — Meshy RodinAI generative 3D Etsy MakerWorld pipeline"
@@ -27,18 +27,22 @@ paper_queries:
   - cluster: fdm-print-quality-paper
     query: "research paper fused deposition modeling FDM print quality extrusion fault detection input shaping"
     category: research paper
+    fetch: false
 
   - cluster: vlm-manufacturing-paper
     query: "research paper vision language model additive manufacturing 3D printing inspection"
     category: research paper
+    fetch: false
 
   - cluster: am-security-paper
     query: "research paper 3D printing side channel intellectual property G-code security"
     category: research paper
+    fetch: false
 
   - cluster: soft-robotics-am-paper
     query: "research paper 3D printing soft robotics shape morphing 4D printing FDM"
     category: research paper
+    fetch: false
 
   # arXiv-biased lane — digest discovery only (fetch: false since 2026-06-21; Exa semantic noise).
   - cluster: fdm-print-quality-arxiv

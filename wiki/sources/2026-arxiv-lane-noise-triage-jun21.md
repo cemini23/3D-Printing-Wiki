@@ -6,15 +6,16 @@ keywords: [2606.16902, 2606.16941, 2606.17119, 2606.17242, 2606.20559, exa, site
 related:
   - meta/daily-research-digest-cadence.md
   - sources/2026-arxiv-lane-noise-triage-jun20.md
+  - sources/2026-arxiv-lane-noise-triage-jun22.md
 maturity: draft
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-06-22
 read_status: skimmed
 ---
 
 ## Relations
 
-@meta/daily-research-digest-cadence.md @sources/2026-arxiv-lane-noise-triage-jun20.md
+@meta/daily-research-digest-cadence.md @sources/2026-arxiv-lane-noise-triage-jun20.md @sources/2026-arxiv-lane-noise-triage-jun22.md
 
 ## Raw Concept
 

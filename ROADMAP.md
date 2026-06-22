@@ -57,6 +57,7 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-06-16 | Ingest pass 19 — AMNC security + RedAct cross-route | 1 arXiv ingested (2606.13952 AMNC); 1 cross-routed to cybersec (2606.10813 RedAct). Briefs staged + scp to cybersec. Security cluster updated. |
 | 2026-06-20 | Ingest pass 20 — arXiv lane noise triage | 5 overnight PDFs all rejected (Exa semantic noise). 1 triage source page; arxiv queries tightened. Brief staged. Inbox cleared. |
 | 2026-06-21 | Ingest pass 21 — arXiv noise + publisher signal | 5 PDFs rejected again; on-topic AM in publisher URLs. Disabled arxiv auto-fetch; GNN-at-war cross-route to cybersec. Inbox cleared. |
+| 2026-06-22 | Ingest pass 22 — disable all auto-fetch | 5 PDFs rejected (broad paper lane arxiv noise). Global fetch.enabled false. Publisher manual-fetch brief. Inbox cleared. |
 
 ---
 

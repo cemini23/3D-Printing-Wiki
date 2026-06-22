@@ -2,6 +2,16 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-06-22] ingest | Pass 22 — arXiv noise via broad paper lane (5 PDFs, reject-all)
+
+- **Triage:** 5 PDFs from broad `*-paper` Exa hits (packing, PET scanner, VLA verification, continuum robots, video ADL). All rejected.
+- **Created:** `2026-arxiv-lane-noise-triage-jun22.md`.
+- **Config:** `fetch.enabled: false` globally; `fetch: false` on all four broad `*-paper` queries.
+- **Brief:** `2026-06-22_arxiv-noise-disable-auto-fetch.md` — publisher URL manual-fetch list from sweep.
+- **Archive:** 5 PDFs → egress-fi; inbox cleared.
+
+---
+
 ## [2026-06-21] ingest | Pass 21 — arXiv noise triage + publisher signal (5 PDFs, reject-all)
 
 - **Triage:** 5 overnight arXiv PDFs — all rejected (VLM nav, stats, GNN/drones, remote sensing, egocentric video). On-topic AM hits in digest as publisher URLs (`skipped-no-arxiv`).
