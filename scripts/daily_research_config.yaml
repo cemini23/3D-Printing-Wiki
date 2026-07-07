@@ -1,97 +1,86 @@
-# Daily research digest — 3D Printing wiki (federated install K93)
-# Read by: scripts/daily_research_digest_run.py
-# Update active_topics when ROADMAP.md workstreams shift.
-#
-# Requires: EXA_API_KEY in .env or ~/.cemini/exa-api-key
-# Does NOT auto-ingest wiki pages — morning Cursor "full ingest" only.
-
 loop:
   recency_window_days: 7
   max_results_per_query: 3
-
 fetch:
-  enabled: false  # disabled 2026-06-22 pass 22 — Exa arXiv hits are noise; ingest publisher URLs manually from sweep
+  enabled: false
   max_downloads: 5
   fetch_likely: false
   max_results_per_paper_query: 5
-
+arxiv_fallback:
+  enabled: true
+  request_interval_seconds: 3
+  max_terms_per_query: 6
 active_topics:
-  - "Manual publisher fetch only — auto-fetch disabled 2026-06-22; top hits in daily sweep P1–P4 rows"
-  - "Consumer FDM — Bambu / Flashforge / Orca-Flashforge / print quality"
-  - "Materials baseline — PLA PETG ABS TPU vendor docs + new filament SKUs"
-  - "AI design tools — Meshy RodinAI generative 3D Etsy MakerWorld pipeline"
-  - "Store ops — Etsy MakerWorld Printables listing + print-farm economics (defer for friend reader)"
-
-# Broad discovery — often returns Springer/Nature/ScienceDirect (digest only; fetch skips non-arXiv).
+- Manual publisher fetch only — auto-fetch disabled 2026-06-22; top hits in daily
+  sweep P1–P4 rows
+- Consumer FDM — Bambu / Flashforge / Orca-Flashforge / print quality
+- Materials baseline — PLA PETG ABS TPU vendor docs + new filament SKUs
+- AI design tools — Meshy RodinAI generative 3D Etsy MakerWorld pipeline
+- Store ops — Etsy MakerWorld Printables listing + print-farm economics (defer for
+  friend reader)
 paper_queries:
-  - cluster: fdm-print-quality-paper
-    query: "research paper fused deposition modeling FDM print quality extrusion fault detection input shaping"
-    category: research paper
-    fetch: false
-
-  - cluster: vlm-manufacturing-paper
-    query: "research paper vision language model additive manufacturing 3D printing inspection"
-    category: research paper
-    fetch: false
-
-  - cluster: am-security-paper
-    query: "research paper 3D printing side channel intellectual property G-code security"
-    category: research paper
-    fetch: false
-
-  - cluster: soft-robotics-am-paper
-    query: "research paper 3D printing soft robotics shape morphing 4D printing FDM"
-    category: research paper
-    fetch: false
-
-  # arXiv-biased lane — digest discovery only (fetch: false since 2026-06-21; Exa semantic noise).
-  - cluster: fdm-print-quality-arxiv
-    query: 'site:arxiv.org ("fused deposition modeling" OR "fused filament fabrication" OR FFF) ("print quality" OR extrusion OR "input shaping" OR "fault detection" OR "layer adhesion")'
-    fetch: false
-
-  - cluster: vlm-manufacturing-arxiv
-    query: 'site:arxiv.org ("additive manufacturing" OR LPBF OR SLM OR SLS) ("vision language" OR VLM OR "visual inspection" OR "in-process monitoring")'
-    fetch: false
-
-  - cluster: am-security-arxiv
-    query: 'site:arxiv.org ("3D printing" OR FDM) ("side channel" OR "side-channel" OR G-code OR "intellectual property")'
-    fetch: false
-
-  - cluster: soft-robotics-am-arxiv
-    query: 'site:arxiv.org ("3D printing" OR FDM) ("soft robot" OR "4D printing" OR "shape morphing")'
-    fetch: false
-
+- cluster: fdm-print-quality-paper
+  query: research paper fused deposition modeling FDM print quality extrusion fault
+    detection input shaping
+  category: research paper
+  fetch: false
+- cluster: vlm-manufacturing-paper
+  query: research paper vision language model additive manufacturing 3D printing inspection
+  category: research paper
+  fetch: false
+- cluster: am-security-paper
+  query: research paper 3D printing side channel intellectual property G-code security
+  category: research paper
+  fetch: false
+- cluster: soft-robotics-am-paper
+  query: research paper 3D printing soft robotics shape morphing 4D printing FDM
+  category: research paper
+  fetch: false
+- cluster: fdm-print-quality-arxiv
+  query: site:arxiv.org ("fused deposition modeling" OR "fused filament fabrication"
+    OR FFF) ("print quality" OR extrusion OR "input shaping" OR "fault detection"
+    OR "layer adhesion")
+  fetch: false
+- cluster: vlm-manufacturing-arxiv
+  query: site:arxiv.org ("additive manufacturing" OR LPBF OR SLM OR SLS) ("vision
+    language" OR VLM OR "visual inspection" OR "in-process monitoring")
+  fetch: false
+- cluster: am-security-arxiv
+  query: site:arxiv.org ("3D printing" OR FDM) ("side channel" OR "side-channel" OR
+    G-code OR "intellectual property")
+  fetch: false
+- cluster: soft-robotics-am-arxiv
+  query: site:arxiv.org ("3D printing" OR FDM) ("soft robot" OR "4D printing" OR "shape
+    morphing")
+  fetch: false
 queries:
-  - cluster: bambu-slicer-news
-    query: '"Bambu Lab" OR "Bambu Studio" OR OrcaSlicer OR "Orca-Flashforge" firmware update slicer profile'
-    category: news
-
-  - cluster: marketplace-store-ops
-    query: '"MakerWorld" OR Etsy 3D printing seller OR Printables marketplace listing tips'
-    category: news
-
-  - cluster: filament-materials
-    query: '"3D printing filament" PLA PETG ABS TPU new material datasheet Bambu Polymaker'
-    category: news
-
-  - cluster: generative-3d-ai
-    query: 'Meshy OR "text to 3D" OR "image to 3D" generative model STL 3MF printing'
-    category: news
-
+- cluster: bambu-slicer-news
+  query: '"Bambu Lab" OR "Bambu Studio" OR OrcaSlicer OR "Orca-Flashforge" firmware
+    update slicer profile'
+  category: news
+- cluster: marketplace-store-ops
+  query: '"MakerWorld" OR Etsy 3D printing seller OR Printables marketplace listing
+    tips'
+  category: news
+- cluster: filament-materials
+  query: '"3D printing filament" PLA PETG ABS TPU new material datasheet Bambu Polymaker'
+  category: news
+- cluster: generative-3d-ai
+  query: Meshy OR "text to 3D" OR "image to 3D" generative model STL 3MF printing
+  category: news
 monokern_pipeline:
   enabled: true
   cadence: weekly
   default_deliverable: none
   source_modules:
-    - yt-dlp
-    - inbox_pdf
-    - web_url
-  ingest_hook: "After Sunday digest, one NotebookLM brief on top ROADMAP cluster (optional)"
-
+  - yt-dlp
+  - inbox_pdf
+  - web_url
+  ingest_hook: After Sunday digest, one NotebookLM brief on top ROADMAP cluster (optional)
 social:
   manual_pass:
-    - tool: opencli-reader
-      prompt: "HackerNews / Reddit r/3Dprinting frontpage — Bambu Flashforge slicer filament last 24h"
-
+  - tool: opencli-reader
+    prompt: HackerNews / Reddit r/3Dprinting frontpage — Bambu Flashforge slicer filament
+      last 24h
 output:
-  path_template: "wiki/sweeps/{date}-daily.md"
+  path_template: wiki/sweeps/{date}-daily.md
