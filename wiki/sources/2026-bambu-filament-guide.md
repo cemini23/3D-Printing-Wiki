@@ -11,15 +11,16 @@ related:
   - entities/materials/abs.md
   - entities/materials/asa.md
   - entities/materials/tpu.md
+  - sources/2026-bambu-pla-pure-launch.md
 maturity: validated
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-07-15
 read_status: deep-read
 ---
 
 ## Relations
 
-@concepts/filaments-baseline.md @concepts/fdm-printing.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md
+@sources/2026-bambu-pla-pure-launch.md @concepts/filaments-baseline.md @concepts/fdm-printing.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md
 
 ## Raw Concept
 

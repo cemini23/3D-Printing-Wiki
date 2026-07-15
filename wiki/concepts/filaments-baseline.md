@@ -19,9 +19,10 @@ related:
   - concepts/shape-changing-fdm-interfaces.md
   - concepts/novice-cad-workflows.md
   - sources/2026-06-02-digest-polymaker-abs-pro.md
+  - sources/2026-bambu-pla-pure-launch.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-23
+updated: 2026-06-25
 ---
 
 ## Relations
@@ -41,6 +42,7 @@ Synthesized 2026-05-06 from the Bambu Lab vendor reference [@sources/2026-bambu-
 | If your part needs to… | Use | Why |
 |---|---|---|
 | Look good, print easy, low cost, hobby/decor | **PLA** | Easiest to print; widest color/effect selection; cheapest |
+| Print in a living room / toy-adjacent with lower-emission vendor SKU | **PLA Pure** (Bambu) | Five-ingredient + UL 2904 positioning; not stronger than Basic — see @sources/2026-bambu-pla-pure-launch.md |
 | Be functional, hold up to mild heat, take stress without shattering | **PETG** | Stronger layer adhesion than ABS; printable on open-frame Bambu A1; higher HDT than PLA |
 | Survive in a hot car, hold up to high temperature, take impact | **ABS** | HDT 100°C; impact-resistant; **requires enclosed printer (X1C, P1S)** |
 | Survive outdoors / UV exposure | **ASA** | UV-stable variant of ABS; same enclosure requirement |

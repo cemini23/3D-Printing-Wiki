@@ -7,6 +7,7 @@ related:
   - concepts/filaments-baseline.md
   - concepts/fdm-printing.md
   - sources/2026-bambu-filament-guide.md
+  - sources/2026-bambu-pla-pure-launch.md
   - entities/materials/petg.md
   - entities/materials/abs.md
   - entities/materials/asa.md
@@ -20,12 +21,12 @@ related:
   - sources/2026-faulkner-lithographs-microscopy.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-23
+updated: 2026-06-25
 ---
 
 ## Relations
 
-@concepts/filaments-baseline.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @sources/2025-chi-berkeley-humanoid-lite.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md
+@concepts/filaments-baseline.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @sources/2026-bambu-pla-pure-launch.md @sources/2025-chi-berkeley-humanoid-lite.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md
 
 ## Raw Concept
 
@@ -72,6 +73,7 @@ The default filament. **PLA (polylactic acid)** is the easiest-printing, cheapes
 | Variant | Difference vs Basic | When to pick it |
 |---|---|---|
 | **PLA Basic** | The reference | Default for everything |
+| **PLA Pure** | Five-ingredient home-room formula; UL 2904 + EN 71-3; matches Basic mechanics; RFID on Bambu spools | Living-space / toy-adjacent prints where emissions + composition matter more than cost — see @sources/2026-bambu-pla-pure-launch.md |
 | **PLA Matte** | Matte surface; better at hiding layer lines | Anywhere appearance matters more than gloss |
 | **PLA Silk** | High-gloss, slight color shift | Premium decorative pieces, jewelry boxes |
 | **PLA Tough** | Modified for higher impact resistance | Light functional parts where ABS isn't worth the enclosure |

@@ -7,15 +7,17 @@ related:
   - entities/slicers/orcaslicer.md
   - entities/slicers/bambu-studio.md
   - concepts/bambu-ecosystem-closed-loop.md
+  - sources/2026-orcaslicer-2-4-stable-release.md
+  - sources/2026-orcaslicer-2-4-2-release.md
 maturity: draft
 created: 2026-06-02
-updated: 2026-06-05
+updated: 2026-07-15
 read_status: deep-read
 ---
 
 ## Relations
 
-@entities/slicers/orcaslicer.md @entities/slicers/bambu-studio.md @concepts/bambu-ecosystem-closed-loop.md
+@entities/slicers/orcaslicer.md @entities/slicers/bambu-studio.md @concepts/bambu-ecosystem-closed-loop.md @sources/2026-orcaslicer-2-4-stable-release.md @sources/2026-orcaslicer-2-4-2-release.md
 
 ## Raw Concept
 

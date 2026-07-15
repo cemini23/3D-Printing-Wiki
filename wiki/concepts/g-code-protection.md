@@ -14,14 +14,15 @@ related:
   - sources/2025-dolgavin-hearsay-pbf-power.md
   - sources/2025-ivkic-cost-benefit-maas.md
   - sources/2026-yocam-amnc-bambu-side-channel.md
+  - sources/2026-asgar-firewall3d-firmware-hardware.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-06-16
+updated: 2026-07-15
 ---
 
 ## Relations
 
-@concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-yocam-amnc-bambu-side-channel.md
+@concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-yocam-amnc-bambu-side-channel.md @sources/2026-asgar-firewall3d-firmware-hardware.md
 
 ## Raw Concept
 
@@ -53,6 +54,8 @@ Far less mature. Three published approaches:
 
 4. **Active Motor Noise Cancellation (AMNC)** — Bambu Lab firmware/hardware on P1P and A1 Mini [@sources/2026-yocam-amnc-bambu-side-channel.md]. Adaptive current control suppresses motor resonance frequencies targeted by acoustic SCAs. **First deployed consumer countermeasure empirically validated** (Jun 2026): acoustic closed-set ID drops to random chance. **Does not address** chassis vibration, optical, magnetic, or power channels.
 
+5. **Hardware physical-layer firewall (Firewall3D)** — Asgar & Reddy 2026 [@sources/2026-asgar-firewall3d-firmware-hardware.md]. Custom bump-in-the-wire PCB monitors stepper currents, endstops, temps, fans and halts on mismatch vs intended G-code. Targets **compromised firmware / supply-chain motherboard** — orthogonal to SHM/AMNC (emanation). **Phase-0: REFERENCE / NO-GO hobby install** (no public BOM; invasive wiring; not Bambu-appliance-friendly).
+
 ### Operational defenses (deployable today on a Bambu)
 
 For the reader's Tier 1-2 use case [@concepts/ip-theft-3d-printing.md]:
@@ -76,8 +79,11 @@ For the reader's Tier 1-2 use case [@concepts/ip-theft-3d-printing.md]:
 | Active acoustic masking | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **SHM** (Asgar 2026) | ❌ | ✅ | ❌ | ✅ | ❌ | ❌ |
 | **AMNC** (Bambu P1P/A1 Mini) | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Firewall3D** (research PCB) | partial* | ❌ | ❌ | ❌ | via current sense | motion/thermal sabotage |
 | Physical isolation | ❌ | ✅ | ✅ | ✅ | partial | ❌ |
 | LAN-only / camera off | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+
+\*Firewall3D attests physical execution integrity under untrusted firmware; not a file-encryption substitute. MATE cell: can halt sabotage / some physical leaks (fan-encode) if attacker cannot modify the firewall itself.
 | **Defense-in-depth** | ✅ | ✅ | ✅ | ✅ | partial | partial |
 
 [CONFIRMED] No single defense covers all six attack surfaces. [CONFIRMED] No published defense covers MATE for industrial AM as of 2026-05-06. The strongest realistic posture is layered: file-level encryption + LAN-only / camera-off + isolated print room + SHM-class G-code obfuscation for residual leakage.

@@ -10,14 +10,15 @@ related:
   - concepts/fdm-printing.md
   - concepts/ai-design-tools.md
   - sources/2025-ivkic-cost-benefit-maas.md
+  - sources/2026-bambu-popmart-makerworld-ip-settlement.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-07-15
 ---
 
 ## Relations
 
-@concepts/print-farm-operations.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @concepts/ai-design-tools.md @sources/2025-ivkic-cost-benefit-maas.md
+@sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/print-farm-operations.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @concepts/ai-design-tools.md @sources/2025-ivkic-cost-benefit-maas.md
 
 ## Raw Concept
 

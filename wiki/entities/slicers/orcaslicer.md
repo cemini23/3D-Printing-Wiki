@@ -10,14 +10,16 @@ related:
   - sources/2026-bambu-toolchain-audit.md
   - entities/slicers/bambu-studio.md
   - sources/2026-06-02-digest-orcaslicer-2-4-news.md
+  - sources/2026-orcaslicer-2-4-stable-release.md
+  - sources/2026-orcaslicer-2-4-2-release.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-06-05
+updated: 2026-07-15
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/extrusion-control.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @sources/2026-06-02-digest-orcaslicer-2-4-news.md
+@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/extrusion-control.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @sources/2026-06-02-digest-orcaslicer-2-4-news.md @sources/2026-orcaslicer-2-4-stable-release.md @sources/2026-orcaslicer-2-4-2-release.md
 
 ## Raw Concept
 
@@ -76,7 +78,26 @@ If the reader tunes a Polymaker PETG profile in OrcaSlicer (say, K=0.045, retrac
 
 Workflow recommendation: **calibrate in OrcaSlicer, *write down* the tuned values, then re-create the profile in Bambu Studio** — don't try to copy the entire profile. Treat OrcaSlicer's role as a tuning instrument, not a profile source-of-truth.
 
-### Release watch — V2.4.0 Alpha [CONFIRMED 2026-06-05]
+### Release watch — V2.4.0 stable [CONFIRMED 2026-06-25]
+
+**V2.4.0 stable** released — supersedes Alpha coverage in @sources/2026-06-02-digest-orcaslicer-2-4-news.md. Full delta table: @sources/2026-orcaslicer-2-4-stable-release.md.
+
+Headline stable additions beyond Alpha:
+
+- **Packaged 3MF send** — optional per-printer `.gcode.3mf` upload instead of plain G-code
+- **Offline Orca Cloud session** — profiles stay available without network
+- **Slice-to-preview speed** — largest gains on Klipper-flavor printers
+- **Microsoft Store MSIX channel** — pending Microsoft certification at release time
+
+Alpha/Beta features unchanged in summary: Orca Cloud, ZAA, Optimized Gyroid, Machine Input Shaping, Troubleshoot Center.
+
+**Workflow guidance [CONFIRMED].** CONDITIONAL-GO unchanged: use 2.4 for **calibration experiments** (ZAA on domes, gyroid tuning), not as daily Bambu Studio replacement. Pin version; track #13828 lineage for regressions. **Orca-Flashforge fork may lag** upstream 2.4 — verify fork release before adopting on Flashforge Adventurer 5M.
+
+### Release watch — V2.4.2 maintenance [CONFIRMED 2026-07-15]
+
+**v2.4.2** (2026-07-07) — patch on 2.4.1: missing-preset upgrades, cloud-sync fidelity, Bambu network plugin install fixes, PA/Measure/prime-tower crash fixes, `{first_object_name}` placeholder. Details: @sources/2026-orcaslicer-2-4-2-release.md. CONDITIONAL-GO unchanged; local Mac DMG (~246 MB) not installed on this research laptop — friend endpoint is Orca-Flashforge.
+
+### Release watch — V2.4.0 Alpha [CONFIRMED 2026-06-05] (superseded by stable)
 
 GitHub pre-release **2026-05-25** confirms digest claims — see @sources/2026-06-02-digest-orcaslicer-2-4-news.md:
 

@@ -13,15 +13,16 @@ related:
   - sources/2026-asgar-quietprint-acoustic-defense.md
   - sources/2025-jamarani-acoustic-magnetic-decoding.md
   - sources/2025-chattopadhyay-one-video-optical.md
+  - sources/2026-asgar-firewall3d-firmware-hardware.md
 maturity: draft
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-15
 read_status: skimmed
 ---
 
 ## Relations
 
-@concepts/side-channel-attacks.md @concepts/g-code-protection.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @entities/printers/a1.md @entities/printers/p1s.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-chattopadhyay-one-video-optical.md
+@sources/2026-asgar-firewall3d-firmware-hardware.md @concepts/side-channel-attacks.md @concepts/g-code-protection.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @entities/printers/a1.md @entities/printers/p1s.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-chattopadhyay-one-video-optical.md
 
 ## Raw Concept
 

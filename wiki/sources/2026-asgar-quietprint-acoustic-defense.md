@@ -12,15 +12,16 @@ related:
   - sources/2025-jamarani-acoustic-magnetic-decoding.md
   - sources/2025-dolgavin-hearsay-pbf-power.md
   - sources/2026-yocam-amnc-bambu-side-channel.md
+  - sources/2026-asgar-firewall3d-firmware-hardware.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-06-16
+updated: 2026-07-15
 read_status: deep-read
 ---
 
 ## Relations
 
-@concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2026-yocam-amnc-bambu-side-channel.md
+@concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2026-yocam-amnc-bambu-side-channel.md @sources/2026-asgar-firewall3d-firmware-hardware.md
 
 ## Raw Concept
 
@@ -39,7 +40,7 @@ The first software-only defense against acoustic side-channel IP theft on consum
 
 **Threat model.** Adversary has access to a microphone near the printer — a compromised device, an insider's smartphone, or a planted recorder. Asgar uses the *built-in mic of a Microsoft Surface Pro 7+ laptop* to make the attack realistic; prior work [Faruque 2016, Kubiak 2020] used Zoom H6 / Behringer C-1U pro mics, which is unrealistic for an opportunistic attacker. Hardware: Elegoo Neptune 3 FDM printer.
 
-**Defense landscape update (2026):** Bambu AMNC is a **hardware** acoustic countermeasure on shipping printers; QuietPrint SHM remains the primary **software-only** research defense. AMNC validated on Bambu; SHM validated on Elegoo Neptune 3 — different deployment models [@sources/2026-yocam-amnc-bambu-side-channel.md].
+**Defense landscape update (2026):** Bambu AMNC is a **hardware** acoustic countermeasure on shipping printers; QuietPrint SHM remains the primary **software-only** research defense. AMNC validated on Bambu; SHM validated on Elegoo Neptune 3 — different deployment models [@sources/2026-yocam-amnc-bambu-side-channel.md]. Same authors later published **Firewall3D** (firmware / physical-layer bump-in-the-wire) — complementary to SHM, not a replacement [@sources/2026-asgar-firewall3d-firmware-hardware.md].
 
 **Three acoustic leakage sources** identified:
 1. **Power-supply cooling fan** — uncorrelated with motion, noise.

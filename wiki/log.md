@@ -2,6 +2,23 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-07-15] ingest | Pass 24 — Firewall3D + Orca 2.4.2 + Pop Mart IP + noise triage
+
+- **Inbox:** 5 overnight PDFs after auto-fetch re-enable. **1 ACCEPT / 4 REJECT.**
+- **Accept:** arXiv:2607.10484 Firewall3D → `sources/2026-asgar-firewall3d-firmware-hardware.md` (Phase-0 **REFERENCE / NO-GO** hobby).
+- **Reject:** 2607.06896 construction tracking; 2607.07281 modular robots; 2607.07475 HRI affordances (title false-friend); 2607.09387 DiPolES chemistry.
+- **News stubs:** OrcaSlicer **v2.4.2**; Bambu × Pop Mart MakerWorld Labubu settlement.
+- **Created:** Firewall3D source; jul15 noise triage; orcaslicer-2-4-2; popmart-makerworld-ip.
+- **Updated:** g-code-protection, side-channel-attacks, ip-theft, QuietPrint, orcaslicer entity, orcaslicer-2-4-stable, ai-design-tools, digest cadence, index.
+- **Cross-wiki:** `@cybersecurity-wiki/sources/2026-asgar-firewall3d-firmware-hardware.md` + brief `Cybersecurity wiki/briefs/2026-07-15_firewall3d-from-3d-printing-inbox.md`.
+- **Briefs (local):** `briefs/2026-07-15_firewall3d-phase0-reference.md`, `briefs/2026-07-15_firewall3d-cross-wiki-cybersec.md`.
+- **Routing skipped:** tipdrop/David (not image-gen), poker (no steal), cemini-prod scp (not harness/XSP/PM).
+- **Local adopt:** none under 500 MB (Firewall3D no repo; Orca DMG ~246 MB but not installed — friend = Orca-Flashforge).
+- **Archive:** 5 PDFs → egress-fi `3d-printing/`; inbox cleared.
+- **Backlog sweeps Jun23–Jul15:** pass-23 pages already present; no additional high-signal PDFs beyond today's batch + news stubs above.
+
+---
+
 ## [2026-06-22] ingest | Pass 22 — arXiv noise via broad paper lane (5 PDFs, reject-all)
 
 - **Triage:** 5 PDFs from broad `*-paper` Exa hits (packing, PET scanner, VLA verification, continuum robots, video ADL). All rejected.

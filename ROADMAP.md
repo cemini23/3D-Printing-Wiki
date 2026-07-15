@@ -8,7 +8,7 @@ Active workstreams, open decisions, and the done log. Read at session start; upd
 
 ### W1 — Initial research ingest pass
 
-**Status:** Ingest passes 1–16 complete through 2026-06-01. **Inbox empty.** Wiki has **104 pages**.
+**Status:** Ingest passes 1–24 through 2026-07-15. **Inbox empty.** Auto-fetch re-enabled (2026-07-14); triage each morning.
 
 Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-printing papers. Curation surfaces practical takeaways for the reader; some papers may go in as background-context one-liners rather than full pages.
 
@@ -58,6 +58,9 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-06-20 | Ingest pass 20 — arXiv lane noise triage | 5 overnight PDFs all rejected (Exa semantic noise). 1 triage source page; arxiv queries tightened. Brief staged. Inbox cleared. |
 | 2026-06-21 | Ingest pass 21 — arXiv noise + publisher signal | 5 PDFs rejected again; on-topic AM in publisher URLs. Disabled arxiv auto-fetch; GNN-at-war cross-route to cybersec. Inbox cleared. |
 | 2026-06-22 | Ingest pass 22 — disable all auto-fetch | 5 PDFs rejected (broad paper lane arxiv noise). Global fetch.enabled false. Publisher manual-fetch brief. Inbox cleared. |
+| 2026-06-25 | Ingest pass 23 — news stubs (empty inbox) | PLA Pure, OrcaSlicer 2.4.0, Hi3D/Meshy/Tripo Phase-0 stubs. Auto-fetch still off. |
+| 2026-07-14 | Auto-fetch re-enabled | Operator restored paper+arxiv `fetch: true` after Jun silence. |
+| 2026-07-15 | Ingest pass 24 — Firewall3D + news | 1/5 PDF accept (Firmware hardware firewall); Orca 2.4.2 + Pop Mart MakerWorld IP; cybersec cross-route; no tipdrop/poker/prod scp. Inbox cleared. |
 
 ---
 

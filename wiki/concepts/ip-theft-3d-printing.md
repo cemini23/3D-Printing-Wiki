@@ -15,14 +15,17 @@ related:
   - sources/2025-dolgavin-hearsay-pbf-power.md
   - sources/2025-ivkic-cost-benefit-maas.md
   - sources/2026-yocam-amnc-bambu-side-channel.md
+  - sources/2026-asgar-firewall3d-firmware-hardware.md
+  - sources/2026-bambu-popmart-makerworld-ip-settlement.md
+  - concepts/ai-design-tools.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-06-16
+updated: 2026-07-15
 ---
 
 ## Relations
 
-@concepts/side-channel-attacks.md @concepts/g-code-protection.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @concepts/print-farm-operations.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-yocam-amnc-bambu-side-channel.md
+@concepts/side-channel-attacks.md @concepts/g-code-protection.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @concepts/print-farm-operations.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-yocam-amnc-bambu-side-channel.md @sources/2026-asgar-firewall3d-firmware-hardware.md @sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/ai-design-tools.md
 
 ## Raw Concept
 
@@ -41,6 +44,8 @@ The threat-model spectrum for stealing 3D-printable designs, from a hobbyist sel
 - **Side-channel**: theoretically possible but practically unlikely for sub-$50 SKUs. **Update (2026):** Bambu AMNC neutralizes acoustic leakage on P1P/A1 Mini [@sources/2026-yocam-amnc-bambu-side-channel.md]; vibration remains a partial channel — still not reconstruction-grade on public test data. Optical (cloud camera) and file piracy dominate practical Tier-1 risk.
 
 **Defenses**: watermark designs (subtle, recoverable surface features); time-limited streaming via OctoPrint to a single printer; DMCA takedowns post-leak; price low enough that pirating isn't worth the friction.
+
+**Platform IP (2026 update):** MakerWorld-scale communities attract rights-holder enforcement. Bambu × Pop Mart settlement over unauthorized Labubu models (delist + apology) signals that **uploader fan-IP and platform notice duty** are live Tier-1 risks — not only pirate copies of indie STLs [@sources/2026-bambu-popmart-makerworld-ip-settlement.md]. Avoid publishing brand-character fan models; AI image-to-3D of IP characters inherits the same exposure.
 
 ### Tier 2 — Commercial designer with proprietary geometry
 

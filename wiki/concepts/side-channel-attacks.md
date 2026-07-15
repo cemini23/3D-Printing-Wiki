@@ -12,14 +12,15 @@ related:
   - sources/2025-jamarani-acoustic-magnetic-decoding.md
   - sources/2025-dolgavin-hearsay-pbf-power.md
   - sources/2026-yocam-amnc-bambu-side-channel.md
+  - sources/2026-asgar-firewall3d-firmware-hardware.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-06-16
+updated: 2026-07-15
 ---
 
 ## Relations
 
-@concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2026-yocam-amnc-bambu-side-channel.md
+@concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2026-yocam-amnc-bambu-side-channel.md @sources/2026-asgar-firewall3d-firmware-hardware.md
 
 ## Raw Concept
 
@@ -39,6 +40,8 @@ A **side-channel** is an unintended physical emanation from a process that corre
 | **Power** | Gatlin 2021 (FDM stepper currents, ~99% spatial accuracy) | Dolgavin 2025 (industrial PBF, 90.29% TP voxel volume) | Scales from FDM to industrial PBF [@sources/2025-dolgavin-hearsay-pbf-power.md]; defeats end-to-end design encryption |
 | **Vibration / inertial** | Stańczak 2021 (FDM accelerometer chassis-mounted) | Gao 2024 (multimodal FDM); Yocam 2026: ~61% closed-set ID with temporal model on AMNC-equipped Bambu (vibration not cancelled) [@sources/2026-yocam-amnc-bambu-side-channel.md] | Effective, but requires physical contact with chassis; AMNC does not address |
 | **Thermal** | Faruque 2018 (FDM, IR camera) | — | Lower-bandwidth than acoustic / optical; less mature |
+
+**Adjacent (not classic side-channel, but same physical bus):** compromised firmware can *modulate* fans/temps/motion as intentional leak or sabotage channels. Firewall3D [@sources/2026-asgar-firewall3d-firmware-hardware.md] treats those as detectable anomalies via independent sensing — defense layer, not a new SCA modality.
 
 Source: [Source: 2025-dolgavin-hearsay-pbf-power.pdf Table I] enumerates all FDM-side-channel attacks; 2025 Chattopadhyay et al. + 2025 Dolgavin et al. extend the table beyond FDM.
 

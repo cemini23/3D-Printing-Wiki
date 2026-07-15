@@ -21,14 +21,21 @@ related:
   - concepts/fdm-research-tools.md
   - sources/2024-kwatra-splatoverflow-troubleshooting.md
   - sources/arxiv-2605-17448-self-improving-cad-agents.md
+  - entities/tools/meshy.md
+  - entities/tools/hi3d.md
+  - entities/tools/tripo-ai.md
+  - sources/2026-hi3d-maker-toolkit-phase0.md
+  - sources/2026-bambu-popmart-makerworld-ip-settlement.md
+  - concepts/ip-theft-3d-printing.md
+  - sources/2026-bambu-pla-pure-launch.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-06-05
+updated: 2026-07-15
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/vlm-in-manufacturing.md @concepts/print-farm-operations.md @concepts/am-as-a-service.md @concepts/shape-changing-fdm-interfaces.md @meta/daily-research-digest-cadence.md @concepts/open-source-legged-robotics.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md
+@sources/2026-bambu-pla-pure-launch.md @concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/vlm-in-manufacturing.md @concepts/print-farm-operations.md @concepts/am-as-a-service.md @concepts/shape-changing-fdm-interfaces.md @meta/daily-research-digest-cadence.md @concepts/open-source-legged-robotics.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/ip-theft-3d-printing.md
 
 - @concepts/2026-05-13_gracia-ai-volumetric-3d-export.md — volumetric-capture (Gaussian Splatting) variant of the generative-3D-to-printable-mesh pipeline
 
@@ -69,11 +76,17 @@ When a generative platform exports 3MF directly, those color/texture assignments
 
 ### The platforms (2026 state)
 
-[TENTATIVE 2026-05-07 — descriptions sourced from audit's works-cited; not independently audited via Phase-0 yet]
+Phase-0 entity stubs added 2026-06-25 — see @entities/tools/meshy.md, @entities/tools/hi3d.md, @entities/tools/tripo-ai.md. All three: **CONDITIONAL-GO, decorative-only.**
 
-- **Meshy** (`meshy.ai`) — text-to-3D + image-to-3D platform. Direct API integration with Bambu Studio for one-click "send to slicer" workflow. Free tier + paid subscription model. Output quality: best for organic / sculpted assets; mechanical precision is weak.
-- **RodinAI** (`hyperhuman.deemos.com/rodin`) — text-to-3D + image-to-3D, focus on humanoid / character models. Similar Bambu Studio integration via 3MF.
-- **3DAIStudio** (`3daistudio.com`) — Bambu-Labs-targeted; emphasizes the Etsy/MakerWorld pipeline directly in marketing.
+**Copyright (2026-07):** decorative-only does **not** mean brand-IP-safe. Image-to-3D of Labubu / Disney / similar characters risks MakerWorld takedowns and platform liability — see Bambu × Pop Mart settlement [@sources/2026-bambu-popmart-makerworld-ip-settlement.md].
+
+[TENTATIVE 2026-05-07 — descriptions sourced from audit's works-cited; platform-specific audits expanded 2026-06-25]
+
+- **Meshy** (`meshy.ai`) — text-to-3D + image-to-3D platform. Direct API integration with Bambu Studio for one-click "send to slicer" workflow. Free tier + paid subscription model. Output quality: best for organic / sculpted assets; mechanical precision is weak. **Ecosystem hook:** MakerWorld integration (industry press 2026).
+- **Hi3D** (browser SaaS, Sparc3D engine) — **Print by Parts** auto-segmentation + **Auto Connectors** for large figurines. Free CC BY 4.0 tier; paid commercial rights. Competes on mesh splitting vs Meshy's Bambu integration.
+- **Tripo AI** (`tripo3d.ai`) — text/image → mesh + segmentation + PBR texturing + rigging. Fast iteration; rigging features are game/animation oriented. Tripo API for developers.
+- **RodinAI** (`hyperhuman.deemos.com/rodin`) — text-to-3D + image-to-3D, focus on humanoid / character models. Similar Bambu Studio integration via 3MF. [TENTATIVE — Phase-0 deferred]
+- **3DAIStudio** (`3daistudio.com`) — Bambu-Labs-targeted; emphasizes the Etsy/MakerWorld pipeline directly in marketing. [TENTATIVE — Phase-0 deferred]
 
 These platforms compete on three dimensions: prompt fidelity (does the output match the prompt?), geometric quality (is the mesh manifold and printable?), and Bambu Studio integration depth (does the 3MF export include the metadata Bambu Studio expects?).
 
