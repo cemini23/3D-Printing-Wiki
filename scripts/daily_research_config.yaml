@@ -1,66 +1,58 @@
 loop:
-  recency_window_days: 7
+  recency_window_days: 14
   max_results_per_query: 3
 fetch:
-  enabled: false
+  enabled: true
   max_downloads: 5
   fetch_likely: false
-  max_results_per_paper_query: 5
+  max_results_per_paper_query: 3
 arxiv_fallback:
   enabled: true
   request_interval_seconds: 3
-  max_terms_per_query: 6
+  max_terms_per_query: 4
+exa:
+  news_enabled: false
+  paper_mode: arxiv-only
+  include_domains:
+  - arxiv.org
+  search_type: auto
 active_topics:
-- Manual publisher fetch only — auto-fetch disabled 2026-06-22; top hits in daily
-  sweep P1–P4 rows
+- Auto-fetch re-enabled 2026-07-14 on *-paper and *-arxiv lanes (triage inbox before ingest)
 - Consumer FDM — Bambu / Flashforge / Orca-Flashforge / print quality
 - Materials baseline — PLA PETG ABS TPU vendor docs + new filament SKUs
 - AI design tools — Meshy RodinAI generative 3D Etsy MakerWorld pipeline
-- Store ops — Etsy MakerWorld Printables listing + print-farm economics (defer for
-  friend reader)
+- Store ops — Etsy MakerWorld Printables listing + print-farm economics (defer for friend reader)
 paper_queries:
 - cluster: fdm-print-quality-paper
-  query: research paper fused deposition modeling FDM print quality extrusion fault
-    detection input shaping
+  query: research paper fused deposition modeling FDM print quality extrusion fault detection input shaping
   category: research paper
-  fetch: false
+  fetch: true
+  arxiv_query: (all:FDM OR all:FFF OR all:"fused deposition") AND (all:"print quality" OR all:extrusion
+    OR all:"fault detection")
 - cluster: vlm-manufacturing-paper
   query: research paper vision language model additive manufacturing 3D printing inspection
   category: research paper
-  fetch: false
+  fetch: true
+  arxiv_query: (all:VLM OR all:"vision language" OR all:"vision-language") AND (all:"additive manufacturing"
+    OR all:"3D printing" OR all:LPBF)
 - cluster: am-security-paper
   query: research paper 3D printing side channel intellectual property G-code security
   category: research paper
-  fetch: false
+  fetch: true
+  arxiv_query: (all:"3D printing" OR all:FDM OR all:G-code) AND (all:"side channel" OR all:"side-channel"
+    OR all:"intellectual property")
 - cluster: soft-robotics-am-paper
   query: research paper 3D printing soft robotics shape morphing 4D printing FDM
   category: research paper
-  fetch: false
-- cluster: fdm-print-quality-arxiv
-  query: site:arxiv.org ("fused deposition modeling" OR "fused filament fabrication"
-    OR FFF) ("print quality" OR extrusion OR "input shaping" OR "fault detection"
-    OR "layer adhesion")
-  fetch: false
-- cluster: vlm-manufacturing-arxiv
-  query: site:arxiv.org ("additive manufacturing" OR LPBF OR SLM OR SLS) ("vision
-    language" OR VLM OR "visual inspection" OR "in-process monitoring")
-  fetch: false
-- cluster: am-security-arxiv
-  query: site:arxiv.org ("3D printing" OR FDM) ("side channel" OR "side-channel" OR
-    G-code OR "intellectual property")
-  fetch: false
-- cluster: soft-robotics-am-arxiv
-  query: site:arxiv.org ("3D printing" OR FDM) ("soft robot" OR "4D printing" OR "shape
-    morphing")
-  fetch: false
+  fetch: true
+  arxiv_query: (all:"soft robot" OR all:"4D printing" OR all:"shape morphing") AND (all:"3D printing"
+    OR all:FDM OR all:additive)
 queries:
 - cluster: bambu-slicer-news
-  query: '"Bambu Lab" OR "Bambu Studio" OR OrcaSlicer OR "Orca-Flashforge" firmware
-    update slicer profile'
+  query: '"Bambu Lab" OR "Bambu Studio" OR OrcaSlicer OR "Orca-Flashforge" firmware update slicer profile'
   category: news
 - cluster: marketplace-store-ops
-  query: '"MakerWorld" OR Etsy 3D printing seller OR Printables marketplace listing
-    tips'
+  query: '"MakerWorld" OR Etsy 3D printing seller OR Printables marketplace listing tips'
   category: news
 - cluster: filament-materials
   query: '"3D printing filament" PLA PETG ABS TPU new material datasheet Bambu Polymaker'
@@ -80,7 +72,6 @@ monokern_pipeline:
 social:
   manual_pass:
   - tool: opencli-reader
-    prompt: HackerNews / Reddit r/3Dprinting frontpage — Bambu Flashforge slicer filament
-      last 24h
+    prompt: HackerNews / Reddit r/3Dprinting frontpage — Bambu Flashforge slicer filament last 24h
 output:
   path_template: wiki/sweeps/{date}-daily.md
