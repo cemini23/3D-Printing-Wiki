@@ -18,14 +18,15 @@ related:
   - sources/2026-faulkner-lithographs-microscopy.md
   - concepts/self-improving-cad-generation-agents.md
   - sources/arxiv-2605-17448-self-improving-cad-agents.md
+  - sources/2026-george-agentscad-fdm-dfm.md
 maturity: draft
 created: 2026-05-23
-updated: 2026-06-01
+updated: 2026-07-16
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/filaments-baseline.md @concepts/ai-design-tools.md @concepts/vlm-in-manufacturing.md @concepts/open-source-legged-robotics.md @entities/printers/flashforge-adventurer-5m.md @sources/2025-arslan-tinkerxr-ar-cad-novices.md
+@sources/2026-george-agentscad-fdm-dfm.md @concepts/fdm-printing.md @concepts/filaments-baseline.md @concepts/ai-design-tools.md @concepts/vlm-in-manufacturing.md @concepts/open-source-legged-robotics.md @entities/printers/flashforge-adventurer-5m.md @sources/2025-arslan-tinkerxr-ar-cad-novices.md
 
 ## Raw Concept
 

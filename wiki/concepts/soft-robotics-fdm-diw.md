@@ -17,14 +17,15 @@ related:
   - sources/2025-pattabiraman-eflesh-magnetic-tactile.md
   - concepts/fdm-research-tools.md
   - sources/2026-mohammadi-rce-lqr-extrusion.md
+  - sources/2026-luo-multimaterial-e2e-optimization.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-07-16
 ---
 
 ## Relations
 
-@concepts/open-source-legged-robotics.md @concepts/fdm-printing.md @entities/materials/tpu.md @sources/2025-miyama-soft-hand-skin-skeleton.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-clancy-magnetic-soft-microrobots.md @sources/2025-truempler-ionic-polymer-diw.md @sources/2025-cha-diw-stretchable-strain-sensors.md @sources/2025-kota-3d-cal-tactile-calibration.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md
+@sources/2026-luo-multimaterial-e2e-optimization.md @concepts/open-source-legged-robotics.md @concepts/fdm-printing.md @entities/materials/tpu.md @sources/2025-miyama-soft-hand-skin-skeleton.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-clancy-magnetic-soft-microrobots.md @sources/2025-truempler-ionic-polymer-diw.md @sources/2025-cha-diw-stretchable-strain-sensors.md @sources/2025-kota-3d-cal-tactile-calibration.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md
 
 ## Raw Concept
 

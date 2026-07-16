@@ -2,6 +2,19 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-07-16] ingest | Pass 25 — AgentsCAD FDM DFM + multimaterial soft-robotics background
+
+- **Inbox:** 4 overnight PDFs (`arxiv-only` mode; news lane off). **2 ACCEPT / 2 REJECT.**
+- **Accept:** arXiv:2607.02448 AgentsCAD → `sources/2026-george-agentscad-fdm-dfm.md` (Phase-0 **REFERENCE**); arXiv:2607.13174 multimaterial e2e opt → soft-robotics background source.
+- **Reject:** 2607.06740 modular soft-robot continual learning (GitHub NO-GO); 2607.07958 medical exogloves.
+- **Updated:** self-improving-cad hub, ai-design-tools, soft-robotics-fdm-diw, fdm-printing, digest cadence, index.
+- **Briefs:** local AgentsCAD Phase-0; CCC/prod harness brief (MCP tool-grounding steal).
+- **Routing:** tipdrop/David **skip**; poker **skip**; **cemini-prod scp** AgentsCAD MCP brief.
+- **Local adopt:** none (AgentsCAD no repo; soft-robot GH ~47 KB but out-of-scope).
+- **Archive:** 4 PDFs → egress-fi; inbox cleared.
+
+---
+
 ## [2026-07-15] ingest | Pass 24 — Firewall3D + Orca 2.4.2 + Pop Mart IP + noise triage
 
 - **Inbox:** 5 overnight PDFs after auto-fetch re-enable. **1 ACCEPT / 4 REJECT.**

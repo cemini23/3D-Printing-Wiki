@@ -7,15 +7,16 @@ related:
   - meta/daily-research-digest-cadence.md
   - sources/2026-arxiv-lane-noise-triage-jun22.md
   - sources/2026-asgar-firewall3d-firmware-hardware.md
+  - sources/2026-arxiv-lane-noise-triage-jul16.md
 maturity: draft
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-16
 read_status: skimmed
 ---
 
 ## Relations
 
-@meta/daily-research-digest-cadence.md @sources/2026-arxiv-lane-noise-triage-jun22.md @sources/2026-asgar-firewall3d-firmware-hardware.md
+@sources/2026-arxiv-lane-noise-triage-jul16.md @meta/daily-research-digest-cadence.md @sources/2026-arxiv-lane-noise-triage-jun22.md @sources/2026-asgar-firewall3d-firmware-hardware.md
 
 ## Raw Concept
 

@@ -7,15 +7,16 @@ related:
   - concepts/self-improving-cad-generation-agents.md
   - concepts/ai-design-tools.md
   - concepts/novice-cad-workflows.md
+  - sources/2026-george-agentscad-fdm-dfm.md
 maturity: draft
 read_status: deep-read
 created: 2026-06-03
-updated: 2026-06-05
+updated: 2026-07-16
 ---
 
 ## Relations
 
-@concepts/self-improving-cad-generation-agents.md @concepts/ai-design-tools.md @concepts/novice-cad-workflows.md
+@sources/2026-george-agentscad-fdm-dfm.md @concepts/self-improving-cad-generation-agents.md @concepts/ai-design-tools.md @concepts/novice-cad-workflows.md
 
 ## Raw Concept
 

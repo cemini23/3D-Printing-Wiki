@@ -38,15 +38,16 @@ related:
   - sweeps/2026-06-24-daily.md
   - sweeps/2026-06-25-daily.md
   - sources/2026-digest-sweep-triage-jun23-25.md
+  - sources/2026-arxiv-lane-noise-triage-jul16.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-07-15
+updated: 2026-07-16
 cross-wiki-source: "@osint-wiki/concepts/federated-daily-research-digest.md"
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/print-farm-operations.md @sweeps/_daily-template.md @sweeps/2026-06-01-daily.md @sweeps/2026-06-02-daily.md @sweeps/2026-06-03-daily.md @sweeps/2026-06-04-daily.md @sweeps/2026-06-05-daily.md @sweeps/2026-06-06-daily.md @sweeps/2026-06-07-daily.md @sweeps/2026-06-08-daily.md @sweeps/2026-06-09-daily.md @sweeps/2026-06-10-daily.md @sweeps/2026-06-11-daily.md @sweeps/2026-06-12-daily.md @sweeps/2026-06-13-daily.md @sweeps/2026-06-14-daily.md @sweeps/2026-06-15-daily.md @sweeps/2026-06-16-daily.md @sweeps/2026-06-17-daily.md @sweeps/2026-06-18-daily.md @sweeps/2026-06-19-daily.md @sweeps/2026-06-20-daily.md @sweeps/2026-06-21-daily.md @sources/2026-arxiv-lane-noise-triage-jun20.md @sources/2026-arxiv-lane-noise-triage-jun21.md @sources/2026-arxiv-lane-noise-triage-jun22.md @sources/2026-arxiv-lane-noise-triage-jul15.md @sweeps/2026-06-22-daily.md
+@sources/2026-arxiv-lane-noise-triage-jul16.md @concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/print-farm-operations.md @sweeps/_daily-template.md @sweeps/2026-06-01-daily.md @sweeps/2026-06-02-daily.md @sweeps/2026-06-03-daily.md @sweeps/2026-06-04-daily.md @sweeps/2026-06-05-daily.md @sweeps/2026-06-06-daily.md @sweeps/2026-06-07-daily.md @sweeps/2026-06-08-daily.md @sweeps/2026-06-09-daily.md @sweeps/2026-06-10-daily.md @sweeps/2026-06-11-daily.md @sweeps/2026-06-12-daily.md @sweeps/2026-06-13-daily.md @sweeps/2026-06-14-daily.md @sweeps/2026-06-15-daily.md @sweeps/2026-06-16-daily.md @sweeps/2026-06-17-daily.md @sweeps/2026-06-18-daily.md @sweeps/2026-06-19-daily.md @sweeps/2026-06-20-daily.md @sweeps/2026-06-21-daily.md @sources/2026-arxiv-lane-noise-triage-jun20.md @sources/2026-arxiv-lane-noise-triage-jun21.md @sources/2026-arxiv-lane-noise-triage-jun22.md @sources/2026-arxiv-lane-noise-triage-jul15.md @sweeps/2026-06-22-daily.md
 
 - @osint-wiki/concepts/federated-daily-research-digest.md — federation install kit (K93 canonical)
 
@@ -102,6 +103,8 @@ Label must stay unique across federation wikis (`com.cemini.daily-research-diges
 **Auto-fetch re-enabled (2026-07-14):** operator restored `fetch.enabled: true` + `fetch: true` on all `*-paper` and `*-arxiv` clusters. Cap still `max_downloads: 5`.
 
 **Pass 24 triage (2026-07-15):** overnight fetch 1/5 accept (Firewall3D) + 4 noise rejects. Keep fetch on; revisit keyword gate if next nights return 0/5. Record: @sources/2026-arxiv-lane-noise-triage-jul15.md.
+
+**Pass 25 triage (2026-07-16):** 2/4 accept (AgentsCAD + multimaterial soft-robotics background); 2 soft-robot control/medical rejects. News lane still off. Record: @sources/2026-arxiv-lane-noise-triage-jul16.md.
 
 ## Snippets
 

@@ -5,17 +5,18 @@ tags: [concept, cad, agents, k95, FEA, reference]
 keywords: [2605.17448, Hephaestus-CCX, CadQuery, CalculiX, engineering CAD agents]
 related:
   - sources/arxiv-2605-17448-self-improving-cad-agents.md
+  - sources/2026-george-agentscad-fdm-dfm.md
   - concepts/fdm-printing.md
   - concepts/ai-design-tools.md
   - concepts/novice-cad-workflows.md
 maturity: draft
 created: 2026-06-03
-updated: 2026-06-05
+updated: 2026-07-16
 ---
 
 ## Relations
 
-@sources/arxiv-2605-17448-self-improving-cad-agents.md @concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/novice-cad-workflows.md
+@sources/arxiv-2605-17448-self-improving-cad-agents.md @sources/2026-george-agentscad-fdm-dfm.md @concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/novice-cad-workflows.md
 
 ## Raw Concept
 
@@ -46,6 +47,10 @@ Deep-read of @sources/arxiv-2605-17448-self-improving-cad-agents.md (2026-06-05)
 - Contrast with @concepts/novice-cad-workflows.md (mock → refine → slice): this paper's "refine" step is **FEA failure codes**, not slicer preview or print test.
 
 **Friend handoff:** skip — no day-1 Orca-Flashforge relevance.
+
+### Related — AgentsCAD FDM DFM (2026-07)
+
+@sources/2026-george-agentscad-fdm-dfm.md is a **complementary** agent CAD lane: multi-agent **printability DFM** on STEP (overhangs → reorient / teardrop) with **MCP geometry tools**, not FEA. Same REFERENCE / no-local-repo stance; stronger signal for harness design (tool-grounded spatial reasoning vs confident hallucination).
 
 ## Snippets
 

@@ -12,6 +12,9 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 
 - [Adaptive Input Shaper Design for Unknown Second-Order Systems](sources/2025-aung-adaptive-input-shaper.md) — feedforward TDF input shaper with real-time RLS parameter estimation; simulation only — `paper, control, input-shaping, vibration`
 - [Self-improving CAD generation agents (arXiv:2605.17448)](sources/arxiv-2605-17448-self-improving-cad-agents.md) — K95 REFERENCE — agent loops for parametric CAD — `paper, cad, agents, k95`
+- [AgentsCAD: Multi-agent FDM DFM on STEP (arXiv:2607.02448)](sources/2026-george-agentscad-fdm-dfm.md) — Claude+GPT-4o+MCP overhang DFM; Phase-0 REFERENCE — `paper, cad, agents, FDM, MCP, DFAM`
+- [Multimaterial e2e topology optimization (arXiv:2607.13174)](sources/2026-luo-multimaterial-e2e-optimization.md) — soft-gripper digital materials; soft-robotics background — `paper, multimaterial, soft-robotics, background`
+- [arXiv lane noise triage — overnight fetch 2026-07-16](sources/2026-arxiv-lane-noise-triage-jul16.md) — 2/4 accept (AgentsCAD + multimaterial) — `meta, triage, arxiv, digest, noise`
 - [One-Shot Camera-Based Extrusion Optimization for High Speed FFF](sources/2025-lin-camera-extrusion-optimization.md) — two calibration prints + phone camera → optimized G-code; 2× quality-equivalent speed on Ender-3 V2 (1600→3600 mm/min) — `paper, vision, extrusion, high-speed-fdm`
 - [Real time fault detection using CNN + acoustic signals](sources/2023-waheed-acoustic-cnn-fault-detection.md) — microphone + spectrogram + CNN classifier for clog / breakage / pulley skip — `paper, fault-detection, CNN, acoustic, ML`
 - [Closed Loop Reference Optimization for Extrusion AM](sources/2025-hoteit-closed-loop-extrusion-lqr.md) — LQR over Force-Controlled Printing; 39.57% RMS error reduction — `paper, control, extrusion, LQR, closed-loop`
