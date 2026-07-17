@@ -2,6 +2,19 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-07-17] ingest | Pass 26 — hybrid soft gripper + reject-stub dedupe fix
+
+- **Inbox:** 2 PDFs. **1 ACCEPT / 1 REJECT (repeat).**
+- **Accept:** arXiv:2607.14730 hybrid rigid-soft gripper → `sources/2026-chen-hybrid-rigid-soft-gripper.md` (Phase-0 **REFERENCE**).
+- **Reject:** arXiv:2607.07958 exogloves — same as pass 25; re-fetched because reject had no wiki arXiv ID.
+- **Process fix:** REJECT stubs for `2607.07958` + `2607.06740` so overnight fetch skips them.
+- **Updated:** soft-robotics-fdm-diw, fdm-printing, pla, digest cadence, index.
+- **Briefs / routing:** tipdrop/poker/prod **skip** (no harness/image-gen steal).
+- **Local adopt:** none.
+- **Archive:** 2 PDFs → egress-fi; inbox cleared.
+
+---
+
 ## [2026-07-16] ingest | Pass 25 — AgentsCAD FDM DFM + multimaterial soft-robotics background
 
 - **Inbox:** 4 overnight PDFs (`arxiv-only` mode; news lane off). **2 ACCEPT / 2 REJECT.**

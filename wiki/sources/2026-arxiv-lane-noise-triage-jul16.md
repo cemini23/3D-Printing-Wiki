@@ -8,15 +8,18 @@ related:
   - sources/2026-arxiv-lane-noise-triage-jul15.md
   - sources/2026-george-agentscad-fdm-dfm.md
   - sources/2026-luo-multimaterial-e2e-optimization.md
+  - sources/2026-arxiv-lane-noise-triage-jul17.md
+  - sources/2026-reject-arxiv-2607-07958-soft-exogloves.md
+  - sources/2026-reject-arxiv-2607-06740-soft-robot-continual-learning.md
 maturity: draft
 created: 2026-07-16
-updated: 2026-07-16
+updated: 2026-07-17
 read_status: skimmed
 ---
 
 ## Relations
 
-@meta/daily-research-digest-cadence.md @sources/2026-arxiv-lane-noise-triage-jul15.md @sources/2026-george-agentscad-fdm-dfm.md @sources/2026-luo-multimaterial-e2e-optimization.md
+@sources/2026-reject-arxiv-2607-06740-soft-robot-continual-learning.md @sources/2026-reject-arxiv-2607-07958-soft-exogloves.md @sources/2026-arxiv-lane-noise-triage-jul17.md @meta/daily-research-digest-cadence.md @sources/2026-arxiv-lane-noise-triage-jul15.md @sources/2026-george-agentscad-fdm-dfm.md @sources/2026-luo-multimaterial-e2e-optimization.md
 
 ## Raw Concept
 
