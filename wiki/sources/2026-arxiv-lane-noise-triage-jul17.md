@@ -9,15 +9,16 @@ related:
   - sources/2026-chen-hybrid-rigid-soft-gripper.md
   - sources/2026-reject-arxiv-2607-07958-soft-exogloves.md
   - sources/2026-reject-arxiv-2607-06740-soft-robot-continual-learning.md
+  - sources/2026-arxiv-lane-noise-triage-jul18.md
 maturity: draft
 created: 2026-07-17
-updated: 2026-07-17
+updated: 2026-07-18
 read_status: skimmed
 ---
 
 ## Relations
 
-@meta/daily-research-digest-cadence.md @sources/2026-arxiv-lane-noise-triage-jul16.md @sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-reject-arxiv-2607-07958-soft-exogloves.md @sources/2026-reject-arxiv-2607-06740-soft-robot-continual-learning.md
+@sources/2026-arxiv-lane-noise-triage-jul18.md @meta/daily-research-digest-cadence.md @sources/2026-arxiv-lane-noise-triage-jul16.md @sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-reject-arxiv-2607-07958-soft-exogloves.md @sources/2026-reject-arxiv-2607-06740-soft-robot-continual-learning.md
 
 ## Raw Concept
 

@@ -17,6 +17,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [Hybrid rigid-soft gripper with self-locking (arXiv:2607.14730)](sources/2026-chen-hybrid-rigid-soft-gripper.md) — AM ratchets + membrane pneumatics; PLA FDM test spheres — `paper, soft-robotics, gripper, FDM`
 - [arXiv lane noise triage — overnight fetch 2026-07-16](sources/2026-arxiv-lane-noise-triage-jul16.md) — 2/4 accept (AgentsCAD + multimaterial) — `meta, triage, arxiv, digest, noise`
 - [arXiv lane noise triage — overnight fetch 2026-07-17](sources/2026-arxiv-lane-noise-triage-jul17.md) — hybrid gripper accept; exoglove re-fetch → reject stubs — `meta, triage, arxiv, digest, noise`
+- [arXiv lane noise triage — overnight fetch 2026-07-18](sources/2026-arxiv-lane-noise-triage-jul18.md) — empty inbox; reject-stub skipped-dup confirmed for 07958 — `meta, triage, arxiv, digest, noise`
 - [REJECT stub — soft exogloves (arXiv:2607.07958)](sources/2026-reject-arxiv-2607-07958-soft-exogloves.md) — fetch-dedupe only — `meta, reject-stub`
 - [REJECT stub — soft-robot continual learning (arXiv:2607.06740)](sources/2026-reject-arxiv-2607-06740-soft-robot-continual-learning.md) — fetch-dedupe only — `meta, reject-stub`
 - [One-Shot Camera-Based Extrusion Optimization for High Speed FFF](sources/2025-lin-camera-extrusion-optimization.md) — two calibration prints + phone camera → optimized G-code; 2× quality-equivalent speed on Ender-3 V2 (1600→3600 mm/min) — `paper, vision, extrusion, high-speed-fdm`

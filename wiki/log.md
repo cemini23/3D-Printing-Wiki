@@ -2,6 +2,17 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-07-18] ingest | Pass 27 — empty inbox; reject-stub dedupe confirmed
+
+- **Inbox:** empty. Digest fetched **0** PDFs; skipped **4** wiki dups (Firewall3D, hybrid gripper, multimaterial e2e, **exogloves 07958**).
+- **Confirm:** pass-26 REJECT stub for `2607.07958` → `skipped-dup` overnight. [CONFIRMED]
+- **Created:** `sources/2026-arxiv-lane-noise-triage-jul18.md`; committed sweep `sweeps/2026-07-18-daily.md`.
+- **Updated:** digest cadence, jul17 triage + reject/source backlinks, index, ROADMAP.
+- **Phase-0 / briefs / tipdrop / poker / prod / local adopt:** none (no new material).
+- **News lane:** still off (`exa.news_enabled: false`).
+
+---
+
 ## [2026-07-17] ingest | Pass 26 — hybrid soft gripper + reject-stub dedupe fix
 
 - **Inbox:** 2 PDFs. **1 ACCEPT / 1 REJECT (repeat).**

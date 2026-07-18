@@ -11,9 +11,10 @@ related:
   - concepts/fdm-printing.md
   - sources/2026-yocam-amnc-bambu-side-channel.md
   - sources/2026-arxiv-lane-noise-triage-jul15.md
+  - sources/2026-arxiv-lane-noise-triage-jul18.md
 maturity: draft
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-18
 read_status: skimmed
 ---
 

@@ -8,15 +8,16 @@ related:
   - concepts/fdm-printing.md
   - sources/2026-arxiv-lane-noise-triage-jul16.md
   - sources/2026-chen-hybrid-rigid-soft-gripper.md
+  - sources/2026-arxiv-lane-noise-triage-jul18.md
 maturity: draft
 created: 2026-07-16
-updated: 2026-07-17
+updated: 2026-07-18
 read_status: skimmed
 ---
 
 ## Relations
 
-@sources/2026-chen-hybrid-rigid-soft-gripper.md @concepts/soft-robotics-fdm-diw.md @concepts/fdm-printing.md @sources/2026-arxiv-lane-noise-triage-jul16.md
+@sources/2026-arxiv-lane-noise-triage-jul18.md @sources/2026-chen-hybrid-rigid-soft-gripper.md @concepts/soft-robotics-fdm-diw.md @concepts/fdm-printing.md @sources/2026-arxiv-lane-noise-triage-jul16.md
 
 ## Raw Concept
 

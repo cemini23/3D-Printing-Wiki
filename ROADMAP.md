@@ -8,7 +8,7 @@ Active workstreams, open decisions, and the done log. Read at session start; upd
 
 ### W1 — Initial research ingest pass
 
-**Status:** Ingest passes 1–24 through 2026-07-15. **Inbox empty.** Auto-fetch re-enabled (2026-07-14); triage each morning.
+**Status:** Ingest passes 1–27 through 2026-07-18. **Inbox empty.** Auto-fetch on (arxiv-only; news off); triage each morning.
 
 Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-printing papers. Curation surfaces practical takeaways for the reader; some papers may go in as background-context one-liners rather than full pages.
 
@@ -63,6 +63,7 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-07-15 | Ingest pass 24 — Firewall3D + news | 1/5 PDF accept (Firmware hardware firewall); Orca 2.4.2 + Pop Mart MakerWorld IP; cybersec cross-route; no tipdrop/poker/prod scp. Inbox cleared. |
 | 2026-07-16 | Ingest pass 25 — AgentsCAD | 2/4 accept (AgentsCAD FDM DFM + multimaterial soft-robotics bg); MCP-grounding brief → cemini-prod; tipdrop/poker skip. Inbox cleared. |
 | 2026-07-17 | Ingest pass 26 — hybrid gripper + reject stubs | 1/2 accept (rigid-soft gripper); exoglove re-fetch fixed via REJECT stubs for 07958/06740; no tipdrop/poker/prod. Inbox cleared. |
+| 2026-07-18 | Ingest pass 27 — empty inbox / dedupe confirm | 0 PDFs fetched; 4 skipped-dup including reject-stub 07958; no Phase-0/briefs/routing. |
 
 ---
 

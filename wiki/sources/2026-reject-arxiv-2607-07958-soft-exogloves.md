@@ -7,15 +7,16 @@ related:
   - sources/2026-arxiv-lane-noise-triage-jul16.md
   - sources/2026-arxiv-lane-noise-triage-jul17.md
   - meta/daily-research-digest-cadence.md
+  - sources/2026-arxiv-lane-noise-triage-jul18.md
 maturity: draft
 created: 2026-07-17
-updated: 2026-07-17
+updated: 2026-07-18
 read_status: skimmed
 ---
 
 ## Relations
 
-@sources/2026-arxiv-lane-noise-triage-jul16.md @sources/2026-arxiv-lane-noise-triage-jul17.md @meta/daily-research-digest-cadence.md
+@sources/2026-arxiv-lane-noise-triage-jul18.md @sources/2026-arxiv-lane-noise-triage-jul16.md @sources/2026-arxiv-lane-noise-triage-jul17.md @meta/daily-research-digest-cadence.md
 
 ## Raw Concept
 

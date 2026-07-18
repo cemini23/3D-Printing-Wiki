@@ -9,15 +9,16 @@ related:
   - entities/materials/pla.md
   - sources/2026-luo-multimaterial-e2e-optimization.md
   - sources/2026-arxiv-lane-noise-triage-jul17.md
+  - sources/2026-arxiv-lane-noise-triage-jul18.md
 maturity: draft
 created: 2026-07-17
-updated: 2026-07-17
+updated: 2026-07-18
 read_status: skimmed
 ---
 
 ## Relations
 
-@concepts/soft-robotics-fdm-diw.md @concepts/fdm-printing.md @entities/materials/pla.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-arxiv-lane-noise-triage-jul17.md
+@sources/2026-arxiv-lane-noise-triage-jul18.md @concepts/soft-robotics-fdm-diw.md @concepts/fdm-printing.md @entities/materials/pla.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-arxiv-lane-noise-triage-jul17.md
 
 ## Raw Concept
 
