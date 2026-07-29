@@ -43,3 +43,6 @@ venv/
 /tmp_*.txt
 /tmp_*.md
 *.tmp
+
+# Local Phase-0 tool adoptions (<500MB)
+.adopted/

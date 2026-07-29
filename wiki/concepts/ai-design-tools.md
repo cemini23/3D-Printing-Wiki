@@ -29,14 +29,17 @@ related:
   - concepts/ip-theft-3d-printing.md
   - sources/2026-bambu-pla-pure-launch.md
   - sources/2026-george-agentscad-fdm-dfm.md
+  - concepts/slicer-project-compilation.md
+  - entities/tools/openvcad.md
+  - sources/2026-wade-slicer-project-compilation.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-07-16
+updated: 2026-07-29
 ---
 
 ## Relations
 
-@sources/2026-george-agentscad-fdm-dfm.md @sources/2026-bambu-pla-pure-launch.md @concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/vlm-in-manufacturing.md @concepts/print-farm-operations.md @concepts/am-as-a-service.md @concepts/shape-changing-fdm-interfaces.md @meta/daily-research-digest-cadence.md @concepts/open-source-legged-robotics.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/ip-theft-3d-printing.md
+@concepts/slicer-project-compilation.md @entities/tools/openvcad.md @sources/2026-wade-slicer-project-compilation.md @sources/2026-george-agentscad-fdm-dfm.md @sources/2026-bambu-pla-pure-launch.md @concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/vlm-in-manufacturing.md @concepts/print-farm-operations.md @concepts/am-as-a-service.md @concepts/shape-changing-fdm-interfaces.md @meta/daily-research-digest-cadence.md @concepts/open-source-legged-robotics.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/ip-theft-3d-printing.md
 
 - @concepts/2026-05-13_gracia-ai-volumetric-3d-export.md — volumetric-capture (Gaussian Splatting) variant of the generative-3D-to-printable-mesh pipeline
 

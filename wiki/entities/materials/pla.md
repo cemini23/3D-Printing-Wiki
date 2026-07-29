@@ -20,14 +20,16 @@ related:
   - sources/2025-tran-3d-printed-acoustic-guitars.md
   - sources/2026-faulkner-lithographs-microscopy.md
   - sources/2026-chen-hybrid-rigid-soft-gripper.md
+  - sources/2026-wade-slicer-project-compilation.md
+  - concepts/slicer-project-compilation.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-07-17
+updated: 2026-07-29
 ---
 
 ## Relations
 
-@sources/2026-chen-hybrid-rigid-soft-gripper.md @concepts/filaments-baseline.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @sources/2026-bambu-pla-pure-launch.md @sources/2025-chi-berkeley-humanoid-lite.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md
+@sources/2026-chen-hybrid-rigid-soft-gripper.md @concepts/filaments-baseline.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @sources/2026-bambu-pla-pure-launch.md @sources/2025-chi-berkeley-humanoid-lite.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @sources/2026-wade-slicer-project-compilation.md @concepts/slicer-project-compilation.md
 
 ## Raw Concept
 

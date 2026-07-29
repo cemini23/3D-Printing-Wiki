@@ -20,14 +20,16 @@ related:
   - concepts/novice-cad-workflows.md
   - sources/2026-06-02-digest-polymaker-abs-pro.md
   - sources/2026-bambu-pla-pure-launch.md
+  - concepts/slicer-project-compilation.md
+  - sources/2026-wade-slicer-project-compilation.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-06-25
+updated: 2026-07-29
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md
+@concepts/slicer-project-compilation.md @sources/2026-wade-slicer-project-compilation.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md
 
 ## Raw Concept
 

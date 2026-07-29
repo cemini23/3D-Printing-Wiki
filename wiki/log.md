@@ -2,6 +2,19 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-07-29] ingest | Pass 28 — OpenVCAD slicer compilation + OVC confidential bidding
+
+- **Inbox:** 2 overnight PDFs. **2 ACCEPT / 0 REJECT.**
+- **Accept:** arXiv:2607.25326 Wade/MacCurdy slicer project compilation → `sources/2026-wade-slicer-project-compilation.md` (Phase-0 **CONDITIONAL-GO research**); arXiv:2607.25517 Corn OVC blockchain bidding → `sources/2026-corn-optimistic-verifiable-claims.md` (Phase-0 **REFERENCE**).
+- **Created:** concept `slicer-project-compilation.md`; entity `tools/openvcad.md`.
+- **Updated:** orcaslicer, bambu-studio, tpu (foaming VarioShore), pla, g-code-protection (OVC), ip-theft, am-as-a-service, fdm-printing, index, ROADMAP.
+- **Briefs:** OpenVCAD Phase-0; OVC Phase-0; OVC cybersec cross-wiki; CCC/prod optimistic-claim adjudication steal.
+- **Routing:** tipdrop/David **skip**; atto **skip**; poker **skip**; **cybersec** stub + brief; **cemini-prod scp** OVC harness brief.
+- **Local adopt:** OpenVCAD shallow clone `.adopted/OpenVCAD-Public` (~5 MB). Full pip venv ~975 MB → **skipped** (over 500 MB cap). OVC Solidity package **skipped**.
+- **Archive:** 2 PDFs → egress-fi `3d-printing/`; inbox cleared.
+
+---
+
 ## [2026-07-18] ingest | Pass 27 — empty inbox; reject-stub dedupe confirmed
 
 - **Inbox:** empty. Digest fetched **0** PDFs; skipped **4** wiki dups (Firewall3D, hybrid gripper, multimaterial e2e, **exogloves 07958**).

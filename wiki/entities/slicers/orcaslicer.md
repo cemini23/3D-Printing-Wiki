@@ -12,14 +12,17 @@ related:
   - sources/2026-06-02-digest-orcaslicer-2-4-news.md
   - sources/2026-orcaslicer-2-4-stable-release.md
   - sources/2026-orcaslicer-2-4-2-release.md
+  - sources/2026-wade-slicer-project-compilation.md
+  - concepts/slicer-project-compilation.md
+  - entities/tools/openvcad.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-07-15
+updated: 2026-07-29
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/extrusion-control.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @sources/2026-06-02-digest-orcaslicer-2-4-news.md @sources/2026-orcaslicer-2-4-stable-release.md @sources/2026-orcaslicer-2-4-2-release.md
+@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/extrusion-control.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @sources/2026-06-02-digest-orcaslicer-2-4-news.md @sources/2026-orcaslicer-2-4-stable-release.md @sources/2026-orcaslicer-2-4-2-release.md @sources/2026-wade-slicer-project-compilation.md @concepts/slicer-project-compilation.md @entities/tools/openvcad.md
 
 ## Raw Concept
 
@@ -50,6 +53,7 @@ The CONDITIONAL: **isolate OrcaSlicer to advanced calibration only.** Use it whe
 - Diagnosing an extrusion problem that Bambu Studio's UI doesn't expose enough knobs for (corner blob / under-extrusion at speed transitions)
 - Tuning K-values, retract distance/speed, or flow ratio on a non-Bambu filament that needs values outside Bambu Studio's defaults
 - Slicing for a non-Bambu printer (if reader ever picks up a secondary Prusa / Voron / Creality)
+- **FullSpectrum / graded multi-material research** — OpenVCAD slicer-project compilation targets Orca FullSpectrum as a halftoning path alongside Prusa ColorMix [@sources/2026-wade-slicer-project-compilation.md]
 
 ### When NOT to use OrcaSlicer
 

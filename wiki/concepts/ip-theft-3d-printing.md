@@ -18,14 +18,15 @@ related:
   - sources/2026-asgar-firewall3d-firmware-hardware.md
   - sources/2026-bambu-popmart-makerworld-ip-settlement.md
   - concepts/ai-design-tools.md
+  - sources/2026-corn-optimistic-verifiable-claims.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-07-15
+updated: 2026-07-29
 ---
 
 ## Relations
 
-@concepts/side-channel-attacks.md @concepts/g-code-protection.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @concepts/print-farm-operations.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-yocam-amnc-bambu-side-channel.md @sources/2026-asgar-firewall3d-firmware-hardware.md @sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/ai-design-tools.md
+@concepts/side-channel-attacks.md @concepts/g-code-protection.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @concepts/print-farm-operations.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-yocam-amnc-bambu-side-channel.md @sources/2026-asgar-firewall3d-firmware-hardware.md @sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/ai-design-tools.md @sources/2026-corn-optimistic-verifiable-claims.md
 
 ## Raw Concept
 

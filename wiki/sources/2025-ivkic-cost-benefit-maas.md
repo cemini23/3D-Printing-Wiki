@@ -12,15 +12,16 @@ related:
   - sources/2025-wang-collaborative-parameter-recommender.md
   - sources/2025-surynek-sequential-printing-cegar.md
   - sources/2026-hatton-parallelobox-aabb-decomposition.md
+  - sources/2026-corn-optimistic-verifiable-claims.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-07-29
 read_status: deep-read
 ---
 
 ## Relations
 
-@concepts/am-as-a-service.md @concepts/print-farm-operations.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @sources/2025-wang-collaborative-parameter-recommender.md @sources/2025-surynek-sequential-printing-cegar.md @sources/2026-hatton-parallelobox-aabb-decomposition.md
+@concepts/am-as-a-service.md @concepts/print-farm-operations.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @sources/2025-wang-collaborative-parameter-recommender.md @sources/2025-surynek-sequential-printing-cegar.md @sources/2026-hatton-parallelobox-aabb-decomposition.md @sources/2026-corn-optimistic-verifiable-claims.md
 
 ## Raw Concept
 

@@ -13,6 +13,8 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [Adaptive Input Shaper Design for Unknown Second-Order Systems](sources/2025-aung-adaptive-input-shaper.md) — feedforward TDF input shaper with real-time RLS parameter estimation; simulation only — `paper, control, input-shaping, vibration`
 - [Self-improving CAD generation agents (arXiv:2605.17448)](sources/arxiv-2605-17448-self-improving-cad-agents.md) — K95 REFERENCE — agent loops for parametric CAD — `paper, cad, agents, k95`
 - [AgentsCAD: Multi-agent FDM DFM on STEP (arXiv:2607.02448)](sources/2026-george-agentscad-fdm-dfm.md) — Claude+GPT-4o+MCP overhang DFM; Phase-0 REFERENCE — `paper, cad, agents, FDM, MCP, DFAM`
+- [Slicer project compilation / OpenVCAD (arXiv:2607.25326)](sources/2026-wade-slicer-project-compilation.md) — graded FFF → slicer-native `.3mf`; Phase-0 CONDITIONAL-GO research — `paper, slicing, 3MF, OpenVCAD, foaming`
+- [Optimistic Verifiable Claims / OVC (arXiv:2607.25517)](sources/2026-corn-optimistic-verifiable-claims.md) — confidential G-code bidding on L2s; Phase-0 REFERENCE — `paper, security, blockchain, MaaS, IP`
 - [Multimaterial e2e topology optimization (arXiv:2607.13174)](sources/2026-luo-multimaterial-e2e-optimization.md) — soft-gripper digital materials; soft-robotics background — `paper, multimaterial, soft-robotics, background`
 - [Hybrid rigid-soft gripper with self-locking (arXiv:2607.14730)](sources/2026-chen-hybrid-rigid-soft-gripper.md) — AM ratchets + membrane pneumatics; PLA FDM test spheres — `paper, soft-robotics, gripper, FDM`
 - [arXiv lane noise triage — overnight fetch 2026-07-16](sources/2026-arxiv-lane-noise-triage-jul16.md) — 2/4 accept (AgentsCAD + multimaterial) — `meta, triage, arxiv, digest, noise`
@@ -117,6 +119,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 
 ### Tools
 
+- [OpenVCAD](entities/tools/openvcad.md) — volumetric multi-material CAD → slicer `.3mf` compiler; CONDITIONAL-GO research (non-commercial license) — `tool, CAD, volumetric, OpenVCAD, phase-0`
 - [Kickstarter / Autodesk FDM Test V4 Protocol](entities/tools/kickstarter-autodesk-fdm-protocol.md) — Apache-2.0 standardized calibration print (`ksr_fdmtest_v4.stl`); witness features fail in known patterns to surface specific extruder/motion failures — `calibration, benchmark, witness-features, FDM, Apache-2.0, GO-tier, materials-research`
 - [Obsidian](entities/tools/obsidian.md) — local-first markdown knowledge-base app; free for personal use; recommended reader for this wiki — `tool, obsidian, knowledge-base, markdown, local-first, free-personal, navigation`
 - [Cursor](entities/tools/cursor.md) — IDE + Chat with `@` file refs; **friend handoff AI** (Cursor Pro, not Claude Code) — `tool, cursor, IDE, AI, friend-handoff`
@@ -148,6 +151,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [Side-Channel Attacks on 3D Printers](concepts/side-channel-attacks.md) — six modalities (acoustic / optical / magnetic / power / vibration / thermal) and the attack-tier continuum — `security, side-channel, attack-surface`
 - [IP Theft in 3D Printing](concepts/ip-theft-3d-printing.md) — three threat tiers from hobbyist Etsy seller to industrial outsourced AM (MATE) — `security, IP, threat-model, business`
 - [G-Code Protection](concepts/g-code-protection.md) — file-level (encryption / streaming / TPM) vs physical-level (SHM / acoustic masking) defenses; coverage matrix — `security, defense, encryption, obfuscation`
+- [Slicer Project Compilation (Functionally Graded FFF)](concepts/slicer-project-compilation.md) — continuous design fields → slicer-native `.3mf` (settings meshes / virtual extrusion / ColorMix|FullSpectrum) — `process, slicing, FFF, functionally-graded, 3MF`
 - [Print Farm Operations](concepts/print-farm-operations.md) — hub page for the multi-printer regime; per-machine tuning + scheduling + MaaS productization+security — `operations, print-farm, fleet, distributed-manufacturing`
 - [Print Job Scheduling](concepts/print-job-scheduling.md) — sequential printing (one printer, many objects) vs parallel decomposition (one model, many printers) — `scheduling, packing, sequential-printing, parallel-printing, optimization`
 - [Additive Manufacturing as a Service (MaaS)](concepts/am-as-a-service.md) — economics + security gap of cloud-distributed AM (Cloud Crafting, Shapeways, Hubs, Xometry) vs direct-STL marketplaces (Etsy, MakerWorld) — `business, MaaS, cloud, distributed-manufacturing, economics`

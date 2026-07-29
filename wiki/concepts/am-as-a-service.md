@@ -11,14 +11,15 @@ related:
   - concepts/ai-design-tools.md
   - sources/2025-ivkic-cost-benefit-maas.md
   - sources/2026-bambu-popmart-makerworld-ip-settlement.md
+  - sources/2026-corn-optimistic-verifiable-claims.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-07-15
+updated: 2026-07-29
 ---
 
 ## Relations
 
-@sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/print-farm-operations.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @concepts/ai-design-tools.md @sources/2025-ivkic-cost-benefit-maas.md
+@sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/print-farm-operations.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/fdm-printing.md @concepts/ai-design-tools.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-corn-optimistic-verifiable-claims.md
 
 ## Raw Concept
 
@@ -96,6 +97,8 @@ The Ivkic architecture distributes G-code (or pre-G-code STL + slicer config) ov
 - Side-channel attacks (acoustic, optical, magnetic, power) [@concepts/side-channel-attacks.md] all become viable because the printer is remote and unsupervised by the designer
 
 Ivkic's paper acknowledges security as a non-functional requirement but does **not** implement the published defenses from [@concepts/g-code-protection.md] — no chunked-STL streaming, no SHM, no TPM-bound printer attestation. **For any commercially valuable design (anything the reader would want to keep proprietary), MaaS as currently architected is unsafe**. Direct sale of the printable STL is more secure: the customer prints it themselves, no third party touches the file.
+
+**Research counter to the pre-contractual deadlock:** Optimistic Verifiable Claims (OVC) [@sources/2026-corn-optimistic-verifiable-claims.md] lets Providers bid on *claims about* concealed G-code (e.g. filament length) without seeing the file, with on-chain challenge if the claim is false. Addresses Arrow’s paradox at bidding time; does **not** replace physical-side-channel or MATE defenses after Specification Handover. Cost-feasible on L2s (Arbitrum/opBNB), not Ethereum at industrial G-code sizes. Phase-0: **REFERENCE**.
 
 [CONFIRMED] No published MaaS platform implements physical-side-channel defenses. [TENTATIVE] Industrial MaaS (Shapeways, Hubs, Xometry) likely uses contractual + insurance instruments rather than cryptographic ones to address IP risk — out of scope for this wiki.
 

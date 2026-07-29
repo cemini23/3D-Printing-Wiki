@@ -15,14 +15,15 @@ related:
   - sources/2025-ivkic-cost-benefit-maas.md
   - sources/2026-yocam-amnc-bambu-side-channel.md
   - sources/2026-asgar-firewall3d-firmware-hardware.md
+  - sources/2026-corn-optimistic-verifiable-claims.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-07-15
+updated: 2026-07-29
 ---
 
 ## Relations
 
-@concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-yocam-amnc-bambu-side-channel.md @sources/2026-asgar-firewall3d-firmware-hardware.md
+@concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @concepts/am-as-a-service.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-dolgavin-hearsay-pbf-power.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2026-yocam-amnc-bambu-side-channel.md @sources/2026-asgar-firewall3d-firmware-hardware.md @sources/2026-corn-optimistic-verifiable-claims.md
 
 ## Raw Concept
 
@@ -39,6 +40,8 @@ The defense landscape splits into **file-level** (protecting the bytes) and **ph
 2. **Direct G-code streaming** (Baumann 2017, Tiwari 2020). The designer holds the G-code file; sends it instruction-by-instruction over a secure channel to the printer at print time. No persisted G-code on the manufacturer's storage. Reduces the file-theft window. **Vulnerability**: stream-injection attack — an MITM injects malicious G-code commands during transmission, potentially damaging the machine [Source: 2026-asgar-quietprint-acoustic-defense.pdf p.1]. **Mitigation** (Asgar 2025 [6]): send chunked STL fragments instead of G-code, since STL contains only design data, not machine commands; the printer slices on its own.
 
 3. **Blockchain-based G-code storage** (referenced in Jamarani 2025 [27]). Tamper-evident audit log of G-code modifications. Useful for provenance and anti-tampering, less so for confidentiality.
+
+3b. **Optimistic Verifiable Claims (OVC)** — Corn et al. 2026 [@sources/2026-corn-optimistic-verifiable-claims.md]. Pre-contractual protocol: Consumer commits a *claim* about concealed G-code (e.g. filament consumption); Providers bid without seeing the file; challenge triggers on-chain predicates (access / identity / G-code syntax / feature). Honest path keeps design private. Economically viable on Arbitrum/opBNB, not Ethereum at industrial size. **Does not** defeat side-channels or MATE after handover — addresses Arrow’s bidding deadlock for MaaS, not physical emanation. Phase-0: **REFERENCE**.
 
 4. **DRM / TPM secure boot** (Identify3D / Materialise [12], Assembrix [14]). Industrial-grade. Designs are bound to specific printers via a TPM; the design file decrypts only inside an attested boot environment. **Defeats** file-level theft and most insider scenarios. **Does not defeat** Man-At-The-End (MATE) physical-side-channel attacks (Dolgavin 2025 [@sources/2025-dolgavin-hearsay-pbf-power.md]).
 

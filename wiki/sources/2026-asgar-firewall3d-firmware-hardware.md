@@ -12,16 +12,17 @@ related:
   - sources/2026-yocam-amnc-bambu-side-channel.md
   - sources/2026-arxiv-lane-noise-triage-jul15.md
   - sources/2026-arxiv-lane-noise-triage-jul18.md
+  - sources/2026-corn-optimistic-verifiable-claims.md
 maturity: draft
 created: 2026-07-15
-updated: 2026-07-18
+updated: 2026-07-29
 read_status: skimmed
 ---
 
 ## Relations
 - @cybersecurity-wiki/sources/2026-asgar-firewall3d-firmware-hardware.md  (cross-wiki stub)
 
-@sources/2026-asgar-quietprint-acoustic-defense.md @concepts/g-code-protection.md @concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @sources/2026-yocam-amnc-bambu-side-channel.md @sources/2026-arxiv-lane-noise-triage-jul15.md
+@sources/2026-asgar-quietprint-acoustic-defense.md @concepts/g-code-protection.md @concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/fdm-printing.md @sources/2026-yocam-amnc-bambu-side-channel.md @sources/2026-arxiv-lane-noise-triage-jul15.md @sources/2026-corn-optimistic-verifiable-claims.md
 
 ## Raw Concept
 

@@ -20,14 +20,16 @@ related:
   - concepts/soft-robotics-fdm-diw.md
   - sources/2026-hansen-tendon-actuated-tpu-backbone.md
   - sources/2025-miyama-soft-hand-skin-skeleton.md
+  - sources/2026-wade-slicer-project-compilation.md
+  - concepts/slicer-project-compilation.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-06-01
+updated: 2026-07-29
 ---
 
 ## Relations
 
-@concepts/filaments-baseline.md @concepts/fdm-printing.md @concepts/open-source-legged-robotics.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/tools/rebot-devarm.md
+@concepts/filaments-baseline.md @concepts/fdm-printing.md @concepts/shape-changing-fdm-interfaces.md @concepts/open-source-legged-robotics.md @concepts/soft-robotics-fdm-diw.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md @sources/2026-bambu-filament-guide.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-miyama-soft-hand-skin-skeleton.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/tools/rebot-devarm.md @sources/2026-wade-slicer-project-compilation.md @concepts/slicer-project-compilation.md
 
 ## Raw Concept
 
@@ -47,6 +49,10 @@ TPU comes in different stiffness grades, labeled by **Shore A hardness** — a s
 | Shore D scale starts | Rigid plastics begin | — | — |
 
 **Practical translation:** for AMS multi-color flexible work, only **TPU 95A HF** is supported. Softer grades (90A, 85A) must be printed manually-fed or single-spool-only. The reader's first TPU spool should be **95A or 95A HF** for compatibility.
+
+### Foaming / graded Shore TPU (research)
+
+**ColorFabb VarioShore TPU** (and similar temperature-responsive foaming TPUs) can vary density and Shore A via nozzle temperature + flow compensation — used as the process-state target in OpenVCAD slicer-project compilation [@sources/2026-wade-slicer-project-compilation.md]. Printed Shore gradient 65A→85A achieved MAE **0.5 Shore A** in that paper's calibration. **Not** a Bambu AMS day-1 SKU; specialty research filament. [CONFIRMED — paper calibration; [TENTATIVE] for other brands]
 
 ### When TPU is the right choice
 
