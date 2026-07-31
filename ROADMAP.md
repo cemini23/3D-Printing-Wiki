@@ -8,7 +8,7 @@ Active workstreams, open decisions, and the done log. Read at session start; upd
 
 ### W1 — Initial research ingest pass
 
-**Status:** Ingest passes 1–28 through 2026-07-29. **Inbox empty.** Auto-fetch on (arxiv-only; news off); triage each morning.
+**Status:** Ingest passes 1–29 through 2026-07-31. **Inbox empty.** Auto-fetch on (arxiv-only; news off); triage each morning.
 
 Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-printing papers. Curation surfaces practical takeaways for the reader; some papers may go in as background-context one-liners rather than full pages.
 
@@ -65,6 +65,7 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-07-17 | Ingest pass 26 — hybrid gripper + reject stubs | 1/2 accept (rigid-soft gripper); exoglove re-fetch fixed via REJECT stubs for 07958/06740; no tipdrop/poker/prod. Inbox cleared. |
 | 2026-07-18 | Ingest pass 27 — empty inbox / dedupe confirm | 0 PDFs fetched; 4 skipped-dup including reject-stub 07958; no Phase-0/briefs/routing. |
 | 2026-07-29 | Ingest pass 28 — OpenVCAD + OVC | 2/2 accept (slicer project compilation CONDITIONAL-GO research; OVC REFERENCE); cybersec + prod briefs; OpenVCAD shallow clone ~5 MB (pip venv over 500 MB cap skipped). |
+| 2026-07-31 | Ingest pass 29 — PrintAnything | 1/1 accept (G-plan point→G-code REFERENCE / empty repo); K221 prod brief; tipdrop/atto/poker/cyber skip; no local adopt. |
 
 ---
 

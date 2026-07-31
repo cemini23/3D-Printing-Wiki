@@ -2,6 +2,18 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-07-31] ingest | Pass 29 — PrintAnything G-plan (point cloud → G-code)
+
+- **Inbox:** 1 overnight PDF. **1 ACCEPT / 0 REJECT.**
+- **Accept:** arXiv:2607.27729 PrintAnything → `sources/2026-hong-printanything-gplan.md` + entity `tools/printanything.md` (Phase-0 **REFERENCE**; GitHub empty stub).
+- **Updated:** ai-design-tools (G-code red-line + PrintAnything note), novice-cad-workflows (week-1 skip), fdm-printing, bambu-studio, x1c, index, ROADMAP.
+- **Briefs:** local Phase-0; CCC/prod **K221** G-plan intermediate + deterministic compiler steal.
+- **Routing:** tipdrop/David/atto/poker/cybersec **skip**; **cemini-prod scp** K221.
+- **Local adopt:** none (empty repo; G-code NO-GO).
+- **Archive:** 1 PDF → egress-fi `3d-printing/`; inbox cleared.
+
+---
+
 ## [2026-07-29] ingest | Pass 28 — OpenVCAD slicer compilation + OVC confidential bidding
 
 - **Inbox:** 2 overnight PDFs. **2 ACCEPT / 0 REJECT.**

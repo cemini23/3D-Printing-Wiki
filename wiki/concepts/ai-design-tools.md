@@ -32,14 +32,16 @@ related:
   - concepts/slicer-project-compilation.md
   - entities/tools/openvcad.md
   - sources/2026-wade-slicer-project-compilation.md
+  - sources/2026-hong-printanything-gplan.md
+  - entities/tools/printanything.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-07-29
+updated: 2026-07-31
 ---
 
 ## Relations
 
-@concepts/slicer-project-compilation.md @entities/tools/openvcad.md @sources/2026-wade-slicer-project-compilation.md @sources/2026-george-agentscad-fdm-dfm.md @sources/2026-bambu-pla-pure-launch.md @concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/vlm-in-manufacturing.md @concepts/print-farm-operations.md @concepts/am-as-a-service.md @concepts/shape-changing-fdm-interfaces.md @meta/daily-research-digest-cadence.md @concepts/open-source-legged-robotics.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/ip-theft-3d-printing.md
+@sources/2026-hong-printanything-gplan.md @entities/tools/printanything.md @concepts/slicer-project-compilation.md @entities/tools/openvcad.md @sources/2026-wade-slicer-project-compilation.md @sources/2026-george-agentscad-fdm-dfm.md @sources/2026-bambu-pla-pure-launch.md @concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/vlm-in-manufacturing.md @concepts/print-farm-operations.md @concepts/am-as-a-service.md @concepts/shape-changing-fdm-interfaces.md @meta/daily-research-digest-cadence.md @concepts/open-source-legged-robotics.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/bambu-studio.md @sources/2026-bambu-popmart-makerworld-ip-settlement.md @concepts/ip-theft-3d-printing.md
 
 - @concepts/2026-05-13_gracia-ai-volumetric-3d-export.md — volumetric-capture (Gaussian Splatting) variant of the generative-3D-to-printable-mesh pipeline
 
@@ -117,6 +119,8 @@ For functional parts: traditional CAD (OpenSCAD / FreeCAD / Fusion 360) or curat
 ### The hallucinated-G-code red line (audit's strongest warning)
 
 The audit explicitly **prohibits AI tools that generate kinematics firmware macros or custom G-code routines.** The reasoning: hallucinated G-code commands risk physical collisions and catastrophic hardware damage. A generated motion command that drives the toolhead through a fixture, into the bed, or beyond the build envelope is not just a print failure — it's a hardware failure.
+
+**2026-07-31 update — PrintAnything [REFERENCE]:** Hong et al. (arXiv:2607.27729) demonstrate point-cloud → **G-plan** intermediate → compiled G-code, with claimed Bambu X1C prints and better Slice-100K scores than mesh→PrusaSlicer baselines [@sources/2026-hong-printanything-gplan.md]. The *pattern* (typed intermediate + deterministic compiler) is worth citing for research/harness. The *product* remains **NO-GO** for this wiki’s reader path: public repo empty; physics bias absent; still emits executable G-code. Do not treat “beats Poisson” as permission to run model G-code on a Flashforge / Bambu day-1 machine.
 
 This connects to the [@concepts/vlm-in-manufacturing.md] cluster's broader finding: **VLMs / LLMs are bad at quantitative engineering parameters.** Force limits, motion ranges, Z-axis safe heights — these must come from the printer's documentation, not from any LLM/VLM's "this seems reasonable" generation. The same rule that applies to chat-VLM-for-troubleshooting (`briefs/2026-05-07_vlm-prompt-discipline.md`) applies double here: **never accept generated motion commands without verification.**
 

@@ -16,14 +16,16 @@ related:
   - sources/2026-wade-slicer-project-compilation.md
   - concepts/slicer-project-compilation.md
   - entities/tools/openvcad.md
+  - sources/2026-hong-printanything-gplan.md
+  - entities/tools/printanything.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-07-29
+updated: 2026-07-31
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/ai-design-tools.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/orcaslicer.md @sources/2026-06-02-digest-orcaslicer-2-4-news.md @sources/2026-orcaslicer-2-4-stable-release.md @sources/2026-orcaslicer-2-4-2-release.md @sources/2026-bambu-popmart-makerworld-ip-settlement.md @sources/2026-wade-slicer-project-compilation.md @concepts/slicer-project-compilation.md @entities/tools/openvcad.md
+@sources/2026-hong-printanything-gplan.md @entities/tools/printanything.md @concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/ai-design-tools.md @sources/2026-bambu-toolchain-audit.md @entities/slicers/orcaslicer.md @sources/2026-06-02-digest-orcaslicer-2-4-news.md @sources/2026-orcaslicer-2-4-stable-release.md @sources/2026-orcaslicer-2-4-2-release.md @sources/2026-bambu-popmart-makerworld-ip-settlement.md @sources/2026-wade-slicer-project-compilation.md @concepts/slicer-project-compilation.md @entities/tools/openvcad.md
 
 ## Raw Concept
 

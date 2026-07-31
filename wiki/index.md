@@ -15,6 +15,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [AgentsCAD: Multi-agent FDM DFM on STEP (arXiv:2607.02448)](sources/2026-george-agentscad-fdm-dfm.md) — Claude+GPT-4o+MCP overhang DFM; Phase-0 REFERENCE — `paper, cad, agents, FDM, MCP, DFAM`
 - [Slicer project compilation / OpenVCAD (arXiv:2607.25326)](sources/2026-wade-slicer-project-compilation.md) — graded FFF → slicer-native `.3mf`; Phase-0 CONDITIONAL-GO research — `paper, slicing, 3MF, OpenVCAD, foaming`
 - [Optimistic Verifiable Claims / OVC (arXiv:2607.25517)](sources/2026-corn-optimistic-verifiable-claims.md) — confidential G-code bidding on L2s; Phase-0 REFERENCE — `paper, security, blockchain, MaaS, IP`
+- [PrintAnything G-plan point→G-code (arXiv:2607.27729)](sources/2026-hong-printanything-gplan.md) — mesh-free G-code from point clouds; Phase-0 REFERENCE / empty repo — `paper, AI, G-code, point-cloud, Bambu`
 - [Multimaterial e2e topology optimization (arXiv:2607.13174)](sources/2026-luo-multimaterial-e2e-optimization.md) — soft-gripper digital materials; soft-robotics background — `paper, multimaterial, soft-robotics, background`
 - [Hybrid rigid-soft gripper with self-locking (arXiv:2607.14730)](sources/2026-chen-hybrid-rigid-soft-gripper.md) — AM ratchets + membrane pneumatics; PLA FDM test spheres — `paper, soft-robotics, gripper, FDM`
 - [arXiv lane noise triage — overnight fetch 2026-07-16](sources/2026-arxiv-lane-noise-triage-jul16.md) — 2/4 accept (AgentsCAD + multimaterial) — `meta, triage, arxiv, digest, noise`
@@ -120,6 +121,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 ### Tools
 
 - [OpenVCAD](entities/tools/openvcad.md) — volumetric multi-material CAD → slicer `.3mf` compiler; CONDITIONAL-GO research (non-commercial license) — `tool, CAD, volumetric, OpenVCAD, phase-0`
+- [PrintAnything](entities/tools/printanything.md) — point cloud → G-plan → G-code; Phase-0 REFERENCE (empty GitHub; G-code red-line NO-GO) — `tool, AI, G-code, point-cloud, phase-0`
 - [Kickstarter / Autodesk FDM Test V4 Protocol](entities/tools/kickstarter-autodesk-fdm-protocol.md) — Apache-2.0 standardized calibration print (`ksr_fdmtest_v4.stl`); witness features fail in known patterns to surface specific extruder/motion failures — `calibration, benchmark, witness-features, FDM, Apache-2.0, GO-tier, materials-research`
 - [Obsidian](entities/tools/obsidian.md) — local-first markdown knowledge-base app; free for personal use; recommended reader for this wiki — `tool, obsidian, knowledge-base, markdown, local-first, free-personal, navigation`
 - [Cursor](entities/tools/cursor.md) — IDE + Chat with `@` file refs; **friend handoff AI** (Cursor Pro, not Claude Code) — `tool, cursor, IDE, AI, friend-handoff`
