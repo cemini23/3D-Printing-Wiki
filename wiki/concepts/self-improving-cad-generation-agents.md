@@ -9,14 +9,15 @@ related:
   - concepts/fdm-printing.md
   - concepts/ai-design-tools.md
   - concepts/novice-cad-workflows.md
+  - sources/2026-hong-printanything-gplan.md
 maturity: draft
 created: 2026-06-03
-updated: 2026-07-16
+updated: 2026-07-31
 ---
 
 ## Relations
 
-@sources/arxiv-2605-17448-self-improving-cad-agents.md @sources/2026-george-agentscad-fdm-dfm.md @concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/novice-cad-workflows.md
+@sources/2026-hong-printanything-gplan.md @sources/arxiv-2605-17448-self-improving-cad-agents.md @sources/2026-george-agentscad-fdm-dfm.md @concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/novice-cad-workflows.md
 
 ## Raw Concept
 
