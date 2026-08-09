@@ -155,3 +155,15 @@ Read in **Obsidian** or **Cursor** (open the files in the editor), in this order
 3. Ask the person who sent you this wiki.
 
 **Cursor Pro tip:** If you burn through fast premium usage, use **Auto** model for routine questions or upgrade to Pro+ — only if you hit limits; normal wiki Q&A is light usage.
+
+---
+
+## Optional — support the wiki author
+
+This handoff is free. If you want to follow along or tip the research later:
+
+- Newsletter: [Outlier Weekly](https://outlierweekly.substack.com)
+- Projects: [youratto.com](https://youratto.com) · [guruwatcher.com](https://guruwatcher.com)
+- Donation addresses + thank-you note: see the **Support** section in [`README.md`](README.md)
+
+Thank you for trying this path — questions welcome anytime.

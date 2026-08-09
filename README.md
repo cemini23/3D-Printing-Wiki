@@ -1,6 +1,10 @@
-# 3D Printing Wiki — Bambu Labs Production Workflow
+# 3D Printing Wiki
 
-A local knowledge base for setting up and operating a Bambu Labs 3D printer for hobby + Etsy / MakerWorld production. Curated from academic papers, vendor docs, and a 25-repo Phase-0 toolchain audit. Designed to be read in [Obsidian](https://obsidian.md) (free) or directly on GitHub.
+A local knowledge base for **FDM / FFF 3D printing** — research, materials, slicers, and production workflows. Curated from academic papers, vendor docs, and a Phase-0 toolchain audit. Built to be read in [Obsidian](https://obsidian.md) (free) or directly on GitHub.
+
+The core thesis is **Bambu Labs as a practical production stack** for hobby + Etsy / MakerWorld work. There is also a first-time-owner path for the **Flashforge Adventurer 5M**.
+
+Welcome — whether you are setting up a first printer or tightening a small production workflow, start with the links below.
 
 ---
 
@@ -10,88 +14,89 @@ A local knowledge base for setting up and operating a Bambu Labs 3D printer for 
 
 **Bambu reader?** Continue below.
 
-1. **Open this folder in Obsidian** as a vault — or just browse on GitHub.
-2. **Read [`wiki/concepts/wiki-navigation.md`](wiki/concepts/wiki-navigation.md)** — five-minute meta-guide to the schema and navigation conventions.
-3. **Then [`wiki/index.md`](wiki/index.md)** — the catalog of every page. Skim, then drill into whatever interests you.
+1. **Open this folder in Obsidian** as a vault — or browse on GitHub.
+2. **Read [`wiki/concepts/wiki-navigation.md`](wiki/concepts/wiki-navigation.md)** — a short meta-guide to the schema and navigation conventions.
+3. **Then [`wiki/index.md`](wiki/index.md)** — the catalog of every page. Skim, then drill into what you need.
 
-If you only have time for one document: read [`wiki/concepts/bambu-ecosystem-closed-loop.md`](wiki/concepts/bambu-ecosystem-closed-loop.md) — it's the load-bearing thesis for why this wiki rejects most 3D-printing forum advice.
+If you only have time for one document: read [`wiki/concepts/bambu-ecosystem-closed-loop.md`](wiki/concepts/bambu-ecosystem-closed-loop.md) — the load-bearing thesis for why this wiki rejects most “install Klipper / OctoPrint / random slicer” forum advice on Bambu.
 
 ---
 
 ## What's in here
 
-50 wiki pages, organized into:
+Rough scale as of **2026-08-09** (see [`wiki/index.md`](wiki/index.md) for the live catalog):
 
-- **18 source pages** — one per ingested research paper / vendor doc / audit. Heavy on 2023-2026 academic FDM literature plus Bambu Labs primary sources.
-- **18 concept pages** — synthesis hubs covering FDM physics, extrusion control, fault detection, side-channel attacks, IP theft, print farms, manufacturing-as-a-service, materials baseline, VLMs in manufacturing, the Bambu closed-firmware ecosystem, AI-design tooling, and wiki navigation.
-- **5 materials entity pages** — PLA / PETG / ABS / ASA / TPU.
-- **5 printer entity pages** — Bambu X1C / P1S / A1 (+ mini) + Flashforge Adventurer 5M (friend reader).
-- **2 slicer entity pages** — Bambu Studio (mandatory native), OrcaSlicer (advanced calibration only).
-- **4 tools entity pages** — Obsidian, FDM Test V4 calibration print, reBot-DevArm, markdown-preview-pluk (cross-wiki stub).
+| Kind | Count (approx.) | What’s covered |
+|------|----------------:|----------------|
+| **Source pages** | ~88 | Papers, vendor docs, audits, digest stubs (heavy on 2023–2026 FDM literature + Bambu primary sources) |
+| **Concept pages** | ~28 | FDM physics, extrusion, fault detection, side-channels / IP, print farms, MaaS, materials baseline, VLMs, Bambu closed-loop ecosystem, AI design tooling, novice CAD, wiki navigation |
+| **Materials** | 5 | PLA · PETG · ABS · ASA · TPU |
+| **Printers** | 4 | Bambu X1C · P1S · A1 (+ mini) · Flashforge Adventurer 5M |
+| **Slicers** | 2 | Bambu Studio (native daily driver) · OrcaSlicer (advanced calibration) |
+| **Tools** | ~10 | Obsidian, Cursor, FDM Test V4, AI mesh tools, OpenVCAD, reBot-DevArm, and related |
 
-See [`wiki/index.md`](wiki/index.md) for a one-line summary of every page.
+Daily research sweeps live under `wiki/sweeps/` (operator cadence notes — not required reading for day one).
 
 ---
 
 ## What's NOT in here
 
-- **`raw-sources/`** — the actual PDF files of every ingested paper plus the Bambu toolchain audit `.docx`. These live local-only (gitignored): ~17 files, mostly copyrighted academic papers. Source pages cite them by filename + page number; if you need the full PDF, find it via DOI or arXiv ID in the source's frontmatter.
-- **`research to be indexed/`** — transient drop zone for new sources before ingest (gitignored).
-- **`briefs/`** — one-off deliverables staged for distribution to other tools (gitignored).
+- **`raw-sources/`** — PDFs and similar primary files. Local-only (gitignored); mostly copyrighted. Source pages cite filename + page / DOI / arXiv; fetch originals yourself when you need the full paper.
+- **`research to be indexed/`** — transient drop zone before ingest (gitignored).
+- **`briefs/`** — one-off deliverables staged for other tools (gitignored).
 - **`hot.md`** — ephemeral session-state cache (gitignored).
-- **`.env`** — secrets (API keys for Brave / Exa / Context7 / DeepSeek). Use `.env.example` as the template; supply your own keys.
+- **`.env`** — secrets (Brave / Exa / Context7 / DeepSeek, etc.). Copy `.env.example` and use your own keys.
 
 ---
 
 ## Conventions
 
-Every wiki page has YAML frontmatter (`title`, `type`, `tags`, `keywords`, `related`, `maturity`, `created`, `updated`) plus structured body sections. Cross-links use `@path/to/page.md` syntax (NOT Obsidian's native `[[wikilinks]]` — see the navigation guide for why).
+Every wiki page has YAML frontmatter (`title`, `type`, `tags`, `keywords`, `related`, `maturity`, `created`, `updated`) plus structured body sections. Cross-links use `@path/to/page.md` (not Obsidian `[[wikilinks]]` — see the navigation guide for why).
 
-Confidence tags inside body text:
+Confidence tags in body text:
 
-- `[CONFIRMED]` — ≥2 independent sources
-- `[TENTATIVE 2026-05-07]` — single source or circumstantial; treat as "probably true"
+- `[CONFIRMED]` — ≥2 independent sources, or personally tested
+- `[TENTATIVE 2026-05-07]` — single source or circumstantial; treat as “probably true”
 - `[NEEDS VERIFICATION 2026-05-07]` — plausible but unchecked
 - `[RETRACTED]` — disproven; kept for context
 
-**Most pages are `maturity: draft`**. The synthesis is built from primary sources but cross-validation is incremental — if you act on a claim that drives a buying decision, double-check the source.
+**Most pages are `maturity: draft`.** Synthesis comes from primary sources; cross-validation is incremental. For buying decisions, double-check the cited source.
 
 ---
 
 ## Schema enforcement
 
-The wiki has a lint script that catches orphan pages, broken cross-links, and frontmatter errors:
-
 ```bash
 python3 scripts/wiki_lint.py
 ```
 
-Clean output = 0 orphans, 0 bidirectional gaps, 0 dangling links.
+Catches orphans, broken cross-links, and frontmatter issues. Other helpers in `scripts/`:
 
-Other scripts in `scripts/`:
-
-- `preingest_check.py` — duplicate detection before adding a new source (sha256 / arXiv ID / DOI / URL / filename / title)
-- `wiki_gap_detect.py` — flags cited-unread stubs, stale `[NEEDS VERIFICATION]` tags, thin concept pages
+- `preingest_check.py` — duplicate detection before a new source (sha256 / arXiv / DOI / URL / filename / title)
+- `wiki_gap_detect.py` — cited-unread stubs, stale `[NEEDS VERIFICATION]` tags, thin concept pages
 
 ---
 
-## Day-1 toolchain (the punchline)
+## Day-1 toolchain (Bambu)
 
-If you're new to Bambu and reading this wiki to set up a printer for the first time:
+If you are new to Bambu and setting up a printer for the first time:
 
-**Install:**
-1. **Bambu Studio** — `bambulab/BambuStudio` (AGPL-3.0). Mandatory native slicer.
-2. **OrcaSlicer** — `OrcaSlicer/OrcaSlicer` (AGPL-3.0). Use for advanced calibration only — NOT daily driver. ([Why?](wiki/entities/slicers/orcaslicer.md))
-3. **Kickstarter Autodesk FDM Test V4** — `kickstarter/kickstarter-autodesk-3d` (Apache-2.0). One-time download; standardized calibration print.
-4. **Obsidian** — `obsidian.md` (free for personal use). To read this wiki.
+**Install**
 
-**Ignore** (when 3D-printing forums tell you to install them on Bambu): Klipper, Marlin, OctoPrint, PrusaSlicer-as-daily, Cura, Voron CAD repos, and ~22 other repos in 4 rejection patterns. See [`wiki/concepts/bambu-ecosystem-closed-loop.md`](wiki/concepts/bambu-ecosystem-closed-loop.md) for the rationale or [`wiki/sources/2026-bambu-toolchain-audit.md`](wiki/sources/2026-bambu-toolchain-audit.md) for the per-repo table.
+1. **Bambu Studio** — [`bambulab/BambuStudio`](https://github.com/bambulab/BambuStudio) (AGPL-3.0). Mandatory native slicer.
+2. **OrcaSlicer** — [`OrcaSlicer/OrcaSlicer`](https://github.com/OrcaSlicer/OrcaSlicer) (AGPL-3.0). Advanced calibration only — not the daily driver. ([Why?](wiki/entities/slicers/orcaslicer.md))
+3. **Kickstarter Autodesk FDM Test V4** — [`kickstarter/kickstarter-autodesk-3d`](https://github.com/kickstarter/kickstarter-autodesk-3d) (Apache-2.0). One-time standardized calibration print.
+4. **Obsidian** — [obsidian.md](https://obsidian.md) (free for personal use). Comfortable reader for this wiki.
+
+**Skip on Bambu** (when forums push them): Klipper, Marlin, OctoPrint, PrusaSlicer-as-daily, Cura, Voron CAD repos, and most of the rest of the 25-repo audit’s NO-GO set. See [`wiki/concepts/bambu-ecosystem-closed-loop.md`](wiki/concepts/bambu-ecosystem-closed-loop.md) or [`wiki/sources/2026-bambu-toolchain-audit.md`](wiki/sources/2026-bambu-toolchain-audit.md).
+
+Flashforge Adventurer 5M owners: use **Orca-Flashforge** and start at [`FRIEND-SETUP.md`](FRIEND-SETUP.md) — not the Bambu Studio path above.
 
 ---
 
 ## Cemini wiki federation
 
-**Eight** wikis + private **Cemini Financial Suite**. Cross-links: `@<alias>/path/to/page.md` (`CLAUDE.md` → Related Wikis).
+**Eight** wikis + private **Cemini Financial Suite**. Cross-links: `@<alias>/path/to/page.md` (see `CLAUDE.md` → Related Wikis).
 
 | Alias | Repository | Visibility | Focus |
 |-------|------------|------------|--------|
@@ -109,10 +114,11 @@ If you're new to Bambu and reading this wiki to set up a printer for the first t
 
 ---
 
-
 ## Support
 
-Voluntary tips fund open research and tooling. **Donation-only addresses** — not trading or production wallets.
+Thank you for using this wiki — forks, stars, corrections, and quiet reading all help keep the research public.
+
+If you want to go further, optional tips fund open research and tooling. **Donation-only addresses** — not trading or production wallets.
 
 | Chain family | Address |
 |--------------|---------|
@@ -120,28 +126,41 @@ Voluntary tips fund open research and tooling. **Donation-only addresses** — n
 | **Solana / SVM** | `J4zNn4hK9jTrKBFY8sbAGJHLoZvXvQf4B9pQSbSrocZE` |
 | **Polymarket** (referral) | [polymarket.com/?r=Cemini23](https://polymarket.com/?r=Cemini23) |
 
+**Projects & writing** (also a great way to support the work):
+
+| Project | Link | What it is |
+|---------|------|------------|
+| **Outlier Weekly** | [outlierweekly.substack.com](https://outlierweekly.substack.com) | Methodology newsletter — markets, research systems, and open tooling notes |
+| **Atto** | [youratto.com](https://youratto.com) | Private desktop organizer for Italian family / citizenship document packets |
+| **GuruWatcher** | [guruwatcher.com](https://guruwatcher.com) | Local app: newsletter price levels → Discord alerts (alert-only; never trades) |
+| **YouTube** | [@Cemini23](https://www.youtube.com/@Cemini23) | Walkthroughs and demos |
+
+Canonical donation copy across the federation: [SUPPORT.md](https://github.com/cemini23/cemini-claude-code-CCC/blob/main/SUPPORT.md) on CCC.
+
+---
 
 ## License
 
 [MIT](LICENSE) — wiki content, scripts, and configuration are free to use, modify, and redistribute. Built so any hobbyist or small-business owner getting into 3D printing can lift it, fork it, or contribute back.
 
-Cited primary sources (academic papers, vendor docs) remain under their original licenses and copyrights — they are not redistributed in this repo (see `.gitignore`). To verify a specific claim against its primary source, find the paper via the title or DOI in the source page's frontmatter.
+Cited primary sources (academic papers, vendor docs) remain under their original licenses and copyrights — they are not redistributed here (see `.gitignore`). To verify a claim, use the title / DOI / arXiv ID on the source page.
 
 ---
 
 ## Status
 
-- Wiki: **57 pages**, 401 cross-links, lint clean as of 2026-05-23
-- Inbox: 37 PDFs/docx awaiting ingest
+- Wiki: **~138 core pages** (+ daily sweeps under `wiki/sweeps/`); ~990 outbound `related:` edges as of 2026-08-09
+- Inbox: empty (auto-fetch arXiv-only; news off — triage in the morning)
 - Schema: HEAVY-mode (full bidirectional cross-link enforcement)
-- Maturity: `draft` for most pages; iterating
+- Maturity: mostly `draft`; iterating with each ingest
 
-See [`ROADMAP.md`](ROADMAP.md) for active workstreams and [`wiki/log.md`](wiki/log.md) for full ingest history.
+See [`ROADMAP.md`](ROADMAP.md) for active workstreams and [`wiki/log.md`](wiki/log.md) for ingest history.
 
 ## Related
 
-- Methodology newsletter: [Outlier Weekly](https://outlierweekly.substack.com)
+- Newsletter: [Outlier Weekly](https://outlierweekly.substack.com)
+- Products: [Atto](https://youratto.com) · [GuruWatcher](https://guruwatcher.com)
 - YouTube: [@Cemini23](https://www.youtube.com/@Cemini23)
 - Wiki federation hub: [cemini-claude-code-CCC](https://github.com/cemini23/cemini-claude-code-CCC)
 - Agent toolkit: [wikilint](https://github.com/cemini23/wikilint) · [vet](https://github.com/cemini23/vet) · [ara-schema](https://github.com/cemini23/ara-schema)
-- Sibling wikis: [SEO/GEO](https://github.com/cemini23/SEO-GEO-B-M-Wiki) · [Cybersecurity](https://github.com/cemini23/Cybersecurity-wiki) · [Image Gen](https://github.com/cemini23/uncensored-image-gen-wiki)
+- Sibling wikis: [SEO/GEO](https://github.com/cemini23/SEO-GEO-B-M-Wiki) · [Cybersecurity](https://github.com/cemini23/Cybersecurity-wiki) · [Image Gen](https://github.com/cemini23/uncensored-image-gen-wiki) · [Gambling](https://github.com/cemini23/Gambling-wiki) · [Game Dev](https://github.com/cemini23/Game-Dev-wiki)
