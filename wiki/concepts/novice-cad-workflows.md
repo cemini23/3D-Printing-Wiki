@@ -44,7 +44,7 @@ Your first jobs are **calibration and trust-building**, not CAD:
 2. [@entities/tools/kickstarter-autodesk-fdm-protocol.md] FDM Test V4 on stock PLA profile.
 3. Download someone else's proven STL (Printables, Thingiverse, MakerWorld) before you model anything original.
 
-**Skip entirely in week 1:** @concepts/print-farm-operations.md, @concepts/am-as-a-service.md, @concepts/shape-changing-fdm-interfaces.md, @concepts/open-source-legged-robotics.md, security/MaaS pages, and any **point-cloud → G-code** research tools (@entities/tools/printanything.md — Phase-0 REFERENCE / empty repo; do not run model G-code).
+**Skip entirely in week 1:** @concepts/print-farm-operations.md, @concepts/am-as-a-service.md, @concepts/shape-changing-fdm-interfaces.md, @concepts/open-source-legged-robotics.md, security/MaaS pages, any **pneumatics / 4D** soft-robotics work (@sources/2026-abboodi-airtight-spa-fdm.md — airtight TPU pneumatics; Phase-0 REFERENCE), and any **point-cloud → G-code** research tools (@entities/tools/printanything.md — Phase-0 REFERENCE / empty repo; do not run model G-code).
 
 ### Week 2–4 — simple CAD without new hardware
 

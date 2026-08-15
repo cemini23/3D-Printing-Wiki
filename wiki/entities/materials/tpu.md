@@ -22,14 +22,15 @@ related:
   - sources/2025-miyama-soft-hand-skin-skeleton.md
   - sources/2026-wade-slicer-project-compilation.md
   - concepts/slicer-project-compilation.md
+  - sources/2026-abboodi-airtight-spa-fdm.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-07-29
+updated: 2026-08-15
 ---
 
 ## Relations
 
-@concepts/filaments-baseline.md @concepts/fdm-printing.md @concepts/shape-changing-fdm-interfaces.md @concepts/open-source-legged-robotics.md @concepts/soft-robotics-fdm-diw.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md @sources/2026-bambu-filament-guide.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-miyama-soft-hand-skin-skeleton.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/tools/rebot-devarm.md @sources/2026-wade-slicer-project-compilation.md @concepts/slicer-project-compilation.md
+@concepts/filaments-baseline.md @concepts/fdm-printing.md @concepts/shape-changing-fdm-interfaces.md @concepts/open-source-legged-robotics.md @concepts/soft-robotics-fdm-diw.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md @sources/2026-bambu-filament-guide.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-miyama-soft-hand-skin-skeleton.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/tools/rebot-devarm.md @sources/2026-wade-slicer-project-compilation.md @concepts/slicer-project-compilation.md @sources/2026-abboodi-airtight-spa-fdm.md
 
 ## Raw Concept
 
@@ -71,6 +72,8 @@ TPU comes in different stiffness grades, labeled by **Shore A hardness** — a s
 - **Beginner first-month prints.** TPU is the highest-friction filament to feed — bowden tubes, sharp PTFE bends, and rapid travel moves all cause feeding failures. **Direct-drive extruder strongly preferred** (Bambu's printers are direct-drive — good).
 
 **Research note:** @sources/2025-yoshimura-m3d-skin-tactile-fdm.md pairs **TPU + conductive TPU** infill for printed pressure sensors — requires **multi-material FDM**, not a typical single-nozzle first printer (@concepts/open-source-legged-robotics.md).
+
+**Research note — pneumatic TPU (2026-08):** @sources/2026-abboodi-airtight-spa-fdm.md — for **airtight pneumatic** TPU parts, sealing depends on **extrusion-path architecture** (three 0.32 mm wall lines sealed better than two 0.8 mm lines) and **filament moisture** (5 h @ 50 °C drying, RH <20% ambient), not nominal wall thickness alone. Bowden worked with conditioning (low-friction PTFE, retraction off) — [TENTATIVE] transfer; the wiki's direct-drive-strongly-preferred default stands for the friend reader's Bambu/Flashforge day-1 TPU.
 
 ### Specs (Bambu TPU 95A HF) [Source: https://bambulab.com/en-us/filament/guide (retrieved 2026-05-06)]
 

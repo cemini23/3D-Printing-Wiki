@@ -19,14 +19,15 @@ related:
   - sources/2026-mohammadi-rce-lqr-extrusion.md
   - sources/2026-luo-multimaterial-e2e-optimization.md
   - sources/2026-chen-hybrid-rigid-soft-gripper.md
+  - sources/2026-abboodi-airtight-spa-fdm.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-07-17
+updated: 2026-08-15
 ---
 
 ## Relations
 
-@sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-luo-multimaterial-e2e-optimization.md @concepts/open-source-legged-robotics.md @concepts/fdm-printing.md @entities/materials/tpu.md @sources/2025-miyama-soft-hand-skin-skeleton.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-clancy-magnetic-soft-microrobots.md @sources/2025-truempler-ionic-polymer-diw.md @sources/2025-cha-diw-stretchable-strain-sensors.md @sources/2025-kota-3d-cal-tactile-calibration.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md
+@sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-abboodi-airtight-spa-fdm.md @concepts/open-source-legged-robotics.md @concepts/fdm-printing.md @entities/materials/tpu.md @sources/2025-miyama-soft-hand-skin-skeleton.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-clancy-magnetic-soft-microrobots.md @sources/2025-truempler-ionic-polymer-diw.md @sources/2025-cha-diw-stretchable-strain-sensors.md @sources/2025-kota-3d-cal-tactile-calibration.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md
 
 ## Raw Concept
 
@@ -52,6 +53,10 @@ Ingest pass 11 — extends pass 9 (@concepts/open-source-legged-robotics.md) wit
 ### Hybrid rigid–soft gripper (2026-07)
 
 @sources/2026-chen-hybrid-rigid-soft-gripper.md — agricultural gripper with membrane pneumatics + **FDM/AM ratchet–pawl self-locking**; PLA spheres for bench tests. **REFERENCE** only (no public BOM). Complements multimaterial topology work (@sources/2026-luo-multimaterial-e2e-optimization.md).
+
+### Airtight TPU pneumatic FDM (2026-08)
+
+@sources/2026-abboodi-airtight-spa-fdm.md — uOttawa process evaluation of **five routes** for a complex airtight SPA (heat-shrink / silicone casting / powder AM / DLP / FDM). **FDM TPU retained** because its dominant defects were correctable. Headline [CONFIRMED paper]: a **0.96 mm wall from three 0.32 mm lines sealed better than a 1.6 mm wall from two 0.8 mm lines** — extrusion-path architecture matters more than nominal thickness (mechanism [TENTATIVE]). Bowden (Ultimaker pair) worked **with conditioning** — a nuance vs the direct-drive default in @entities/materials/tpu.md. Phase-0 **REFERENCE**; do not copy the Ultimaker lab window to consumer printers.
 
 ## Snippets
 

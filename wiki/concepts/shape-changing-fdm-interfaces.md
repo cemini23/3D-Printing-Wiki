@@ -16,14 +16,15 @@ related:
   - sources/2025-iqbal-single-material-4d-pvp.md
   - sources/2026-li-lce-nat-diw-hybrid-cooling.md
   - concepts/novice-cad-workflows.md
+  - sources/2026-abboodi-airtight-spa-fdm.md
 maturity: draft
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-08-15
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/filaments-baseline.md @entities/materials/pla.md @entities/materials/tpu.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-lee-fluxlab-sma-sla.md @sources/2025-iqbal-single-material-4d-pvp.md @sources/2026-li-lce-nat-diw-hybrid-cooling.md
+@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/filaments-baseline.md @entities/materials/pla.md @entities/materials/tpu.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-lee-fluxlab-sma-sla.md @sources/2025-iqbal-single-material-4d-pvp.md @sources/2026-li-lce-nat-diw-hybrid-cooling.md @sources/2026-abboodi-airtight-spa-fdm.md
 
 ## Raw Concept
 
@@ -39,6 +40,7 @@ Shape-changing **products** (kinetic lamps, morphing toys, soft grippers, wearab
 |----------|-------|---------------|-----------|------------|
 | **PvP strain-trapping 4D** | @sources/2025-iqbal-single-material-4d-pvp.md | Desktop **FFF** | Commercial **SMP** filament (MM3520), not PLA | Best FDM entry—tune nozzle temp + speed + lattice geometry |
 | **FDM + heat-seal pneumatics** | @sources/2026-li-duomorph-fdm-pneumatic.md | **FFF** + thin TPU sheet | PLA/TPU on film; Rhino toolchain | Validated on **Bambu A1**; high design labor; reversible inflation |
+| **Airtight FDM TPU pneumatics** | @sources/2026-abboodi-airtight-spa-fdm.md | Bowden **FFF**, dried TPU | TPU 95A-class, no film | Research **REFERENCE** — airtight walls via wall-line architecture; no heat-seal step |
 | **SLA + SMA + inductive sense** | @sources/2026-lee-fluxlab-sma-sla.md | **SLA** (Form 4B) + post-assembly | Silicone 40A resin + Nitinol spring | **Not FDM**—skip for FFF-only readers |
 | **DIW NAT-LCE** | @sources/2026-li-lce-nat-diw-hybrid-cooling.md | Custom **DIW** + UV | Oligomer inks | **Background only**—specialty soft-matter lab |
 
@@ -59,6 +61,8 @@ DuoMorph merges **heat-seal G-code** (nozzle welds 0.2 mm TPU film paths at ~5 m
 - Run **cold bed** for most FDM-on-film steps—heated bed softens the substrate.
 - Slice structural STLs in Bambu Studio / Cura; merge with seal paths in Rhino tool.
 - **Never** run merged G-code without reading—includes non-standard temperatures and slow sealing moves.
+
+**Contrast — airtight without heat-seal (2026-08):** @sources/2026-abboodi-airtight-spa-fdm.md shows the all-FDM alternative: monolithic airtight TPU walls need **neither film nor heat-seal G-code** if the wall is built from **three 0.32 mm lines** (vs fewer, wider lines) with dried filament and a controlled Bowden feed. DuoMorph (heat-seal) wins on fast fabrication + 4D pre-shape; Abboodi (direct TPU walls) wins on a monolithic pressure boundary — but is **REFERENCE**-only, no public BOM, lab window not transferable to consumer printers.
 
 [TENTATIVE 2026-05-23] Flashforge 5M (Orca-Flashforge) should be capable in principle (Klipper G-code), but only Bambu A1 is validated in the source.
 

@@ -2,6 +2,19 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-08-15] ingest | Pass 30 — Abboodi airtight SPA FDM process eval (arXiv:2608.13233)
+
+- **Inbox:** 1 PDF (overnight digest). **1 ACCEPT / 0 REJECT.**
+- **Accept:** arXiv:2608.13233 Abboodi (uOttawa) manufacturing-process evaluation of complex airtight soft pneumatic actuators → `sources/2026-abboodi-airtight-spa-fdm.md` (Phase-0 **REFERENCE** / NO-GO hobby; no public repo, license, or BOM).
+- **Created:** source page with 5-route comparison table (heat-shrink / casting / powder AM / DLP / FDM TPU), Ultimaker process window with transfer caveat, wall-architecture headline finding, Table 2 bed-temp contradiction flagged.
+- **Updated:** soft-robotics-fdm-diw (new airtight-TPU subsection), shape-changing-fdm-interfaces (pneumatics row vs DuoMorph heat-seal), tpu (pneumatic TPU research note), fdm-printing (related + Relations only), novice-cad-workflows (week-1 skip one-liner), index, ROADMAP.
+- **Briefs:** local Phase-0 (`briefs/2026-08-15_abboodi-airtight-spa-phase0.md`).
+- **Routing:** tipdrop / David / atto / poker / cybersec / cemini-prod **skip** (no harness / firmware / image-gen steal).
+- **Local adopt:** none (no repo; 3D-printing Phase-1 wires untouched).
+- **Archive:** 1 PDF → egress-fi `3d-printing/`; inbox cleared.
+
+---
+
 ## [2026-07-31] ingest | Pass 29 — PrintAnything G-plan (point cloud → G-code)
 
 - **Inbox:** 1 overnight PDF. **1 ACCEPT / 0 REJECT.**
