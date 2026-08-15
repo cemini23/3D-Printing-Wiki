@@ -2,6 +2,12 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-08-15] fill | Pass 30 cluster backlinks + Phase-0 brief body
+
+- Bidirectional related: Abboodi ↔ DuoMorph, Chen hybrid gripper, novice-cad-workflows.
+- Hubs: soft-robotics modality row; shape-changing “four” → five.
+- Brief `briefs/2026-08-15_abboodi-airtight-spa-phase0.md` filled to peer Phase-0 shape (checklist + atto skip). Gitignored — local only.
+
 ## [2026-08-15] ingest | Pass 30 — Abboodi airtight SPA FDM process eval (arXiv:2608.13233)
 
 - **Inbox:** 1 PDF (overnight digest). **1 ACCEPT / 0 REJECT.**

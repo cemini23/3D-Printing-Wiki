@@ -41,6 +41,7 @@ Ingest pass 11 — extends pass 9 (@concepts/open-source-legged-robotics.md) wit
 |----------|----------|--------------|
 | **Single-material flexible FDM** | Soft hand skin-skeleton | Advanced |
 | **TPU FDM structure** | Tendon continuum backbone | Advanced + TPU skill |
+| **Airtight TPU pneumatics** | Abboodi SPA process eval | Research only — lab window |
 | **Multi-material FDM sensing** | M3D-skin, eFlesh (pass 9) | MMU or pause-insert |
 | **DIW on silicone** | Cha strain sensors; Trümpler ionic actuators | Custom hardware |
 | **Printer as robot** | 3D Cal probing | Clever repurposing |

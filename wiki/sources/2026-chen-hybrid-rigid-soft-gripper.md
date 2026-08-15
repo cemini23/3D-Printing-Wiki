@@ -10,15 +10,16 @@ related:
   - sources/2026-luo-multimaterial-e2e-optimization.md
   - sources/2026-arxiv-lane-noise-triage-jul17.md
   - sources/2026-arxiv-lane-noise-triage-jul18.md
+  - sources/2026-abboodi-airtight-spa-fdm.md
 maturity: draft
 created: 2026-07-17
-updated: 2026-07-18
+updated: 2026-08-15
 read_status: skimmed
 ---
 
 ## Relations
 
-@sources/2026-arxiv-lane-noise-triage-jul18.md @concepts/soft-robotics-fdm-diw.md @concepts/fdm-printing.md @entities/materials/pla.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-arxiv-lane-noise-triage-jul17.md
+@sources/2026-arxiv-lane-noise-triage-jul18.md @concepts/soft-robotics-fdm-diw.md @concepts/fdm-printing.md @entities/materials/pla.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-arxiv-lane-noise-triage-jul17.md @sources/2026-abboodi-airtight-spa-fdm.md
 
 ## Raw Concept
 
@@ -34,7 +35,7 @@ read_status: skimmed
 
 Agricultural hybrid gripper: **membrane pneumatic soft chambers** + **3D-printed dual ratchet–pawl** joints for energy-free self-locking after grasp. Claims vs continuous-pressure soft gripper: ~**4200 g** destructive load capacity (vs 45–210 g), more uniform contact force ratios, **~50% lower energy** per cycle (~42.6 J vs 85.28 J) by cutting continuous pneumatics once locked. Fruit/object demos (peach, pear, apple, kiwi, etc.).
 
-**FDM wiki hook [CONFIRMED]:** PLA FDM (15% infill) used for spherical test artifacts; additive manufacturing for ratchet parts + COTS pneumatic chambers — low-cost fab story. Not a Bambu/Flashforge consumer print guide.
+**FDM wiki hook [CONFIRMED]:** PLA FDM (15% infill) used for spherical test artifacts; additive manufacturing for ratchet parts + COTS pneumatic chambers — low-cost fab story. Not a Bambu/Flashforge consumer print guide. Cluster contrast: @sources/2026-abboodi-airtight-spa-fdm.md is the **monolithic TPU-wall** airtight route (no COTS membrane); this paper keeps pneumatics as bought chambers + printed lock.
 
 ### Phase-0 (2026-07-17)
 

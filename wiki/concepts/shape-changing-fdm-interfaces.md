@@ -32,7 +32,7 @@ Ingest cluster A (2026-05-23): four papers on programmable shape change—three 
 
 ## Narrative
 
-Shape-changing **products** (kinetic lamps, morphing toys, soft grippers, wearable mechanics) sit outside normal "print a static STL" workflows. This hub maps **four fabrication modalities** from the cluster and which printers can attempt them.
+Shape-changing **products** (kinetic lamps, morphing toys, soft grippers, wearable mechanics) sit outside normal "print a static STL" workflows. This hub maps **five fabrication modalities** from the cluster (plus the 2026-08 airtight-TPU row) and which printers can attempt them.
 
 ### Modality comparison
 

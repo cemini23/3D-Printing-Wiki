@@ -8,6 +8,9 @@ related:
   - concepts/shape-changing-fdm-interfaces.md
   - entities/materials/tpu.md
   - concepts/fdm-printing.md
+  - concepts/novice-cad-workflows.md
+  - sources/2026-li-duomorph-fdm-pneumatic.md
+  - sources/2026-chen-hybrid-rigid-soft-gripper.md
 maturity: draft
 created: 2026-08-15
 updated: 2026-08-15
@@ -16,7 +19,7 @@ read_status: skimmed
 
 ## Relations
 
-@concepts/soft-robotics-fdm-diw.md @concepts/shape-changing-fdm-interfaces.md @entities/materials/tpu.md @concepts/fdm-printing.md
+@concepts/soft-robotics-fdm-diw.md @concepts/shape-changing-fdm-interfaces.md @entities/materials/tpu.md @concepts/fdm-printing.md @concepts/novice-cad-workflows.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-chen-hybrid-rigid-soft-gripper.md
 
 ## Raw Concept
 

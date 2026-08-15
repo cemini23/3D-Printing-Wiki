@@ -9,15 +9,16 @@ related:
   - entities/materials/pla.md
   - entities/materials/tpu.md
   - entities/printers/a1.md
+  - sources/2026-abboodi-airtight-spa-fdm.md
 maturity: draft
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-08-15
 read_status: read
 ---
 
 ## Relations
 
-@concepts/shape-changing-fdm-interfaces.md @concepts/fdm-printing.md @entities/materials/pla.md @entities/materials/tpu.md @entities/printers/a1.md
+@concepts/shape-changing-fdm-interfaces.md @concepts/fdm-printing.md @entities/materials/pla.md @entities/materials/tpu.md @entities/printers/a1.md @sources/2026-abboodi-airtight-spa-fdm.md
 
 ## Raw Concept
 
@@ -51,6 +52,8 @@ HCI fabrication paper presenting **DuoMorph**: a unified workflow where a **stan
 **Applications demonstrated.** Kinetic sculpture (mimosa touch-deflate), Venus-flytrap biomimetic gripper (constraint + conductive spikes + friction dots), customized 4D-framed massage neck pillow, hedgehog desktop toy (4D shell + inflatable body).
 
 **Reader translation (Bambu / Flashforge FDM).** [CONFIRMED] Workflow is consumer FDM + sheet stock, not a new printer class. [TENTATIVE 2026-05-23] Orca-Flashforge / non-Bambu printers should work if they can run custom low-speed heat-seal G-code and cold-bed PLA-on-film profiles—only **Bambu A1** validated in paper. Labor and Rhino toolchain are high; best fit is **interactive art / kinetic Etsy niche**, not production jigs.
+
+**Contrast — no-film airtight TPU:** @sources/2026-abboodi-airtight-spa-fdm.md prints the pressure boundary as **monolithic TPU walls** (wall-line architecture + dried filament) instead of heat-sealed film. DuoMorph wins on consumer-printer + 4D pre-shape; Abboodi is lab **REFERENCE** only.
 
 ## Snippets
 
