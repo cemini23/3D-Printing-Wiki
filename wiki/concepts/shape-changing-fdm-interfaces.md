@@ -17,30 +17,33 @@ related:
   - sources/2026-li-lce-nat-diw-hybrid-cooling.md
   - concepts/novice-cad-workflows.md
   - sources/2026-abboodi-airtight-spa-fdm.md
+  - sources/2026-jiang-unified-kirigami-design.md
+  - entities/tools/pykirigami.md
 maturity: draft
 created: 2026-05-23
-updated: 2026-08-15
+updated: 2026-09-01
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/filaments-baseline.md @entities/materials/pla.md @entities/materials/tpu.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-lee-fluxlab-sma-sla.md @sources/2025-iqbal-single-material-4d-pvp.md @sources/2026-li-lce-nat-diw-hybrid-cooling.md @sources/2026-abboodi-airtight-spa-fdm.md
+@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/filaments-baseline.md @entities/materials/pla.md @entities/materials/tpu.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-lee-fluxlab-sma-sla.md @sources/2025-iqbal-single-material-4d-pvp.md @sources/2026-li-lce-nat-diw-hybrid-cooling.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-jiang-unified-kirigami-design.md @entities/tools/pykirigami.md
 
 ## Raw Concept
 
-Ingest cluster A (2026-05-23): four papers on programmable shape change—three with direct FFF relevance (pneumatic+FDM, PvP SMP, SLA+SMA contrast) plus one DIW LCE background source. Synthesizes when a Bambu/Flashforge hobbyist or Etsy maker should care vs skip.
+Ingest cluster A (2026-05-23): four papers on programmable shape change—three with direct FFF relevance (pneumatic+FDM, PvP SMP, SLA+SMA contrast) plus one DIW LCE background source. Pass 31 (2026-09-01) adds computational kirigami design (Jiang & Choi) + PyKirigami simulator REFERENCE. Synthesizes when a Bambu/Flashforge hobbyist or Etsy maker should care vs skip.
 
 ## Narrative
 
-Shape-changing **products** (kinetic lamps, morphing toys, soft grippers, wearable mechanics) sit outside normal "print a static STL" workflows. This hub maps **five fabrication modalities** from the cluster (plus the 2026-08 airtight-TPU row) and which printers can attempt them.
+Shape-changing **products** (kinetic lamps, morphing toys, soft grippers, wearable mechanics) sit outside normal "print a static STL" workflows. This hub maps **six fabrication / design modalities** from the cluster and which printers can attempt them.
 
 ### Modality comparison
 
-| Modality | Paper | Printer stack | Materials | Reader fit |
-|----------|-------|---------------|-----------|------------|
+| Modality | Paper / tool | Printer stack | Materials | Reader fit |
+|----------|--------------|---------------|-----------|------------|
 | **PvP strain-trapping 4D** | @sources/2025-iqbal-single-material-4d-pvp.md | Desktop **FFF** | Commercial **SMP** filament (MM3520), not PLA | Best FDM entry—tune nozzle temp + speed + lattice geometry |
 | **FDM + heat-seal pneumatics** | @sources/2026-li-duomorph-fdm-pneumatic.md | **FFF** + thin TPU sheet | PLA/TPU on film; Rhino toolchain | Validated on **Bambu A1**; high design labor; reversible inflation |
 | **Airtight FDM TPU pneumatics** | @sources/2026-abboodi-airtight-spa-fdm.md | Bowden **FFF**, dried TPU | TPU 95A-class, no film | Research **REFERENCE** — airtight walls via wall-line architecture; no heat-seal step |
+| **Computational kirigami design** | @sources/2026-jiang-unified-kirigami-design.md + @entities/tools/pykirigami.md | Design/simulation first; optional **FFF TPU** jointed tiles | TPU joints (one paper demo) | **REFERENCE** — inverse layout math; not a slicer plugin |
 | **SLA + SMA + inductive sense** | @sources/2026-lee-fluxlab-sma-sla.md | **SLA** (Form 4B) + post-assembly | Silicone 40A resin + Nitinol spring | **Not FDM**—skip for FFF-only readers |
 | **DIW NAT-LCE** | @sources/2026-li-lce-nat-diw-hybrid-cooling.md | Custom **DIW** + UV | Oligomer inks | **Background only**—specialty soft-matter lab |
 
@@ -69,6 +72,12 @@ DuoMorph merges **heat-seal G-code** (nozzle welds 0.2 mm TPU film paths at ~5 m
 ### FluxLab — contrast case (SLA, not your daily driver)
 
 FluxLab's **FluxIO** embeds one SMA spring as both actuator and inductive sensor inside SLA silicone lattices. Useful conceptually for "sensing + morphing in one object," but **requires a resin printer and post-print assembly**—orthogonal to @concepts/bambu-ecosystem-closed-loop.md FFF toolchain.
+
+### Computational kirigami — design math, not day-1 printing
+
+@sources/2026-jiang-unified-kirigami-design.md (arXiv:2608.30032) is an **inverse design** framework for cut patterns that morph between prescribed 2D/3D states—rotating-squares topology, IPM solver, theory on inertia transposition and impossible targets (e.g. compact cube → compact sphere). One **TPU FDM** square→circle demo uses jointed tile corners; there is **no consumer toolchain** from optimizer output to Orca/Bambu profiles.
+
+@entities/tools/pykirigami.md (Apache-2.0) simulates deployment kinematics; it does **not** slice STLs. Pair with @concepts/novice-cad-workflows.md skip rule for week-1 readers.
 
 ### LCE — defer
 

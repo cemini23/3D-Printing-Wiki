@@ -2,6 +2,18 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-09-01] ingest | Pass 31 — Jiang unified kirigami design (arXiv:2608.30032)
+
+- **Inbox:** 1 PDF (overnight digest). **1 ACCEPT / 0 REJECT.**
+- **Accept:** arXiv:2608.30032 Jiang & Choi unified kirigami inverse design → `sources/2026-jiang-unified-kirigami-design.md` (Phase-0 **REFERENCE**; optimizer code not shipped; PyKirigami Apache-2.0 companion).
+- **Created:** source page + entity `entities/tools/pykirigami.md`.
+- **Updated:** shape-changing-fdm-interfaces (kirigami modality row + subsection), novice-cad-workflows (week-1 skip), index, ROADMAP.
+- **Briefs:** local Phase-0 (`briefs/2026-09-01_jiang-kirigami-phase0.md`).
+- **Phase-1:** **wont_wire** — 3D-printing local harness wires off.
+- **Routing:** tipdrop / atto / poker / cybersec / cemini-prod **skip**.
+- **Sweeps:** committed Aug 16–Sep 1 daily digest files (discovery-only backlog).
+- **Archive:** PDF → egress-fi `3d-printing/`; inbox cleared.
+
 ## [2026-08-15] fill | Pass 30 cluster backlinks + Phase-0 brief body
 
 - Bidirectional related: Abboodi ↔ DuoMorph, Chen hybrid gripper, novice-cad-workflows.
