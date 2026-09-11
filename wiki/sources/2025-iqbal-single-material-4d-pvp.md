@@ -7,9 +7,10 @@ related:
   - concepts/shape-changing-fdm-interfaces.md
   - concepts/fdm-printing.md
   - entities/materials/pla.md
+  - sources/2026-jiang-unified-kirigami-design.md
 maturity: draft
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-09-11
 read_status: read
 ---
 

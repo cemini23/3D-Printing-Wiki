@@ -2,6 +2,17 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-09-11] ingest | Pass 32 — soft robotics cluster (3 papers)
+
+- **Inbox:** 3 PDFs (Sep 2–4 overnight digest). **3 ACCEPT / 0 REJECT.**
+- **Accept:** arXiv:2609.00751 MONORIGAMI (SLA origami vacuum actuators) → `sources/2026-jang-monorigami-sla-origami-pneumatic.md`; arXiv:2609.02157 PRC fabric arm → `sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md`; arXiv:2609.03758 multi-vine → `sources/2026-kashef-multi-vine-working-channel.md`. All Phase-0 **REFERENCE** / NO-GO hobby.
+- **Updated:** soft-robotics-fdm-diw (pass-32 table), shape-changing-fdm-interfaces (MONORIGAMI SLA row), fault-detection + niche-fdm backlinks, jiang kirigami ↔ monorigami, index, ROADMAP.
+- **Briefs:** local Phase-0 cluster brief (`briefs/2026-09-11_soft-robotics-pass32-phase0.md`).
+- **Phase-1:** **wont_wire** all three.
+- **Routing:** tipdrop / atto / poker / cybersec / cemini-prod **skip**.
+- **Sweeps:** committed Sep 2–11 daily digest backlog.
+- **Archive:** 3 PDFs → egress-fi; inbox cleared.
+
 ## [2026-09-01] ingest | Pass 31 — Jiang unified kirigami design (arXiv:2608.30032)
 
 - **Inbox:** 1 PDF (overnight digest). **1 ACCEPT / 0 REJECT.**

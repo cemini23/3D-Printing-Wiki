@@ -23,6 +23,7 @@ related:
   - entities/tools/printanything.md
   - sources/2026-abboodi-airtight-spa-fdm.md
   - sources/2026-jiang-unified-kirigami-design.md
+  - sources/2026-jang-monorigami-sla-origami-pneumatic.md
 maturity: draft
 created: 2026-05-23
 updated: 2026-08-15
@@ -30,7 +31,7 @@ updated: 2026-08-15
 
 ## Relations
 
-@sources/2026-hong-printanything-gplan.md @entities/tools/printanything.md @sources/2026-george-agentscad-fdm-dfm.md @concepts/fdm-printing.md @concepts/filaments-baseline.md @concepts/ai-design-tools.md @concepts/vlm-in-manufacturing.md @concepts/open-source-legged-robotics.md @entities/printers/flashforge-adventurer-5m.md @sources/2025-arslan-tinkerxr-ar-cad-novices.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-jiang-unified-kirigami-design.md
+@sources/2026-hong-printanything-gplan.md @entities/tools/printanything.md @sources/2026-george-agentscad-fdm-dfm.md @concepts/fdm-printing.md @concepts/filaments-baseline.md @concepts/ai-design-tools.md @concepts/vlm-in-manufacturing.md @concepts/open-source-legged-robotics.md @entities/printers/flashforge-adventurer-5m.md @sources/2025-arslan-tinkerxr-ar-cad-novices.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-jiang-unified-kirigami-design.md @sources/2026-jang-monorigami-sla-origami-pneumatic.md
 
 ## Raw Concept
 

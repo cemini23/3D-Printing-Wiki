@@ -18,6 +18,7 @@ related:
   - sources/2025-banerjee-neuromorphic-lpbf.md
   - sources/2026-pelaez-stgt-lpbf-quality-prediction.md
   - sources/2026-orth-auto-exposure-vam.md
+  - sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-06-12
@@ -25,7 +26,7 @@ updated: 2026-06-12
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/vlm-in-manufacturing.md @concepts/industrial-am-monitoring.md @sources/2023-waheed-acoustic-cnn-fault-detection.md @sources/2025-waheed-multimodal-sensor-fusion.md @sources/2026-mahjourian-vlm-iris.md @sources/2025-margadji-cipher.md @sources/2025-banerjee-neuromorphic-lpbf.md @sources/2026-pelaez-stgt-lpbf-quality-prediction.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
+@concepts/fdm-printing.md @concepts/vlm-in-manufacturing.md @concepts/industrial-am-monitoring.md @sources/2023-waheed-acoustic-cnn-fault-detection.md @sources/2025-waheed-multimodal-sensor-fusion.md @sources/2026-mahjourian-vlm-iris.md @sources/2025-margadji-cipher.md @sources/2025-banerjee-neuromorphic-lpbf.md @sources/2026-pelaez-stgt-lpbf-quality-prediction.md @sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
 
 ## Raw Concept
 

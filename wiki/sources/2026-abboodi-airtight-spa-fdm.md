@@ -11,9 +11,12 @@ related:
   - concepts/novice-cad-workflows.md
   - sources/2026-li-duomorph-fdm-pneumatic.md
   - sources/2026-chen-hybrid-rigid-soft-gripper.md
+  - sources/2026-jang-monorigami-sla-origami-pneumatic.md
+  - sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md
+  - sources/2026-jiang-unified-kirigami-design.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-09-11
 read_status: skimmed
 ---
 

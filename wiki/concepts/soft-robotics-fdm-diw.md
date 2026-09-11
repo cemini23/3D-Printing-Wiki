@@ -20,14 +20,17 @@ related:
   - sources/2026-luo-multimaterial-e2e-optimization.md
   - sources/2026-chen-hybrid-rigid-soft-gripper.md
   - sources/2026-abboodi-airtight-spa-fdm.md
+  - sources/2026-jang-monorigami-sla-origami-pneumatic.md
+  - sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md
+  - sources/2026-kashef-multi-vine-working-channel.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-08-15
+updated: 2026-09-11
 ---
 
 ## Relations
 
-@sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-abboodi-airtight-spa-fdm.md @concepts/open-source-legged-robotics.md @concepts/fdm-printing.md @entities/materials/tpu.md @sources/2025-miyama-soft-hand-skin-skeleton.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-clancy-magnetic-soft-microrobots.md @sources/2025-truempler-ionic-polymer-diw.md @sources/2025-cha-diw-stretchable-strain-sensors.md @sources/2025-kota-3d-cal-tactile-calibration.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md
+@sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-jang-monorigami-sla-origami-pneumatic.md @sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md @sources/2026-kashef-multi-vine-working-channel.md @concepts/open-source-legged-robotics.md @concepts/fdm-printing.md @entities/materials/tpu.md @sources/2025-miyama-soft-hand-skin-skeleton.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-clancy-magnetic-soft-microrobots.md @sources/2025-truempler-ionic-polymer-diw.md @sources/2025-cha-diw-stretchable-strain-sensors.md @sources/2025-kota-3d-cal-tactile-calibration.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md
 
 ## Raw Concept
 
@@ -58,6 +61,14 @@ Ingest pass 11 — extends pass 9 (@concepts/open-source-legged-robotics.md) wit
 ### Airtight TPU pneumatic FDM (2026-08)
 
 @sources/2026-abboodi-airtight-spa-fdm.md — uOttawa process evaluation of **five routes** for a complex airtight SPA (heat-shrink / silicone casting / powder AM / DLP / FDM). **FDM TPU retained** because its dominant defects were correctable. Headline [CONFIRMED paper]: a **0.96 mm wall from three 0.32 mm lines sealed better than a 1.6 mm wall from two 0.8 mm lines** — extrusion-path architecture matters more than nominal thickness (mechanism [TENTATIVE]). Bowden (Ultimaker pair) worked **with conditioning** — a nuance vs the direct-drive default in @entities/materials/tpu.md. Phase-0 **REFERENCE**; do not copy the Ultimaker lab window to consumer printers.
+
+### Pass 32 cluster (2026-09-11) — origami SLA, PRC sensing, vine robots
+
+| Paper | Stack | Verdict |
+|-------|-------|---------|
+| @sources/2026-jang-monorigami-sla-origami-pneumatic.md | **SLA** (Form 3 + Flexible 80A) monolithic origami vacuum actuators; composable multi-DoF | **REFERENCE** — not FDM; adjacent to kirigami + DuoMorph pneumatics |
+| @sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md | Fabric arm; sealed vs coupled pouch topology for PRC state estimation | **REFERENCE** — sensing architecture background |
+| @sources/2026-kashef-multi-vine-working-channel.md | Dual eversion vines + external tool channel; colon phantom steering | **REFERENCE** — medical vine robots; not AM |
 
 ## Snippets
 

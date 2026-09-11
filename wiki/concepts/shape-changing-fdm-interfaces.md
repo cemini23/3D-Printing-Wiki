@@ -19,22 +19,23 @@ related:
   - sources/2026-abboodi-airtight-spa-fdm.md
   - sources/2026-jiang-unified-kirigami-design.md
   - entities/tools/pykirigami.md
+  - sources/2026-jang-monorigami-sla-origami-pneumatic.md
 maturity: draft
 created: 2026-05-23
-updated: 2026-09-01
+updated: 2026-09-11
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/filaments-baseline.md @entities/materials/pla.md @entities/materials/tpu.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-lee-fluxlab-sma-sla.md @sources/2025-iqbal-single-material-4d-pvp.md @sources/2026-li-lce-nat-diw-hybrid-cooling.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-jiang-unified-kirigami-design.md @entities/tools/pykirigami.md
+@concepts/fdm-printing.md @concepts/ai-design-tools.md @concepts/filaments-baseline.md @entities/materials/pla.md @entities/materials/tpu.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-lee-fluxlab-sma-sla.md @sources/2025-iqbal-single-material-4d-pvp.md @sources/2026-li-lce-nat-diw-hybrid-cooling.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-jiang-unified-kirigami-design.md @entities/tools/pykirigami.md @sources/2026-jang-monorigami-sla-origami-pneumatic.md
 
 ## Raw Concept
 
-Ingest cluster A (2026-05-23): four papers on programmable shape change—three with direct FFF relevance (pneumatic+FDM, PvP SMP, SLA+SMA contrast) plus one DIW LCE background source. Pass 31 (2026-09-01) adds computational kirigami design (Jiang & Choi) + PyKirigami simulator REFERENCE. Synthesizes when a Bambu/Flashforge hobbyist or Etsy maker should care vs skip.
+Ingest cluster A (2026-05-23): four papers on programmable shape change—three with direct FFF relevance (pneumatic+FDM, PvP SMP, SLA+SMA contrast) plus one DIW LCE background source. Pass 31 (2026-09-01) adds computational kirigami design (Jiang & Choi) + PyKirigami simulator REFERENCE. Pass 32 (2026-09-11) adds MONORIGAMI SLA origami pneumatics. Synthesizes when a Bambu/Flashforge hobbyist or Etsy maker should care vs skip.
 
 ## Narrative
 
-Shape-changing **products** (kinetic lamps, morphing toys, soft grippers, wearable mechanics) sit outside normal "print a static STL" workflows. This hub maps **six fabrication / design modalities** from the cluster and which printers can attempt them.
+Shape-changing **products** (kinetic lamps, morphing toys, soft grippers, wearable mechanics) sit outside normal "print a static STL" workflows. This hub maps **seven fabrication / design modalities** from the cluster and which printers can attempt them.
 
 ### Modality comparison
 
@@ -44,6 +45,7 @@ Shape-changing **products** (kinetic lamps, morphing toys, soft grippers, wearab
 | **FDM + heat-seal pneumatics** | @sources/2026-li-duomorph-fdm-pneumatic.md | **FFF** + thin TPU sheet | PLA/TPU on film; Rhino toolchain | Validated on **Bambu A1**; high design labor; reversible inflation |
 | **Airtight FDM TPU pneumatics** | @sources/2026-abboodi-airtight-spa-fdm.md | Bowden **FFF**, dried TPU | TPU 95A-class, no film | Research **REFERENCE** — airtight walls via wall-line architecture; no heat-seal step |
 | **Computational kirigami design** | @sources/2026-jiang-unified-kirigami-design.md + @entities/tools/pykirigami.md | Design/simulation first; optional **FFF TPU** jointed tiles | TPU joints (one paper demo) | **REFERENCE** — inverse layout math; not a slicer plugin |
+| **SLA origami pneumatics (MONORIGAMI)** | @sources/2026-jang-monorigami-sla-origami-pneumatic.md | **SLA** (Form 3) + vacuum | Flexible 80A resin; thickness-tier facets/creases | **REFERENCE** — monolithic multi-DoF modules; **not FFF** |
 | **SLA + SMA + inductive sense** | @sources/2026-lee-fluxlab-sma-sla.md | **SLA** (Form 4B) + post-assembly | Silicone 40A resin + Nitinol spring | **Not FDM**—skip for FFF-only readers |
 | **DIW NAT-LCE** | @sources/2026-li-lce-nat-diw-hybrid-cooling.md | Custom **DIW** + UV | Oligomer inks | **Background only**—specialty soft-matter lab |
 

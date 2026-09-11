@@ -10,9 +10,11 @@ related:
   - entities/materials/tpu.md
   - entities/printers/a1.md
   - sources/2026-abboodi-airtight-spa-fdm.md
+  - sources/2026-jang-monorigami-sla-origami-pneumatic.md
+  - sources/2026-jiang-unified-kirigami-design.md
 maturity: draft
 created: 2026-05-23
-updated: 2026-08-15
+updated: 2026-09-11
 read_status: read
 ---
 

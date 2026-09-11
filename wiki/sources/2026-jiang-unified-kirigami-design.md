@@ -10,6 +10,7 @@ related:
   - sources/2025-iqbal-single-material-4d-pvp.md
   - sources/2026-abboodi-airtight-spa-fdm.md
   - concepts/novice-cad-workflows.md
+  - sources/2026-jang-monorigami-sla-origami-pneumatic.md
 maturity: draft
 created: 2026-09-01
 updated: 2026-09-01
@@ -20,7 +21,7 @@ wire_target: "3D-printing Phase-1 local wires off; PyKirigami REFERENCE only"
 
 ## Relations
 
-@concepts/shape-changing-fdm-interfaces.md @entities/tools/pykirigami.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2025-iqbal-single-material-4d-pvp.md @sources/2026-abboodi-airtight-spa-fdm.md @concepts/novice-cad-workflows.md
+@concepts/shape-changing-fdm-interfaces.md @entities/tools/pykirigami.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2025-iqbal-single-material-4d-pvp.md @sources/2026-abboodi-airtight-spa-fdm.md @concepts/novice-cad-workflows.md @sources/2026-jang-monorigami-sla-origami-pneumatic.md
 
 ## Raw Concept
 

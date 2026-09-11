@@ -12,14 +12,15 @@ related:
   - sources/2026-miyatake-tasteprint-food-printing.md
   - sources/2025-tran-3d-printed-acoustic-guitars.md
   - sources/2024-rotoo-canine-head-phantom-vet.md
+  - sources/2026-kashef-multi-vine-working-channel.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-05
+updated: 2026-09-11
 ---
 
 ## Relations
 
-@concepts/fdm-printing.md @concepts/novice-cad-workflows.md @entities/materials/pla.md @sources/2026-faulkner-lithographs-microscopy.md @sources/2025-mobile-food-printing-kitchens.md @sources/2026-miyatake-tasteprint-food-printing.md @sources/2025-tran-3d-printed-acoustic-guitars.md @sources/2024-rotoo-canine-head-phantom-vet.md
+@concepts/fdm-printing.md @concepts/novice-cad-workflows.md @entities/materials/pla.md @sources/2026-faulkner-lithographs-microscopy.md @sources/2025-mobile-food-printing-kitchens.md @sources/2026-miyatake-tasteprint-food-printing.md @sources/2025-tran-3d-printed-acoustic-guitars.md @sources/2024-rotoo-canine-head-phantom-vet.md @sources/2026-kashef-multi-vine-working-channel.md
 
 ## Raw Concept
 
