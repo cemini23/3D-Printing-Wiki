@@ -2,6 +2,14 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-09-17] ingest | Pass 33 — empty inbox / digest catch-up
+
+- **Inbox:** empty (0 PDFs). **0 ACCEPT / 0 REJECT.**
+- **Digest:** ran `daily_research_digest_run.py`; Sep 12–17 sweeps committed; only hit arXiv:2609.03758 (already ingested pass 32) — skipped as dupe.
+- **Phase-0 / Phase-1:** none (no new sources).
+- **Lint:** 0 asymmetric / 0 dangling (253 pages).
+- **Routing:** tipdrop / atto / poker / cybersec / cemini-prod **skip** — nothing to route.
+
 ## [2026-09-11] ingest | Pass 32 — soft robotics cluster (3 papers)
 
 - **Inbox:** 3 PDFs (Sep 2–4 overnight digest). **3 ACCEPT / 0 REJECT.**

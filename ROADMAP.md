@@ -8,7 +8,7 @@ Active workstreams, open decisions, and the done log. Read at session start; upd
 
 ### W1 — Initial research ingest pass
 
-**Status:** Ingest passes 1–32 through 2026-09-11. **Inbox empty** after pass 32. Auto-fetch on (arxiv-only; news off); triage each morning.
+**Status:** Ingest passes 1–33 through 2026-09-17. **Inbox empty.** Auto-fetch on (arxiv-only; news off); triage each morning. Sep 12–17 digests: no new arXiv PDFs (dupes only).
 
 Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-printing papers. Curation surfaces practical takeaways for the reader; some papers may go in as background-context one-liners rather than full pages.
 
@@ -69,6 +69,7 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-08-15 | Ingest pass 30 — Abboodi airtight SPA | 1/1 accept (arXiv:2608.13233 5-route FDM TPU process eval REFERENCE / no repo); soft-robotics + pneumatics cluster + tpu + fdm-printing updated; tipdrop/atto/poker/cyber/prod skip; archived; inbox cleared. |
 | 2026-09-01 | Ingest pass 31 — Jiang unified kirigami | 1/1 accept (arXiv:2608.30032 inverse kirigami IPM REFERENCE); PyKirigami entity; shape-changing hub + novice-cad updated; Aug 16–Sep 1 sweeps committed; tipdrop/atto/poker/cyber/prod skip; archived; inbox cleared. |
 | 2026-09-11 | Ingest pass 32 — soft robotics cluster | 3/3 accept (MONORIGAMI SLA origami, PRC pneumatic arm, multi-vine medical); soft-robotics + shape-changing hubs updated; Sep 2–11 sweeps committed; tipdrop/atto/poker/cyber/prod skip; archived; inbox cleared. |
+| 2026-09-17 | Ingest pass 33 — empty inbox | 0 PDFs; Sep 12–17 sweeps committed; digest dupe-skip 2609.03758; lint clean; no Phase-0/briefs/routing. |
 
 ---
 
