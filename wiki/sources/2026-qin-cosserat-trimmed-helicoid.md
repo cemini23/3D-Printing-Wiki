@@ -28,7 +28,7 @@ wire_target: "Soft-robotics modeling REFERENCE; 3D-printing Phase-1 local wires 
 - **Type:** Journal-format paper (IEEE-style, cs.RO)
 - **arXiv:** 2609.25264v1 [cs.RO] — 21 Sep 2026
 - **Pages:** 8
-- **Location:** `raw-sources/arxiv-2609.25264-cosserat-modeling-of-trimmed-helicoid-soft-arms.pdf` — **egress archive pending.** SSH to `cemini-egress-fi` was blocked in this session. Run `bash "../OSINT WORKSPACE/scripts/archive_raw_to_egress.sh" --wiki-id 3d-printing "raw-sources/arxiv-2609.25264-cosserat-modeling-of-trimmed-helicoid-soft-arms.pdf"` from a normal terminal, then update this field.
+- **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2609.25264-cosserat-modeling-of-trimmed-helicoid-soft-arms.pdf`
 - **Read-status:** deep-read
 
 ## Narrative

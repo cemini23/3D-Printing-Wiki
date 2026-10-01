@@ -32,8 +32,9 @@ Pages touched: **10 wiki pages** (3 created + 6 modified + index), plus this log
 
 ### Archive
 
-- **Blocked.** `archive_raw_to_egress.sh` needs SSH to `cemini-egress-fi`; the sandbox returns `Operation not permitted`. Both PDFs were moved to `raw-sources/` (gitignored) so the inbox is clear, and each source page's `Location` records the pending egress step with the exact command to run from a normal terminal.
-- Note: the path in `CLAUDE.md` (`../../OSINT WORKSPACE/...`) does not resolve — the OSINT workspace is a **sibling**, so the working path is `../OSINT WORKSPACE/...`.
+- **Done.** Both PDFs archived to `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/`. The script verified the remote size, then removed the local copies. Source page `Location` fields updated to the canonical egress paths.
+- Ran from the user's terminal: the sandboxed shell denies SSH (`Operation not permitted`), so the archive could not complete in-session.
+- Also fixed: `CLAUDE.md`'s `../../OSINT WORKSPACE/...` path did not resolve. The OSINT workspace is a **sibling**, so `../OSINT WORKSPACE/...` is correct (commit `43e44bd`).
 
 ### Phase-0 / Phase-1
 
