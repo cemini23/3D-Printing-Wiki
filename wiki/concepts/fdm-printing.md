@@ -66,12 +66,6 @@ related:
   - entities/printers/x1c.md
   - entities/printers/p1s.md
   - entities/printers/a1.md
-  - concepts/industrial-am-monitoring.md
-  - concepts/fdm-research-tools.md
-  - concepts/volumetric-additive-manufacturing.md
-  - concepts/niche-fdm-applications.md
-  - concepts/printed-photonics-background.md
-  - concepts/soft-robotics-fdm-diw.md
   - sources/2026-unlu-unified-tvam-2pp.md
   - sources/2026-demircali-thermal-drawing-preforms.md
   - sources/2011-roberts-bed-rotation-photogrammetry.md
@@ -94,14 +88,17 @@ related:
   - entities/tools/openvcad.md
   - sources/2026-hong-printanything-gplan.md
   - entities/tools/printanything.md
+  - entities/printers/bambu-h2d.md
+  - sources/2026-huang-mfps-monolithic-force-proprioception.md
+  - sources/2026-qin-cosserat-trimmed-helicoid.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-08-15
+updated: 2026-09-30
 ---
 
 ## Relations
 
-@sources/2026-hong-printanything-gplan.md @entities/tools/printanything.md @sources/2026-wade-slicer-project-compilation.md @sources/2026-corn-optimistic-verifiable-claims.md @concepts/slicer-project-compilation.md @entities/tools/openvcad.md @sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-george-agentscad-fdm-dfm.md @sources/2026-asgar-firewall3d-firmware-hardware.md @concepts/input-shaping.md @concepts/extrusion-control.md @concepts/fault-detection.md @concepts/high-speed-fdm.md @concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/print-farm-operations.md @concepts/print-job-scheduling.md @concepts/am-as-a-service.md @concepts/filaments-baseline.md @concepts/vlm-in-manufacturing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/ai-design-tools.md @concepts/self-improving-cad-generation-agents.md @concepts/shape-changing-fdm-interfaces.md @concepts/open-source-legged-robotics.md @meta/daily-research-digest-cadence.md @entities/slicers/bambu-studio.md @entities/slicers/orcaslicer.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @sources/2025-aung-adaptive-input-shaper.md @sources/2025-lin-camera-extrusion-optimization.md @sources/2023-waheed-acoustic-cnn-fault-detection.md @sources/2025-hoteit-closed-loop-extrusion-lqr.md @sources/2025-waheed-multimodal-sensor-fusion.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-wang-collaborative-parameter-recommender.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2025-surynek-sequential-printing-cegar.md @sources/2026-hatton-parallelobox-aabb-decomposition.md @sources/2026-bambu-filament-guide.md @sources/2026-mahjourian-vlm-iris.md @sources/2025-chen-tau-schema-vlm.md @sources/2025-margadji-cipher.md @sources/2026-bambu-toolchain-audit.md @sources/2025-chi-berkeley-humanoid-lite.md @sources/2024-kawaharazuka-mevius-quadruped.md @sources/2025-kawaharazuka-mevita-bipedal.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md
+@sources/2026-hong-printanything-gplan.md @entities/tools/printanything.md @sources/2026-wade-slicer-project-compilation.md @sources/2026-corn-optimistic-verifiable-claims.md @concepts/slicer-project-compilation.md @entities/tools/openvcad.md @sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-george-agentscad-fdm-dfm.md @sources/2026-asgar-firewall3d-firmware-hardware.md @concepts/input-shaping.md @concepts/extrusion-control.md @concepts/fault-detection.md @concepts/high-speed-fdm.md @concepts/side-channel-attacks.md @concepts/ip-theft-3d-printing.md @concepts/g-code-protection.md @concepts/print-farm-operations.md @concepts/print-job-scheduling.md @concepts/am-as-a-service.md @concepts/filaments-baseline.md @concepts/vlm-in-manufacturing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/ai-design-tools.md @concepts/self-improving-cad-generation-agents.md @concepts/shape-changing-fdm-interfaces.md @concepts/open-source-legged-robotics.md @meta/daily-research-digest-cadence.md @entities/slicers/bambu-studio.md @entities/slicers/orcaslicer.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @sources/2025-aung-adaptive-input-shaper.md @sources/2025-lin-camera-extrusion-optimization.md @sources/2023-waheed-acoustic-cnn-fault-detection.md @sources/2025-hoteit-closed-loop-extrusion-lqr.md @sources/2025-waheed-multimodal-sensor-fusion.md @sources/2026-asgar-quietprint-acoustic-defense.md @sources/2025-chattopadhyay-one-video-optical.md @sources/2025-jamarani-acoustic-magnetic-decoding.md @sources/2025-wang-collaborative-parameter-recommender.md @sources/2025-ivkic-cost-benefit-maas.md @sources/2025-surynek-sequential-printing-cegar.md @sources/2026-hatton-parallelobox-aabb-decomposition.md @sources/2026-bambu-filament-guide.md @sources/2026-mahjourian-vlm-iris.md @sources/2025-chen-tau-schema-vlm.md @sources/2025-margadji-cipher.md @sources/2026-bambu-toolchain-audit.md @sources/2025-chi-berkeley-humanoid-lite.md @sources/2024-kawaharazuka-mevius-quadruped.md @sources/2025-kawaharazuka-mevita-bipedal.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md @entities/printers/bambu-h2d.md @sources/2026-huang-mfps-monolithic-force-proprioception.md @sources/2026-qin-cosserat-trimmed-helicoid.md
 
 ## Raw Concept
 
@@ -156,6 +153,21 @@ The four control problems are about **how the printer works**. Three other dimen
 - **Material** — filament chemistry sets temperature, drying, enclosure, and nozzle wear requirements before any control law applies [@concepts/filaments-baseline.md]. The Bambu A1 / A1 mini is double-disqualified for ABS (no enclosure + AMS lite), pushing PETG as the practical default for functional parts.
 - **Production** — one printer is a hobby; ten is a print farm with scheduling, parameter-tuning, and economics problems [@concepts/print-farm-operations.md]. MaaS pricing converges around 400-600% gross margin on Etsy-tier custom parts [@concepts/am-as-a-service.md].
 - **IP / security** — your designs leak. Side-channel attacks recover G-code from acoustic / magnetic / video traces [@concepts/side-channel-attacks.md]; print-from-photo workflows enable counterfeit at hobbyist tier [@concepts/ip-theft-3d-printing.md]. Encryption alone doesn't solve it [@concepts/g-code-protection.md].
+
+### Printing a structure, not just a shape
+
+Most of this page treats a print as a **shape** that must come out dimensionally right. A second class of print has a **functional** requirement the slicer does not police: a chamber must hold pressure, a lattice must bend a specific way, a sensor must change resistance.
+
+Two 2026 papers hit the same problem from different sides. Both printed **TPU that has to do a job**:
+
+- **Sealing depends on extrusion-path architecture, not wall thickness.** @sources/2026-abboodi-airtight-spa-fdm.md found a **0.96 mm wall built from three 0.32 mm lines** sealed better than a **1.6 mm wall built from two 0.8 mm lines**. Dried filament mattered too.
+- **Fan speed and layer height trade against each other.** @sources/2026-huang-mfps-monolithic-force-proprioception.md found lower fan speed and smaller layer height both **improve airtightness** — but too low a fan speed stops the plastic solidifying in time, and too small a layer height lets the **nozzle drag the print**, which destroyed their weak sensor region.
+
+Practical rule: on a **functional** TPU print, fan speed and layer height are not independent quality knobs. They are coupled, and the coupling differs from a decorative PLA print. [TENTATIVE — two independent research setups, neither on a consumer Bambu]
+
+**Monolithic single-material printing** is the other lever. @sources/2026-huang-mfps-monolithic-force-proprioception.md printed an actuator and its force sensor from **one** conductive-TPU material in a single step, specifically to avoid the stress concentration a multimaterial joint creates. @concepts/soft-robotics-fdm-diw.md collects the soft-robotics cases; @concepts/shape-changing-fdm-interfaces.md collects the morphing cases.
+
+> **Open gap.** The wiki still has no dedicated `process-parameter-tuning` page (pressure advance, flow calibration, temperature towers). The observations above belong there once it exists. Tracked in `ROADMAP.md`.
 
 ### Where Bambu sits in this map
 

@@ -2,6 +2,52 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-09-30] ingest | Pass 34 — soft-robotics cluster (2 papers): MFPS actuator + Cosserat helicoid arm
+
+- **Inbox:** 2 PDFs. **2 ACCEPT / 0 REJECT.**
+- **PDF text extraction:** `pdftoppm` still missing; `pypdf` workaround used again (both papers 8 pages).
+
+### Accepted (2)
+
+- **arXiv:2609.24499** — Huang et al., "A Monolithic Force-Proprioception Soft Actuator Enabled by Single-Material 3D printing" (SUSTech + Shenzhen Tech). Conductive-TPU pneumatic actuator **and** its force sensor printed from one material in one FDM step on a Raise3D Pro2 Plus. Origami AOB chamber + FPS resistance sensor. 40° bend (total swing; abstract vs body wording reconciled), 12.5 N at 300 kPa, 26.9% resistance change over 0–45 N; winning FPS-3 geometry gave 35%. Geometry decides signal: solid block max strain 0.019 → no output; creased surface 0.079 → 35%. Weakness: **TPU hysteresis**, explicitly unfinished. Phase-0 **REFERENCE** (no repo). `read_status: deep-read`.
+- **arXiv:2609.25264** — Qin et al., "Cosserat Modeling of Trimmed Helicoid Soft Arms with a Separated-Section Constitutive Law" (NUS + KU Leuven + Khalifa). Modeling paper. Validation rig printed **TPU 95A on a Bambu Lab H2D** with PLA rigid connectors — **first H2D sighting in this wiki**. Separated-section law vs summed-section baseline: 25–92% error → 7–8% across 103 configurations; ~0.3 s/solve on one CPU core. Phase-0 **REFERENCE** (no repo). `read_status: deep-read`.
+
+### Created (3 pages)
+
+- `wiki/sources/2026-huang-mfps-monolithic-force-proprioception.md`
+- `wiki/sources/2026-qin-cosserat-trimmed-helicoid.md`
+- `wiki/entities/printers/bambu-h2d.md` — new printer page (ROADMAP backlog item, surfaced by paper 2). Dual-nozzle, 350×320×325 mm, 350 °C nozzle, **65 °C heated chamber**, optional 10/40 W laser, ~$1,549. Specs are third-party/commercial-sourced and **prices conflict across sources** → `[NEEDS VERIFICATION 2026-09-30]`.
+
+### Modified (6 content pages + index)
+
+- `wiki/concepts/soft-robotics-fdm-diw.md` — Pass 34 section; 2 new modality rows (single-material self-sensing; H2D continuum datapoint).
+- `wiki/entities/materials/tpu.md` — conductive-TPU research note; TPU 95A as structural continuum material on an H2D.
+- `wiki/concepts/fdm-printing.md` — new "Printing a structure, not just a shape" section (fan-speed/layer-height coupling; extrusion-path architecture; monolithic single-material). **Also repaired pre-existing drift**: removed 6 duplicate `related:` entries and resynced `## Relations` to `related:`.
+- `wiki/concepts/shape-changing-fdm-interfaces.md` — 8th modality row; counts updated seven → eight.
+- `wiki/concepts/filaments-baseline.md` — H2D backlink; `## Relations` resynced to `related:` (had drifted by 4 entries).
+- `wiki/entities/printers/x1c.md` — H2D backlink.
+- `wiki/index.md` — 2 source rows + H2D printer row.
+
+Pages touched: **10 wiki pages** (3 created + 6 modified + index), plus this log, `ROADMAP.md`, `hot.md`, `LESSONS.md`.
+
+### Archive
+
+- **Blocked.** `archive_raw_to_egress.sh` needs SSH to `cemini-egress-fi`; the sandbox returns `Operation not permitted`. Both PDFs were moved to `raw-sources/` (gitignored) so the inbox is clear, and each source page's `Location` records the pending egress step with the exact command to run from a normal terminal.
+- Note: the path in `CLAUDE.md` (`../../OSINT WORKSPACE/...`) does not resolve — the OSINT workspace is a **sibling**, so the working path is `../OSINT WORKSPACE/...`.
+
+### Phase-0 / Phase-1
+
+- **Phase-0:** neither paper ships a repo, dataset, or adoptable tool → **no new audit triggered**. Both **REFERENCE**.
+- **Phase-1:** both sources and the H2D page marked `wont_wire`. The `phase1-wire` skill lists **3D-printing as a hard-stop surface** — no Cursor rule, MCP, or CLAUDE.md wire attempted, by policy. Same posture as passes 30–32.
+
+### Routing
+
+- **Attempted, blocked by sandbox.** `route-task` exits 1 — it writes run logs to `~/Projects/agent-toolkit/` (FS denied). `grok -p` fails on network (`cli-chat-proxy.grok.com:443` denied) **and** FS (`~/.grok` not writable). `opencode run` fails on FS (`~/.local/share/opencode`). This session's sandbox is a strict allowlist that cannot be widened. All drafting done in-session. Recorded in `LESSONS.md`.
+
+### Lint
+
+- 0 asymmetric / 0 dangling. `scripts/wiki_lint.py` exit 0.
+
 ## [2026-09-17] ingest | Pass 33 — empty inbox / digest catch-up
 
 - **Inbox:** empty (0 PDFs). **0 ACCEPT / 0 REJECT.**

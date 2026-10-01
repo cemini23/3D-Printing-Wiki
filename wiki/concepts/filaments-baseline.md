@@ -15,6 +15,7 @@ related:
   - entities/printers/x1c.md
   - entities/printers/p1s.md
   - entities/printers/a1.md
+  - entities/printers/bambu-h2d.md
   - entities/printers/flashforge-adventurer-5m.md
   - concepts/shape-changing-fdm-interfaces.md
   - concepts/novice-cad-workflows.md
@@ -24,12 +25,12 @@ related:
   - sources/2026-wade-slicer-project-compilation.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-07-29
+updated: 2026-09-30
 ---
 
 ## Relations
 
-@concepts/slicer-project-compilation.md @sources/2026-wade-slicer-project-compilation.md @concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md @entities/printers/flashforge-adventurer-5m.md
+@concepts/fdm-printing.md @sources/2026-bambu-filament-guide.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/materials/tpu.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @entities/printers/x1c.md @entities/printers/p1s.md @entities/printers/a1.md @entities/printers/bambu-h2d.md @entities/printers/flashforge-adventurer-5m.md @concepts/shape-changing-fdm-interfaces.md @concepts/novice-cad-workflows.md @sources/2026-06-02-digest-polymaker-abs-pro.md @sources/2026-bambu-pla-pure-launch.md @concepts/slicer-project-compilation.md @sources/2026-wade-slicer-project-compilation.md
 
 ## Raw Concept
 

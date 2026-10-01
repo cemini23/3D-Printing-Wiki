@@ -13,18 +13,19 @@ related:
   - concepts/high-speed-fdm.md
   - entities/printers/p1s.md
   - entities/printers/a1.md
+  - entities/printers/bambu-h2d.md
   - entities/tools/kickstarter-autodesk-fdm-protocol.md
   - sources/2026-bambu-toolchain-audit.md
   - sources/2026-hong-printanything-gplan.md
   - entities/tools/printanything.md
 maturity: draft
 created: 2026-05-08
-updated: 2026-07-31
+updated: 2026-09-30
 ---
 
 ## Relations
 
-@sources/2026-hong-printanything-gplan.md @entities/tools/printanything.md @concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/filaments-baseline.md @concepts/fault-detection.md @concepts/input-shaping.md @concepts/extrusion-control.md @concepts/high-speed-fdm.md @entities/printers/p1s.md @entities/printers/a1.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @sources/2026-bambu-toolchain-audit.md
+@sources/2026-hong-printanything-gplan.md @entities/tools/printanything.md @concepts/fdm-printing.md @concepts/bambu-ecosystem-closed-loop.md @concepts/filaments-baseline.md @concepts/fault-detection.md @concepts/input-shaping.md @concepts/extrusion-control.md @concepts/high-speed-fdm.md @entities/printers/p1s.md @entities/printers/a1.md @entities/printers/bambu-h2d.md @entities/tools/kickstarter-autodesk-fdm-protocol.md @sources/2026-bambu-toolchain-audit.md
 
 ## Raw Concept
 

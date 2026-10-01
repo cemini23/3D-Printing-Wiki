@@ -23,14 +23,17 @@ related:
   - sources/2026-wade-slicer-project-compilation.md
   - concepts/slicer-project-compilation.md
   - sources/2026-abboodi-airtight-spa-fdm.md
+  - sources/2026-huang-mfps-monolithic-force-proprioception.md
+  - sources/2026-qin-cosserat-trimmed-helicoid.md
+  - entities/printers/bambu-h2d.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-08-15
+updated: 2026-09-30
 ---
 
 ## Relations
 
-@concepts/filaments-baseline.md @concepts/fdm-printing.md @concepts/shape-changing-fdm-interfaces.md @concepts/open-source-legged-robotics.md @concepts/soft-robotics-fdm-diw.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md @sources/2026-bambu-filament-guide.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-miyama-soft-hand-skin-skeleton.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/tools/rebot-devarm.md @sources/2026-wade-slicer-project-compilation.md @concepts/slicer-project-compilation.md @sources/2026-abboodi-airtight-spa-fdm.md
+@concepts/filaments-baseline.md @concepts/fdm-printing.md @concepts/shape-changing-fdm-interfaces.md @concepts/open-source-legged-robotics.md @concepts/soft-robotics-fdm-diw.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md @sources/2026-bambu-filament-guide.md @sources/2026-li-duomorph-fdm-pneumatic.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-miyama-soft-hand-skin-skeleton.md @entities/materials/pla.md @entities/materials/petg.md @entities/materials/abs.md @entities/materials/asa.md @entities/tools/rebot-devarm.md @sources/2026-wade-slicer-project-compilation.md @concepts/slicer-project-compilation.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-huang-mfps-monolithic-force-proprioception.md @sources/2026-qin-cosserat-trimmed-helicoid.md @entities/printers/bambu-h2d.md
 
 ## Raw Concept
 
@@ -74,6 +77,10 @@ TPU comes in different stiffness grades, labeled by **Shore A hardness** — a s
 **Research note:** @sources/2025-yoshimura-m3d-skin-tactile-fdm.md pairs **TPU + conductive TPU** infill for printed pressure sensors — requires **multi-material FDM**, not a typical single-nozzle first printer (@concepts/open-source-legged-robotics.md).
 
 **Research note — pneumatic TPU (2026-08):** @sources/2026-abboodi-airtight-spa-fdm.md — for **airtight pneumatic** TPU parts, sealing depends on **extrusion-path architecture** (three 0.32 mm wall lines sealed better than two 0.8 mm lines) and **filament moisture** (5 h @ 50 °C drying, RH <20% ambient), not nominal wall thickness alone. Bowden worked with conditioning (low-friction PTFE, retraction off) — [TENTATIVE] transfer; the wiki's direct-drive-strongly-preferred default stands for the friend reader's Bambu/Flashforge day-1 TPU.
+
+**Research note — conductive TPU (2026-09):** @sources/2026-huang-mfps-monolithic-force-proprioception.md — **conductive TPU** filament changes resistance when compressed, because the spacing between conductive particles shrinks. That makes a printed part its own force sensor. The paper printed a complete pneumatic actuator-plus-sensor from this one material, with no assembly step. Geometry decides how well it works: a **solid block barely strains** and gives no signal; a **creased contact surface** concentrated strain and gave a **35% resistance change**. Main problem is **hysteresis** (TPU is viscoelastic, so the reading lags the force). Conductive TPU is a **specialty spool**, not a Bambu day-1 SKU, and the paper used a prosumer Raise3D Pro2 Plus. [TENTATIVE] for consumer transfer.
+
+**Research note — TPU 95A as a structural continuum material (2026-09):** @sources/2026-qin-cosserat-trimmed-helicoid.md — a three-section **tendon-driven continuum arm** printed in **TPU 95A on a Bambu Lab H2D**, with rigid **PLA** connectors on the second nozzle. This is a concrete datapoint that a current consumer Bambu can print a working soft manipulator from a **standard** TPU grade — no specialty filament. The same paper shows why a **lattice** (trimmed helicoid) behaves very differently from a solid TPU rod: the separated load-bearing domains slide against each other, so bending and extension soften roughly **10×** versus a rigid common-section assumption. See @entities/printers/bambu-h2d.md.
 
 ### Specs (Bambu TPU 95A HF) [Source: https://bambulab.com/en-us/filament/guide (retrieved 2026-05-06)]
 

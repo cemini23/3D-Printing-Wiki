@@ -23,14 +23,17 @@ related:
   - sources/2026-jang-monorigami-sla-origami-pneumatic.md
   - sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md
   - sources/2026-kashef-multi-vine-working-channel.md
+  - sources/2026-huang-mfps-monolithic-force-proprioception.md
+  - sources/2026-qin-cosserat-trimmed-helicoid.md
+  - entities/printers/bambu-h2d.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-09-11
+updated: 2026-09-30
 ---
 
 ## Relations
 
-@sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-jang-monorigami-sla-origami-pneumatic.md @sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md @sources/2026-kashef-multi-vine-working-channel.md @concepts/open-source-legged-robotics.md @concepts/fdm-printing.md @entities/materials/tpu.md @sources/2025-miyama-soft-hand-skin-skeleton.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-clancy-magnetic-soft-microrobots.md @sources/2025-truempler-ionic-polymer-diw.md @sources/2025-cha-diw-stretchable-strain-sensors.md @sources/2025-kota-3d-cal-tactile-calibration.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md
+@sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-jang-monorigami-sla-origami-pneumatic.md @sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md @sources/2026-kashef-multi-vine-working-channel.md @sources/2026-huang-mfps-monolithic-force-proprioception.md @sources/2026-qin-cosserat-trimmed-helicoid.md @entities/printers/bambu-h2d.md @concepts/open-source-legged-robotics.md @concepts/fdm-printing.md @entities/materials/tpu.md @sources/2025-miyama-soft-hand-skin-skeleton.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-clancy-magnetic-soft-microrobots.md @sources/2025-truempler-ionic-polymer-diw.md @sources/2025-cha-diw-stretchable-strain-sensors.md @sources/2025-kota-3d-cal-tactile-calibration.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md
 
 ## Raw Concept
 
@@ -43,7 +46,8 @@ Ingest pass 11 — extends pass 9 (@concepts/open-source-legged-robotics.md) wit
 | Modality | Examples | Hobbyist fit |
 |----------|----------|--------------|
 | **Single-material flexible FDM** | Soft hand skin-skeleton | Advanced |
-| **TPU FDM structure** | Tendon continuum backbone | Advanced + TPU skill |
+| **Single-material self-sensing FDM** | Conductive-TPU actuator + sensor (MFPS) | Research only — conductive TPU + prosumer printer |
+| **TPU FDM structure** | Tendon continuum backbone; trimmed-helicoid arm on Bambu H2D | Advanced + TPU skill |
 | **Airtight TPU pneumatics** | Abboodi SPA process eval | Research only — lab window |
 | **Multi-material FDM sensing** | M3D-skin, eFlesh (pass 9) | MMU or pause-insert |
 | **DIW on silicone** | Cha strain sensors; Trümpler ionic actuators | Custom hardware |
@@ -69,6 +73,19 @@ Ingest pass 11 — extends pass 9 (@concepts/open-source-legged-robotics.md) wit
 | @sources/2026-jang-monorigami-sla-origami-pneumatic.md | **SLA** (Form 3 + Flexible 80A) monolithic origami vacuum actuators; composable multi-DoF | **REFERENCE** — not FDM; adjacent to kirigami + DuoMorph pneumatics |
 | @sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md | Fabric arm; sealed vs coupled pouch topology for PRC state estimation | **REFERENCE** — sensing architecture background |
 | @sources/2026-kashef-multi-vine-working-channel.md | Dual eversion vines + external tool channel; colon phantom steering | **REFERENCE** — medical vine robots; not AM |
+
+### Pass 34 cluster (2026-09-30) — single-material self-sensing, and a Cosserat arm on an H2D
+
+| Paper | Stack | Verdict |
+|-------|-------|---------|
+| @sources/2026-huang-mfps-monolithic-force-proprioception.md | **FDM**, commercial **conductive TPU**, Raise3D Pro2 Plus. One material, one step: origami (AOB) pneumatic chamber + resistance-based force sensor | **REFERENCE** — prosumer printer + specialty filament; the transferable idea is **geometric strain concentration**, not the recipe |
+| @sources/2026-qin-cosserat-trimmed-helicoid.md | **TPU 95A on a Bambu Lab H2D** + PLA rigid connectors; three-module tendon-driven continuum arm | **REFERENCE** — a **modeling** paper; notable here as the wiki's first **Bambu H2D** fabrication datapoint |
+
+**Single-material self-sensing (Huang).** The paper's contribution is closing the assembly step: no glued-on or embedded sensor, no multimaterial interface, no stress concentration at a material joint. Sensing comes from **conductive TPU** whose particle spacing — and therefore resistance — changes under compression. The design lesson is that a solid block barely strains (FPS-1 gave almost no signal, max strain 0.019); a **creased contact surface** (FPS-3, max strain 0.079) gave **35%** resistance change and won. Same 1 g of material across all three designs. Main weakness: **TPU hysteresis** — the authors call it unfinished.
+
+FDM process tension worth noting: **lower fan speed and smaller layer height improve airtightness**, but too-low fan speed prevents solidification and too-small layer height lets the nozzle **drag the weak sensor region** and destroy it. That is the same sealing problem @sources/2026-abboodi-airtight-spa-fdm.md attacks from the **wall-line architecture** side — two papers, one problem, no consumer-ready recipe yet.
+
+**Cosserat arm on a Bambu H2D (Qin).** Not a printing paper, but its validation rig is: three tapered **trimmed-helicoid** modules printed in **TPU 95A on a Bambu Lab H2D**, with rigid **PLA** connectors [@entities/printers/bambu-h2d.md]. The modeling result that matters conceptually: if you assume a **common cross-section** (the standard "summed properties" approach), you overestimate stiffness badly — errors of **25–92%** — because the load-bearing helix domains are separated and slide relative to each other. Modelling them separately drops the error to **~7–8%** across 103 configurations. Bending and extension soften ~10×, torsion barely changes.
 
 ## Snippets
 

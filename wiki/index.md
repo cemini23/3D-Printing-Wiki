@@ -23,6 +23,8 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [MONORIGAMI SLA origami folding actuators (arXiv:2609.00751)](sources/2026-jang-monorigami-sla-origami-pneumatic.md) — Form 3 Flexible 80A monolithic vacuum modules; composable multi-DoF; Phase-0 REFERENCE (SLA not FDM) — `paper, origami, pneumatic, SLA, haptics`
 - [Physical reservoir computing — pneumatic soft arm (arXiv:2609.02157)](sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md) — sealed vs coupled pouch topology; 2–3 sensors enough; Phase-0 REFERENCE — `paper, soft-robotics, PRC, sensing`
 - [Multi-vine robot + working channel (arXiv:2609.03758)](sources/2026-kashef-multi-vine-working-channel.md) — dual eversion vines; colon phantom 90°; Phase-0 REFERENCE — `paper, vine-robot, medical, soft-robotics`
+- [Monolithic Force-Proprioception Soft Actuator (arXiv:2609.24499)](sources/2026-huang-mfps-monolithic-force-proprioception.md) — conductive-TPU actuator + sensor from one material in one FDM step; 40° bend / 12.5 N / 26.9% resistance change; TPU hysteresis unsolved; Phase-0 REFERENCE — `paper, soft-robotics, TPU, FDM, conductive, origami`
+- [Cosserat Modeling of Trimmed Helicoid Soft Arms (arXiv:2609.25264)](sources/2026-qin-cosserat-trimmed-helicoid.md) — separated-section constitutive law; summed-section baseline errs 25–92% vs ~7–8%; **TPU 95A on a Bambu H2D**; Phase-0 REFERENCE — `paper, soft-robotics, TPU, Bambu, H2D, continuum, modeling`
 - [arXiv lane noise triage — overnight fetch 2026-07-16](sources/2026-arxiv-lane-noise-triage-jul16.md) — 2/4 accept (AgentsCAD + multimaterial) — `meta, triage, arxiv, digest, noise`
 - [arXiv lane noise triage — overnight fetch 2026-07-17](sources/2026-arxiv-lane-noise-triage-jul17.md) — hybrid gripper accept; exoglove re-fetch → reject stubs — `meta, triage, arxiv, digest, noise`
 - [arXiv lane noise triage — overnight fetch 2026-07-18](sources/2026-arxiv-lane-noise-triage-jul18.md) — empty inbox; reject-stub skipped-dup confirmed for 07958 — `meta, triage, arxiv, digest, noise`
@@ -105,6 +107,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 
 ### Printers
 
+- [Bambu Lab H2D](entities/printers/bambu-h2d.md) — dual-nozzle large-format enclosed; 350×320×325 mm; 350 °C nozzle; **65 °C heated chamber**; optional laser; ~$1,549; specs third-party-sourced, prices conflict — `printer, bambu, h2d, dual-nozzle, enclosed, heated-chamber, large-format`
 - [Bambu Lab X1 Carbon (X1C)](entities/printers/x1c.md) — flagship CoreXY enclosed; lidar + AI camera + accelerometer; hardened nozzle; ABS/ASA/composites capable; ~$1,200 — `printer, bambu, x1c, corexy, enclosed, flagship`
 - [Bambu Lab P1S](entities/printers/p1s.md) — mid-tier CoreXY enclosed; AI camera + accelerometer (no lidar); same build volume as X1C at ~$700 bare; ABS/ASA non-composite — `printer, bambu, p1s, corexy, enclosed, mid-tier`
 - [Bambu Lab A1 (and A1 mini)](entities/printers/a1.md) — entry-level bed-slinger open-frame; AMS Lite; lidar + AI camera; ~$400 (A1) / ~$300 (mini); PLA/PETG/TPU only — `printer, bambu, a1, a1-mini, bed-slinger, open-frame, entry-level`
