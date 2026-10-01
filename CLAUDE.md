@@ -128,7 +128,7 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 
 | Alias | Path | Description |
 |-------|------|-------------|
-| `osint-wiki` | `../../OSINT WORKSPACE/wiki/` | Financial research, quant finance, prediction markets, CeminiSuite, RL for trading |
+| `osint-wiki` | `../OSINT WORKSPACE/wiki/` | Financial research, quant finance, prediction markets, CeminiSuite, RL for trading |
 | `gambling-wiki` | `../Gambling wiki/wiki/` | Sports betting, casino, poker, DFS, best ball |
 | `image-gen-wiki` | `../Image gen/wiki/` | Uncensored image generation, model cataloging, ComfyUI, LoRA, persona/character ops |
 | `seo-wiki` | `../SEO:GEO B&M Business/wiki/` | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
@@ -149,7 +149,7 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 2. Read the source (or relevant sections for long PDFs / repo READMEs)
 3. **Discuss key takeaways with the user before writing**
 3b. **Cross-wiki routing check** — before writing pages, evaluate whether the source contains off-topic content more relevant to another wiki (@osint-wiki, @image-gen-wiki, or @seo-wiki). If so:
-   - Call `python3 "../../OSINT WORKSPACE/scripts/cross_wiki_route.py"` (from this repo) to create a stub page or brief in the correct wiki, piping content via stdin — requires the private `osint-wiki` checkout as a sibling directory
+   - Call `python3 "../OSINT WORKSPACE/scripts/cross_wiki_route.py"` (from this repo) to create a stub page or brief in the correct wiki, piping content via stdin — requires the private `osint-wiki` checkout as a sibling directory
    - Use `--type page` for substantive material, `--type brief` for tangential material
    - **When in doubt, prefer a brief over a stub** — briefs are cheaper and don't create maintenance burden in the target wiki
 4. Create `wiki/sources/<slug>.md` — frontmatter + Raw Concept + short Narrative
@@ -158,7 +158,7 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
    - If no page: create a stub. Real content accumulates over subsequent ingests
 6. Update `wiki/index.md` — add rows for new pages
 7. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed
-8. **Archive raw to egress-fi**: `bash "../../OSINT WORKSPACE/scripts/archive_raw_to_egress.sh" --wiki-id 3d-printing "research to be indexed/<filename>"` — update source page `Location`
+8. **Archive raw to egress-fi**: `bash "../OSINT WORKSPACE/scripts/archive_raw_to_egress.sh" --wiki-id 3d-printing "research to be indexed/<filename>"` — update source page `Location`
 9. Update `ROADMAP.md` if the ingest opens new follow-ups; stage briefs in `briefs/` if the ingest produced something actionable
 10. A single ingest must touch 3-15 pages. If it touches 0 new pages, ask whether the source is worth ingesting
 

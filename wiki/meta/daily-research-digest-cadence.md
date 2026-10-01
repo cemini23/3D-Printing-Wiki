@@ -45,7 +45,7 @@ related:
   - sources/2026-arxiv-lane-noise-triage-jul18.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-07-18
+updated: 2026-09-30
 cross-wiki-source: "@osint-wiki/concepts/federated-daily-research-digest.md"
 ---
 
@@ -64,7 +64,7 @@ Cross-wiki automation installed 2026-06-01 from OSINT federation brief K93. Repl
 | Field | Value |
 |-------|--------|
 | **Cadence** | Daily @ 08:15 local (LaunchAgent) |
-| **Install** | `bash "../../OSINT WORKSPACE/scripts/federation/daily_digest/install_federated_daily_digest.sh" "<repo>" 3d-printing` |
+| **Install** | `bash "../OSINT WORKSPACE/scripts/federation/daily_digest/install_federated_daily_digest.sh" "<repo>" 3d-printing` |
 | **Runner** | `~/bin/cemini-daily-research-digest-3d-printing` → `python3 scripts/daily_research_digest_run.py` |
 | **Config** | `scripts/daily_research_config.yaml` — topics synced to `ROADMAP.md` |
 | **Report** | `wiki/sweeps/YYYY-MM-DD-daily.md` |
