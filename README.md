@@ -135,7 +135,7 @@ If you want to go further, optional tips fund open research and tooling. **Donat
 | **Outlier Weekly** | [outlierweekly.substack.com](https://outlierweekly.substack.com) | Methodology newsletter — markets, research systems, and open tooling notes |
 | **Atto** | [youratto.com](https://youratto.com) | Private desktop organizer for Italian family / citizenship document packets |
 | **GuruWatcher** | [guruwatcher.com](https://guruwatcher.com) | Local app: newsletter price levels → Discord alerts (alert-only; never trades) |
-| **YouTube** | [@Cemini23](https://www.youtube.com/@Cemini23) | Walkthroughs and demos |
+| **X** | [@Cemini23](https://x.com/Cemini23) | Build logs and walkthroughs |
 
 Canonical donation copy across the federation: [SUPPORT.md](https://github.com/cemini23/cemini-claude-code-CCC/blob/main/SUPPORT.md) on CCC.
 
@@ -162,7 +162,6 @@ See [`ROADMAP.md`](ROADMAP.md) for active workstreams and [`wiki/log.md`](wiki/l
 
 - Newsletter: [Outlier Weekly](https://outlierweekly.substack.com)
 - Products: [Atto](https://youratto.com) · [GuruWatcher](https://guruwatcher.com)
-- YouTube: [@Cemini23](https://www.youtube.com/@Cemini23)
 - Wiki federation hub: [cemini-claude-code-CCC](https://github.com/cemini23/cemini-claude-code-CCC)
 - Agent toolkit: [wikilint](https://github.com/cemini23/wikilint) · [vet](https://github.com/cemini23/vet) · [ara-schema](https://github.com/cemini23/ara-schema)
 - Sibling wikis: [SEO/GEO](https://github.com/cemini23/SEO-GEO-B-M-Wiki) · [Cybersecurity](https://github.com/cemini23/Cybersecurity-wiki) · [Image Gen](https://github.com/cemini23/uncensored-image-gen-wiki) · [Gambling](https://github.com/cemini23/Gambling-wiki) · [Game Dev](https://github.com/cemini23/Game-Dev-wiki)
