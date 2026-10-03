@@ -2,6 +2,51 @@
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
 
+## [2026-10-03] ingest | Pass 35 — VLA deployment + tactile simulation (2 papers)
+
+- **Inbox:** 2 PDFs (Oct 2 overnight fetch). **2 ACCEPT / 0 REJECT.**
+- **PDF text extraction:** `pypdf` workaround again (both papers 8 pages).
+
+### Accepted (2)
+
+- **arXiv:2610.01856** — Liu et al., "ChunkVLA-AM: Parallel Action Chunking for Vision-Language-Action Robot Control in Additive Manufacturing" (UT Rio Grande Valley + USF + SDSU). 7B OpenVLA-OFT + LoRA + 8-step action chunks on a FAIRINO FR3 doing post-print part retrieval. **This closes the ROADMAP Tier-2 backlog item "VLM-in-manufacturing failure-mode papers."** Key numbers: zero-shot MAE **179.60–650.12 mm** (unusable); single-step adapted 9.50 mm avg / **16.90 mm on X** (the paper's own words: *"easily causes collisions with the build plate or printed parts"*); ChunkVLA-AM **1.74 mm** open-loop; physical **39/42 = 92.9%**, with **all 3 failures at terminal placement** from poor release-height control. Illumination sweep (10 trials × 181 levels): min error at luminance 95, low-error band **85–125**, endpoints **+31.2% / +20.9%**; explicitly **not** a universal optimum (per-trial optima 36–198). Z-axis dominant error throughout. Two honest caveats captured: the 1.74 mm is **open-loop consistency on logged frames**, not task success; and the configs differ in **both** adaptation and horizon, so the paper does **not** attribute the gain to chunking alone. Phase-0 **REFERENCE** (no repo). `read_status: deep-read`.
+- **arXiv:2609.38418** — Zhong et al., "PneuTac: Tactile Manipulation with Soft Pneumatic Robots via Unified MPM-Gaussian Splatting Simulation" (Oxford Robotics Institute). MPM for both the soft body and the tactile gel, 3DGS for rendering — first paper to jointly model a compliant actuator and a compliant tactile sensor. Real-to-sim from **one** image per device; CMA-ES parameter ID; surrogates give **5×** (MLP torque) and **3000×** (UNet perception) speedups. Sim-augmented demos (10 real → 100 sim) beat real-only on egg (90.0 vs 26.7) and card (66.7 vs 33.3) but **lost to simply doubling real demos** on switch (83.3 vs Real-20 90.0). Tactile removal collapses switch (→30.0) but barely moves card → contact- vs position-dominated tasks. PPO scored **10.0%** on card where BC scored 66.7 — a weak simulator punishes RL harder than imitation learning. **Printed on a Stratasys PolyJet (Agilus30/Vero), not FDM.** Phase-0 **REFERENCE** (no repo). `read_status: deep-read`.
+
+### Created (2 pages)
+
+- `wiki/sources/2026-liu-chunkvla-am-vla-deployment.md`
+- `wiki/sources/2026-zhong-pneutac-mpm-gaussian-tactile.md`
+
+### Modified (4 content pages + index)
+
+- `wiki/concepts/vlm-in-manufacturing.md` — **major update.** Third angle → **fourth angle (deployment)**; new "Deployment — what the failure data actually says" section; "What's missing" rewritten as a status table (failure-modes gap **closed**, cost gap **partly closed**, CNN-baseline gap **still open**); confidence tags extended. **Also repaired pre-existing drift**: `## Relations` was missing 3 of the 10 `related:` entries.
+- `wiki/concepts/soft-robotics-fdm-diw.md` — Pass 35 section (PneuTac); new modality row; sim-to-real lessons.
+- `wiki/concepts/fdm-printing.md` — 2 new backlinks; `updated` bumped.
+- `wiki/concepts/print-farm-operations.md` — ChunkVLA backlink. **Also repaired pre-existing drift**: `## Relations` was missing 3 of 15 `related:` entries.
+- `wiki/index.md` — 2 source rows; updated VLM + soft-robotics concept rows.
+
+Pages touched: **8 wiki pages** (2 created + 4 modified + index + this log), plus `ROADMAP.md`, `hot.md`, and one brief.
+
+### Phase-0 / Phase-1
+
+- **Phase-0:** neither paper ships a repo, code, or dataset. No audit triggered. Both **REFERENCE**.
+- **Phase-1:** both source pages marked `wont_wire`. `phase1-wire` lists 3D-printing as a hard-stop surface — no wire attempted, by policy.
+
+### Cross-wiki routing
+
+- **No route.** Checked both papers against @osint-wiki / @image-gen-wiki / @seo-wiki. ChunkVLA-AM is robotics-for-AM (stays). PneuTac is physics simulation, not image generation — the 3DGS angle is tangential to image-gen's ComfyUI work and the wiki already covers Gaussian splatting (`sources/2024-kwatra-splatoverflow-troubleshooting.md`). Neither warrants a stub or brief elsewhere.
+
+### Routing
+
+- **First successful routed task from this workspace.** Ran `route-task` from the user's Terminal panel (the sandboxed Bash tool cannot reach it). Lane **easy**, no forced fallback — it completed on **OpenRouter free**.
+- Task: draft a headings-and-bullets outline, **no numeric claims**, for a `process-parameter-tuning` concept page (a ROADMAP backlog item).
+- Output staged as `briefs/2026-10-03_process-parameter-tuning-outline-scaffold.md` — **scaffold only**, deliberately content-free. A page on pressure advance / flow calibration is exactly where an unsourced number does damage, so the outline stops at structure and lists the sources the real page still needs.
+- `LESSONS.md` updated: the 2026-09-30 "routing is blocked" entry is now marked superseded. The failures were real but specific to the sandboxed Bash tool.
+
+### Lint
+
+- 0 asymmetric / 0 dangling. `scripts/wiki_lint.py` exit 0.
+
 ## [2026-09-30] ingest | Pass 34 — soft-robotics cluster (2 papers): MFPS actuator + Cosserat helicoid arm
 
 - **Inbox:** 2 PDFs. **2 ACCEPT / 0 REJECT.**

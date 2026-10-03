@@ -8,7 +8,7 @@ Active workstreams, open decisions, and the done log. Read at session start; upd
 
 ### W1 — Initial research ingest pass
 
-**Status:** Ingest passes 1–34 through 2026-09-30. **Inbox empty.** Auto-fetch on (arxiv-only; news off); triage each morning. Pass 34 accepted 2 soft-robotics arXiv papers (MFPS conductive-TPU actuator; Cosserat trimmed-helicoid arm) and added the first **Bambu H2D** page.
+**Status:** Ingest passes 1–35 through 2026-10-03. **Inbox empty.** Auto-fetch on (arxiv-only; news off); triage each morning. Pass 35 accepted 2 arXiv papers (ChunkVLA-AM: first VLA **deployment/failure-mode** paper, closing a Tier-2 backlog item; PneuTac: MPM+3DGS tactile simulator).
 
 Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-printing papers. Curation surfaces practical takeaways for the reader; some papers may go in as background-context one-liners rather than full pages.
 
@@ -71,6 +71,7 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 | 2026-09-11 | Ingest pass 32 — soft robotics cluster | 3/3 accept (MONORIGAMI SLA origami, PRC pneumatic arm, multi-vine medical); soft-robotics + shape-changing hubs updated; Sep 2–11 sweeps committed; tipdrop/atto/poker/cyber/prod skip; archived; inbox cleared. |
 | 2026-09-17 | Ingest pass 33 — empty inbox | 0 PDFs; Sep 12–17 sweeps committed; digest dupe-skip 2609.03758; lint clean; no Phase-0/briefs/routing. |
 | 2026-09-30 | Ingest pass 34 — soft-robotics cluster (2 papers) | 2/2 accept (arXiv:2609.24499 MFPS conductive-TPU actuator + arXiv:2609.25264 Cosserat trimmed-helicoid arm). New **Bambu H2D** entity page closes a printer gap. Repaired pre-existing `related:`/`## Relations` drift on `fdm-printing.md` and `filaments-baseline.md`. Phase-0 both REFERENCE; Phase-1 both `wont_wire` (3D-printing wires off by policy). Lint clean. **Routing blocked by sandbox** → `LESSONS.md`. |
+| 2026-10-03 | Ingest pass 35 — VLA deployment + tactile simulation (2 papers) | 2/2 accept (arXiv:2610.01856 ChunkVLA-AM VLA deployment on a FR3 + arXiv:2609.38418 PneuTac MPM-3DGS tactile simulator). **Closes the Tier-2 VLM failure-mode backlog item.** `vlm-in-manufacturing.md` gains a deployment angle and a rewritten gap-status table. Repaired pre-existing `## Relations` drift on `vlm-in-manufacturing.md` (3 missing) and `print-farm-operations.md` (3 missing). Phase-0 both REFERENCE; Phase-1 both `wont_wire`. No cross-wiki route. Lint clean. |
 
 ---
 
@@ -81,13 +82,13 @@ Source-mix surprise (still applies): ~58 of original 62 are academic AM/3D-print
 - ~~Bambu-specific entity pages~~ — **partly done.** X1C / P1S / A1 exist; **H2D added 2026-09-30**. Still missing: A1 mini (folded into `a1.md`) and the 2026 siblings (H2S / H2D Pro / H2C / X2D) — those need verification, not reseller copy.
 - `process-parameter-tuning` concept page (pressure advance / linear advance / Klipper auto-calibration) — **now has seed material**: fan-speed/layer-height coupling and extrusion-path architecture sit in `concepts/fdm-printing.md`, and need a home.
 - Deep-read deferred papers (CIPHER p13+, Lin p16-32) on demand
-- Tier-2 sweep: VLM failure-mode papers
+- ~~Tier-2 sweep: VLM failure-mode papers~~ — **done 2026-10-03** (pass 35, ChunkVLA-AM). Residual: a **second** independent deployment study, and a **CNN-baseline comparison**, would fully close the cluster gap. Also still absent: any VLA paper doing a genuinely **AM-specific** task (warped-part inspection, failed-print removal) — the ingested one uses coloured-block A-to-B transfer as a proxy.
 
 **Completed — initial ingest pass:**
 
 - ~~Pick next cluster from remaining PDFs~~ — **done 2026-06-01; inbox empty**
 - CIPHER pages 13+ deferred deep-read — methods + extended figures (out-of-distribution validation; end-to-end autonomous fabrication demo). Pages 1-12 deep-read 2026-05-07 covers headline metric + ablation. Revisit if a question arises about VLA out-of-distribution behavior.
-- Tier-2 sweep target: VLM-in-manufacturing **failure-mode** papers — current cluster is all successful demos; production-deployment failure analysis would round it out (called out as missing in `vlm-in-manufacturing.md`).
+- ~~Tier-2 sweep target: VLM-in-manufacturing **failure-mode** papers~~ — **completed 2026-10-03** by pass 35 (ChunkVLA-AM, arXiv:2610.01856). See the note under "Higher priority" for what residual gaps remain.
 - ~~Bambu-specific entity pages (X1C / P1S / A1 / A1 mini) once reader chooses model~~ — **superseded 2026-09-30**: X1C / P1S / A1 pages exist and H2D was added; remaining gap is the 2026 sibling lineup (H2S / H2D Pro / H2C / X2D), which needs first-party verification.
 - Lin 2025 pages 16-32 deferred deep-read — full-part validation results (specific test geometries, surface-roughness numbers, photographs). Pages 1-15 deep-read 2026-05-06 covers method + headline metric. Revisit only if a question arises.
 

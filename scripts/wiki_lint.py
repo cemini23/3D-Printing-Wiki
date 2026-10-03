@@ -193,8 +193,10 @@ for src, fm in pages.items():
 
 # -- 8: cross-wiki @wiki-alias/path links ---------------------------
 # Check @wiki-alias/path/to/page.md references to other wikis.
+# Stop at quotes too: frontmatter carries the form `cross-wiki-source: "@alias/path.md"`,
+# and without this the closing quote is captured into the path -> false "dangling".
 
-CROSS_WIKI_RE = re.compile(r"@([a-z0-9_-]+)/([^\s`)]+)")
+CROSS_WIKI_RE = re.compile(r"@([a-z0-9_-]+)/([^\s`)\"']+)")
 
 cross_wiki_dangling = []  # (src, alias, rel_path, target_path)
 cross_wiki_ok = 0

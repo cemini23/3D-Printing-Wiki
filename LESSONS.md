@@ -6,7 +6,31 @@ Newest entries on top.
 
 ---
 
+## [2026-10-03] Routing works — but only from the Terminal panel, not the Bash tool
+
+**Update to the 2026-09-30 entry below.** That entry concluded routing was blocked. It is not. The fix is to use the **Terminal panel** instead of the sandboxed Bash tool.
+
+**Verified:** `route-task` easy lane ran end-to-end on 2026-10-03, using the OpenRouter free tier, and returned a usable output. Command run from the Terminal panel:
+
+```bash
+route-task -Profile claudio -WorkDir "/Users/claudiobarone/Projects/3D printing" "easy: <task>"
+```
+
+**Why it works:** the Terminal panel starts the user's own login shell, outside the OS sandbox. The sandboxed Bash tool denies writes to `~/Projects/agent-toolkit/` (where `route-task` writes run logs) and denies network to the executor endpoints.
+
+**Use the Terminal panel for anything that leaves the project directory or needs the network:**
+
+| Task | Sandboxed Bash | Terminal panel |
+|---|---|---|
+| `route-task` / grok / opencode | Denied | Works |
+| `git push` | Denied | Works |
+| Egress archive (`scp`) | Denied | Works |
+
+**What to do:** Plan routing work as normal, but run it in the Terminal panel. The user sees and approves each command there. Do not report these as impossible — report which surface works.
+
 ## [2026-09-30] External model routing does not work inside the desktop sandbox
+
+**Superseded 2026-10-03 — see the entry above.** The failures below are real, but they apply to the **sandboxed Bash tool only**. Run the same commands from the Terminal panel and they work.
 
 **What broke:** The `route` skill and its executors cannot run in a sandboxed Claude desktop session.
 

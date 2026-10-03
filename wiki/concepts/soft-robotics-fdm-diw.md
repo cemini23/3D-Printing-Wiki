@@ -26,14 +26,15 @@ related:
   - sources/2026-huang-mfps-monolithic-force-proprioception.md
   - sources/2026-qin-cosserat-trimmed-helicoid.md
   - entities/printers/bambu-h2d.md
+  - sources/2026-zhong-pneutac-mpm-gaussian-tactile.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-09-30
+updated: 2026-10-03
 ---
 
 ## Relations
 
-@sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-jang-monorigami-sla-origami-pneumatic.md @sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md @sources/2026-kashef-multi-vine-working-channel.md @sources/2026-huang-mfps-monolithic-force-proprioception.md @sources/2026-qin-cosserat-trimmed-helicoid.md @entities/printers/bambu-h2d.md @concepts/open-source-legged-robotics.md @concepts/fdm-printing.md @entities/materials/tpu.md @sources/2025-miyama-soft-hand-skin-skeleton.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-clancy-magnetic-soft-microrobots.md @sources/2025-truempler-ionic-polymer-diw.md @sources/2025-cha-diw-stretchable-strain-sensors.md @sources/2025-kota-3d-cal-tactile-calibration.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md
+@sources/2026-chen-hybrid-rigid-soft-gripper.md @sources/2026-luo-multimaterial-e2e-optimization.md @sources/2026-abboodi-airtight-spa-fdm.md @sources/2026-jang-monorigami-sla-origami-pneumatic.md @sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md @sources/2026-kashef-multi-vine-working-channel.md @sources/2026-huang-mfps-monolithic-force-proprioception.md @sources/2026-qin-cosserat-trimmed-helicoid.md @entities/printers/bambu-h2d.md @sources/2026-zhong-pneutac-mpm-gaussian-tactile.md @concepts/open-source-legged-robotics.md @concepts/fdm-printing.md @entities/materials/tpu.md @sources/2025-miyama-soft-hand-skin-skeleton.md @sources/2026-hansen-tendon-actuated-tpu-backbone.md @sources/2025-clancy-magnetic-soft-microrobots.md @sources/2025-truempler-ionic-polymer-diw.md @sources/2025-cha-diw-stretchable-strain-sensors.md @sources/2025-kota-3d-cal-tactile-calibration.md @sources/2025-yoshimura-m3d-skin-tactile-fdm.md @sources/2025-pattabiraman-eflesh-magnetic-tactile.md
 
 ## Raw Concept
 
@@ -51,6 +52,7 @@ Ingest pass 11 — extends pass 9 (@concepts/open-source-legged-robotics.md) wit
 | **Airtight TPU pneumatics** | Abboodi SPA process eval | Research only — lab window |
 | **Multi-material FDM sensing** | M3D-skin, eFlesh (pass 9) | MMU or pause-insert |
 | **DIW on silicone** | Cha strain sensors; Trümpler ionic actuators | Custom hardware |
+| **PolyJet soft body + tactile tip** | PneuTac soft finger (Agilus30 + Digit) | **Not FDM** — PolyJet machine class |
 | **Printer as robot** | 3D Cal probing | Clever repurposing |
 
 ### 3D Cal pattern [CONFIRMED single source]
@@ -86,6 +88,28 @@ Ingest pass 11 — extends pass 9 (@concepts/open-source-legged-robotics.md) wit
 FDM process tension worth noting: **lower fan speed and smaller layer height improve airtightness**, but too-low fan speed prevents solidification and too-small layer height lets the nozzle **drag the weak sensor region** and destroy it. That is the same sealing problem @sources/2026-abboodi-airtight-spa-fdm.md attacks from the **wall-line architecture** side — two papers, one problem, no consumer-ready recipe yet.
 
 **Cosserat arm on a Bambu H2D (Qin).** Not a printing paper, but its validation rig is: three tapered **trimmed-helicoid** modules printed in **TPU 95A on a Bambu Lab H2D**, with rigid **PLA** connectors [@entities/printers/bambu-h2d.md]. The modeling result that matters conceptually: if you assume a **common cross-section** (the standard "summed properties" approach), you overestimate stiffness badly — errors of **25–92%** — because the load-bearing helix domains are separated and slide relative to each other. Modelling them separately drops the error to **~7–8%** across 103 configurations. Bending and extension soften ~10×, torsion barely changes.
+
+### Pass 35 (2026-10-03) — simulating the soft robot and its tactile skin together
+
+@sources/2026-zhong-pneutac-mpm-gaussian-tactile.md (Oxford Robotics Institute) is the cluster's first **simulation / sim-to-real** entry. It couples the **soft body** and the **tactile gel** in one physics model — **MPM** for both dynamics problems, **3D Gaussian Splatting** for rendering — because prior simulators modelled them separately and neither could handle the pair [@sources/2026-zhong-pneutac-mpm-gaussian-tactile.md].
+
+**Process note: this is another non-FDM soft-robotics paper.** The finger was printed on a **Stratasys PolyJet** (Agilus30 soft / Vero rigid), with a **Digit** tactile sensor and an Ecoflex gel. Together with MONORIGAMI (SLA), that is now **two of the last three** soft-robotics papers running on non-FDM hardware — a clear signal that consumer FDM soft robotics remains research-adjacent.
+
+The transferable result is not the simulator. It is what the **comparison table** teaches about when simulation-augmented data actually pays:
+
+| Task | Sim+Real (10 real + 100 sim) | Real only (10) | Real-20 (20 real) | No tactile | PPO |
+|---|---|---|---|---|---|
+| Switch | 83.3% | 60.0% | **90.0%** | 30.0% | 63.3% |
+| Egg carton | **90.0%** | 26.7% | 40.0% | 56.7% | 80.0% |
+| Card pulling | **66.7%** | 33.3% | 50.0% | 63.3% | **10.0%** |
+
+**Three lessons, none of them obvious:**
+
+1. **Simulation augmentation is not free lunch — it competes with just collecting more real data.** On the switch task, doubling the real demonstrations (**Real-20, 90.0%**) **beat** the simulation pipeline (83.3%). Simulation won where real data **under-samples the success manifold** (egg, card). So the question is never "is sim useful," but "is my real set already representative?" [CONFIRMED paper, §V.C]
+2. **Tactile feedback helps contact-dominated tasks, not position-dominated ones.** Removing it collapsed the switch (83.3 → 30.0%) but barely moved card pulling (66.7 → 63.3%) — card pulling is position-dominated, so touch adds little. Match the sensing modality to what the task actually depends on.
+3. **A weak simulator punishes reinforcement learning harder than imitation learning.** PPO scored **10.0%** on card pulling where behaviour cloning scored 66.7%. The cause is the simulator's poor fidelity for **card-on-card contact** — and because PPO explores by reward, it finds and exploits that error, while a BC policy stays anchored on real demonstrations. **If your simulator is wrong about a contact mode, RL will discover it and you will not like what it does.**
+
+Two practical caveats from the same paper: calibration does **not** transfer between sensor units (a second Digit unit scored RMSE 8.12 re-calibrated but **22.96** when reusing the original calibration), and the real-to-sim step still needed only **one** image per device — a genuinely light calibration burden.
 
 ## Snippets
 
