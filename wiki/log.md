@@ -27,6 +27,10 @@ Append-only chronological operations log. Each entry: date + operation + summary
 
 Pages touched: **8 wiki pages** (2 created + 4 modified + index + this log), plus `ROADMAP.md`, `hot.md`, and one brief.
 
+### Archive
+
+- **Done.** Both PDFs archived to `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/` (remote size verified, local copies removed). Source `Location` fields updated to the canonical paths. Ran from the user's Terminal panel — the sandboxed Bash tool cannot reach the egress host.
+
 ### Phase-0 / Phase-1
 
 - **Phase-0:** neither paper ships a repo, code, or dataset. No audit triggered. Both **REFERENCE**.

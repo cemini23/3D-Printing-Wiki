@@ -26,7 +26,7 @@ wire_target: "Simulation/sim-to-real REFERENCE; 3D-printing Phase-1 local wires 
 - **Type:** Conference-format paper (IEEE-style, cs.RO)
 - **arXiv:** 2609.38418v1 [cs.RO] — 29 Sep 2026
 - **Pages:** 8
-- **Location:** `raw-sources/arxiv-2609.38418-pneutac-tactile-manipulation-with-soft-pneumatic.pdf`
+- **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2609.38418-pneutac-tactile-manipulation-with-soft-pneumatic.pdf`
 - **Read-status:** deep-read
 
 ## Narrative

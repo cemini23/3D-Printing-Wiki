@@ -27,7 +27,7 @@ wire_target: "VLA deployment REFERENCE; 3D-printing Phase-1 local wires off"
 - **Type:** Conference-format paper (IEEE-style, cs.RO)
 - **arXiv:** 2610.01856v1 [cs.RO] — 1 Oct 2026
 - **Pages:** 8
-- **Location:** `raw-sources/arxiv-2610.01856-chunkvla-am-parallel-action-chunking-for-vision.pdf`
+- **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2610.01856-chunkvla-am-parallel-action-chunking-for-vision.pdf`
 - **Read-status:** deep-read
 - **Funding:** NSF CREST MECIS (2112650), NSF Expand AI ARISE (2434916), NSF ACCESS (ELE250047), USDOT UTCRS
 

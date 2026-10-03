@@ -6,6 +6,24 @@ Newest entries on top.
 
 ---
 
+## [2026-10-03] A green lint is not proof of health — fixing one error unmasked another
+
+**What happened:** On 2026-09-30 I fixed the `../../OSINT WORKSPACE/` path in `CLAUDE.md` to `../OSINT WORKSPACE/`. That is what `wiki_lint.py` reads to build its cross-wiki alias table.
+
+Before the fix, every cross-wiki check failed to resolve a base directory and the linter reported **"0 dangling, 2 ok"** — a clean bill of health it had not earned.
+
+After the fix, the linter could resolve the sibling wiki and immediately reported **"3 dangling, 14 ok"**. Those three turned out to be **false positives**: the regex was
+
+```python
+CROSS_WIKI_RE = re.compile(r"@([a-z0-9_-]+)/([^\s`)]+)")
+```
+
+The excluded-character class omitted quotes. Frontmatter carries the form `cross-wiki-source: "@osint-wiki/path.md"`, so the closing `"` was captured into the path and the lookup failed. All three target files existed the whole time. Fixed by adding `\"'` to the class → **0 dangling, 17 ok**.
+
+**The lesson:** a validator that cannot reach its inputs reports success. "0 dangling" and "0 dangling *after being able to check*" are different claims. When a lint section reports clean while a neighbouring section reports many findings, check whether the clean section is actually doing work.
+
+**What to do:** after changing anything the linter reads (paths, alias tables, config), re-run it and compare *every* section's numbers against the previous run, not just the exit code. A sudden jump in "ok" counts means the linter just started doing more work.
+
 ## [2026-10-03] Routing works — but only from the Terminal panel, not the Bash tool
 
 **Update to the 2026-09-30 entry below.** That entry concluded routing was blocked. It is not. The fix is to use the **Terminal panel** instead of the sandboxed Bash tool.
